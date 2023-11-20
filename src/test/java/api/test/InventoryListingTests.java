@@ -2,10 +2,7 @@ package api.test;
 
 import api.endpoints.UserEndPoints;
 import io.restassured.response.Response;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.hamcrest.Matchers.equalTo;
 
 public class InventoryListingTests {
     @Test(priority = 1)
