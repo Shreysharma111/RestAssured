@@ -6,6 +6,7 @@ import static io.restassured.RestAssured.given;
 
 import api.payload.Login;
 import api.payload.ReportIncidence;
+import api.payload.ResolveIncidence;
 import api.utilities.JwtTokenUtil;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -75,7 +76,7 @@ public class UserEndPoints {
 
         return response;
     }
-    public static Response resolveIncidence(Login payload)
+    public static Response resolveIncidence(ResolveIncidence payload)
     {
         Response response = given()
                 .header("x-authorization", jwtToken)
@@ -83,6 +84,8 @@ public class UserEndPoints {
                 .body(payload)
                 .when()
                 .post(Routes.resolve_incidence_url);
+        JwtTokenUtil.responseIncId =payload.getIncidenceId();
+        tokenChange();
 
         return response;
     }
@@ -90,7 +93,7 @@ public class UserEndPoints {
     {
         Response response = given()
                 .header("x-authorization", jwtToken)
-                .pathParam("incidenceId",incidenceId)
+                .pathParam("incidenceId", incidenceId)
                 .when()
                 .get(Routes.reporter_resolver_url);
 

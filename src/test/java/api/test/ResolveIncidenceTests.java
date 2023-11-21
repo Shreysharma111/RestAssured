@@ -1,10 +1,12 @@
 package api.test;
 
+import api.endpoints.UserEndPoints;
 import api.payload.Accessories;
 import api.payload.Images;
-import api.payload.ReportIncidence;
 import api.payload.ResolveIncidence;
+import io.restassured.response.Response;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.util.List;
 import java.util.ResourceBundle;
@@ -25,6 +27,7 @@ public class ResolveIncidenceTests {
     private String status;
     private String image1;
     private String image2;
+int statusCode;
 
     @BeforeClass
     public void setupData() {
@@ -64,7 +67,55 @@ public class ResolveIncidenceTests {
         image.setThumbUrl(image1);
         image.setImageUrl(image2);
 
-        reportPayload.setImages(List.of(image));
+        resolvePayload.setImages(List.of(image));
 
+        resolvePayload.setIncidenceId(incidenceId);
+        resolvePayload.setResolutionStatus(resolutionStatus);
+        resolvePayload.setIsAvailable(isAvailable);
+        resolvePayload.setResolverRemark(resolverRemark);
+    }
+
+    @Test(priority = 1)
+    public void testIncidenceResolve() {
+        int maxRetries = 1; // Set the maximum number of retries
+        int retryCount = 0;
+
+        while (retryCount < maxRetries) {
+            try {
+                Response response = UserEndPoints.resolveIncidence(resolvePayload);
+                statusCode = response.getStatusCode();
+                System.out.println("Status code is : " + response.getStatusCode());
+
+                System.out.println("Response time : " + response.getTime() + "ms");
+                break;
+            } catch (Exception e) {
+
+                if (statusCode == 403) {
+                    // Perform test cases of LoginTest.java test class
+                    LoginTests loginInstance = new LoginTests();
+                    loginInstance.testLoginIT();
+
+                    // Retry the incidenceDetails method
+                    retryCount++;
+                } else if (statusCode == 500) {
+                    System.out.println("A server error occurred: " + e.getMessage());
+                    testIncidenceResolve();
+                    // Retry the incidenceResolve method
+                    retryCount++;
+                } else if (statusCode == 404) {
+                    System.out.println("Not found error occurred: " + e.getMessage());
+
+                    // Retry the incidenceResolve method
+                    retryCount++;
+                } else if (statusCode == 200) {
+                    System.out.println("Verified successfully");
+                    // Verified successfully
+                    retryCount++;
+                } else {
+                    throw e; // Re-throw the exception if it's not one of the expected cases
+                }
+            }
+
+        }
     }
 }

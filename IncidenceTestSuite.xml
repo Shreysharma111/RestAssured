@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Incidence Test Suite">
-    <test verbose="2" preserve-order="true"
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager"/>
+    </listeners>
+
+    <test verbose="2"
           name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/LoginTests.java">
         <classes>
             <class name="api.test.LoginTests">
@@ -10,54 +14,39 @@
                     <include name="testLoginDr"/>
                 </methods>
             </class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/InventoryListingTests.java">
-        <classes>
             <class name="api.test.InventoryListingTests">
                 <methods>
                     <include name="testInventoryListing"/>
                 </methods>
             </class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/IncidenceListTests.java">
-        <classes>
             <class name="api.test.IncidenceListTests">
                 <methods>
                     <include name="testIncidenceList"/>
                 </methods>
             </class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/IncidenceDetailsTests.java">
-        <classes>
             <class name="api.test.IncidenceDetailsTests">
                 <methods>
                     <include name="testIncidenceDetails"/>
                 </methods>
             </class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/IncidenceHistoryTests.java">
-        <classes>
             <class name="api.test.IncidenceHistoryTests">
                 <methods>
                     <include name="testIncidenceHistory"/>
                 </methods>
             </class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/ReportIncidenceTests.java">
-        <classes>
             <class name="api.test.ReportIncidenceTests">
                 <methods>
                     <include name="testIncidenceReport"/>
+                </methods>
+            </class>
+            <class name="api.test.ResolveIncidenceTests">
+                <methods>
+                    <include name="testIncidenceResolve"/>
+                </methods>
+            </class>
+            <class name="api.test.ReporterResolverTests">
+                <methods>
+                    <include name="testReporterResolver"/>
                 </methods>
             </class>
         </classes>

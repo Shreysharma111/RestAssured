@@ -19,7 +19,7 @@ public class Routes {
     //Incidence module
     public static String login_url=base_url+"/auth/signin";
     public static String inventory_listing_url=base_url+"/asset2/v1/assets/inventory";
-    public static String incidence_list_url=base_url+"/asset2/v1/assets/incidence";
+    public static String incidence_list_url=base_url+"/asset/v1/assets/incidence";
     public static String incidence_history_url=base_url+"/asset2/v1/assets/incidence-history/{assetId}";
     public static String incidence_details_url=base_url+"/asset2/v1/assets/incidence-details?assetId={assetId}";
     public static String report_incidence_url=base_url+"/asset2/v1/email/report-incident";

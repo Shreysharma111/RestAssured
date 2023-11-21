@@ -8,6 +8,7 @@ import java.util.Properties;
 
 public class JwtTokenUtil {
     public static String jwtToken;
+    public static int responseIncId;
     public static void tokenChange()
     {
         // Update the properties file
@@ -45,6 +46,15 @@ public class JwtTokenUtil {
         } else {
             // If it does, update the IT property value
             properties.setProperty("IT", jwtToken);
+        }
+
+        // Check if the responseIncidenceId property already exists
+        if (!properties.containsKey("responseIncidenceId")) {
+            // If it doesn't, add a new responseIncidenceId property with the value of the generated JWT token
+            properties.setProperty("responseIncidenceId", String.valueOf(responseIncId));
+        } else {
+            // If it does, update the responseIncidenceId property value
+            properties.setProperty("responseIncidenceId", String.valueOf(responseIncId));
         }
         return properties;
     }
