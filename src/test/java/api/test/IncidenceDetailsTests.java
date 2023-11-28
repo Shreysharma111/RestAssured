@@ -1,6 +1,7 @@
 package api.test;
 
 import api.endpoints.UserEndPoints;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,6 +12,8 @@ import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
 public class IncidenceDetailsTests {
+
+    private ExtentTest test;
 
     private int assetId;
     private Logger logger = LogManager.getLogger(this.getClass());

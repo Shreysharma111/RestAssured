@@ -4,6 +4,7 @@ import api.endpoints.UserEndPoints;
 import api.payload.Accessories;
 import api.payload.Images;
 import api.payload.ResolveIncidence;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,8 +15,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
+
 public class ResolveIncidenceTests {
     ResolveIncidence resolvePayload;
+    private ExtentTest test;
 
     private int incidenceId;
     private String resolutionStatus;

@@ -68,3 +68,15 @@
 [2023-11-28 14:12:02] [INFO ] [ResolveIncidenceTests] - Response time : 119ms
 [2023-11-28 14:12:02] [INFO ] [ReporterResolverTests] - Status code : 200
 [2023-11-28 14:12:02] [INFO ] [ReporterResolverTests] - Response time : 108ms
+[2023-11-28 15:54:17] [INFO ] [LoginTests] - Status code : 200
+[2023-11-28 15:54:17] [INFO ] [LoginTests] - Response time : 3594ms
+[2023-11-28 15:55:24] [INFO ] [LoginTests] - Status code : 200
+[2023-11-28 15:55:24] [INFO ] [LoginTests] - Response time : 15132ms
+[2023-11-28 15:57:10] [INFO ] [LoginTests] - Status code : 200
+[2023-11-28 15:57:10] [INFO ] [LoginTests] - Response time : 3133ms
+[2023-11-28 16:03:50] [INFO ] [LoginTests] - Status code : 200
+[2023-11-28 16:03:50] [INFO ] [LoginTests] - Response time : 127ms
+[2023-11-28 16:10:30] [INFO ] [LoginTests] - Status code : 200
+[2023-11-28 16:10:30] [INFO ] [LoginTests] - Response time : 3133ms
+[2023-11-28 17:07:25] [INFO ] [LoginTests] - Status code : 200
+[2023-11-28 17:07:25] [INFO ] [LoginTests] - Response time : 111ms
