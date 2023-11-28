@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="api.utilities.ExtentManager"/>
+        <listener class-name="api.utilities.reporting.Setup"/>
     </listeners>
 
     <test verbose="2" preserve-order="true"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Incidence Test Suite">
-<!--    <listeners>-->
-<!--        <listener class-name="api.utilities.ExtentManager"/>-->
-<!--    </listeners>-->
+    <listeners>
+        <listener class-name="api.utilities.reporting.Setup"/>
+    </listeners>
 
     <test verbose="2"
           name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/LoginTests.java">
