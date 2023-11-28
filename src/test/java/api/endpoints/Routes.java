@@ -5,7 +5,7 @@ Incidence URI : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081
 Login(POST) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/auth/signin
 Inventory listing(GET) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/asset2/v1/assets/inventory
 Incidence list(GET) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/asset2/v1/assets/incidence
-Incidence history(GET) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/asset2/v1/assets/incidence-history/{incidenceId}
+Incidence history(GET) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/asset2/v1/assets/incidence-history/{assetId}
 Incidence details(GET) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/asset2/v1/assets/incidence-details?assetId={assetId}
 Report incidence(POST) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/asset2/v1/email/report-incident
 Resolve incidence(POST) : http://ec2-43-205-70-111.ap-south-1.compute.amazonaws.com:8081/asset2/v1/assets/resolve-incidence

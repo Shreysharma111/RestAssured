@@ -5,11 +5,14 @@ import api.payload.Accessories;
 import api.payload.Images;
 import api.payload.ResolveIncidence;
 import io.restassured.response.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
 
 public class ResolveIncidenceTests {
     ResolveIncidence resolvePayload;
@@ -27,7 +30,9 @@ public class ResolveIncidenceTests {
     private String status;
     private String image1;
     private String image2;
-int statusCode;
+    int statusCode;
+
+    private Logger logger = LogManager.getLogger(this.getClass());
 
     @BeforeClass
     public void setupData() {
@@ -84,9 +89,8 @@ int statusCode;
             try {
                 Response response = UserEndPoints.resolveIncidence(resolvePayload);
                 statusCode = response.getStatusCode();
-                System.out.println("Status code is : " + response.getStatusCode());
-
-                System.out.println("Response time : " + response.getTime() + "ms");
+                logger.info("Status code : "+response.getStatusCode());
+                logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
                 break;
             } catch (Exception e) {
 
