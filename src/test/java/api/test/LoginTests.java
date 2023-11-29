@@ -1,18 +1,16 @@
 package api.test;
 
 import api.endpoints.UserEndPoints;
+import api.endpoints.UserEndPoints2;
 import api.payload.Login;
-import api.utilities.reporting.ExtentReportManager;
 import api.utilities.reporting.Setup;
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.*;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
-import static org.hamcrest.Matchers.equalTo;
 public class LoginTests extends Setup {
 
     Login loginPayloadIT;
@@ -24,7 +22,7 @@ public class LoginTests extends Setup {
     String nameDr;
     String password;
 
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
     @BeforeClass
     public void setupData() {
         loginPayloadIT=new Login();
@@ -45,7 +43,7 @@ public class LoginTests extends Setup {
 
     @Test(priority = 1)
     public void testLoginIT() {
-        Response response = UserEndPoints.login(loginPayloadIT);
+        Response response = UserEndPoints2.login(loginPayloadIT);
 // Verify keys and log in the report
         logApiDetails(response);
         logResultAndDetails(response);
@@ -54,7 +52,7 @@ public class LoginTests extends Setup {
     }
     @Test(priority = 2)
     public void testLoginDr() {
-        Response response = UserEndPoints.login(loginPayloadDr);
+        Response response = UserEndPoints2.login(loginPayloadDr);
 // Verify keys and log in the report
         logApiDetails(response);
         logResultAndDetails(response);

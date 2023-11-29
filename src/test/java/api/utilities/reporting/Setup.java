@@ -1,20 +1,13 @@
 package api.utilities.reporting;
 
-import api.endpoints.UserEndPoints;
-import api.test.LoginTests;
-import api.utilities.reporting.ExtentReportManager;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 
@@ -69,23 +62,23 @@ public class Setup implements ITestListener {
         if (statusCode == 403) {
             test.fail("403 — Forbidden error occurred");
             // Perform test cases of LoginTest.java test class
-//            LoginTests loginInstance = new LoginTests();
-//            loginInstance.testLoginIT();
+            //LoginTests loginInstance = new LoginTests();
+            //loginInstance.testLoginIT();
 
         } else if (statusCode == 500) {
             test.log(Status.FAIL, "500 - Server error occurred");
-            test.log(Status.INFO, "Response Message - " + response.jsonPath().get("message"));
+            test.log(Status.INFO, "API Message - " + response.jsonPath().get("message"));
 
         } else if (statusCode == 404) {
             test.log(Status.FAIL, "404 - Not found error occurred");
-            test.log(Status.INFO, "Response Message - " + response.jsonPath().get("message"));
+            test.log(Status.INFO, "API Message - " + response.jsonPath().get("message"));
 
         } else if (statusCode == 200) {
             test.log(Status.PASS, "200 OK - Verified successfully");
 
         } else if (statusCode == 401) {
             test.fail("401 - Unauthorized error occurred");
-            test.log(Status.INFO, "Response Message - " + response.jsonPath().get("message"));
+            test.log(Status.INFO, "API Message - " + response.jsonPath().get("message"));
 
         } else {
             test.log(Status.FAIL, "Error occurred : "+response.getStatusCode());

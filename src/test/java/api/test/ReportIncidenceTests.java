@@ -20,9 +20,9 @@ import static api.utilities.reporting.Setup.logResultAndDetails;
 public class ReportIncidenceTests {
     ReportIncidence reportPayload;
 
-    private int assetId;
-    private String incidenceType;
-    private String assetName;
+    int assetId;
+    String incidenceType;
+    String assetName;
     String reporterRemark;
     int accessory1Id;
     int accessory2Id;
@@ -35,7 +35,7 @@ public class ReportIncidenceTests {
     String image1;
     String image2;
 
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @BeforeClass
     public void setupData() {

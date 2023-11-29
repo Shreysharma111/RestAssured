@@ -1,7 +1,6 @@
 package api.test;
 
 import api.endpoints.UserEndPoints;
-import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,10 +15,8 @@ import static api.utilities.reporting.Setup.logResultAndDetails;
 
 public class IncidenceDetailsTests {
 
-    private ExtentTest test;
-
     private int assetId;
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
     @BeforeClass
     public void setupData() {
         ResourceBundle incDet = ResourceBundle.getBundle("incidenceDetails");

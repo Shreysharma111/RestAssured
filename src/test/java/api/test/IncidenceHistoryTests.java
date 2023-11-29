@@ -16,7 +16,7 @@ import static api.utilities.reporting.Setup.logResultAndDetails;
 public class IncidenceHistoryTests {
 
     private int assetId;
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
     @BeforeClass
     public void setupData() {
         ResourceBundle incDet = ResourceBundle.getBundle("incidenceHistory");

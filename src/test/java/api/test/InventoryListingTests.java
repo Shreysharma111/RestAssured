@@ -13,7 +13,7 @@ import static api.utilities.reporting.Setup.logResultAndDetails;
 
 public class InventoryListingTests {
 
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
     @Test(priority = 1)
     public void testInventoryListing() {
         Response response = UserEndPoints.inventoryListing();

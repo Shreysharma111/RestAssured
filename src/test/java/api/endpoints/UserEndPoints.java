@@ -15,10 +15,11 @@ import io.restassured.response.Response;
 Created to perform CRUD requests to the incidence APIs
  */
 public class UserEndPoints {
+    private static Response response;
 
     public static Response login(Login payload)
     {
-        Response response = given()
+        response = given()
                 .contentType(ContentType.JSON)
                 .body(payload)
                 .when()
@@ -29,7 +30,7 @@ public class UserEndPoints {
     }
     public static Response inventoryListing()
     {
-        Response response = given()
+        response = given()
                 .header("x-authorization", jwtToken)
                 .when()
                 .get(Routes.inventory_listing_url);
@@ -38,7 +39,7 @@ public class UserEndPoints {
     }
     public static Response incidenceList()
     {
-        Response response = given()
+       response = given()
                 .header("x-authorization", jwtToken)
                 .when()
                 .get(Routes.incidence_list_url);
@@ -47,7 +48,7 @@ public class UserEndPoints {
     }
     public static Response incidenceDetails(int assetId)
     {
-        Response response = given()
+         response = given()
                 .pathParam("assetId", assetId)
                 .header("x-authorization", jwtToken)
                 .when()
@@ -57,7 +58,7 @@ public class UserEndPoints {
     }
     public static Response incidenceHistory(int assetId)
     {
-        Response response = given()
+         response = given()
                 .pathParam("assetId", assetId)
                 .header("x-authorization", jwtToken)
                 .when()
@@ -67,7 +68,7 @@ public class UserEndPoints {
     }
     public static Response reportIncidence(ReportIncidence payload)
     {
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .contentType(ContentType.JSON)
                 .body(payload)
@@ -78,7 +79,7 @@ public class UserEndPoints {
     }
     public static Response resolveIncidence(ResolveIncidence payload)
     {
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .contentType(ContentType.JSON)
                 .body(payload)
@@ -91,7 +92,7 @@ public class UserEndPoints {
     }
     public static Response reporterResolverDetails(int incidenceId)
     {
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .pathParam("incidenceId", incidenceId)
                 .when()

@@ -17,6 +17,7 @@ import static io.restassured.RestAssured.given;
 Created to perform CRUD requests to the incidence APIs
  */
 public class UserEndPoints2 {
+    private static Response response;
 
     //method to get URLs from properties file
     static ResourceBundle getUrl() {
@@ -28,7 +29,7 @@ public class UserEndPoints2 {
     {
         String login_url = getUrl().getString("login_url");
 
-        Response response = given()
+         response = given()
                 .contentType(ContentType.JSON)
                 .body(payload)
                 .when()
@@ -41,7 +42,7 @@ public class UserEndPoints2 {
     {
         String inventory_listing_url = getUrl().getString("inventory_listing_url");
 
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .when()
                 .get(inventory_listing_url);
@@ -52,7 +53,7 @@ public class UserEndPoints2 {
     {
         String incidence_list_url = getUrl().getString("incidence_list_url");
 
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .when()
                 .get(incidence_list_url);
@@ -63,7 +64,7 @@ public class UserEndPoints2 {
     {
         String incidence_details_url = getUrl().getString("incidence_details_url");
 
-        Response response = given()
+         response = given()
                 .pathParam("assetId", assetId)
                 .header("x-authorization", jwtToken)
                 .when()
@@ -75,7 +76,7 @@ public class UserEndPoints2 {
     {
         String incidence_history_url = getUrl().getString("incidence_history_url");
 
-        Response response = given()
+         response = given()
                 .pathParam("assetId", assetId)
                 .header("x-authorization", jwtToken)
                 .when()
@@ -87,7 +88,7 @@ public class UserEndPoints2 {
     {
         String report_incidence_url = getUrl().getString("report_incidence_url");
 
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .contentType(ContentType.JSON)
                 .body(payload)
@@ -100,7 +101,7 @@ public class UserEndPoints2 {
     {
         String resolve_incidence_url = getUrl().getString("resolve_incidence_url");
 
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .contentType(ContentType.JSON)
                 .body(payload)
@@ -115,7 +116,7 @@ public class UserEndPoints2 {
     {
         String reporter_resolver_url = getUrl().getString("reporter_resolver_url");
 
-        Response response = given()
+         response = given()
                 .header("x-authorization", jwtToken)
                 .pathParam("incidenceId", incidenceId)
                 .when()

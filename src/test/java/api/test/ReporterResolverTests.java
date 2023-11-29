@@ -15,7 +15,7 @@ import static api.utilities.reporting.Setup.logResultAndDetails;
 
 public class ReporterResolverTests {
     private int incidenceId;
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
     @BeforeClass
     public void setupData() {
         ResourceBundle incDet = ResourceBundle.getBundle("resolveIncidence");

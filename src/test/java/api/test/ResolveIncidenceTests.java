@@ -21,7 +21,6 @@ import static api.utilities.reporting.Setup.logResultAndDetails;
 
 public class ResolveIncidenceTests {
     ResolveIncidence resolvePayload;
-    private ExtentTest test;
 
     private int incidenceId;
     private String resolutionStatus;
@@ -36,7 +35,6 @@ public class ResolveIncidenceTests {
     private String status;
     private String image1;
     private String image2;
-    int statusCode;
 
     private Logger logger = LogManager.getLogger(this.getClass());
 
