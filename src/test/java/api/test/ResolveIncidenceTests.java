@@ -15,6 +15,9 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
+import static api.utilities.reporting.Setup.logApiDetails;
+import static api.utilities.reporting.Setup.logResultAndDetails;
+
 
 public class ResolveIncidenceTests {
     ResolveIncidence resolvePayload;
@@ -85,44 +88,12 @@ public class ResolveIncidenceTests {
 
     @Test(priority = 1)
     public void testIncidenceResolve() {
-        int maxRetries = 1; // Set the maximum number of retries
-        int retryCount = 0;
+        Response response = UserEndPoints.resolveIncidence(resolvePayload);
+// Verify keys and log in the report
+        logApiDetails(response);
+        logResultAndDetails(response);;
+        logger.info("Status code : "+response.getStatusCode());
+        logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
 
-        while (retryCount < maxRetries) {
-            try {
-                Response response = UserEndPoints.resolveIncidence(resolvePayload);
-                statusCode = response.getStatusCode();
-                logger.info("Status code : "+response.getStatusCode());
-                logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
-                break;
-            } catch (Exception e) {
-
-                if (statusCode == 403) {
-                    // Perform test cases of LoginTest.java test class
-                    LoginTests loginInstance = new LoginTests();
-                    loginInstance.testLoginIT();
-
-                    // Retry the incidenceDetails method
-                    retryCount++;
-                } else if (statusCode == 500) {
-                    System.out.println("A server error occurred: " + e.getMessage());
-                    testIncidenceResolve();
-                    // Retry the incidenceResolve method
-                    retryCount++;
-                } else if (statusCode == 404) {
-                    System.out.println("Not found error occurred: " + e.getMessage());
-
-                    // Retry the incidenceResolve method
-                    retryCount++;
-                } else if (statusCode == 200) {
-                    System.out.println("Verified successfully");
-                    // Verified successfully
-                    retryCount++;
-                } else {
-                    throw e; // Re-throw the exception if it's not one of the expected cases
-                }
-            }
-
-        }
     }
 }

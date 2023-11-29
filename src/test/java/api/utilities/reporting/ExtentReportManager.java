@@ -26,7 +26,7 @@ public class ExtentReportManager {
     }
 
     public static String getReportNameWithTimestamp() {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH_mm_ss_yyyy_MM_dd");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy_HH.mm.ss");
         LocalDateTime localDateTime = LocalDateTime.now();
         String formattedTime = dateTimeFormatter.format(localDateTime);
         String reportName = "TestReport"+formattedTime+".html";

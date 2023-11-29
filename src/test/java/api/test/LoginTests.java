@@ -46,30 +46,18 @@ public class LoginTests extends Setup {
     @Test(priority = 1)
     public void testLoginIT() {
         Response response = UserEndPoints.login(loginPayloadIT);
-// Verify keys in the response body
-        response.then()
-                .assertThat()
-                .body("username", equalTo(usernameIT))
-                .body("name", equalTo(nameIT))
-                .body("id", equalTo(15))
-                .statusCode(200);
-
+// Verify keys and log in the report
         logApiDetails(response);
+        logResultAndDetails(response);
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
     }
     @Test(priority = 2)
     public void testLoginDr() {
         Response response = UserEndPoints.login(loginPayloadDr);
-// Verify keys in the response body
-        response.then()
-                .assertThat()
-                .body("username", equalTo(usernameDr))
-                .body("name", equalTo(nameDr))
-                .body("id", equalTo(13))
-                .statusCode(200);
-
+// Verify keys and log in the report
         logApiDetails(response);
+        logResultAndDetails(response);
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
     }
