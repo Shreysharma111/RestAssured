@@ -1,0 +1,1063 @@
+Started by user [8mha:////4KYodtL+BRM+LMOuIv40FZQH+PWj51zO9ir+qHAdIN5VAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYR/dLi1CL94oyi1MrijMSi3ERDQ0MACM0ao8kAAAA=[0mShrey Sharma
+[8mha:////4GzEEWZM1OslvPyqWXojTB2MHdAs/xcaYmnpsb2k124FAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4MK9umdGpDC0Fol6hoTOA/JEUO71023Jb40guukN8D5qAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4HTdsoGqFqZglugPutgYeNtBA/b22iLXZQTGtSoiEUZSAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\workspace\RestAssured
+[8mha:////4MHjvBRnrNKw+sxsEMk7Co4XBSLL5cWUUOgDHdFIRCzUAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4IiNUtm/+o1I/MF/sW+sEvQTYiEHB0FefW9bnuZUw6lfAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4Cm/5QoEH+fDzx7VGivHmXiDGijYtP5EB0jQSPtRzhbUAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Tool Install)
+[8mha:////4IbCEY3afNtkQyUGWSlSrfUeJI0OW38wBchAJ4OsIuzMAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] tool
+[8mha:////4DQl7ftyosf1VYZHkIDSuwsIIyWoHlQ2Cpw17IlBX//GAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED8v8DEJvAAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4MigmpoPsbax5cuurVtCdzJHyA3PqKdJwZry4w2DWpS5AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j/zqggXvAAAAA==[0m[Pipeline] }
+[8mha:////4IB6gu4xWCOhZuS753c4GGLlw99e9SPyEanFnVvfX0IsAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoYeVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AExtCpb0AAAA=[0m[Pipeline] // stage
+[8mha:////4Et91SsXGR8lgr5khTrPRyAN6U+TXnQxeE4mnO9w4aCaAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjSHSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oNEzd2msEAAAA=[0m[Pipeline] withEnv
+[8mha:////4KMXpOKNV8mXdIT5UWaRL8K5N6iXXFGa0uu4M24JqoV0AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4PwRZX4M7WM75Nydh24WDa8ZoAadnDx80RU+mokHdeMcAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] stage
+[8mha:////4EZPwrABZ6zY62+MoUzmBCpZ8EtQ0OBeWcIk1FSVG11sAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] { (Build and Run)
+[8mha:////4ISl8lLS3hP+gzyULalqv17aD4IZmgy14y/J95bNOvIPAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8W7Eii+AAAA[0m[Pipeline] tool
+[8mha:////4EEtpHluV17k35VakQ1ZDhkHJzqi/5yKjJLeWCvF0zJoAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEG6D8DvgAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4FA+YR3+WKZ9jnWU3J28YC5fdyOpJmYqzrVuppL0YGW7AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSEgMiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gOeMTC6wgAAAA==[0m[Pipeline] withEnv
+[8mha:////4FkntQ4k1+1VykrW13rcFv5CmZXfpdse/ZMczbBpCob8AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4EHUNpyleIcZt0nII9tNS3dG1HCnK2BOelo5+rvGYE0eAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\workspace\RestAssured\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Shreysharma111/RestAssured.git # timeout=10
+Fetching upstream changes from https://github.com/Shreysharma111/RestAssured.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.1.windows.1'
+ > git fetch --tags --force --progress -- https://github.com/Shreysharma111/RestAssured.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision fabbdef0ec4573ccc0b1a778ad7807343e63b997 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fabbdef0ec4573ccc0b1a778ad7807343e63b997 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master fabbdef0ec4573ccc0b1a778ad7807343e63b997 # timeout=10
+Commit message: "userendpoints access using properties file instead of java class Routes"
+ > git rev-list --no-walk fabbdef0ec4573ccc0b1a778ad7807343e63b997 # timeout=10
+[8mha:////4OP0xWdH5a5vHS+8i6I3Nq2CgqInHgExbSyERtxTJqg7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AGtm4OQvgAAAA==[0m[Pipeline] bat
+
+C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\workspace\RestAssured>mvn clean test -Dsuite-IncidenceTestSuite.xml 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.example:RestAssured:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.aventstack:extentreports:jar -> version ${extentReportVersion} vs 4.1.5 @ line 148, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------------< org.example:RestAssured >-----------------------
+[INFO] Building RestAssured 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ RestAssured ---
+[INFO] Deleting C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\workspace\RestAssured\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ RestAssured ---
+[INFO] skip non existing resourceDirectory C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\workspace\RestAssured\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ RestAssured ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ RestAssured ---
+[INFO] Copying 8 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ RestAssured ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\workspace\RestAssured\target\test-classes
+[INFO] 
+[INFO] --- surefire:2.22.0:test (default-test) @ RestAssured ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{
+    "id": 15,
+    "username": "jai.malviyanagar2",
+    "name": "Jaipur Malviya Nagar 2",
+    "privileges": [
+        "r.a",
+        "r.f.pm"
+    ],
+    "tenants": {
+        "1": "QA",
+        "2": "QA1"
+    },
+    "jwtToken": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySW5mbyI6eyJpZCI6MTUsImhvc3RJZCI6MTUsInVzZXJuYW1lIjpudWxsLCJmbmFtZSI6IkphaXB1ciBNYWx2aXlhIiwibG5hbWUiOiJOYWdhciAyIiwiZW1haWwiOiJub3JlcGx5QGNsb3ZlZGVudGFsLmluIiwidXNlclR5cGUiOiJJVCIsImlzTWZhIjoxLCJ0ZW5hbnRzIjp7IjEiOiJRQSIsIjIiOiJRQTEifSwiYWN0aXZlVGVuYW50IjoyfSwicHJpdmlsZWdlcyI6WyJyLmEiLCJyLmYucG0iXSwic3ViIjoiamFpLm1hbHZpeWFuYWdhcjIiLCJhdWQiOiJuL2EiLCJyb2xlcyI6bnVsbCwiZXhwIjoxNzAxMjY4MjEzLCJpYXQiOjE3MDEyNjQ2MTN9.kf2NFUYF5fICptdVKebXdu-_JWFAjP9GiDfxd3BSEUU",
+    "refreshToken": "12d41316-1c0a-4344-b473-c7ddfb3fa57d"
+}
+{
+    "id": 13,
+    "username": "jai.banipark2",
+    "name": "Jaipur Bani Park 2",
+    "privileges": [
+        "r.a"
+    ],
+    "tenants": {
+        "1": "QA",
+        "2": "QA1"
+    },
+    "jwtToken": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySW5mbyI6eyJpZCI6MTMsImhvc3RJZCI6MTMsInVzZXJuYW1lIjpudWxsLCJmbmFtZSI6IkphaXB1ciBCYW5pIiwibG5hbWUiOiJQYXJrIDIiLCJlbWFpbCI6IiIsInVzZXJUeXBlIjoiRG9jdG9yIiwiaXNNZmEiOjEsInRlbmFudHMiOnsiMSI6IlFBIiwiMiI6IlFBMSJ9LCJhY3RpdmVUZW5hbnQiOjJ9LCJwcml2aWxlZ2VzIjpbInIuYSJdLCJzdWIiOiJqYWkuYmFuaXBhcmsyIiwiYXVkIjoibi9hIiwicm9sZXMiOm51bGwsImV4cCI6MTcwMTI2ODIxNCwiaWF0IjoxNzAxMjY0NjE0fQ.19Ysd0YC9TTO9wodubyZELIb9fDFAOObcLPbzH5L4cg",
+    "refreshToken": "8f538b62-dab1-4540-9ba9-dd9d87643b78"
+}
+{
+    "content": [
+        {
+            "id": 9,
+            "code": "DEIOS00021",
+            "serial": "BG2303100046",
+            "qrCode": "DEIOS00021",
+            "name": "Scanner",
+            "model": "Medit I-600",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "CLINICAL",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 2,
+            "accessories": [
+                {
+                    "id": 1,
+                    "name": "Wand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 2,
+                    "name": "Calibrator",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 3,
+                    "name": "Stand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 4,
+                    "name": "Type C to C cable",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 5,
+                    "name": "SCANNING TIPS",
+                    "code": null,
+                    "type": "Fixture",
+                    "quantity": 5,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "code": "DEIOS00025",
+            "serial": "BG2303100042",
+            "qrCode": "DEIOS00025",
+            "name": "Scanner",
+            "model": "Medit I-600",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "CLINICAL",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 2,
+            "accessories": [
+                {
+                    "id": 1,
+                    "name": "Wand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 2,
+                    "name": "Calibrator",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 3,
+                    "name": "Stand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 4,
+                    "name": "Type C to C cable",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 5,
+                    "name": "SCANNING TIPS",
+                    "code": null,
+                    "type": "Fixture",
+                    "quantity": 5,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "code": "IHLTS00012",
+            "serial": "BG2303100042",
+            "qrCode": "IHLTS00012",
+            "name": "Laptop",
+            "model": "16\" Macbook Pro",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "IT",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 1,
+            "accessories": [
+                {
+                    "id": 6,
+                    "name": "Laptop",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 7,
+                    "name": "Charger",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "code": "DEIOS00022",
+            "serial": "BG2303100042",
+            "qrCode": "DEIOS00022",
+            "name": "Scanner",
+            "model": "Medit I-600",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "CLINICAL",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 2,
+            "accessories": [
+                {
+                    "id": 1,
+                    "name": "Wand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 2,
+                    "name": "Calibrator",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 3,
+                    "name": "Stand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 4,
+                    "name": "Type C to C cable",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 5,
+                    "name": "SCANNING TIPS",
+                    "code": null,
+                    "type": "Fixture",
+                    "quantity": 5,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "code": "IHLTS00008",
+            "serial": "BG2303100042",
+            "qrCode": "IHLTS00008",
+            "name": "Laptop",
+            "model": "16\" Macbook Pro",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "IT",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 1,
+            "accessories": [
+                {
+                    "id": 6,
+                    "name": "Laptop",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 7,
+                    "name": "Charger",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "code": "DEIOS00023",
+            "serial": "BG2303100042",
+            "qrCode": "DEIOS00023",
+            "name": "Scanner",
+            "model": "Medit I-600",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "CLINICAL",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 2,
+            "accessories": [
+                {
+                    "id": 1,
+                    "name": "Wand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 2,
+                    "name": "Calibrator",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 3,
+                    "name": "Stand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 4,
+                    "name": "Type C to C cable",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 5,
+                    "name": "SCANNING TIPS",
+                    "code": null,
+                    "type": "Fixture",
+                    "quantity": 5,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "code": "IHLTS00013",
+            "serial": "BG2303100042",
+            "qrCode": "IHLTS00013",
+            "name": "Laptop",
+            "model": "16\" Macbook Pro",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "IT",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 1,
+            "accessories": [
+                {
+                    "id": 6,
+                    "name": "Laptop",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 7,
+                    "name": "Charger",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "code": "DEIOS00019",
+            "serial": "BG2303100042",
+            "qrCode": "DEIOS00019",
+            "name": "Scanner",
+            "model": "Medit I-600",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "IT",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 1,
+            "accessories": [
+                {
+                    "id": 1,
+                    "name": "Wand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 2,
+                    "name": "Calibrator",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 3,
+                    "name": "Stand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 4,
+                    "name": "Type C to C cable",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 5,
+                    "name": "SCANNING TIPS",
+                    "code": null,
+                    "type": "Fixture",
+                    "quantity": 5,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "code": "IHLTS00007",
+            "serial": "SRPKXLFK4KP",
+            "qrCode": "IHLTS00007",
+            "name": "Laptop",
+            "model": "16\" Macbook Pro",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "IT",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 1,
+            "accessories": [
+                {
+                    "id": 6,
+                    "name": "Laptop",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 7,
+                    "name": "Charger",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "code": "DEIOS00018",
+            "serial": "BG2303100042",
+            "qrCode": "DEIOS00018",
+            "name": "Scanner",
+            "model": "Medit I-600",
+            "state": "Inventory",
+            "status": "Working",
+            "transferType": null,
+            "transferState": null,
+            "isVerified": null,
+            "isIncidence": 0,
+            "type": "CLINICAL",
+            "initUser": null,
+            "issuedUser": null,
+            "issuedDate": null,
+            "commissionedDate": null,
+            "createdDate": "2023-10-11 00:00:00",
+            "categoryId": 2,
+            "accessories": [
+                {
+                    "id": 1,
+                    "name": "Wand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 2,
+                    "name": "Calibrator",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 3,
+                    "name": "Stand",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 4,
+                    "name": "Type C to C cable",
+                    "code": null,
+                    "type": "Essential",
+                    "quantity": 1,
+                    "status": "InUse"
+                },
+                {
+                    "id": 5,
+                    "name": "SCANNING TIPS",
+                    "code": null,
+                    "type": "Fixture",
+                    "quantity": 5,
+                    "status": "InUse"
+                }
+            ]
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "sorted": false,
+            "empty": true,
+            "unsorted": true
+        },
+        "pageNumber": 0,
+        "pageSize": 10,
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+    },
+    "totalPages": 2,
+    "totalElements": 17,
+    "last": false,
+    "size": 10,
+    "number": 0,
+    "sort": {
+        "sorted": false,
+        "empty": true,
+        "unsorted": true
+    },
+    "numberOfElements": 10,
+    "first": true,
+    "empty": false
+}
+{
+    "content": [
+        
+    ]
+}
+{
+    "source": "asset2",
+    "status": 404,
+    "message": "asset incidence not found.",
+    "error": "Not Found",
+    "type": "NotFoundException"
+}
+{
+    "id": 2,
+    "name": "Laptop",
+    "model": "16\" Macbook Pro",
+    "code": "IHLTS00011",
+    "serial": "ST9D4QQTYFF",
+    "issuedUser": " ",
+    "issuedDate": null,
+    "history": [
+        
+    ]
+}
+{
+    "status": false,
+    "message": "Failed to send email"
+}
+{
+    "status": true,
+    "message": "Incidence Resolved Successfully."
+}
+{
+    "reporterName": "jai.banipark2",
+    "resolverName": "jai.banipark2",
+    "type": "Theft",
+    "status": "Pending",
+    "reportedDate": "2023-11-20 17:20:19",
+    "resolvedDate": "2023-11-29 19:00:16",
+    "reporterRemark": "New 1234",
+    "resolverRemark": "asset is resolved",
+    "reporterImages": [
+        {
+            "id": 19,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/14ff1226-7689-463d-8e0f-49e08d72dfd8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/app_document/053c845d-9f1e-4c16-8966-4f853df5a9e9.jpg\"",
+            "incidenceUserType": "Reporter"
+        }
+    ],
+    "resolverImages": [
+        {
+            "id": 46,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 47,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 48,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 49,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 50,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 51,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 52,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 54,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 55,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 56,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 57,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 58,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 59,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 60,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 61,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 62,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 63,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 64,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 65,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 67,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 68,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 69,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 70,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 71,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 72,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 73,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 74,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 75,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 76,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 77,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 78,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 79,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 80,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 81,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 82,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 83,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 84,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 85,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 86,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 87,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 88,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        },
+        {
+            "id": 89,
+            "incidenceId": 45,
+            "thumbUrl": "\"https://s3-ap-southeast-1.amazonaws.com/clove-qa/document_thumb/6d370b94-744f-4ebd-8f24-37aa575272c8.jpg\"",
+            "imageUrl": "\"https://s3-ap-southeast-1.amazonaws.com/prmassets/prm1/2082f130-7108-4a98-9ade-c7a925b23282.jpg\"",
+            "incidenceUserType": "Resolver"
+        }
+    ],
+    "createdOn": null,
+    "images": null
+}
+PASSED: api.test.ReporterResolverTests.testReporterResolver
+PASSED: api.test.LoginTests.testLoginDr
+PASSED: api.test.ReportIncidenceTests.testIncidenceReport
+PASSED: api.test.InventoryListingTests.testInventoryListing
+PASSED: api.test.IncidenceDetailsTests.testIncidenceDetails
+PASSED: api.test.LoginTests.testLoginIT
+PASSED: api.test.ResolveIncidenceTests.testIncidenceResolve
+PASSED: api.test.IncidenceHistoryTests.testIncidenceHistory
+PASSED: api.test.IncidenceListTests.testIncidenceList
+
+===============================================
+    C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/LoginTests.java
+    Tests run: 9, Failures: 0, Skips: 0
+===============================================
+
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.117 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.013 s
+[INFO] Finished at: 2023-11-29T19:00:16+05:30
+[INFO] ------------------------------------------------------------------------
+Post stage
+[8mha:////4MBWh4NC4F5se5fTIwL78qNykUXg5eWMAbZslIXrwBtEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUCEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QVkfcu1r/wHsqpiJvgAAAA==[0m[Pipeline] publishHTML
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at BUILD level C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\workspace\RestAssured\reports to C:\Users\Shrey Sharma\IdeaProjects\RestAssured\jenkins\jobs\RestAssured\builds\8\htmlreports\My_20Reports
+[8mha:////4FHtPgrRXUMlfMx0sr0e4y3boheG/4uzm+b6uPHgy5IaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRqZAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEdlBFkvgAAAA==[0m[Pipeline] }
+[8mha:////4Ewjt+RRtr/RaQtcuZPBq4j5nBggXNqGrUxm5hsjghZWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8pWvI/vgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4GVzuIxbMDZmgQ2g8CG0TtOZFVAHnnMB+amBrljY5Wf/AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvPys7/ru+AAAA[0m[Pipeline] }
+[8mha:////4M7h2igimkGNPAGtpOrAt+jHQB5Gw4Dd4M4F6/gNFw9zAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdIdd2/wEtfcbuvgAAAA==[0m[Pipeline] // stage
+[8mha:////4CUqhE+dYZMgZMEC4Dc+GEL1h5bLces6dJkiuUw3HpcsAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRKWgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QEVP1UfvgAAAA==[0m[Pipeline] }
+[8mha:////4NhuOGs1J16f5CCFN7j+4WszuFOcriP4nCF1rUH8M25TAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QEKvQBNvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4DKB9b1xn5jzuaTtgvYH0i4jlK8uR4EvMkqsjG8kAslJAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREAUSoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBdnuA+oSoWS9AAAA[0m[Pipeline] }
+[8mha:////4H9YwMuGFBYGNQKjyN9xcTYVLDtdvAy+vS+g9TDd4jEhAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoEKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP+a6lx70AAAA=[0m[Pipeline] // node
+[8mha:////4LV7fFUCgJH0ONte/XxW7j2c87Om+5LBgk9Pvzcd0R6XAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny/VaQ7T67L+52vQAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
