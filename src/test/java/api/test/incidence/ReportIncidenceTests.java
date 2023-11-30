@@ -1,4 +1,4 @@
-package api.test;
+package api.test.incidence;
 
 import api.endpoints.UserEndPoints;
 import api.payload.Accessories;

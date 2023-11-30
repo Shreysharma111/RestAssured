@@ -1,10 +1,9 @@
-package api.test;
+package api.test.incidence;
 
 import api.endpoints.UserEndPoints;
 import api.payload.Accessories;
 import api.payload.Images;
 import api.payload.ResolveIncidence;
-import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

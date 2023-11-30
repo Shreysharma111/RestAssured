@@ -1,13 +1,14 @@
-package api.test;
+package api.test.incidence;
 
-import api.endpoints.UserEndPoints;
 import api.endpoints.UserEndPoints2;
 import api.payload.Login;
 import api.utilities.reporting.Setup;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 

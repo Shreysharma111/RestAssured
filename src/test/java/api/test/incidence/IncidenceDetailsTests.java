@@ -1,4 +1,4 @@
-package api.test;
+package api.test.incidence;
 
 import api.endpoints.UserEndPoints;
 import io.restassured.response.Response;
@@ -13,23 +13,26 @@ import java.util.concurrent.TimeUnit;
 import static api.utilities.reporting.Setup.logApiDetails;
 import static api.utilities.reporting.Setup.logResultAndDetails;
 
-public class IncidenceHistoryTests {
+public class IncidenceDetailsTests {
 
     private int assetId;
     private final Logger logger = LogManager.getLogger(this.getClass());
     @BeforeClass
     public void setupData() {
-        ResourceBundle incDet = ResourceBundle.getBundle("incidenceHistory");
+        ResourceBundle incDet = ResourceBundle.getBundle("incidenceDetails");
         assetId = Integer.parseInt(incDet.getString("assetId"));
 
     }
     @Test(priority = 1)
-    public void testIncidenceHistory() {
-        Response response = UserEndPoints.incidenceHistory(assetId);
+    public void testIncidenceDetails() {
+        Response response = UserEndPoints.incidenceDetails(assetId);
 // Verify keys and log in the report
         logApiDetails(response);
         logResultAndDetails(response);
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
+
+
+
     }
 }
