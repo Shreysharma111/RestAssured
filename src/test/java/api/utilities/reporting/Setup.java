@@ -16,8 +16,8 @@ public class Setup implements ITestListener {
     private static ExtentReports extentReports;
     public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
     public void onStart(ITestContext context) {
-        String fileName = ExtentReportManager.getReportNameWithTimestamp();
-        String fullReportPath = System.getProperty("user.dir")+ "\\reports\\"+fileName;
+//        String fileName = ExtentReportManager.getReportNameWithTimestamp();
+        String fullReportPath = System.getProperty("user.dir")+ "\\reports\\"+"TestReport.html";
         extentReports = ExtentReportManager.createInstance(fullReportPath, "Test API Automation Report", "Extent Report");
     }
 
