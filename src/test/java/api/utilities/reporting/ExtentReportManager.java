@@ -25,13 +25,13 @@ public class ExtentReportManager {
         return extentReports;
     }
 
-//    public static String getReportNameWithTimestamp() {
-//        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy_HH.mm.ss");
-//        LocalDateTime localDateTime = LocalDateTime.now();
-//        String formattedTime = dateTimeFormatter.format(localDateTime);
-//        String reportName = "TestReport"+formattedTime+".html";
-//        return reportName;
-//    }
+    public static String getReportNameWithTimestamp() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy_HH.mm.ss");
+        LocalDateTime localDateTime = LocalDateTime.now();
+        String formattedTime = dateTimeFormatter.format(localDateTime);
+        String reportName = "TestReport"+formattedTime+".html";
+        return reportName;
+    }
 
     public static void logPassDetails(String log) {
         Setup.extentTest.get().pass(MarkupHelper.createLabel(log, ExtentColor.GREEN));
