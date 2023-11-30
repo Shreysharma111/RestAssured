@@ -27,7 +27,7 @@ public class Setup implements ITestListener {
     }
 
     public void onTestStart(ITestResult result) {
-        ExtentTest test = extentReports.createTest(result.getTestClass().getName() + " - " + result.getMethod().getMethodName());
+        ExtentTest test = extentReports.createTest(result.getTestClass().getRealClass().getSimpleName() + " - " + result.getMethod().getMethodName());
         extentTest.set(test);
     }
     public void onTestSuccess(ITestResult result) {
