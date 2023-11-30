@@ -51,7 +51,7 @@ public class Setup implements ITestListener {
         // Log status code, response time, and response body
         test.log(Status.INFO, "Status Code: " + response.getStatusCode());
         test.log(Status.INFO, "Response Time: " + response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
-        ExtentReportManager.logJson("Response Body: " + response.getBody().prettyPrint());
+        ExtentReportManager.logJson("\n\nResponse Body: " + response.getBody().prettyPrint()+"\n\n");
 
     }
 
