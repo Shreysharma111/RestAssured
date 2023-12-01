@@ -18,7 +18,7 @@ public class Setup implements ITestListener {
     public void onStart(ITestContext context) {
 //        String fileName = ExtentReportManager.getReportNameWithTimestamp();
         String fullReportPath = System.getProperty("user.dir")+ "\\reports\\"+"TestReport.html";
-        extentReports = ExtentReportManager.createInstance(fullReportPath, "Test API Automation Report", "Extent Report");
+        extentReports = ExtentReportManager.createInstance(fullReportPath, "Test API Extent Report", "Extent Report");
     }
 
     public void onFinish(ITestContext context) {
@@ -61,9 +61,6 @@ public class Setup implements ITestListener {
         int statusCode = response.getStatusCode();
         if (statusCode == 403) {
             test.fail("403 — Forbidden error occurred");
-            // Perform test cases of LoginTest.java test class
-            //LoginTests loginInstance = new LoginTests();
-            //loginInstance.testLoginIT();
 
         } else if (statusCode == 500) {
             test.log(Status.FAIL, "500 - Server error occurred");

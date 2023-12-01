@@ -4,8 +4,10 @@ import api.payload.Login;
 import api.payload.ReportIncidence;
 import api.payload.ResolveIncidence;
 import api.utilities.JwtTokenUtil;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 import java.util.ResourceBundle;
 
@@ -18,6 +20,7 @@ Created to perform CRUD requests to the incidence APIs
  */
 public class UserEndPoints2 {
     private static Response response;
+    private static String jwtToken;
 
     //method to get URLs from properties file
     static ResourceBundle getUrl() {
@@ -25,9 +28,24 @@ public class UserEndPoints2 {
         return routes;
     }
 
+    //generated to create common request specifications
+    public static RequestSpecification commonRequestSpec(String jwtToken) {
+        return new RequestSpecBuilder()
+                .addHeader("x-authorization", jwtToken)
+                .setContentType(ContentType.JSON)
+                .build();
+    }
+    public static RequestSpecification commonRequestSpecWithBody(String jwtToken, Object payload) {
+        return new RequestSpecBuilder()
+                .addHeader("x-authorization", jwtToken)
+                .setContentType(ContentType.JSON)
+                .setBody(payload)
+                .build();
+    }
+
     public static Response login(Login payload)
     {
-        String login_url = getUrl().getString("login_url");
+        String login_url = getUrl().getString("base_url")+getUrl().getString("login_url");
 
          response = given()
                 .contentType(ContentType.JSON)
@@ -35,26 +53,27 @@ public class UserEndPoints2 {
                 .when()
                 .post(login_url);
         JwtTokenUtil.jwtToken =response.path("jwtToken");
+        jwtToken =response.path("jwtToken");
         tokenChange();
         return response;
     }
     public static Response inventoryListing()
     {
-        String inventory_listing_url = getUrl().getString("inventory_listing_url");
+        String inventory_listing_url = getUrl().getString("base_url")+getUrl().getString("inventory_listing_url");
 
          response = given()
-                .header("x-authorization", jwtToken)
-                .when()
-                .get(inventory_listing_url);
+                 .spec(commonRequestSpec(jwtToken))
+                 .when()
+                 .get(inventory_listing_url);
 
         return response;
     }
     public static Response incidenceList()
     {
-        String incidence_list_url = getUrl().getString("incidence_list_url");
+        String incidence_list_url = getUrl().getString("base_url")+getUrl().getString("incidence_list_url");
 
          response = given()
-                .header("x-authorization", jwtToken)
+                 .spec(commonRequestSpec(jwtToken))
                 .when()
                 .get(incidence_list_url);
 
@@ -62,11 +81,11 @@ public class UserEndPoints2 {
     }
     public static Response incidenceDetails(int assetId)
     {
-        String incidence_details_url = getUrl().getString("incidence_details_url");
+        String incidence_details_url = getUrl().getString("base_url")+getUrl().getString("incidence_details_url");
 
          response = given()
+                 .spec(commonRequestSpec(jwtToken))
                 .pathParam("assetId", assetId)
-                .header("x-authorization", jwtToken)
                 .when()
                 .get(incidence_details_url);
 
@@ -74,11 +93,11 @@ public class UserEndPoints2 {
     }
     public static Response incidenceHistory(int assetId)
     {
-        String incidence_history_url = getUrl().getString("incidence_history_url");
+        String incidence_history_url = getUrl().getString("base_url")+getUrl().getString("incidence_history_url");
 
          response = given()
+                 .spec(commonRequestSpec(jwtToken))
                 .pathParam("assetId", assetId)
-                .header("x-authorization", jwtToken)
                 .when()
                 .get(incidence_history_url);
 
@@ -86,12 +105,10 @@ public class UserEndPoints2 {
     }
     public static Response reportIncidence(ReportIncidence payload)
     {
-        String report_incidence_url = getUrl().getString("report_incidence_url");
+        String report_incidence_url = getUrl().getString("base_url")+getUrl().getString("report_incidence_url");
 
          response = given()
-                .header("x-authorization", jwtToken)
-                .contentType(ContentType.JSON)
-                .body(payload)
+                 .spec(commonRequestSpecWithBody(jwtToken, payload))
                 .when()
                 .post(report_incidence_url);
 
@@ -99,12 +116,10 @@ public class UserEndPoints2 {
     }
     public static Response resolveIncidence(ResolveIncidence payload)
     {
-        String resolve_incidence_url = getUrl().getString("resolve_incidence_url");
+        String resolve_incidence_url = getUrl().getString("base_url")+getUrl().getString("resolve_incidence_url");
 
          response = given()
-                .header("x-authorization", jwtToken)
-                .contentType(ContentType.JSON)
-                .body(payload)
+                 .spec(commonRequestSpecWithBody(jwtToken, payload))
                 .when()
                 .post(resolve_incidence_url);
         JwtTokenUtil.responseIncId =payload.getIncidenceId();
@@ -114,10 +129,10 @@ public class UserEndPoints2 {
     }
     public static Response reporterResolverDetails(int incidenceId)
     {
-        String reporter_resolver_url = getUrl().getString("reporter_resolver_url");
+        String reporter_resolver_url = getUrl().getString("base_url")+getUrl().getString("reporter_resolver_url");
 
          response = given()
-                .header("x-authorization", jwtToken)
+                 .spec(commonRequestSpec(jwtToken))
                 .pathParam("incidenceId", incidenceId)
                 .when()
                 .get(reporter_resolver_url);

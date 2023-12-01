@@ -1,6 +1,6 @@
 package api.test.incidence;
 
-import api.endpoints.UserEndPoints;
+import api.endpoints.UserEndPoints2;
 import api.payload.Accessories;
 import api.payload.Images;
 import api.payload.ReportIncidence;
@@ -87,7 +87,7 @@ public class ReportIncidenceTests {
 
     @Test(priority = 1)
     public void testIncidenceReport() {
-        Response response = UserEndPoints.reportIncidence(reportPayload);
+        Response response = UserEndPoints2.reportIncidence(reportPayload);
 // Verify keys and log in the report
         logApiDetails(response);
         logResultAndDetails(response);

@@ -1,6 +1,6 @@
 package api.test.incidence;
 
-import api.endpoints.UserEndPoints;
+import api.endpoints.UserEndPoints2;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +16,7 @@ public class InventoryListingTests {
     private final Logger logger = LogManager.getLogger(this.getClass());
     @Test(priority = 1)
     public void testInventoryListing() {
-        Response response = UserEndPoints.inventoryListing();
+        Response response = UserEndPoints2.inventoryListing();
 // Verify keys and log in the report
         logApiDetails(response);
         logResultAndDetails(response);

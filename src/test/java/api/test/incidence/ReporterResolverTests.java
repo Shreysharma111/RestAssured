@@ -1,6 +1,6 @@
 package api.test.incidence;
 
-import api.endpoints.UserEndPoints;
+import api.endpoints.UserEndPoints2;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,7 +24,7 @@ public class ReporterResolverTests {
     }
     @Test(priority = 1)
     public void testReporterResolver() {
-        Response response = UserEndPoints.reporterResolverDetails(incidenceId);
+        Response response = UserEndPoints2.reporterResolverDetails(incidenceId);
 // Verify keys and log in the report
         logApiDetails(response);
         logResultAndDetails(response);

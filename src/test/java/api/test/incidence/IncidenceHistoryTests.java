@@ -1,6 +1,6 @@
 package api.test.incidence;
 
-import api.endpoints.UserEndPoints;
+import api.endpoints.UserEndPoints2;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,7 +25,7 @@ public class IncidenceHistoryTests {
     }
     @Test(priority = 1)
     public void testIncidenceHistory() {
-        Response response = UserEndPoints.incidenceHistory(assetId);
+        Response response = UserEndPoints2.incidenceHistory(assetId);
 // Verify keys and log in the report
         logApiDetails(response);
         logResultAndDetails(response);
