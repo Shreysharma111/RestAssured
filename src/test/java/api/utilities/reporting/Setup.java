@@ -4,6 +4,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import io.restassured.response.Response;
+import io.restassured.specification.QueryableRequestSpecification;
+import io.restassured.specification.SpecificationQuerier;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -46,12 +48,13 @@ public class Setup implements ITestListener {
         return extentTest.get();
     }
     public static void logApiDetails(Response response) {
+        QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query();
         ExtentTest test = getTest();
 
         // Log status code, response time, and response body
         test.log(Status.INFO, "Status Code: " + response.getStatusCode());
         test.log(Status.INFO, "Response Time: " + response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
-        ExtentReportManager.logJson("\n\nResponse Body: " + response.getBody().prettyPrint()+"\n\n");
+        ExtentReportManager.logJson("\n\nResponse Body: " + response.prettyPrint()+"\n\n");
 
     }
 
