@@ -4,9 +4,9 @@ import static api.utilities.JwtTokenUtil.jwtToken;
 import static api.utilities.JwtTokenUtil.tokenChange;
 import static io.restassured.RestAssured.given;
 
-import api.payload.Login;
-import api.payload.ReportIncidence;
-import api.payload.ResolveIncidence;
+import api.pojos.Login;
+import api.pojos.ReportIncidence;
+import api.pojos.ResolveIncidence;
 import api.utilities.JwtTokenUtil;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

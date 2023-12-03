@@ -47,7 +47,7 @@ public class ExtentReportManager {
     }
 
     public static void logJson(String json) {
-//        Setup.extentTest.get().info(MarkupHelper.createCodeBlock(json, CodeLanguage.JSON));
-        Setup.extentTest.get().info(json);
+        Setup.extentTest.get().info(MarkupHelper.createCodeBlock(json, CodeLanguage.JSON));
+//        Setup.extentTest.get().info(json);
     }
 }

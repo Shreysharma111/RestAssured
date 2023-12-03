@@ -14,6 +14,11 @@
                     <include name="testLoginDr"/>
                 </methods>
             </class>
+            <class name="api.test.incidence.ReportIncidenceTests">
+                <methods>
+                    <include name="testIncidenceReport"/>
+                </methods>
+            </class>
         </classes>
     </test>
 <!--    <test verbose="2" preserve-order="true"-->

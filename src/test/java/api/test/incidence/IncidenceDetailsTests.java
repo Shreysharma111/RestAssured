@@ -10,9 +10,6 @@ import org.testng.annotations.Test;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
-import static api.utilities.reporting.Setup.logApiDetails;
-import static api.utilities.reporting.Setup.logResultAndDetails;
-
 public class IncidenceDetailsTests {
 
     private int assetId;
@@ -26,9 +23,7 @@ public class IncidenceDetailsTests {
     @Test(priority = 1)
     public void testIncidenceDetails() {
         Response response = UserEndPoints2.incidenceDetails(assetId);
-// Verify keys and log in the report
-        logApiDetails(response);
-        logResultAndDetails(response);
+
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
 

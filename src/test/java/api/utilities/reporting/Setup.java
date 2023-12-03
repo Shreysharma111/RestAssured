@@ -48,13 +48,12 @@ public class Setup implements ITestListener {
         return extentTest.get();
     }
     public static void logApiDetails(Response response) {
-        QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query();
         ExtentTest test = getTest();
 
         // Log status code, response time, and response body
         test.log(Status.INFO, "Status Code: " + response.getStatusCode());
         test.log(Status.INFO, "Response Time: " + response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
-        ExtentReportManager.logJson("\n\nResponse Body: " + response.prettyPrint()+"\n\n");
+        ExtentReportManager.logJson(response.getBody().prettyPrint());
 
     }
 
@@ -63,28 +62,28 @@ public class Setup implements ITestListener {
 
         int statusCode = response.getStatusCode();
         if (statusCode == 403) {
-            test.fail("403 — Forbidden error occurred");
+            ExtentReportManager.logFailureDetails("403 — Forbidden error occurred");
 
         } else if (statusCode == 500) {
-            test.log(Status.FAIL, "500 - Server error occurred");
             test.log(Status.INFO, "API Message - " + response.jsonPath().get("message"));
+            ExtentReportManager.logFailureDetails("500 - Server error occurred");
 
         } else if (statusCode == 404) {
-            test.log(Status.FAIL, "404 - Not found error occurred");
             test.log(Status.INFO, "API Message - " + response.jsonPath().get("message"));
+            ExtentReportManager.logFailureDetails("404 - Not found error occurred");
 
         } else if (statusCode == 200) {
-            test.log(Status.PASS, "200 OK - Verified successfully");
+            ExtentReportManager.logPassDetails("200 OK - Verified successfully");
 
         } else if (statusCode == 401) {
-            test.fail("401 - Unauthorized error occurred");
             test.log(Status.INFO, "API Message - " + response.jsonPath().get("message"));
+            ExtentReportManager.logFailureDetails("401 - Unauthorized error occurred");
 
         } else {
-            test.log(Status.FAIL, "Error occurred : "+response.getStatusCode());
+            ExtentReportManager.logFailureDetails("Error occurred : "+response.getStatusCode());
 
         }
-        extentReports.flush();
+//        extentReports.flush();
     }
 
 }
