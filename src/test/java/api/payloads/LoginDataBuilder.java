@@ -1,10 +1,9 @@
 package api.payloads;
 
 import api.pojos.Login;
-import io.restassured.response.Response;
-import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class LoginDataBuilder {
     private static final ResourceBundle usersBundle = ResourceBundle.getBundle("users");
@@ -27,11 +26,5 @@ public class LoginDataBuilder {
                 .build();
 
     }
-//    public static void assertIT(Response response) {
-//        Assert.assertEquals(response.jsonPath().get("username"), usersBundle.getString("usernameIT"));
-//    }
-//    public static void assertDr(Response response) {
-//        Assert.assertEquals(response.jsonPath().get("username"), usersBundle.getString("usernameDr"));
-//    }
 
 }

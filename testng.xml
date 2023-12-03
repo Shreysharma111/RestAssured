@@ -4,9 +4,8 @@
     <listeners>
         <listener class-name="api.utilities.reporting.Setup"/>
     </listeners>
-
     <test verbose="2" preserve-order="true"
-          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/LoginTests.java">
+          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/incidence/LoginTests.java">
         <classes>
             <class name="api.test.incidence.LoginTests">
                 <methods>
@@ -14,22 +13,6 @@
                     <include name="testLoginDr"/>
                 </methods>
             </class>
-            <class name="api.test.incidence.ReportIncidenceTests">
-                <methods>
-                    <include name="testIncidenceReport"/>
-                </methods>
-            </class>
         </classes>
     </test>
-<!--    <test verbose="2" preserve-order="true"-->
-<!--          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/InventoryListingTests.java">-->
-<!--        <classes>-->
-<!--            <class name="api.test.InventoryListingTests">-->
-<!--                <methods>-->
-<!--                    <include name="testInventoryListing"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
-
 </suite>

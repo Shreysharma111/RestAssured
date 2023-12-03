@@ -26,6 +26,7 @@ public class Setup implements ITestListener {
     public void onFinish(ITestContext context) {
         if(extentReports != null)
             extentReports.flush();
+        ExtentReportManager.openReportInBrowser();
     }
 
     public void onTestStart(ITestResult result) {

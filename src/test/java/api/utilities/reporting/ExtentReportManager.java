@@ -7,12 +7,16 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class ExtentReportManager {
 
     public static ExtentReports extentReports;
+    private static String reportFilePath;
     public static ExtentReports createInstance(String fileName, String reportName, String docTitle) {
         ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter(fileName);
         extentSparkReporter.config().setReportName(reportName);
@@ -22,6 +26,8 @@ public class ExtentReportManager {
 
         extentReports = new ExtentReports();
         extentReports.attachReporter(extentSparkReporter);
+        // Store the report file path
+        reportFilePath = fileName;
         return extentReports;
     }
 
@@ -45,9 +51,15 @@ public class ExtentReportManager {
     public static void logWarningDetails(String log) {
         Setup.extentTest.get().warning(MarkupHelper.createLabel(log, ExtentColor.YELLOW));
     }
-
     public static void logJson(String json) {
         Setup.extentTest.get().info(MarkupHelper.createCodeBlock(json, CodeLanguage.JSON));
-//        Setup.extentTest.get().info(json);
+    }
+    public static void openReportInBrowser() {
+        try {
+            File reportFile = new File(reportFilePath);
+            Desktop.getDesktop().browse(reportFile.toURI());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
