@@ -14,7 +14,7 @@ public class ReportIncidenceTests {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    @Test(priority = 1)
+    @Test(priority = 1, dependsOnMethods = "testLoginIT")
     public void testIncidenceReport() {
         ReportIncidence reportPayload = ReportIncidenceDataBuilder.setupData();
         Response response = UserEndPoints2.reportIncidence(reportPayload);

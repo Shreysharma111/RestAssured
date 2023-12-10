@@ -15,6 +15,7 @@ import java.util.ResourceBundle;
 
 import static api.utilities.JwtTokenUtil.tokenChange;
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 /*
 Created to perform CRUD requests to the incidence APIs
@@ -50,6 +51,13 @@ public class UserEndPoints2 {
                 .build();
     }
 
+    // Method for JSON schema validation
+    protected static void validateJsonSchema(Response response, String schemaPath) {
+        response.then()
+                .assertThat()
+                .body(matchesJsonSchemaInClasspath(schemaPath));
+    }
+
     public static Response login(Login payload)
     {
         String login_url = getUrl().getString("base_url")+getUrl().getString("login_url");
@@ -59,6 +67,7 @@ public class UserEndPoints2 {
                 .when()
                 .post(login_url);
 
+        validateJsonSchema(response, "loginSchema.json");
         //log details and verify status code in extent report
         Setup.logApiDetails(response);
         Setup.logResultAndDetails(response);

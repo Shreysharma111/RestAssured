@@ -19,7 +19,7 @@ public class LoginTests {
     @Test(priority = 1)
     public void testLoginIT() {
         Login loginPayloadIT = LoginDataBuilder.setupDataIT();
-        Response response = UserEndPoints2.login(loginPayloadIT);
+         Response response = UserEndPoints2.login(loginPayloadIT);
 
         Assert.assertEquals(response.jsonPath().get("username"), loginPayloadIT.getUsername());
 
