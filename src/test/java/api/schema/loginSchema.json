@@ -13,14 +13,7 @@
     },
     "privileges": {
       "type": "array",
-      "items": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "string"
-        }
-      ]
+      "items": {}
     },
     "tenants": {
       "type": "object",

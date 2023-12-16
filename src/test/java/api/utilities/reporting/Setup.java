@@ -42,7 +42,7 @@ public class Setup implements ITestListener {
 //        ExtentReportManager.logFailureDetails("Test case failed : "+result.getMethod().getMethodName());
 
     }
-    private static ExtentTest getTest() {
+    public static ExtentTest getTest() {
         if (extentTest.get() == null) {
             extentTest.set(extentReports.createTest("API Test"));
         }

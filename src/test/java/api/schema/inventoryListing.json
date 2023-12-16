@@ -1,0 +1,2182 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "code": {
+              "type": "string"
+            },
+            "serial": {
+              "type": "string"
+            },
+            "qrCode": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "transferType": {
+              "type": "null"
+            },
+            "transferState": {
+              "type": "null"
+            },
+            "isVerified": {
+              "type": "null"
+            },
+            "isIncidence": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "initUser": {
+              "type": "null"
+            },
+            "issuedUser": {
+              "type": "null"
+            },
+            "issuedDate": {
+              "type": "null"
+            },
+            "commissionedDate": {
+              "type": "null"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "categoryId": {
+              "type": "integer"
+            },
+            "accessories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "null"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "code",
+                    "type",
+                    "quantity",
+                    "status"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "code",
+            "serial",
+            "qrCode",
+            "name",
+            "model",
+            "state",
+            "status",
+            "transferType",
+            "transferState",
+            "isVerified",
+            "isIncidence",
+            "type",
+            "initUser",
+            "issuedUser",
+            "issuedDate",
+            "commissionedDate",
+            "createdDate",
+            "categoryId",
+            "accessories"
+          ]
+        }
+      ]
+    },
+    "pageable": {
+      "type": "object",
+      "properties": {
+        "sort": {
+          "type": "object",
+          "properties": {
+            "empty": {
+              "type": "boolean"
+            },
+            "sorted": {
+              "type": "boolean"
+            },
+            "unsorted": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "empty",
+            "sorted",
+            "unsorted"
+          ]
+        },
+        "offset": {
+          "type": "integer"
+        },
+        "pageNumber": {
+          "type": "integer"
+        },
+        "pageSize": {
+          "type": "integer"
+        },
+        "paged": {
+          "type": "boolean"
+        },
+        "unpaged": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "sort",
+        "offset",
+        "pageNumber",
+        "pageSize",
+        "paged",
+        "unpaged"
+      ]
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "totalElements": {
+      "type": "integer"
+    },
+    "last": {
+      "type": "boolean"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "sort": {
+      "type": "object",
+      "properties": {
+        "empty": {
+          "type": "boolean"
+        },
+        "sorted": {
+          "type": "boolean"
+        },
+        "unsorted": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "empty",
+        "sorted",
+        "unsorted"
+      ]
+    },
+    "numberOfElements": {
+      "type": "integer"
+    },
+    "first": {
+      "type": "boolean"
+    },
+    "empty": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "content",
+    "pageable",
+    "totalPages",
+    "totalElements",
+    "last",
+    "size",
+    "number",
+    "sort",
+    "numberOfElements",
+    "first",
+    "empty"
+  ]
+}

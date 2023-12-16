@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class IncidenceListTests {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    @Test(priority = 1)
+    @Test(dependsOnMethods = "testLoginDr", alwaysRun = true)
     public void testIncidenceList() {
         Response response = UserEndPoints2.incidenceList();
 

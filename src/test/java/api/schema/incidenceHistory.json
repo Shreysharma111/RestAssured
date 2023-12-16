@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "issuedUser": {
+      "type": "string"
+    },
+    "issuedDate": {
+      "type": "null"
+    },
+    "history": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "model",
+    "code",
+    "serial",
+    "issuedUser",
+    "issuedDate",
+    "history"
+  ]
+}

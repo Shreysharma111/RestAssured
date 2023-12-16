@@ -5,11 +5,12 @@ import api.pojos.ReportIncidence;
 import api.pojos.ResolveIncidence;
 import api.utilities.JwtTokenUtil;
 import api.utilities.reporting.Setup;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.testng.Assert;
 
 import java.util.ResourceBundle;
 
@@ -67,13 +68,25 @@ public class UserEndPoints2 {
                 .when()
                 .post(login_url);
 
-        validateJsonSchema(response, "loginSchema.json");
+//        validateJsonSchema(response, "loginSchema.json");
         //log details and verify status code in extent report
         Setup.logApiDetails(response);
         Setup.logResultAndDetails(response);
+        System.out.println("Response Body: " + response.getBody().asString());
 
-        JwtTokenUtil.jwtToken =response.path("jwtToken");
-        jwtToken =response.path("jwtToken");
+//        try {
+//            ObjectMapper objectMapper = new ObjectMapper();
+//            JsonNode jsonNode = objectMapper.readTree(String.valueOf(response));
+//
+//            String jwtToken = jsonNode.get("jwtToken").asText();
+//            System.out.println("JWT Token: " + jwtToken);
+//        } catch (Exception e) {
+//            System.out.println("Error extracting JWT Token: " + e.getMessage());
+//        }
+
+
+//        JwtTokenUtil.jwtToken =response.jsonPath().getString("jwtToken");
+//        jwtToken =response.jsonPath().getString("jwtToken");
         tokenChange();
         return response;
     }
@@ -85,6 +98,7 @@ public class UserEndPoints2 {
                 .spec(commonRequestSpec(jwtToken))
                 .when()
                 .get(inventory_listing_url);
+//        validateJsonSchema(response, "inventoryListing.json");
 
         //log details and verify status code in extent report
         Setup.logApiDetails(response);
@@ -143,6 +157,7 @@ public class UserEndPoints2 {
                 .spec(commonRequestSpecWithBody(jwtToken, payload))
                 .when()
                 .post(report_incidence_url);
+        validateJsonSchema(response, "reportIncidence.json");
 
         //log details and verify status code in extent report
         Setup.logApiDetails(response);

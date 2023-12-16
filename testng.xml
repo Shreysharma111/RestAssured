@@ -9,8 +9,8 @@
         <classes>
             <class name="api.test.incidence.LoginTests">
                 <methods>
-                    <include name="testLoginIT"/>
                     <include name="testLoginDr"/>
+                    <include name="testLoginExcel"/>
                 </methods>
             </class>
         </classes>
