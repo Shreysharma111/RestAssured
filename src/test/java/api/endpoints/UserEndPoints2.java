@@ -1,8 +1,6 @@
 package api.endpoints;
 
-import api.pojos.Login;
-import api.pojos.ReportIncidence;
-import api.pojos.ResolveIncidence;
+import api.pojos.*;
 import api.utilities.JwtTokenUtil;
 import api.utilities.reporting.Setup;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -74,22 +72,52 @@ public class UserEndPoints2 {
         Setup.logApiDetails(response);
         Setup.logResultAndDetails(response);
 
-//        try {
-//            ObjectMapper objectMapper = new ObjectMapper();
-//            JsonNode jsonNode = objectMapper.readTree(String.valueOf(response));
-//
-//            String jwtToken = jsonNode.get("jwtToken").asText();
-//            System.out.println("JWT Token: " + jwtToken);
-//        } catch (Exception e) {
-//            System.out.println("Error extracting JWT Token: " + e.getMessage());
-//        }
+//        JwtTokenUtil.jwtToken =response.jsonPath().getString("jwtToken");
+//        jwtToken =response.jsonPath().getString("jwtToken");
+        tokenChange();
+        return response;
+    }
+    public static Response login(LoginPoiji payload)
+    {
+        String login_url = getUrl().getString("base_url")+getUrl().getString("login_url");
 
+        response = given()
+                .spec(commonRequestSpecWithoutToken(payload))
+                .when()
+                .post(login_url);
+
+//        validateJsonSchema(response, "loginSchema.json");
+        //log details and verify status code in extent report
+        System.out.println("Response Body: " + response.getBody().asString());
+        Setup.logApiDetails(response);
+        Setup.logResultAndDetails(response);
 
 //        JwtTokenUtil.jwtToken =response.jsonPath().getString("jwtToken");
 //        jwtToken =response.jsonPath().getString("jwtToken");
         tokenChange();
         return response;
     }
+    public static Response login(LoginScenerioPojo payload)
+    {
+        String login_url = getUrl().getString("base_url")+getUrl().getString("login_url");
+
+        response = given()
+                .spec(commonRequestSpecWithoutToken(payload))
+                .when()
+                .post(login_url);
+
+//        validateJsonSchema(response, "loginSchema.json");
+        //log details and verify status code in extent report
+        System.out.println("Response Body: " + response.getBody().asString());
+        Setup.logApiDetails(response);
+        Setup.logResultAndDetails(response);
+
+//        JwtTokenUtil.jwtToken =response.jsonPath().getString("jwtToken");
+//        jwtToken =response.jsonPath().getString("jwtToken");
+        tokenChange();
+        return response;
+    }
+
     public static Response inventoryListing()
     {
         String inventory_listing_url = getUrl().getString("base_url")+getUrl().getString("inventory_listing_url");

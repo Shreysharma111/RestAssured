@@ -44,7 +44,7 @@ public class LoginTests {
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
     }
 
-    @Test(dataProvider = "getLoginData")
+    @Test(dataProvider = "getLoginData", dataProviderClass = LoginDataBuilder.class)
     public void testLoginExcel(Login login) {
         Response response = UserEndPoints2.login(login);
 
@@ -54,24 +54,5 @@ public class LoginTests {
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
     }
 
-    @DataProvider(name = "getLoginData")
-    public Iterator<Login> getLoginData() {
-        List<LinkedHashMap<String, String>> excelDataAsListOfMap = null;
-        try {
-            excelDataAsListOfMap = ExcelUtils.getExcelDataAsListOfMap("Login", "Sheet1");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println(excelDataAsListOfMap);
-        List<Login> loginData = new ArrayList<>();
-        for(LinkedHashMap<String,String> data : excelDataAsListOfMap) {
-            Login login = Login.builder()
-                    .username(data.get("username"))
-                    .password(data.get("password"))
-                    .build();
-            loginData.add(login);
-        }
-        return loginData.iterator();
-    }
 
 }
