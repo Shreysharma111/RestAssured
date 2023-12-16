@@ -70,9 +70,9 @@ public class UserEndPoints2 {
 
 //        validateJsonSchema(response, "loginSchema.json");
         //log details and verify status code in extent report
+        System.out.println("Response Body: " + response.getBody().asString());
         Setup.logApiDetails(response);
         Setup.logResultAndDetails(response);
-        System.out.println("Response Body: " + response.getBody().asString());
 
 //        try {
 //            ObjectMapper objectMapper = new ObjectMapper();
@@ -119,13 +119,14 @@ public class UserEndPoints2 {
         Setup.logResultAndDetails(response);
         return response;
     }
-    public static Response incidenceDetails(int assetId)
+    public static Response incidenceDetails(int assetId, int incidenceId)
     {
         String incidence_details_url = getUrl().getString("base_url")+getUrl().getString("incidence_details_url");
 
         response = given()
                 .spec(commonRequestSpec(jwtToken))
-                .pathParam("assetId", assetId)
+                .queryParam("assetId", assetId)
+                .queryParam("incidenceId", incidenceId)
                 .when()
                 .get(incidence_details_url);
 
