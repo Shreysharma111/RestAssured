@@ -32,18 +32,30 @@ public class UserEndPoints2 {
     //generated to create common request specifications
     public static RequestSpecification commonRequestSpecWithoutToken(Object payload) {
         return new RequestSpecBuilder()
+                .addHeader("X-HMAC-FROM", "WEB")
+                .addHeader("X-APP-DEVICE-ID", "device1")
+                .addHeader("X-APP-OS", "Windows-11")
+                .addHeader("X-APP-VERSION", "11")
                 .setContentType(ContentType.JSON)
                 .setBody(payload)
                 .build();
     }
     public static RequestSpecification commonRequestSpec(String jwtToken) {
         return new RequestSpecBuilder()
+                .addHeader("X-HMAC-FROM", "WEB")
+                .addHeader("X-APP-DEVICE-ID", "device1")
+                .addHeader("X-APP-OS", "Windows-11")
+                .addHeader("X-APP-VERSION", "11")
                 .addHeader("x-authorization", jwtToken)
                 .setContentType(ContentType.JSON)
                 .build();
     }
     public static RequestSpecification commonRequestSpecWithBody(String jwtToken, Object payload) {
         return new RequestSpecBuilder()
+                .addHeader("X-HMAC-FROM", "WEB")
+                .addHeader("X-APP-DEVICE-ID", "device1")
+                .addHeader("X-APP-OS", "Windows-11")
+                .addHeader("X-APP-VERSION", "11")
                 .addHeader("x-authorization", jwtToken)
                 .setContentType(ContentType.JSON)
                 .setBody(payload)

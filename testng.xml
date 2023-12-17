@@ -7,9 +7,8 @@
     <test verbose="2" preserve-order="true"
           name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/incidence/LoginTests.java">
         <classes>
-            <class name="api.test.incidence.LoginTests">
+            <class name="api.test.LoginTestScenerio">
                 <methods>
-                    <include name="testLoginDr"/>
                     <include name="testLoginExcel"/>
                 </methods>
             </class>

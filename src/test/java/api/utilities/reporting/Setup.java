@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Setup implements ITestListener {
 
-    private static ExtentReports extentReports;
+    public static ExtentReports extentReports;
     public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
     public void onStart(ITestContext context) {
 //        String fileName = ExtentReportManager.getReportNameWithTimestamp();
@@ -30,8 +30,8 @@ public class Setup implements ITestListener {
     }
 
     public void onTestStart(ITestResult result) {
-        ExtentTest test = extentReports.createTest(result.getTestClass().getRealClass().getSimpleName() + " - " + result.getMethod().getMethodName());
-        extentTest.set(test);
+//        ExtentTest test = extentReports.createTest(result.getTestClass().getRealClass().getSimpleName() + " - " + result.getMethod().getMethodName());
+//        extentTest.set(test);
     }
     public void onTestSuccess(ITestResult result) {
 //        ExtentReportManager.logPassDetails("Test case passed : "+result.getMethod().getMethodName());

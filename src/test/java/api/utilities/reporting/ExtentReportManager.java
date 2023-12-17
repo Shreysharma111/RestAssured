@@ -6,10 +6,13 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import io.restassured.RestAssured;
+import io.restassured.http.Header;
 
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -53,6 +56,13 @@ public class ExtentReportManager {
     }
     public static void logJson(String json) {
         Setup.extentTest.get().info(MarkupHelper.createCodeBlock(json, CodeLanguage.JSON));
+    }
+
+    public static void logHeaders(List<Header> headersList) {
+
+        String[][] arrayHeaders = headersList.stream().map(header -> new String[] {header.getName(), header.getValue()})
+                .toArray(String[][] :: new);
+        Setup.extentTest.get().info(MarkupHelper.createTable(arrayHeaders));
     }
     public static void openReportInBrowser() {
         try {

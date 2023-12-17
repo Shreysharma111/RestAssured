@@ -2,6 +2,7 @@ package api.payloads;
 
 import api.pojos.Login;
 import api.pojos.LoginPoiji;
+import api.pojos.LoginScenerioPojo;
 import api.utilities.ExcelUtils;
 import com.poiji.bind.Poiji;
 import org.testng.annotations.DataProvider;
@@ -57,6 +58,23 @@ public class LoginDataBuilder {
     public static List<LoginPoiji> getPoijiData() {
         List<LoginPoiji> data = Poiji.fromExcel(new File("src/test/resources/testdata/Login.xlsx"), LoginPoiji.class);
         return data;
+    }
+
+    //data builder for multiple scenerios
+    public static LoginScenerioPojo getCustomizedLoginData(LinkedHashMap<String, String> data) {
+        LoginScenerioPojo loginScePojo=new LoginScenerioPojo();
+
+        loginScePojo.setScenerioId(data.get("scenerioId"));
+        loginScePojo.setScenerioDesc(data.get("scenerioDesc"));
+        loginScePojo.setExpectedStatusCode(Integer.parseInt(data.get("expectedStatusCode")));
+        if(!data.get("expectedMessage").equals("NO_DATA"))
+            loginScePojo.setExpectedMessage(data.get("expectedMessage"));
+        if(!data.get("username").equalsIgnoreCase("NO_DATA"))
+            loginScePojo.setUsername(data.get("username"));
+        if(!data.get("password").equalsIgnoreCase("NO_DATA"))
+            loginScePojo.setPassword(data.get("password"));
+
+        return loginScePojo;
     }
 
 }
