@@ -1128,3 +1128,67 @@
 [2023-12-17 11:12:02] [DEBUG] [PackageRelationshipCollection] - Parsing relationship: /_rels/.rels
 [2023-12-17 11:21:31] [DEBUG] [PackageRelationshipCollection] - Parsing relationship: /xl/_rels/workbook.xml.rels
 [2023-12-17 11:21:32] [DEBUG] [PackageRelationshipCollection] - Parsing relationship: /_rels/.rels
+[2023-12-18 10:17:49] [DEBUG] [PackageRelationshipCollection] - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2023-12-18 10:17:49] [DEBUG] [PackageRelationshipCollection] - Parsing relationship: /_rels/.rels
+[2023-12-18 16:35:57] [DEBUG] [PackageRelationshipCollection] - Parsing relationship: /xl/_rels/workbook.xml.rels
+[2023-12-18 16:35:57] [DEBUG] [PackageRelationshipCollection] - Parsing relationship: /_rels/.rels
+[2023-12-25 18:41:35] [INFO ] [IncidenceListTests] - Status code : 200
+[2023-12-25 18:41:35] [INFO ] [IncidenceListTests] - Response time : 442ms
+[2023-12-25 18:41:36] [INFO ] [IncidenceDetailsTests] - Status code : 404
+[2023-12-25 18:41:36] [INFO ] [IncidenceDetailsTests] - Response time : 754ms
+[2023-12-25 18:41:36] [INFO ] [IncidenceHistoryTests] - Status code : 200
+[2023-12-25 18:41:36] [INFO ] [IncidenceHistoryTests] - Response time : 223ms
+[2023-12-25 18:41:38] [INFO ] [ReportIncidenceTests] - Status code : 200
+[2023-12-25 18:41:38] [INFO ] [ReportIncidenceTests] - Response time : 2054ms
+[2023-12-25 18:41:39] [INFO ] [ResolveIncidenceTests] - Status code : 404
+[2023-12-25 18:41:39] [INFO ] [ResolveIncidenceTests] - Response time : 222ms
+[2023-12-25 18:41:39] [INFO ] [ReporterResolverTests] - Status code : 404
+[2023-12-25 18:41:39] [INFO ] [ReporterResolverTests] - Response time : 207ms
+[2023-12-26 12:03:00] [INFO ] [IncidenceListTests] - Status code : 403
+[2023-12-26 12:03:00] [INFO ] [IncidenceListTests] - Response time : 178ms
+[2023-12-26 12:03:00] [INFO ] [IncidenceDetailsTests] - Status code : 403
+[2023-12-26 12:03:00] [INFO ] [IncidenceDetailsTests] - Response time : 121ms
+[2023-12-26 12:03:00] [INFO ] [IncidenceHistoryTests] - Status code : 403
+[2023-12-26 12:03:00] [INFO ] [IncidenceHistoryTests] - Response time : 117ms
+[2023-12-26 12:03:00] [INFO ] [ResolveIncidenceTests] - Status code : 403
+[2023-12-26 12:03:00] [INFO ] [ResolveIncidenceTests] - Response time : 116ms
+[2023-12-26 12:03:01] [INFO ] [ReporterResolverTests] - Status code : 403
+[2023-12-26 12:03:01] [INFO ] [ReporterResolverTests] - Response time : 113ms
+[2023-12-26 13:04:43] [INFO ] [IncidenceListTests] - Status code : 500
+[2023-12-26 13:04:43] [INFO ] [IncidenceListTests] - Response time : 134ms
+[2023-12-26 13:04:43] [INFO ] [IncidenceDetailsTests] - Status code : 404
+[2023-12-26 13:04:43] [INFO ] [IncidenceDetailsTests] - Response time : 180ms
+[2023-12-26 13:04:43] [INFO ] [IncidenceHistoryTests] - Status code : 200
+[2023-12-26 13:04:43] [INFO ] [IncidenceHistoryTests] - Response time : 132ms
+[2023-12-26 13:04:43] [INFO ] [ReportIncidenceTests] - Status code : 200
+[2023-12-26 13:04:43] [INFO ] [ReportIncidenceTests] - Response time : 203ms
+[2023-12-26 13:04:44] [INFO ] [ReporterResolverTests] - Status code : 200
+[2023-12-26 13:04:44] [INFO ] [ReporterResolverTests] - Response time : 209ms
+[2023-12-26 13:10:52] [INFO ] [InventoryListingTests] - Status code : 401
+[2023-12-26 13:10:52] [INFO ] [InventoryListingTests] - Response time : 142ms
+[2023-12-26 13:10:53] [INFO ] [IncidenceListTests] - Status code : 500
+[2023-12-26 13:10:53] [INFO ] [IncidenceListTests] - Response time : 299ms
+[2023-12-26 13:10:53] [INFO ] [IncidenceDetailsTests] - Status code : 404
+[2023-12-26 13:10:53] [INFO ] [IncidenceDetailsTests] - Response time : 180ms
+[2023-12-26 13:10:53] [INFO ] [IncidenceHistoryTests] - Status code : 200
+[2023-12-26 13:10:53] [INFO ] [IncidenceHistoryTests] - Response time : 178ms
+[2023-12-26 13:10:54] [INFO ] [ReportIncidenceTests] - Status code : 200
+[2023-12-26 13:10:54] [INFO ] [ReportIncidenceTests] - Response time : 217ms
+[2023-12-26 13:10:54] [INFO ] [ResolveIncidenceTests] - Status code : 200
+[2023-12-26 13:10:54] [INFO ] [ResolveIncidenceTests] - Response time : 236ms
+[2023-12-26 13:10:54] [INFO ] [ReporterResolverTests] - Status code : 200
+[2023-12-26 13:10:54] [INFO ] [ReporterResolverTests] - Response time : 220ms
+[2023-12-26 13:14:48] [INFO ] [InventoryListingTests] - Status code : 401
+[2023-12-26 13:14:48] [INFO ] [InventoryListingTests] - Response time : 1261ms
+[2023-12-26 13:14:50] [INFO ] [IncidenceListTests] - Status code : 500
+[2023-12-26 13:14:50] [INFO ] [IncidenceListTests] - Response time : 1299ms
+[2023-12-26 13:14:50] [INFO ] [IncidenceDetailsTests] - Status code : 404
+[2023-12-26 13:14:50] [INFO ] [IncidenceDetailsTests] - Response time : 136ms
+[2023-12-26 13:14:50] [INFO ] [IncidenceHistoryTests] - Status code : 200
+[2023-12-26 13:14:50] [INFO ] [IncidenceHistoryTests] - Response time : 232ms
+[2023-12-26 13:14:51] [INFO ] [ReportIncidenceTests] - Status code : 200
+[2023-12-26 13:14:51] [INFO ] [ReportIncidenceTests] - Response time : 160ms
+[2023-12-26 13:14:51] [INFO ] [ResolveIncidenceTests] - Status code : 200
+[2023-12-26 13:14:51] [INFO ] [ResolveIncidenceTests] - Response time : 143ms
+[2023-12-26 13:14:51] [INFO ] [ReporterResolverTests] - Status code : 200
+[2023-12-26 13:14:51] [INFO ] [ReporterResolverTests] - Response time : 234ms

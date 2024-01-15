@@ -1,8 +1,10 @@
 package api.test.incidence;
 
-import api.endpoints.UserEndPoints2;
+import api.endpoints.IncidenceEndPoints;
 import api.payloads.ResolveIncidenceDataBuilder;
 import api.pojos.ResolveIncidence;
+import api.utilities.reporting.Setup;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,8 +18,11 @@ public class ResolveIncidenceTests {
 
     @Test(priority = 1)
     public void testIncidenceResolve() {
+        ExtentTest test = Setup.extentReports.createTest("Test Name - testIncidenceResolve" );
+        Setup.extentTest.set(test);
+
         ResolveIncidence resolvePayload = ResolveIncidenceDataBuilder.setupData();
-        Response response = UserEndPoints2.resolveIncidence(resolvePayload);
+        Response response = IncidenceEndPoints.resolveIncidence(resolvePayload);
 
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");

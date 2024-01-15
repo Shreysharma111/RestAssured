@@ -19,15 +19,15 @@ public class ResolveIncidenceDataBuilder {
                 .status(resolveBundle.getString("status"))
                 .build();
     }
-    public static Accessories setupChargerAccessories() {
-        return Accessories
-                .builder()
-                .id(Integer.parseInt(resolveBundle.getString("accessoryId2")))
-                .name(resolveBundle.getString("accessoryName2"))
-                .resolvedQuantity(resolveBundle.getString("resolvedQuantity2"))
-                .status(resolveBundle.getString("status"))
-                .build();
-    }
+//    public static Accessories setupChargerAccessories() {
+//        return Accessories
+//                .builder()
+//                .id(Integer.parseInt(resolveBundle.getString("accessoryId2")))
+//                .name(resolveBundle.getString("accessoryName2"))
+//                .resolvedQuantity(resolveBundle.getString("resolvedQuantity2"))
+//                .status(resolveBundle.getString("status"))
+//                .build();
+//    }
     public static Images setupImages() {
         return Images
                 .builder()
@@ -43,7 +43,7 @@ public class ResolveIncidenceDataBuilder {
                 .resolutionStatus(resolveBundle.getString("resolutionStatus"))
                 .isAvailable(resolveBundle.getString("isAvailable"))
                 .resolverRemark(resolveBundle.getString("resolverRemark"))
-                .accessories(List.of(setupLaptopAccessories(),setupChargerAccessories()))
+                .accessories(List.of(setupLaptopAccessories()))
                 .images(List.of(setupImages()))
                 .build();
     }

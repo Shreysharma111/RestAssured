@@ -1,8 +1,10 @@
 package api.test.incidence;
 
-import api.endpoints.UserEndPoints2;
+import api.endpoints.IncidenceEndPoints;
 import api.payloads.ReportIncidenceDataBuilder;
 import api.pojos.ReportIncidence;
+import api.utilities.reporting.Setup;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,10 +16,13 @@ public class ReportIncidenceTests {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    @Test(priority = 1, dependsOnMethods = "testLoginIT")
+    @Test
     public void testIncidenceReport() {
+        ExtentTest test = Setup.extentReports.createTest("Test Name - testIncidenceReport" );
+        Setup.extentTest.set(test);
+
         ReportIncidence reportPayload = ReportIncidenceDataBuilder.setupData();
-        Response response = UserEndPoints2.reportIncidence(reportPayload);
+        Response response = IncidenceEndPoints.reportIncidence(reportPayload);
 
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");

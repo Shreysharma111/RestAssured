@@ -34,13 +34,13 @@ public class ExtentReportManager {
         return extentReports;
     }
 
-//    public static String getReportNameWithTimestamp() {
-//        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy_HH.mm.ss");
-//        LocalDateTime localDateTime = LocalDateTime.now();
-//        String formattedTime = dateTimeFormatter.format(localDateTime);
-//        String reportName = "TestReport"+formattedTime+".html";
-//        return reportName;
-//    }
+    public static String getReportNameWithTimestamp() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy_HH.mm.ss");
+        LocalDateTime localDateTime = LocalDateTime.now();
+        String formattedTime = dateTimeFormatter.format(localDateTime);
+        String reportName = "TestReport"+formattedTime+".html";
+        return reportName;
+    }
 
     public static void logPassDetails(String log) {
         Setup.extentTest.get().pass(MarkupHelper.createLabel(log, ExtentColor.GREEN));
@@ -50,6 +50,12 @@ public class ExtentReportManager {
     }
     public static void logInfoDetails(String log) {
         Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.BLUE));
+    }
+    public static void logInfoDetailsNoMarkup(String log) {
+        Setup.extentTest.get().info(log);
+    }
+    public static void logExceptionDetails(String log) {
+        Setup.extentTest.get().fail(log);
     }
     public static void logWarningDetails(String log) {
         Setup.extentTest.get().warning(MarkupHelper.createLabel(log, ExtentColor.YELLOW));

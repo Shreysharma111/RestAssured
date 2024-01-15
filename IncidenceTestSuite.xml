@@ -8,10 +8,9 @@
     <test verbose="2"
           name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/incidence/LoginTests.java">
         <classes>
-            <class name="api.test.incidence.LoginTests">
+            <class name="api.test.login.LoginTests">
                 <methods>
-                    <include name="testLoginIT"/>
-                    <include name="testLoginDr"/>
+                    <include name="testLogin"/>
                 </methods>
             </class>
             <class name="api.test.incidence.InventoryListingTests">

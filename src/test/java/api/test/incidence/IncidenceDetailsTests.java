@@ -1,9 +1,12 @@
 package api.test.incidence;
 
-import api.endpoints.UserEndPoints2;
+import api.endpoints.IncidenceEndPoints;
+import api.utilities.reporting.Setup;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,12 +26,13 @@ public class IncidenceDetailsTests {
     }
     @Test(priority = 1)
     public void testIncidenceDetails() {
-        Response response = UserEndPoints2.incidenceDetails(assetId, incidenceId);
+        ExtentTest test = Setup.extentReports.createTest("Test Name - testIncidenceDetails" );
+        Setup.extentTest.set(test);
+
+        Response response = IncidenceEndPoints.incidenceDetails(assetId, incidenceId);
 
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
-
-
 
     }
 }

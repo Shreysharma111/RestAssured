@@ -1,12 +1,16 @@
 package api.pojos;
 
-import lombok.Builder;
-import lombok.Data;
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.*;
 @Data
 @Builder
-public class Login {
-
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+public class Login extends BasePojo {
     private String username;
     private String password;
 
