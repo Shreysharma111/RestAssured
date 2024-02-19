@@ -34,7 +34,7 @@ public class OAuth2Authorization {
         RestAssured.useRelaxedHTTPSValidation();
         // OAuth 2.0 authorization logic here
         // sending a request to the authorization server and extracting the access token
-        Response response = RestAssured.given().log().all()
+        Response response = RestAssured.given()
                 .contentType("application/x-www-form-urlencoded")
                 .auth().preemptive().basic("prm1", "prm1") // Basic Auth if required
                 .formParam("grant_type", "password")
