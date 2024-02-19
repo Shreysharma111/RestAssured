@@ -7,7 +7,15 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class JwtTokenUtil {
-    public static String jwtToken;
+    public static String oAuthToken;
+
+    public static String getToken() {
+        return oAuthToken;
+    }
+
+    public static void setToken(String token) {
+        oAuthToken = token;
+    }
     public static int responseIncId;
     public static void tokenChange()
     {
@@ -40,12 +48,12 @@ public class JwtTokenUtil {
         fileInputStream.close();
 
         // Check if the IT property already exists
-        if (!properties.containsKey("IT")) {
+        if (!properties.containsKey("oAuthToken")) {
             // If it doesn't, add a new IT property with the value of the generated JWT token
-            properties.setProperty("IT", jwtToken);
+            properties.setProperty("oAuthToken", oAuthToken);
         } else {
             // If it does, update the IT property value
-            properties.setProperty("IT", jwtToken);
+            properties.setProperty("oAuthToken", oAuthToken);
         }
 
         // Check if the responseIncidenceId property already exists

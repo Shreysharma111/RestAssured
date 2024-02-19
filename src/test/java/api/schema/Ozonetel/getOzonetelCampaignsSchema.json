@@ -1,0 +1,4494 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "message": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "CampaignID": {
+                  "type": "string"
+                },
+                "Campaign": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "DID": {
+                  "type": "string"
+                },
+                "CampaignType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "CampaignID",
+                "Campaign",
+                "UserName",
+                "Position",
+                "DID",
+                "CampaignType"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "message"
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}

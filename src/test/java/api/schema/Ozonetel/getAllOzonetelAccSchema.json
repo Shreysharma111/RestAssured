@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "ozonetelAccountId": {
+              "type": "integer"
+            },
+            "ozonetelAccountName": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            },
+            "apiKey": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ozonetelAccountId",
+            "ozonetelAccountName",
+            "username",
+            "apiKey",
+            "phone"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ozonetelAccountId": {
+              "type": "integer"
+            },
+            "ozonetelAccountName": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            },
+            "apiKey": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ozonetelAccountId",
+            "ozonetelAccountName",
+            "username",
+            "apiKey",
+            "phone"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}

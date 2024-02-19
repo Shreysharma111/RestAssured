@@ -3,6 +3,8 @@ package api.pojos;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
+import java.util.Map;
+
 @Getter
 @Setter
 public class BasePojo {
@@ -14,4 +16,6 @@ public class BasePojo {
     private int expectedStatusCode;
     @JsonIgnore
     private String expectedMessage;
+    @JsonIgnore
+    private Map<String, String> headers;
 }

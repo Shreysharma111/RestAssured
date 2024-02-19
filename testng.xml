@@ -5,11 +5,11 @@
         <listener class-name="api.utilities.reporting.Setup"/>
     </listeners>
     <test verbose="2" preserve-order="true"
-          name="C:/Users/Shrey Sharma/IdeaProjects/RestAssured/src/test/java/api/test/incidence/LoginTests.java">
+          name="OzonetelSuite">
         <classes>
-            <class name="api.test.login.LoginTests">
+            <class name="api.test.ozonetel.GetAllOzonetelAccTests">
                 <methods>
-                    <include name="testLogin"/>
+                    <include name="testGetAllOzonetelAcc"/>
                 </methods>
             </class>
         </classes>
