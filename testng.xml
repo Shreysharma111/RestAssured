@@ -7,11 +7,9 @@
     <test verbose="2" preserve-order="true"
           name="OzonetelSuite">
         <classes>
-            <class name="api.test.ozonetel.GetAllOzonetelAccTests">
-                <methods>
-                    <include name="testGetAllOzonetelAcc"/>
-                </methods>
-            </class>
+            <class name="api.test.ozonetel.GetAllOzonetelAccTests"/>
+            <class name="api.test.ozonetel.GetOzonetelAccTests"/>
+            <class name="api.test.ozonetel.GetOzonetelCampaignsTests"/>
         </classes>
     </test>
 </suite>

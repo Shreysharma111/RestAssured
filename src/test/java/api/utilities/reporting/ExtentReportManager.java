@@ -12,6 +12,7 @@ import io.restassured.http.Header;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -63,13 +64,40 @@ public class ExtentReportManager {
     public static void logJson(String json) {
         Setup.extentTest.get().info(MarkupHelper.createCodeBlock(json, CodeLanguage.JSON));
     }
-
     public static void logHeaders(List<Header> headersList) {
+        // List to store modified headers
+        List<Header> modifiedHeaders = new ArrayList<>();
 
-        String[][] arrayHeaders = headersList.stream().map(header -> new String[] {header.getName(), header.getValue()})
-                .toArray(String[][] :: new);
+        // Iterate through each header
+        for (Header header : headersList) {
+            String headerName = header.getName();
+            String headerValue = header.getValue();
+
+            // Check if the header is the access token
+            if ("Authorization".equalsIgnoreCase(headerName)) {
+                // Truncate the token to a manageable length, e.g., 10 characters
+                String truncatedToken = headerValue.substring(0, Math.min(headerValue.length(), 60)) + "....." + headerValue.substring(headerValue.length() - 30);
+
+                // Create a new Header with the truncated value
+                Header truncatedHeader = new Header(headerName, truncatedToken);
+
+                // Add the modified header to the list
+                modifiedHeaders.add(truncatedHeader);
+            } else {
+                // Add other headers as they are to the list
+                modifiedHeaders.add(header);
+            }
+        }
+
+        // Convert modified headers to a 2D array for table creation
+        String[][] arrayHeaders = modifiedHeaders.stream()
+                .map(header -> new String[]{header.getName(), header.getValue()})
+                .toArray(String[][]::new);
+
+        // Log the modified headers in the Extent Report as a table
         Setup.extentTest.get().info(MarkupHelper.createTable(arrayHeaders));
     }
+
     public static void openReportInBrowser() {
         try {
             File reportFile = new File(reportFilePath);
@@ -78,4 +106,36 @@ public class ExtentReportManager {
             e.printStackTrace();
         }
     }
+
+    public static String formatResponseBody(String responseBody) {
+        String[] lines = responseBody.split("\\r?\\n");
+        StringBuilder formattedBody = new StringBuilder();
+        int maxLines = 20; // Maximum number of lines to display
+
+        // Display all lines if the response body contains 20 or fewer lines
+        if (lines.length <= maxLines) {
+            for (String line : lines) {
+                formattedBody.append(line).append(System.lineSeparator());
+            }
+        } else {
+            // Display the first 20 lines
+            for (int i = 0; i < maxLines; i++) {
+                formattedBody.append(lines[i]).append(System.lineSeparator());
+            }
+
+            // Display an ellipsis
+            formattedBody.append("...").append(System.lineSeparator());
+
+            // Display the last 2-3 lines of the response body
+            int startLine = Math.max(0, lines.length - 3); // Start from the last 3 lines
+            for (int i = startLine; i < lines.length; i++) {
+                formattedBody.append(lines[i]).append(System.lineSeparator());
+            }
+        }
+
+        return formattedBody.toString();
+    }
+
+
+
 }
