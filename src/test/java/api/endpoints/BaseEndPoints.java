@@ -12,6 +12,7 @@ import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
 
+import java.util.Collections;
 import java.util.ResourceBundle;
 
 import static api.utilities.reporting.ExtentReportManager.formatResponseBody;
@@ -57,6 +58,7 @@ public class BaseEndPoints {
     public static void printRequestLogInReport(String endpoint, String method, RequestSpecification requestSpecification) {
         QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query(requestSpecification);
         ExtentReportManager.logInfoDetailsNoMarkup("Endpoint    :   " + endpoint);
+//        ExtentReportManager.logInfoDetailsNoMarkup("Endpoint    :   " + queryableRequestSpecification.getBasePath());
         ExtentReportManager.logInfoDetailsNoMarkup("Method   :   " + method);
         ExtentReportManager.logInfoDetails("Headers : ");
 
@@ -72,7 +74,7 @@ public class BaseEndPoints {
 //        ExtentReportManager.logInfoDetails("Response Headers are ");
 //        ExtentReportManager.logHeaders(response.getHeaders().asList());
         ExtentReportManager.logInfoDetails("Response body : ");
-        ExtentReportManager.logJson(response.getBody().prettyPrint());
+        ExtentReportManager.logJson(formatResponseBody(response.getBody().prettyPrint()));
     }
 
 
