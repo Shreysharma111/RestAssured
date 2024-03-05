@@ -1,8 +1,9 @@
 package payloads;
 
-import api.pojos.Accessories;
-import api.pojos.Images;
-import api.pojos.ReportIncidence;
+
+import pojos.Accessories;
+import pojos.Images;
+import pojos.ReportIncidence;
 
 import java.util.List;
 import java.util.ResourceBundle;

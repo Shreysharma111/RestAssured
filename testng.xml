@@ -2,14 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="api.utilities.reporting.Setup"/>
+        <listener class-name="utilities.reporting.Setup"/>
     </listeners>
     <test verbose="2" preserve-order="true"
           name="OzonetelSuite">
         <classes>
-<!--            <class name="api.test.ozonetel.GetAllOzonetelAccTests"/>-->
-<!--            <class name="api.test.ozonetel.GetOzonetelAccTests"/>-->
-            <class name="api.test.ozonetel.GetOzonetelCampaignsTests"/>
+            <class name="ozonetel.GetAllOzonetelAccTests"/>
+            <class name="ozonetel.GetOzonetelCampaignsTests"/>
         </classes>
     </test>
 </suite>

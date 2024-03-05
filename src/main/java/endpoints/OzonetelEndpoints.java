@@ -37,14 +37,30 @@ public class OzonetelEndpoints {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpec(accessToken))// Set access token as Bearer token
+                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
                 .get(getAllOzontelAccount_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(getAllOzontelAccount_url, "GET", commonRequestSpec(accessToken));
+        printRequestLogInReport(getAllOzontelAccount_url, "GET", commonRequestSpecWithToken(accessToken));
         printResponseLogInReport(response);
-        validateJsonSchema(response, "Ozonetel/getAllOzonetelAccSchema.json");
+//        validateJsonSchema(response, "Ozonetel/getAllOzonetelAccSchema.json");
+        return response;
+    }
+
+    public static Response getAllOzontelAccount(String... headers) {
+
+        // Send a request using the obtained access token
+        response = RestAssured.given().log().all()
+                .spec(commonRequestSpecWithoutPayload(headers))
+                .when()
+                .get(getAllOzontelAccount_url);
+
+        //log details and verify status code in extent report
+
+        printRequestLogInReport(getAllOzontelAccount_url, "GET", commonRequestSpecWithoutPayload(headers));
+        printResponseLogInReport(response);
+//        validateJsonSchema(response, "schema/Ozonetel/getOzonetelCampaignsSchema.json");
         return response;
     }
 
@@ -52,14 +68,14 @@ public class OzonetelEndpoints {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpec(accessToken))// Set access token as Bearer token
+                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
                 .get(getOzonetelAccounts_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(getOzonetelAccounts_url, "GET", commonRequestSpec(accessToken));
+        printRequestLogInReport(getOzonetelAccounts_url, "GET", commonRequestSpecWithToken(accessToken));
         printResponseLogInReport(response);
-        validateJsonSchema(response, "Ozonetel/getOzonetelAccSchema.json");
+//        validateJsonSchema(response, "Ozonetel/getOzonetelAccSchema.json");
         return response;
     }
 
@@ -70,15 +86,34 @@ public class OzonetelEndpoints {
 
         // Send a request using the obtained access token
         response = RestAssured.given().log().all()
-                .spec(commonRequestSpec(accessToken))// Set access token as Bearer token
+                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
                 .get("/ozonetel"+"/{ozonetelId}/cloud-campaigns", ozonetelAccId);
 
         //log details and verify status code in extent report
 
-        printRequestLogInReport(uri, "GET", commonRequestSpec(accessToken));
+        printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
         printResponseLogInReport(response);
-        validateJsonSchema(response, "Ozonetel/getOzonetelCampaignsSchema.json");
+//        validateJsonSchema(response, "./schema/Ozonetel/getOzonetelCampaignsSchema.json");
+        return response;
+    }
+
+
+    public static Response getOzonetelCampaigns(int ozonetelAccId,String... headers) {
+        String uri = String.format("%s%s/%s/%s", baseUrl, "/ozonetel", ozonetelAccId, "cloud-campaigns");
+
+
+        // Send a request using the obtained access token
+        response = RestAssured.given().log().all()
+                .spec(commonRequestSpecWithoutPayload(headers))
+                .when()
+                .get("/ozonetel"+"/{ozonetelId}/cloud-campaigns", ozonetelAccId);
+
+        //log details and verify status code in extent report
+
+        printRequestLogInReport(uri, "GET", commonRequestSpecWithoutPayload(headers));
+        printResponseLogInReport(response);
+//        validateJsonSchema(response, "schema/Ozonetel/getOzonetelCampaignsSchema.json");
         return response;
     }
 

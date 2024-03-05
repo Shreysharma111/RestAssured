@@ -6,15 +6,15 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import io.restassured.RestAssured;
 import io.restassured.http.Header;
 
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ExtentReportManager {
 
@@ -64,10 +64,41 @@ public class ExtentReportManager {
         Setup.extentTest.get().info(MarkupHelper.createCodeBlock(json, CodeLanguage.JSON));
     }
 
-    public static void logHeaders(List<Header> headersList) {
+    public static void formatResponseAndPrint(String json) {
+        Setup.extentTest.get().info(MarkupHelper.createCodeBlock(json, CodeLanguage.JSON).getMarkup());
+    }
 
-        String[][] arrayHeaders = headersList.stream().map(header -> new String[] {header.getName(), header.getValue()})
-                .toArray(String[][] :: new);
+    public static void logHeaders(List<Header> headersList) {
+        // List to store modified headers
+        List<Header> modifiedHeaders = new ArrayList<>();
+
+        // Iterate through each header
+        for (Header header : headersList) {
+            String headerName = header.getName();
+            String headerValue = header.getValue();
+
+            // Check if the header is the access token
+            if ("Authorization".equalsIgnoreCase(headerName) && headerValue.length()>30) {
+                // Truncate the token to a manageable length, e.g., 10 characters
+                String truncatedToken = headerValue.substring(0, Math.min(headerValue.length(), 30)) + "....." + headerValue.substring(headerValue.length() - 20);
+
+                // Create a new Header with the truncated value
+                Header truncatedHeader = new Header(headerName, truncatedToken);
+
+                // Add the modified header to the list
+                modifiedHeaders.add(truncatedHeader);
+            } else {
+                // Add other headers as they are to the list
+                modifiedHeaders.add(header);
+            }
+        }
+
+        // Convert modified headers to a 2D array for table creation
+        String[][] arrayHeaders = modifiedHeaders.stream()
+                .map(header -> new String[]{header.getName(), header.getValue()})
+                .toArray(String[][]::new);
+
+        // Log the modified headers in the Extent Report as a table
         Setup.extentTest.get().info(MarkupHelper.createTable(arrayHeaders));
     }
     public static void openReportInBrowser() {

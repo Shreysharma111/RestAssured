@@ -1,7 +1,6 @@
 package ozonetel;
 
-import utilities.OAuth2Authorization;
-import utilities.reporting.Setup;
+import Dataprovider.Dataprovider;
 import com.aventstack.extentreports.ExtentTest;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -9,14 +8,18 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import utilities.OAuth2Authorization;
+import utilities.reporting.Setup;
 
 import java.util.concurrent.TimeUnit;
 
-import static utilities.RestAssuredUtils.getValue;
 import static endpoints.OzonetelEndpoints.getOzonetelCampaigns;
+import static utilities.RestAssuredUtils.getToken;
+import static utilities.RestAssuredUtils.getValue;
 
 public class GetOzonetelCampaignsTests {
     private int ozonetelAccId;
+    static String accessToken = getToken();
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @BeforeClass
@@ -28,7 +31,7 @@ public class GetOzonetelCampaignsTests {
 
     @Test(priority = 1)
     public void testGetOzonetelCampaigns() {
-        ExtentTest test = Setup.extentReports.createTest("Test Name - testGetOzonetelCampaigns" );
+        ExtentTest test = Setup.extentReports.createTest("Test Name - testGetOzonetelCampaigns", "test positive flow" );
         Setup.extentTest.set(test);
 
         Response response = getOzonetelCampaigns(ozonetelAccId);
@@ -36,6 +39,17 @@ public class GetOzonetelCampaignsTests {
         logger.info("Status code : "+response.getStatusCode());
         logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
 
+    }
+
+    @Test(dataProviderClass = Dataprovider.class, dataProvider = "headerDataProvider", description = "test for authorization header", priority = 2)
+    public void testGetOzonetelCampaignsWithoutToken(String key, String value) {
+        ExtentTest test = Setup.extentReports.createTest("Test Name - testGetOzonetelCampaigns" , "test headers");
+        Setup.extentTest.set(test);
+
+        Response response = getOzonetelCampaigns(ozonetelAccId,key+":"+"Bearer "+value);
+
+        logger.info("Status code : "+response.getStatusCode());
+        logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
     }
 
 }

@@ -1,11 +1,11 @@
 package endpoints;
 
-import api.pojos.Login;
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import pojos.Login;
 
-import static utilities.RestAssuredUtils.*;
 import static endpoints.IncidenceEndPoints.getUrl;
-import static io.restassured.RestAssured.given;
+import static utilities.RestAssuredUtils.*;
 
 public class LoginEndPoints {
     private static Response response;

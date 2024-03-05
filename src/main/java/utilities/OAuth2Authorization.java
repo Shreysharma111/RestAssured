@@ -1,6 +1,6 @@
 package utilities;
 
-import utilities.JwtTokenUtil;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -33,12 +33,12 @@ public class OAuth2Authorization {
         RestAssured.useRelaxedHTTPSValidation();
         // OAuth 2.0 authorization logic here
         // sending a request to the authorization server and extracting the access token
-        Response response = RestAssured.given()
+        Response response = RestAssured.given().log().all()
                 .contentType("application/x-www-form-urlencoded")
-                .auth().preemptive().basic("prm1", "prm1") // Basic Auth if required
+                .auth().preemptive().basic("android", "android") // Basic Auth if required
                 .formParam("grant_type", "password")
                 .formParam("username", "jai.banipark1")
-                .formParam("password", "Clove@123")
+                .formParam("password", "Clove@1234")
                 .formParam("scope", "all")
                 .when()
                 .post("https://auth-qa.clovedental.in/oauth2/token").then().extract().response();

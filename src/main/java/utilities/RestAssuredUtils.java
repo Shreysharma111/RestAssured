@@ -16,7 +16,7 @@ public class RestAssuredUtils {
     public static String baseUrl=getUrl().getString("base_url");
 
     //generated to create common request specifications
-    public static RequestSpecification commonRequestSpecWithoutTokenVariableHeader(Object payload, String... headers) {
+    public static RequestSpecification commonRequestSpecWithoutToken(Object payload, String... headers) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON)
@@ -35,12 +35,30 @@ public class RestAssuredUtils {
         return builder.build();
     }
 
-    public static RequestSpecification commonRequestSpecWithTokenVariableHeader(Object payload, String oAuthToken, String... headers) {
+    public static RequestSpecification commonRequestSpecWithPayload(Object payload, String oAuthToken, String... headers) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .addHeader("Authorization", "Bearer " + oAuthToken)
                 .setContentType(ContentType.JSON)
                 .setBody(payload);
+
+        for (String header : headers) {
+            String[] headerParts = header.split(":");
+            if (headerParts.length == 2) {
+                builder.addHeader(headerParts[0].trim(), headerParts[1].trim());
+            } else {
+                // Handle invalid header format, log or throw an exception as needed
+                System.err.println("Invalid header format: " + header);
+            }
+        }
+
+        return builder.build();
+    }
+
+    public static RequestSpecification commonRequestSpecWithoutPayload(String... headers) {
+        RequestSpecBuilder builder = new RequestSpecBuilder()
+                .setBaseUri(baseUrl)
+                .setContentType(ContentType.JSON);
 
         for (String header : headers) {
             String[] headerParts = header.split(":");
@@ -69,7 +87,7 @@ public class RestAssuredUtils {
                 .setContentType(ContentType.JSON)
                 .build();
     }
-    public static RequestSpecification commonRequestSpecWithBodyWithToken(String oAuthToken, Object payload) {
+    public static RequestSpecification commonRequestSpecWithToken(String oAuthToken, Object payload) {
         return new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .addHeader("Authorization", "Bearer " + oAuthToken)
@@ -78,7 +96,7 @@ public class RestAssuredUtils {
                 .build();
     }
 
-    public static RequestSpecification commonRequestSpecWithBodyWithoutToken(Object payload) {
+    public static RequestSpecification commonRequestSpecWithoutToken(Object payload) {
         return new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON)
@@ -105,7 +123,7 @@ public class RestAssuredUtils {
 //        ExtentReportManager.logInfoDetails("Response Headers are ");
 //        ExtentReportManager.logHeaders(response.getHeaders().asList());
         ExtentReportManager.logInfoDetails("Response body : ");
-        ExtentReportManager.logJson(response.getBody().prettyPrint());
+        ExtentReportManager.formatResponseAndPrint(response.getBody().prettyPrint());
     }
 
 

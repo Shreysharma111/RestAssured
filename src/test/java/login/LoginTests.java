@@ -25,7 +25,7 @@ public class LoginTests {
         ExtentTest test = Setup.extentReports.createTest("Test Name - " + login.getScenerioId(), login.getScenerioDesc());
         Setup.extentTest.set(test);
 
-        Response response = LoginEndPoints.login(login,"X-HMAC-FROM:WEB", "X-APP-DEVICE-ID:device1", "X-APP-OS:Windows-11", "X-APP-VERSION:11");
+        Response response = LoginEndPoints.login(login, null,"X-HMAC-FROM:WEB", "X-APP-DEVICE-ID:device1", "X-APP-OS:Windows-11", "X-APP-VERSION:11");
 
         if(login.getExpectedStatusCode() != 200){
             if(login.getScenerioId().equalsIgnoreCase("Login_4") || login.getScenerioId().equalsIgnoreCase("Login_6")) {
