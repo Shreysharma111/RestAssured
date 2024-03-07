@@ -1,6 +1,6 @@
 package ozonetel;
 
-import Dataprovider.Dataprovider;
+import Dataproviders.Dataproviders;
 import com.aventstack.extentreports.ExtentTest;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -41,7 +41,7 @@ public class GetOzonetelCampaignsTests {
 
     }
 
-    @Test(dataProviderClass = Dataprovider.class, dataProvider = "headerDataProvider", description = "test for authorization header", priority = 2)
+    @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider", description = "test for authorization header", priority = 2)
     public void testGetOzonetelCampaignsWithoutToken(String key, String value) {
         ExtentTest test = Setup.extentReports.createTest("Test Name - testGetOzonetelCampaigns" , "test headers");
         Setup.extentTest.set(test);

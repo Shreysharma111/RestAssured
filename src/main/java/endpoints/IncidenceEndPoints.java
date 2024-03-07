@@ -92,13 +92,13 @@ public class IncidenceEndPoints {
         String report_incidence_url = getUrl().getString("base_url")+getUrl().getString("report_incidence_url");
 
         response = RestAssured.given()
-                .spec(RestAssuredUtils.commonRequestSpecWithToken(getToken(), payload))
+                .spec(RestAssuredUtils.commonRequestSpecPost(getToken(), payload))
                 .when()
                 .post(report_incidence_url);
         RestAssuredUtils.validateJsonSchema(response, "reportIncidence.json");
 
         //log details and verify status code in extent report
-        RestAssuredUtils.printRequestLogInReport(report_incidence_url, "POST", RestAssuredUtils.commonRequestSpecWithToken(getToken(), payload));
+        RestAssuredUtils.printRequestLogInReport(report_incidence_url, "POST", RestAssuredUtils.commonRequestSpecPost(getToken(), payload));
         RestAssuredUtils.printResponseLogInReport(response);
         return response;
     }
@@ -107,14 +107,14 @@ public class IncidenceEndPoints {
         String resolve_incidence_url = getUrl().getString("base_url")+getUrl().getString("resolve_incidence_url");
 
         response = RestAssured.given()
-                .spec(RestAssuredUtils.commonRequestSpecWithToken(getToken(), payload))
+                .spec(RestAssuredUtils.commonRequestSpecPost(getToken(), payload))
                 .when()
                 .post(resolve_incidence_url);
         JwtTokenUtil.responseIncId =payload.getIncidenceId();
         tokenChange();
 
         //log details and verify status code in extent report
-        RestAssuredUtils.printRequestLogInReport(resolve_incidence_url, "POST", RestAssuredUtils.commonRequestSpecWithToken(getToken(), payload));
+        RestAssuredUtils.printRequestLogInReport(resolve_incidence_url, "POST", RestAssuredUtils.commonRequestSpecPost(getToken(), payload));
         RestAssuredUtils.printResponseLogInReport(response);
         return response;
     }

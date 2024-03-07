@@ -8,10 +8,10 @@ import static utilities.RestAssuredUtils.*;
 public class OzonetelEndpoints {
     private static Response response;
     static String accessToken = getToken();
-    static String getAllOzontelAccount_url = getUrl().getString("getAllOzontelAccount_url");
+    public static String getAllOzontelAccount_url = getUrl().getString("getAllOzontelAccount_url");
     static String getOzonetelAccounts_url = getUrl().getString("getOzonetelAccounts_url");
     static String getOzonetelCampaigns_url = getUrl().getString("getOzonetelCampaigns_url");
-    static String createNewSkill_url = getUrl().getString("base_url") + getUrl().getString("createNewSkill_url");
+    static String createNewSkill_url = getUrl().getString("createNewSkill_url");
     static String getSkills_url = getUrl().getString("base_url") + getUrl().getString("getSkills_url");
     static String createAgent_url = getUrl().getString("base_url") + getUrl().getString("createAgent_url");
     static String editAgent_url = getUrl().getString("base_url") + getUrl().getString("editAgent_url");
@@ -34,7 +34,6 @@ public class OzonetelEndpoints {
 
     public static Response getAllOzontelAccount() {
 
-
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
@@ -52,13 +51,13 @@ public class OzonetelEndpoints {
 
         // Send a request using the obtained access token
         response = RestAssured.given().log().all()
-                .spec(commonRequestSpecWithoutPayload(headers))
+                .spec(commonRequestSpecGet(headers))
                 .when()
                 .get(getAllOzontelAccount_url);
 
         //log details and verify status code in extent report
 
-        printRequestLogInReport(getAllOzontelAccount_url, "GET", commonRequestSpecWithoutPayload(headers));
+        printRequestLogInReport(getAllOzontelAccount_url, "GET", commonRequestSpecGet(headers));
         printResponseLogInReport(response);
 //        validateJsonSchema(response, "schema/Ozonetel/getOzonetelCampaignsSchema.json");
         return response;
@@ -105,13 +104,13 @@ public class OzonetelEndpoints {
 
         // Send a request using the obtained access token
         response = RestAssured.given().log().all()
-                .spec(commonRequestSpecWithoutPayload(headers))
+                .spec(commonRequestSpecGet(headers))
                 .when()
                 .get("/ozonetel"+"/{ozonetelId}/cloud-campaigns", ozonetelAccId);
 
         //log details and verify status code in extent report
 
-        printRequestLogInReport(uri, "GET", commonRequestSpecWithoutPayload(headers));
+        printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));
         printResponseLogInReport(response);
 //        validateJsonSchema(response, "schema/Ozonetel/getOzonetelCampaignsSchema.json");
         return response;

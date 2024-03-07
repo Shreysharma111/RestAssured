@@ -1,6 +1,6 @@
 package ozonetel;
 
-import Dataprovider.Dataprovider;
+import Dataproviders.Dataproviders;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
@@ -12,7 +12,7 @@ public class NEWTest {
 Response response;
 
 
-    @Test(dataProviderClass = Dataprovider.class, dataProvider = "headerDataProvider")
+    @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void testHeader(String headerKey,String headerValue){
 
         RestAssured.given().log().all().header(headerKey,headerValue).get(getSkills_url).then().statusCode(200);
@@ -28,13 +28,13 @@ Response response;
 
         // Send a request using the obtained access token
         response = RestAssured.given().log().all()
-                .spec(commonRequestSpecWithoutPayload(headers))
+                .spec(commonRequestSpecGet(headers))
                 .when()
                 .get("/ozonetel"+"/{ozonetelId}/cloud-campaigns", ozonetelAccId);
 
         //log details and verify status code in extent report
 
-        printRequestLogInReport(uri, "GET", commonRequestSpecWithoutPayload(headers));
+        printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));
         printResponseLogInReport(response);
         validateJsonSchema(response, "schema/Ozonetel/getOzonetelCampaignsSchema.json");
 

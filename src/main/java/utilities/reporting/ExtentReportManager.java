@@ -80,7 +80,7 @@ public class ExtentReportManager {
             // Check if the header is the access token
             if ("Authorization".equalsIgnoreCase(headerName) && headerValue.length()>30) {
                 // Truncate the token to a manageable length, e.g., 10 characters
-                String truncatedToken = headerValue.substring(0, Math.min(headerValue.length(), 30)) + "....." + headerValue.substring(headerValue.length() - 20);
+                String truncatedToken = headerValue.substring(0, Math.min(headerValue.length(), 20)) + "....." + headerValue.substring(headerValue.length() - 5);
 
                 // Create a new Header with the truncated value
                 Header truncatedHeader = new Header(headerName, truncatedToken);

@@ -16,13 +16,13 @@ public class LoginEndPoints {
         String login_url = getUrl().getString("base_url")+getUrl().getString("login_url");
 
         response = RestAssured.given()
-                .spec(commonRequestSpecWithoutToken(payload, headers))
+                .spec(commonRequestSpecPost(payload, headers))
                 .when()
                 .post(login_url);
 
 //        validateJsonSchema(response, "loginSchema.json");
         //log details and verify status code in extent report
-        printRequestLogInReport(login_url, "POST", commonRequestSpecWithoutToken(payload, headers));
+        printRequestLogInReport(login_url, "POST", commonRequestSpecPost(payload, headers));
         printResponseLogInReport(response);
 
 

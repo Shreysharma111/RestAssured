@@ -14,9 +14,9 @@ import java.util.ResourceBundle;
 
 public class RestAssuredUtils {
     public static String baseUrl=getUrl().getString("base_url");
-
+    public static String incorrectBaseUrl=getUrl().getString("incorrect_base_url");
     //generated to create common request specifications
-    public static RequestSpecification commonRequestSpecWithoutToken(Object payload, String... headers) {
+    public static RequestSpecification commonRequestSpecPost(Object payload, String... headers) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON)
@@ -35,7 +35,7 @@ public class RestAssuredUtils {
         return builder.build();
     }
 
-    public static RequestSpecification commonRequestSpecWithPayload(Object payload, String oAuthToken, String... headers) {
+    public static RequestSpecification commonRequestSpecPost(Object payload, String oAuthToken, String... headers) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .addHeader("Authorization", "Bearer " + oAuthToken)
@@ -55,7 +55,7 @@ public class RestAssuredUtils {
         return builder.build();
     }
 
-    public static RequestSpecification commonRequestSpecWithoutPayload(String... headers) {
+    public static RequestSpecification commonRequestSpecGet(String... headers) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON);
@@ -87,7 +87,7 @@ public class RestAssuredUtils {
                 .setContentType(ContentType.JSON)
                 .build();
     }
-    public static RequestSpecification commonRequestSpecWithToken(String oAuthToken, Object payload) {
+    public static RequestSpecification commonRequestSpecPost(String oAuthToken, Object payload) {
         return new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .addHeader("Authorization", "Bearer " + oAuthToken)
@@ -96,7 +96,7 @@ public class RestAssuredUtils {
                 .build();
     }
 
-    public static RequestSpecification commonRequestSpecWithoutToken(Object payload) {
+    public static RequestSpecification commonRequestSpecPost(Object payload) {
         return new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON)
@@ -144,6 +144,11 @@ public class RestAssuredUtils {
     public static String getToken() {
         ResourceBundle routes = ResourceBundle.getBundle("logintoken");
         return routes.getString("oAuthToken");
+    }
+
+    public static String getWrongToken() {
+        ResourceBundle routes = ResourceBundle.getBundle("logintoken");
+        return routes.getString("wrong_oAuthToken");
     }
 
     public static String getValue(String resourceBundleName, String key) {

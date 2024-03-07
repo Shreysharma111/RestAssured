@@ -19,17 +19,13 @@
             },
             "apiKey": {
               "type": "string"
-            },
-            "phone": {
-              "type": "string"
             }
           },
           "required": [
             "ozonetelAccountId",
             "ozonetelAccountName",
             "username",
-            "apiKey",
-            "phone"
+            "apiKey"
           ]
         },
         {
@@ -46,17 +42,13 @@
             },
             "apiKey": {
               "type": "string"
-            },
-            "phone": {
-              "type": "string"
             }
           },
           "required": [
             "ozonetelAccountId",
             "ozonetelAccountName",
             "username",
-            "apiKey",
-            "phone"
+            "apiKey"
           ]
         }
       ]
