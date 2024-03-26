@@ -17,7 +17,7 @@ import static utilities.reporting.Setup.extentTest;
 import static utilities.restAssuredFunctions.API.assertFieldIsPresentAndNotEmpty;
 import static utilities.restAssuredFunctions.API.assertStatusCode;
 
-public class GetAllOonetelAccTest {
+public class GetAllOzonetelAccTest {
 
 
     @BeforeClass
@@ -69,6 +69,28 @@ public class GetAllOonetelAccTest {
         Response response = getAllOzontelAccountHeaderCase("Authorization:"+"Bearer "+getToken());
 
         assertStatusCode(response, 200);
+        extentTest.get().log(Status.INFO, "Asserting response status code: "+response.getStatusCode());
+
+    }
+
+    @Test
+    public void wrongEndPointCase() {
+        ExtentTest test = Setup.extentReports.createTest("GetAllOonetelAccTest", "wrong endpoint case");
+        Setup.extentTest.set(test);
+        Response response = getAllOzontelAccountWrongEndpointCase();
+
+        assertStatusCode(response, 404);
+        extentTest.get().log(Status.INFO, "Asserting response status code: "+response.getStatusCode());
+
+    }
+
+    @Test
+    public void wrongMethodCase() {
+        ExtentTest test = Setup.extentReports.createTest("GetAllOonetelAccTest", "wrong request method case");
+        Setup.extentTest.set(test);
+        Response response = getAllOzontelAccountMethodCase();
+
+        assertStatusCode(response, 405);
         extentTest.get().log(Status.INFO, "Asserting response status code: "+response.getStatusCode());
 
     }

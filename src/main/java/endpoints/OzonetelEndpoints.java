@@ -9,7 +9,7 @@ public class OzonetelEndpoints {
     private static Response response;
     static String accessToken = getToken();
     public static String getAllOzontelAccount_url = getUrl().getString("getAllOzontelAccount_url");
-    static String getOzonetelAccounts_url = getUrl().getString("getOzonetelAccounts_url");
+    public static String getOzonetelAccounts_url = getUrl().getString("getOzonetelAccounts_url");
     static String getOzonetelCampaigns_url = getUrl().getString("getOzonetelCampaigns_url");
     static String createNewSkill_url = getUrl().getString("createNewSkill_url");
     static String getSkills_url = getUrl().getString("base_url") + getUrl().getString("getSkills_url");
