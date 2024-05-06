@@ -77,10 +77,11 @@ public class RestAssuredUtils {
         return builder.build();
     }
 
-    public static RequestSpecification commonRequestSpecParamGet(String... queryParams) {
+    public static RequestSpecification commonRequestSpecParamGet(String oAuthToken, String... queryParams) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
-                .setContentType(ContentType.JSON);
+                .setContentType(ContentType.JSON)
+                .addHeader("Authorization", "Bearer " + oAuthToken);
 
         for (String queryParam : queryParams) {
             String[] paramParts = queryParam.split(":");
@@ -141,8 +142,8 @@ public class RestAssuredUtils {
     }
 
     public static void printResponseLogInReport(Response response) {
-        ExtentReportManager.logInfoDetails("Response status code : " + response.getStatusLine());
-        ExtentReportManager.logInfoDetails("Response time in seconds : " + response.getTimeIn(TimeUnit.SECONDS));
+        ExtentReportManager.logInfoDetails("Response status code : " + response.getStatusCode());
+        ExtentReportManager.logInfoDetails("Response time (milliseconds) : " + response.getTimeIn(TimeUnit.MILLISECONDS));
 //        ExtentReportManager.logInfoDetails("Response Headers are ");
 //        ExtentReportManager.logHeaders(response.getHeaders().asList());
         ExtentReportManager.logInfoDetails("Response body : ");

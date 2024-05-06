@@ -81,17 +81,13 @@
                 },
                 "apiKey": {
                   "type": "string"
-                },
-                "phone": {
-                  "type": "string"
                 }
               },
               "required": [
                 "ozonetelAccountId",
                 "ozonetelAccountName",
                 "username",
-                "apiKey",
-                "phone"
+                "apiKey"
               ]
             }
           },
@@ -176,112 +172,13 @@
                 },
                 "apiKey": {
                   "type": "string"
-                },
-                "phone": {
-                  "type": "string"
                 }
               },
               "required": [
                 "ozonetelAccountId",
                 "ozonetelAccountName",
                 "username",
-                "apiKey",
-                "phone"
-              ]
-            }
-          },
-          "required": [
-            "company",
-            "accountDetails"
-          ]
-        },
-        {
-          "type": "object",
-          "properties": {
-            "company": {
-              "type": "object",
-              "properties": {
-                "companyId": {
-                  "type": "integer"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "shortName": {
-                  "type": "string"
-                },
-                "website": {
-                  "type": "null"
-                },
-                "phone": {
-                  "type": "null"
-                },
-                "mobile": {
-                  "type": "null"
-                },
-                "email": {
-                  "type": "null"
-                },
-                "address": {
-                  "type": "null"
-                },
-                "pincode": {
-                  "type": "null"
-                },
-                "city": {
-                  "type": "null"
-                },
-                "state": {
-                  "type": "null"
-                },
-                "countryCode": {
-                  "type": "null"
-                },
-                "companyCode": {
-                  "type": "null"
-                }
-              },
-              "required": [
-                "companyId",
-                "name",
-                "shortName",
-                "website",
-                "phone",
-                "mobile",
-                "email",
-                "address",
-                "pincode",
-                "city",
-                "state",
-                "countryCode",
-                "companyCode"
-              ]
-            },
-            "accountDetails": {
-              "type": "object",
-              "properties": {
-                "ozonetelAccountId": {
-                  "type": "integer"
-                },
-                "ozonetelAccountName": {
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                },
-                "apiKey": {
-                  "type": "string"
-                },
-                "phone": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "ozonetelAccountId",
-                "ozonetelAccountName",
-                "username",
-                "apiKey",
-                "phone"
+                "apiKey"
               ]
             }
           },

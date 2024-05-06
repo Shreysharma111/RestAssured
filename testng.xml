@@ -10,6 +10,7 @@
             <class name="ozonetel.GetAllOzonetelAccTests"/>
             <class name="ozonetel.GetOzonetelAccTests"/>
             <class name="ozonetel.GetOzonetelCampaignsTests"/>
+            <class name="ozonetel.UserCompanyTests"/>
         </classes>
     </test>
 </suite>

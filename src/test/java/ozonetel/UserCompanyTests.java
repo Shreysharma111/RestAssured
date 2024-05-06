@@ -56,9 +56,10 @@ public class UserCompanyTests {
     public void emptyAndWrongParamCase(String key, String value) {
         ExtentTest test = Setup.extentReports.createTest("UserCompany_EmptyAndWrongParam", "query param case : empty param | wrong param");
         Setup.extentTest.set(test);
-        Response response = userCompanyQueryParamCase(agentIdValue, key+":"+"Bearer "+value);
+        Response response = userCompanyQueryParamCase(key+":"+"Bearer "+value);
 
         assertStatusCode(response, 404);
+        assertKeyValue(response, "message", "User not found!");
 
     }
     @Test
@@ -77,16 +78,6 @@ public class UserCompanyTests {
         Response response = userCompanyWrongEndpointCase(agentIdValue);
 
         assertStatusCode(response, 404);
-    }
-
-    @Test
-    public void wrongQueryParamCase() {
-        ExtentTest test = Setup.extentReports.createTest("UserCompany_WrongParam", "wrong query param case");
-        Setup.extentTest.set(test);
-        Response response = userCompanyMethodCase(agentIdValue);
-
-        assertStatusCode(response, 405);
-        assertKeyValue(response, "message", "User not found!");
     }
 
 

@@ -68,16 +68,16 @@ public class UserCompany {
         return response;
     }
 
-    public static Response userCompanyQueryParamCase(String agentId, String... queryParams) {
+    public static Response userCompanyQueryParamCase(String... queryParams) {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecParamGet(queryParams))// Don't set access token as Bearer token
+                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Don't set access token as Bearer token
                 .when()
                 .get(userCompany_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParamGet(queryParams));
+        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParamGet(accessToken, queryParams));
         printResponseLogInReport(response);
         return response;
     }
