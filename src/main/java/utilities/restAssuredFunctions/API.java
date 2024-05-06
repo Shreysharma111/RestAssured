@@ -1,31 +1,29 @@
 package utilities.restAssuredFunctions;
 
-import actions.HttpOperation;
-import actions.ValidatorOperation;
-import interfaces.IApi;
+import com.aventstack.extentreports.Status;
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
+import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
-
 import java.io.File;
 import java.util.List;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.assertEquals;
+import static utilities.reporting.Setup.extentTest;
 
 
-public class API implements IApi {
+public class API {
 
     RequestSpecification reqSpec;
-    HttpOperation method;
+    Method method;
     String url;
-    Response resp;
+    static Response resp;
 
-    public void init(String url, HttpOperation method) {
+    public void init(String url, Method method) {
         this.url = url;
         this.method = method;
         reqSpec = given();
@@ -76,51 +74,23 @@ public class API implements IApi {
         return "invalid method set for API";
     }
 
-    public API assertIt(String key, Object val, ValidatorOperation operation) {
+    // Method to assert a key's value in the response
+    public static void assertKeyValue(Response response, String key, String expectedValue) {
+        // Extracting the actual value of the key from the response
+        String actualValue = response.jsonPath().getString(key);
 
-        switch (operation.toString()) {
-            case "EQUALS":
-                resp.then().body(key, equalTo(val));
-                break;
-
-            case "KEY_PRESENTS":
-                resp.then().body(key, hasKey(key));
-                break;
-
-            case "HAS_ALL":
-                break;
-
-            case "NOT_EQUALS":
-                resp.then().body(key, not(equalTo(val)));
-                break;
-
-            case "EMPTY":
-                resp.then().body(key, empty());
-                break;
-
-            case "NOT_EMPTY":
-                resp.then().body(key, not(emptyArray()));
-                break;
-
-            case "NOT_NULL":
-                resp.then().body(key, notNullValue());
-                break;
-
-            case "HAS_STRING":
-                resp.then().body(key, containsString((String)val));
-                break;
-
-            case "SIZE":
-                resp.then().body(key, hasSize((int)val));
-                break;
-        }
-
-        return this;
+        // Asserting the actual value against the expected value
+        if (actualValue.equals(expectedValue)) {
+            extentTest.get().log(Status.PASS,"Assertion passed! " + key + " has the expected value: " + expectedValue);
+        } else {
+            extentTest.get().log(Status.FAIL,"Assertion failed! " + key + " does not have the expected value. Expected: " +
+                    expectedValue + ", Actual: " + actualValue);
+            }
     }
 
     public void assertIt(List<List<Object>> data) {
         for (List<Object> li : data) {
-            switch (((ValidatorOperation) li.get(2)).toString()) {
+            switch (((Method) li.get(2)).toString()) {
                 case "EQUALS":
                     resp.then().body(((String) li.get(0)), equalTo((String) li.get(1)));
                     break;
@@ -137,20 +107,31 @@ public class API implements IApi {
     // Method for asserting the status code
     public static void assertStatusCode(Response response, int expectedStatusCode) {
         int actualStatusCode = response.getStatusCode();
-        assertEquals(actualStatusCode, expectedStatusCode, "Status code is not as expected");
+        try {
+            assertEquals(actualStatusCode, expectedStatusCode, "Status code is not as expected");
+            extentTest.get().log(Status.PASS,"Status code assertion passed! Expected: " + expectedStatusCode +
+                    ", Actual: " + actualStatusCode);
+            // You can log this information to your report here.
+        } catch (AssertionError e) {
+            extentTest.get().log(Status.FAIL,"Status code assertion failed! Expected: " + expectedStatusCode +
+                    ", Actual: " + actualStatusCode);
+            throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
+        }
     }
 
     // Method for asserting that a particular field is present and not empty in the response body
     public static void assertFieldIsPresentAndNotEmpty(Response response, String fieldName) {
         String fieldValue = response.jsonPath().getString(fieldName);
-        Assert.assertNotNull(fieldValue, "Field '" + fieldName + "' is not present in the response body");
-        Assert.assertFalse(fieldValue.isEmpty(), "Field '" + fieldName + "' is empty");
-    }
-    public API assertIt(int code) {
+        try {
+            Assert.assertNotNull(fieldValue, "Field '" + fieldName + "' is not present in the response body");
+            Assert.assertFalse(fieldValue.isEmpty(), "Field '" + fieldName + "' is empty");
+            extentTest.get().log(Status.PASS,"Assertion passed! Field '" + fieldName + "' is present in the response body " +
+                    "and is not empty");
 
-        resp.then().statusCode(code);
-
-        return this;
+        } catch (AssertionError e) {
+            extentTest.get().log(Status.FAIL,"Assertion failed! " + e.getMessage());
+            throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
+        }
     }
 
     public String extractString(String path) { return resp.jsonPath().getString(path);}

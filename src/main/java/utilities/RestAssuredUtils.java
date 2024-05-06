@@ -1,5 +1,6 @@
 package utilities;
 
+import com.aventstack.extentreports.Status;
 import utilities.reporting.ExtentReportManager;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -10,6 +11,9 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
 
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
+
+import static utilities.reporting.Setup.extentTest;
 
 
 public class RestAssuredUtils {
@@ -73,6 +77,24 @@ public class RestAssuredUtils {
         return builder.build();
     }
 
+    public static RequestSpecification commonRequestSpecParamGet(String... queryParams) {
+        RequestSpecBuilder builder = new RequestSpecBuilder()
+                .setBaseUri(baseUrl)
+                .setContentType(ContentType.JSON);
+
+        for (String queryParam : queryParams) {
+            String[] paramParts = queryParam.split(":");
+            if (paramParts.length == 2) {
+                builder.addQueryParam(paramParts[0].trim(), paramParts[1].trim());
+            } else {
+                // Handle invalid header format, log or throw an exception as needed
+                System.err.println("Invalid query param format: " + queryParam);
+            }
+        }
+
+        return builder.build();
+    }
+
     public static RequestSpecification commonRequestSpecWithToken(String oAuthToken) {
         return new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
@@ -119,7 +141,8 @@ public class RestAssuredUtils {
     }
 
     public static void printResponseLogInReport(Response response) {
-        ExtentReportManager.logInfoDetails("Response status : " + response.getStatusCode());
+        ExtentReportManager.logInfoDetails("Response status code : " + response.getStatusLine());
+        ExtentReportManager.logInfoDetails("Response time in seconds : " + response.getTimeIn(TimeUnit.SECONDS));
 //        ExtentReportManager.logInfoDetails("Response Headers are ");
 //        ExtentReportManager.logHeaders(response.getHeaders().asList());
         ExtentReportManager.logInfoDetails("Response body : ");
@@ -133,9 +156,9 @@ public class RestAssuredUtils {
             response.then()
                     .assertThat()
                     .body(JsonSchemaValidator.matchesJsonSchemaInClasspath(schemaPath));
-            System.out.println("JSON schema validation passed.");
+            extentTest.get().log(Status.PASS,"JSON schema validation passed!");
         } catch (AssertionError e) {
-            System.err.println("JSON schema validation failed. Error: " + e.getMessage());
+            extentTest.get().log(Status.FAIL,"JSON schema validation failed! Error: " + e.getMessage());
             System.err.println("Response Body: " + response.getBody().asString());
             throw e; // Re-throw the assertion error to mark the test as failed
         }

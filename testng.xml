@@ -7,8 +7,9 @@
     <test verbose="2" preserve-order="true"
           name="OzonetelSuite">
         <classes>
-            <class name="ozonetel.GetAllOonetelAccTest"/>
-<!--            <class name="ozonetel.GetOzonetelCampaignsTests"/>-->
+            <class name="ozonetel.GetAllOzonetelAccTests"/>
+            <class name="ozonetel.GetOzonetelAccTests"/>
+            <class name="ozonetel.GetOzonetelCampaignsTests"/>
         </classes>
     </test>
 </suite>

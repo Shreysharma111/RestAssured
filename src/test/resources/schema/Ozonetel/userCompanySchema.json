@@ -1,0 +1,663 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "instanceId": {
+              "type": "integer"
+            },
+            "instanceName": {
+              "type": "null"
+            },
+            "defaultInstance": {
+              "type": "integer"
+            },
+            "ozonetelPrmCompanyMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "companyDetails": {
+                      "type": "object",
+                      "properties": {
+                        "companyId": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "shortName": {
+                          "type": "string"
+                        },
+                        "website": {
+                          "type": "null"
+                        },
+                        "phone": {
+                          "type": "null"
+                        },
+                        "mobile": {
+                          "type": "null"
+                        },
+                        "email": {
+                          "type": "null"
+                        },
+                        "address": {
+                          "type": "null"
+                        },
+                        "pincode": {
+                          "type": "null"
+                        },
+                        "city": {
+                          "type": "null"
+                        },
+                        "state": {
+                          "type": "null"
+                        },
+                        "countryCode": {
+                          "type": "null"
+                        },
+                        "companyCode": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "companyId",
+                        "name",
+                        "shortName",
+                        "website",
+                        "phone",
+                        "mobile",
+                        "email",
+                        "address",
+                        "pincode",
+                        "city",
+                        "state",
+                        "countryCode",
+                        "companyCode"
+                      ]
+                    },
+                    "accountDetails": {
+                      "type": "object",
+                      "properties": {
+                        "ozonetelAccountId": {
+                          "type": "integer"
+                        },
+                        "ozonetelAccountName": {
+                          "type": "string"
+                        },
+                        "username": {
+                          "type": "string"
+                        },
+                        "apiKey": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "ozonetelAccountId",
+                        "ozonetelAccountName",
+                        "username",
+                        "apiKey"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "companyDetails",
+                    "accountDetails"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "companyDetails": {
+                      "type": "object",
+                      "properties": {
+                        "companyId": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "shortName": {
+                          "type": "null"
+                        },
+                        "website": {
+                          "type": "null"
+                        },
+                        "phone": {
+                          "type": "null"
+                        },
+                        "mobile": {
+                          "type": "null"
+                        },
+                        "email": {
+                          "type": "null"
+                        },
+                        "address": {
+                          "type": "null"
+                        },
+                        "pincode": {
+                          "type": "null"
+                        },
+                        "city": {
+                          "type": "null"
+                        },
+                        "state": {
+                          "type": "null"
+                        },
+                        "countryCode": {
+                          "type": "null"
+                        },
+                        "companyCode": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "companyId",
+                        "name",
+                        "shortName",
+                        "website",
+                        "phone",
+                        "mobile",
+                        "email",
+                        "address",
+                        "pincode",
+                        "city",
+                        "state",
+                        "countryCode",
+                        "companyCode"
+                      ]
+                    },
+                    "accountDetails": {
+                      "type": "object",
+                      "properties": {
+                        "ozonetelAccountId": {
+                          "type": "integer"
+                        },
+                        "ozonetelAccountName": {
+                          "type": "string"
+                        },
+                        "username": {
+                          "type": "string"
+                        },
+                        "apiKey": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "ozonetelAccountId",
+                        "ozonetelAccountName",
+                        "username",
+                        "apiKey"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "companyDetails",
+                    "accountDetails"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "instanceId",
+            "instanceName",
+            "defaultInstance",
+            "ozonetelPrmCompanyMappings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "instanceId": {
+              "type": "integer"
+            },
+            "instanceName": {
+              "type": "string"
+            },
+            "defaultInstance": {
+              "type": "integer"
+            },
+            "ozonetelPrmCompanyMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "companyDetails": {
+                      "type": "object",
+                      "properties": {
+                        "companyId": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "shortName": {
+                          "type": "string"
+                        },
+                        "website": {
+                          "type": "null"
+                        },
+                        "phone": {
+                          "type": "null"
+                        },
+                        "mobile": {
+                          "type": "null"
+                        },
+                        "email": {
+                          "type": "null"
+                        },
+                        "address": {
+                          "type": "null"
+                        },
+                        "pincode": {
+                          "type": "null"
+                        },
+                        "city": {
+                          "type": "null"
+                        },
+                        "state": {
+                          "type": "null"
+                        },
+                        "countryCode": {
+                          "type": "null"
+                        },
+                        "companyCode": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "companyId",
+                        "name",
+                        "shortName",
+                        "website",
+                        "phone",
+                        "mobile",
+                        "email",
+                        "address",
+                        "pincode",
+                        "city",
+                        "state",
+                        "countryCode",
+                        "companyCode"
+                      ]
+                    },
+                    "accountDetails": {
+                      "type": "object",
+                      "properties": {
+                        "ozonetelAccountId": {
+                          "type": "integer"
+                        },
+                        "ozonetelAccountName": {
+                          "type": "string"
+                        },
+                        "username": {
+                          "type": "string"
+                        },
+                        "apiKey": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "ozonetelAccountId",
+                        "ozonetelAccountName",
+                        "username",
+                        "apiKey"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "companyDetails",
+                    "accountDetails"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "companyDetails": {
+                      "type": "object",
+                      "properties": {
+                        "companyId": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "shortName": {
+                          "type": "null"
+                        },
+                        "website": {
+                          "type": "null"
+                        },
+                        "phone": {
+                          "type": "null"
+                        },
+                        "mobile": {
+                          "type": "null"
+                        },
+                        "email": {
+                          "type": "null"
+                        },
+                        "address": {
+                          "type": "null"
+                        },
+                        "pincode": {
+                          "type": "null"
+                        },
+                        "city": {
+                          "type": "null"
+                        },
+                        "state": {
+                          "type": "null"
+                        },
+                        "countryCode": {
+                          "type": "null"
+                        },
+                        "companyCode": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "companyId",
+                        "name",
+                        "shortName",
+                        "website",
+                        "phone",
+                        "mobile",
+                        "email",
+                        "address",
+                        "pincode",
+                        "city",
+                        "state",
+                        "countryCode",
+                        "companyCode"
+                      ]
+                    },
+                    "accountDetails": {
+                      "type": "object",
+                      "properties": {
+                        "ozonetelAccountId": {
+                          "type": "integer"
+                        },
+                        "ozonetelAccountName": {
+                          "type": "string"
+                        },
+                        "username": {
+                          "type": "string"
+                        },
+                        "apiKey": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "ozonetelAccountId",
+                        "ozonetelAccountName",
+                        "username",
+                        "apiKey"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "companyDetails",
+                    "accountDetails"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "instanceId",
+            "instanceName",
+            "defaultInstance",
+            "ozonetelPrmCompanyMappings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "instanceId": {
+              "type": "integer"
+            },
+            "instanceName": {
+              "type": "string"
+            },
+            "defaultInstance": {
+              "type": "integer"
+            },
+            "ozonetelPrmCompanyMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "companyDetails": {
+                      "type": "object",
+                      "properties": {
+                        "companyId": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "shortName": {
+                          "type": "string"
+                        },
+                        "website": {
+                          "type": "null"
+                        },
+                        "phone": {
+                          "type": "null"
+                        },
+                        "mobile": {
+                          "type": "null"
+                        },
+                        "email": {
+                          "type": "null"
+                        },
+                        "address": {
+                          "type": "null"
+                        },
+                        "pincode": {
+                          "type": "null"
+                        },
+                        "city": {
+                          "type": "null"
+                        },
+                        "state": {
+                          "type": "null"
+                        },
+                        "countryCode": {
+                          "type": "null"
+                        },
+                        "companyCode": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "companyId",
+                        "name",
+                        "shortName",
+                        "website",
+                        "phone",
+                        "mobile",
+                        "email",
+                        "address",
+                        "pincode",
+                        "city",
+                        "state",
+                        "countryCode",
+                        "companyCode"
+                      ]
+                    },
+                    "accountDetails": {
+                      "type": "object",
+                      "properties": {
+                        "ozonetelAccountId": {
+                          "type": "integer"
+                        },
+                        "ozonetelAccountName": {
+                          "type": "string"
+                        },
+                        "username": {
+                          "type": "string"
+                        },
+                        "apiKey": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "ozonetelAccountId",
+                        "ozonetelAccountName",
+                        "username",
+                        "apiKey"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "companyDetails",
+                    "accountDetails"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "companyDetails": {
+                      "type": "object",
+                      "properties": {
+                        "companyId": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "shortName": {
+                          "type": "null"
+                        },
+                        "website": {
+                          "type": "null"
+                        },
+                        "phone": {
+                          "type": "null"
+                        },
+                        "mobile": {
+                          "type": "null"
+                        },
+                        "email": {
+                          "type": "null"
+                        },
+                        "address": {
+                          "type": "null"
+                        },
+                        "pincode": {
+                          "type": "null"
+                        },
+                        "city": {
+                          "type": "null"
+                        },
+                        "state": {
+                          "type": "null"
+                        },
+                        "countryCode": {
+                          "type": "null"
+                        },
+                        "companyCode": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "companyId",
+                        "name",
+                        "shortName",
+                        "website",
+                        "phone",
+                        "mobile",
+                        "email",
+                        "address",
+                        "pincode",
+                        "city",
+                        "state",
+                        "countryCode",
+                        "companyCode"
+                      ]
+                    },
+                    "accountDetails": {
+                      "type": "object",
+                      "properties": {
+                        "ozonetelAccountId": {
+                          "type": "integer"
+                        },
+                        "ozonetelAccountName": {
+                          "type": "string"
+                        },
+                        "username": {
+                          "type": "string"
+                        },
+                        "apiKey": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "ozonetelAccountId",
+                        "ozonetelAccountName",
+                        "username",
+                        "apiKey"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "companyDetails",
+                    "accountDetails"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "instanceId",
+            "instanceName",
+            "defaultInstance",
+            "ozonetelPrmCompanyMappings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "instanceId": {
+              "type": "integer"
+            },
+            "instanceName": {
+              "type": "string"
+            },
+            "defaultInstance": {
+              "type": "integer"
+            },
+            "ozonetelPrmCompanyMappings": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "instanceId",
+            "instanceName",
+            "defaultInstance",
+            "ozonetelPrmCompanyMappings"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}

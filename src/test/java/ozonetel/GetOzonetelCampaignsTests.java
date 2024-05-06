@@ -4,23 +4,18 @@ import Dataproviders.Dataproviders;
 import com.aventstack.extentreports.ExtentTest;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utilities.OAuth2Authorization;
 import utilities.reporting.Setup;
 
-import java.util.concurrent.TimeUnit;
-
-import static endpoints.OzonetelEndpoints.getOzonetelCampaigns;
-import static utilities.RestAssuredUtils.getToken;
-import static utilities.RestAssuredUtils.getValue;
+import static endpoints.ozonetel.GetOzonetelCampaigns.*;
+import static utilities.RestAssuredUtils.*;
+import static utilities.restAssuredFunctions.API.assertFieldIsPresentAndNotEmpty;
+import static utilities.restAssuredFunctions.API.assertStatusCode;
 
 public class GetOzonetelCampaignsTests {
     private int ozonetelAccId;
-    static String accessToken = getToken();
-    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @BeforeClass
     public void before(){
@@ -29,27 +24,67 @@ public class GetOzonetelCampaignsTests {
         RestAssured.useRelaxedHTTPSValidation();
     }
 
-    @Test(priority = 1)
-    public void testGetOzonetelCampaigns() {
-        ExtentTest test = Setup.extentReports.createTest("Test Name - testGetOzonetelCampaigns", "test positive flow" );
+    @Test
+    public void positiveCase() {
+        ExtentTest test = Setup.extentReports.createTest("GetOzonetelCampaignsTests", "test positive flow" );
         Setup.extentTest.set(test);
 
-        Response response = getOzonetelCampaigns(ozonetelAccId);
+        Response response = getOzonetelCampaignsPositiveCase(ozonetelAccId);
 
-        logger.info("Status code : "+response.getStatusCode());
-        logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
+        assertStatusCode(response, 200);
+        assertFieldIsPresentAndNotEmpty(response, "data");
 
     }
 
-    @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider", description = "test for authorization header", priority = 2)
-    public void testGetOzonetelCampaignsWithoutToken(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("Test Name - testGetOzonetelCampaigns" , "test headers");
+    @Test
+    public void jsonSchemaValidationCase() {
+        ExtentTest test = Setup.extentReports.createTest("GetOzonetelCampaignsTests", "schema validation case");
         Setup.extentTest.set(test);
+        Response response = getOzonetelCampaignsPositiveCase(ozonetelAccId);
 
-        Response response = getOzonetelCampaigns(ozonetelAccId,key+":"+"Bearer "+value);
+        validateJsonSchema(response, "schema/Ozonetel/getOzonetelCampaignsSchema.json");
 
-        logger.info("Status code : "+response.getStatusCode());
-        logger.info("Response time : "+response.getTimeIn(TimeUnit.MILLISECONDS)+"ms");
     }
+
+
+    @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
+    public void emptyAndWrongAuthTokenCase(String key, String value) {
+        ExtentTest test = Setup.extentReports.createTest("GetOzonetelCampaignsTests", "authorization token case : empty token | wrong token");
+        Setup.extentTest.set(test);
+        Response response = getOzonetelCampaignsHeaderCase(ozonetelAccId, key+":"+"Bearer "+value);
+
+        assertStatusCode(response, 401);
+    }
+
+    @Test
+    public void correctAuthTokenCase() {
+        ExtentTest test = Setup.extentReports.createTest("GetOzonetelCampaignsTests", "authorization token case : correct token");
+        Setup.extentTest.set(test);
+        Response response = getOzonetelCampaignsHeaderCase(ozonetelAccId,"Authorization:"+"Bearer "+getToken());
+
+        assertStatusCode(response, 200);
+
+    }
+
+    @Test
+    public void wrongEndPointCase() {
+        ExtentTest test = Setup.extentReports.createTest("GetOzonetelCampaignsTests", "wrong endpoint case");
+        Setup.extentTest.set(test);
+        Response response = getOzonetelCampaignsWrongEndpointCase(ozonetelAccId);
+
+        assertStatusCode(response, 404);
+
+    }
+
+    @Test
+    public void wrongMethodCase() {
+        ExtentTest test = Setup.extentReports.createTest("GetOzonetelCampaignsTests", "wrong request method case");
+        Setup.extentTest.set(test);
+        Response response = getOzonetelCampaignsMethodCase(ozonetelAccId);
+
+        assertStatusCode(response, 405);
+
+    }
+
 
 }

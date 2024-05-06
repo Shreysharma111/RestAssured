@@ -9,7 +9,6 @@ import static utilities.RestAssuredUtils.*;
 public class GetAllOzonetelAccount extends API {
     private static Response response;
     private static String accessToken = getToken();
-    private static String wrongAccessToken = getWrongToken();
 
     public static String getAllOzontelAccount_url = getUrl().getString("getAllOzontelAccount_url");
 

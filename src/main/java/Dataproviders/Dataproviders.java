@@ -12,4 +12,10 @@ public class Dataproviders {
         Object[][] obj= {{"Authoriation", getWrongToken()},{"Authorization",""}};
         return obj;
     }
+
+    @DataProvider(name ="queryDataProvider")
+    public static Object[][] queryParamDataProvider() {
+        Object[][] obj= {{"agentId", 0},{"agentId",""}};
+        return obj;
+    }
 }
