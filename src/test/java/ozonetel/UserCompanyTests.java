@@ -56,7 +56,7 @@ public class UserCompanyTests {
     public void emptyAndWrongParamCase(String key, String value) {
         ExtentTest test = Setup.extentReports.createTest("UserCompany_EmptyAndWrongParam", "query param case : empty param | wrong param");
         Setup.extentTest.set(test);
-        Response response = userCompanyQueryParamCase(key+":"+"Bearer "+value);
+        Response response = userCompanyQueryParamCase(key+":"+value);
 
         assertStatusCode(response, 404);
         assertKeyValue(response, "message", "User not found!");

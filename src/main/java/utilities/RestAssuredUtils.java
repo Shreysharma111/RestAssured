@@ -1,7 +1,6 @@
 package utilities;
 
 import com.aventstack.extentreports.Status;
-import utilities.reporting.ExtentReportManager;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -9,6 +8,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
+import utilities.reporting.ExtentReportManager;
 
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
@@ -133,8 +133,12 @@ public class RestAssuredUtils {
 //        ExtentReportManager.logInfoDetailsNoMarkup("Endpoint    :   " + queryableRequestSpecification.getBasePath());
         ExtentReportManager.logInfoDetailsNoMarkup("Method   :   " + method);
         ExtentReportManager.logInfoDetails("Headers : ");
-
         ExtentReportManager.logHeaders(queryableRequestSpecification.getHeaders().asList());
+
+        if(!queryableRequestSpecification.getQueryParams().isEmpty()) {
+            ExtentReportManager.logInfoDetails("Query Params : ");
+            ExtentReportManager.logQueryParams(queryableRequestSpecification.getQueryParams().toString());
+        }
         if(queryableRequestSpecification.getBody()!=null) {
             ExtentReportManager.logInfoDetails("Request body : ");
             ExtentReportManager.logJson(queryableRequestSpecification.getBody());

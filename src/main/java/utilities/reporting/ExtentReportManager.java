@@ -93,6 +93,7 @@ public class ExtentReportManager {
             }
         }
 
+
         // Convert modified headers to a 2D array for table creation
         String[][] arrayHeaders = modifiedHeaders.stream()
                 .map(header -> new String[]{header.getName(), header.getValue()})
@@ -101,6 +102,49 @@ public class ExtentReportManager {
         // Log the modified headers in the Extent Report as a table
         Setup.extentTest.get().info(MarkupHelper.createTable(arrayHeaders));
     }
+
+    // Method to log query parameters as a table in Extent report
+    public static void logQueryParams(String queryParams) {
+        // List to store modified query parameters
+        List<String> modifiedQueryParams = new ArrayList<>();
+
+        // Split the query parameters string into individual parameters
+        String[] paramsArray = queryParams.split("&");
+
+        // Iterate through each query parameter
+        for (String param : paramsArray) {
+            // Split the parameter into name and value
+            String[] parts = param.split(":");
+            String paramName = parts[0];
+            String paramValue = parts.length > 1 ? parts[1] : "";
+
+            // Truncate the parameter value if it's too long
+            if (paramValue.length() > 30) {
+                // Truncate the value to a manageable length
+                String truncatedValue = paramValue.substring(0, Math.min(paramValue.length(), 20)) + "....." + paramValue.substring(paramValue.length() - 5);
+
+                // Add the modified query parameter to the list
+                modifiedQueryParams.add(paramName + "=" + truncatedValue);
+            } else {
+                // Add the query parameter as it is to the list
+                modifiedQueryParams.add(paramName + "=" + paramValue);
+            }
+        }
+
+        // Convert modified query parameters to a 2D array
+        String[][] tableData = new String[modifiedQueryParams.size()][2];
+        for (int i = 0; i < modifiedQueryParams.size(); i++) {
+            String[] parts = modifiedQueryParams.get(i).split("=");
+            tableData[i][0] = parts[0];
+            tableData[i][1] = parts[1];
+        }
+
+        // Log the modified headers in the Extent Report as a table
+        Setup.extentTest.get().info(MarkupHelper.createTable(tableData));
+
+    }
+
+
     public static void openReportInBrowser() {
         try {
             File reportFile = new File(reportFilePath);

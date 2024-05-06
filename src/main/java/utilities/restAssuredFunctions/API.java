@@ -8,8 +8,11 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
 import java.io.File;
 import java.util.List;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.assertEquals;
@@ -133,6 +136,30 @@ public class API {
             throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
         }
     }
+
+    // Method to assert the response time
+    public static void assertResponseTime(Response response) {
+        long responseTime = response.getTime();
+
+        // Create a SoftAssert instance
+        SoftAssert softAssert = new SoftAssert();
+
+        // Check if the response time is less than 500 milliseconds
+        softAssert.assertTrue(responseTime <= 500, "Response time is less than 500 milliseconds: " + responseTime + "ms");
+
+        try {
+            // Perform all the soft assertions
+            softAssert.assertAll();
+
+            // If no exceptions are thrown, it means all assertions passed
+            extentTest.get().log(Status.PASS, "Assertion passed! Response time is less than 500 milliseconds: " + responseTime + "ms");
+        } catch (AssertionError e) {
+            // Log the failure and re-throw the AssertionError
+            extentTest.get().log(Status.FAIL, "Assertion failed! Response time is greater than 500 milliseconds: " + responseTime + "ms");
+            throw e;
+        }
+    }
+
 
     public String extractString(String path) { return resp.jsonPath().getString(path);}
 

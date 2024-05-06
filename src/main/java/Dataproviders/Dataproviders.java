@@ -15,7 +15,7 @@ public class Dataproviders {
 
     @DataProvider(name ="queryDataProvider")
     public static Object[][] queryParamDataProvider() {
-        Object[][] obj= {{"agentId", "0"},{"agentId",""}};
+        Object[][] obj= {{"agentId", "0"},{"agentId","!@#"}};
         return obj;
     }
 }

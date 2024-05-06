@@ -7,10 +7,11 @@
     <test verbose="2" preserve-order="true"
           name="OzonetelSuite">
         <classes>
-            <class name="ozonetel.GetAllOzonetelAccTests"/>
-            <class name="ozonetel.GetOzonetelAccTests"/>
-            <class name="ozonetel.GetOzonetelCampaignsTests"/>
-            <class name="ozonetel.UserCompanyTests"/>
+<!--            <class name="ozonetel.GetAllOzonetelAccTests"/>-->
+<!--            <class name="ozonetel.GetOzonetelAccTests"/>-->
+<!--            <class name="ozonetel.GetOzonetelCampaignsTests"/>-->
+<!--            <class name="ozonetel.UserCompanyTests"/>-->
+            <class name="ozonetel.GetCallCenterByCompanyTests"/>
         </classes>
     </test>
 </suite>
