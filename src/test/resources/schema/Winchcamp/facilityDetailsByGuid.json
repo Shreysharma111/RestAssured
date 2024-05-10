@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "facilityNpi": {
+          "type": "string"
+        },
+        "camera": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "facilityNpi",
+        "camera"
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}

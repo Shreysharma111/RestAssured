@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "areaName": {
+          "type": "string"
+        },
+        "cameraName": {
+          "type": "string"
+        },
+        "cameraGuid": {
+          "type": "string"
+        },
+        "rtspUrl": {
+          "type": "string"
+        },
+        "monitoringStatus": {
+          "type": "string"
+        },
+        "cameraStatus": {
+          "type": "string"
+        },
+        "events": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name"
+              ]
+            }
+          ]
+        },
+        "ticketStatus": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "area": {
+          "type": "integer"
+        },
+        "camera": {
+          "type": "integer"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "updatedDate": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "integer"
+        },
+        "updatedBy": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "areaName",
+        "cameraName",
+        "cameraGuid",
+        "rtspUrl",
+        "monitoringStatus",
+        "cameraStatus",
+        "events",
+        "ticketStatus",
+        "status",
+        "area",
+        "camera",
+        "createdDate",
+        "updatedDate",
+        "createdBy",
+        "updatedBy"
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}
