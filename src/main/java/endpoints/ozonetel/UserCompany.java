@@ -2,55 +2,52 @@ package endpoints.ozonetel;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import utilities.reporting.ExtentReportManager;
 
 import static utilities.RestAssuredUtils.*;
-import static utilities.RestAssuredUtils.printResponseLogInReport;
 
 public class UserCompany {
     private static Response response;
     private static String accessToken = getToken();
     public static String userCompany_url = getUrl().getString("userCompany_url");
 
-    public static Response userCompanyPositiveCase(String agentId) {
+    public static Response userCompanyPositiveCase(String... queryParams) {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
-                .queryParam("agentId",agentId)
+                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Set access token as Bearer token
                 .when()
                 .get(userCompany_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecWithToken(accessToken));
-        printResponseLogInReport(response);
+        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParamGet(accessToken, queryParams));
+        ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-    public static Response userCompanyWrongEndpointCase(String agentId) {
+    public static Response userCompanyWrongEndpointCase(String... queryParams) {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
-                .queryParam("agentId",agentId)
+                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Set access token as Bearer token
                 .when()
                 .get(userCompany_url+"wrong");
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url+"wrong", "GET", commonRequestSpecWithToken(accessToken));
-        printResponseLogInReport(response);
+        printRequestLogInReport(userCompany_url+"wrong", "GET", commonRequestSpecParamGet(accessToken, queryParams));
+        ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-    public static Response userCompanyMethodCase(String agentId) {
+    public static Response userCompanyMethodCase(String... queryParams) {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
-                .queryParam("agentId",agentId)
+                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Set access token as Bearer token
                 .when()
                 .post(userCompany_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url, "POST", commonRequestSpecWithToken(accessToken));
-        printResponseLogInReport(response);
+        printRequestLogInReport(userCompany_url, "POST", commonRequestSpecParamGet(accessToken, queryParams));
+        ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
     public static Response userCompanyHeaderCase(String agentId, String... headers) {
@@ -64,7 +61,7 @@ public class UserCompany {
 
         //log details and verify status code in extent report
         printRequestLogInReport(userCompany_url, "GET", commonRequestSpecGet(headers));
-        printResponseLogInReport(response);
+        ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
 
@@ -78,7 +75,9 @@ public class UserCompany {
 
         //log details and verify status code in extent report
         printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParamGet(accessToken, queryParams));
-        printResponseLogInReport(response);
+        ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
+
+
 }

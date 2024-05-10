@@ -28,16 +28,16 @@ public class GetOzonetelCampaigns {
     }
 
     public static Response getOzonetelCampaignsWrongEndpointCase(int ozonetelAccId) {
-        String uri = String.format("%s%s/%s/%s", baseUrl, "/ozonetel", ozonetelAccId, "cloud-campaigns");
+        String uri = String.format("%s%s/%s/%s", baseUrl, "/ozonetel", ozonetelAccId, "cloud-campaignswrong");
 
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/ozonetel"+"/{ozonetelId}/cloud-campaigns wrong",ozonetelAccId);
+                .get("/ozonetel"+"/{ozonetelId}/cloud-campaignswrong",ozonetelAccId);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(uri+"wrong", "GET", commonRequestSpecWithToken(accessToken));
+        printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
         printResponseLogInReport(response);
         return response;
     }

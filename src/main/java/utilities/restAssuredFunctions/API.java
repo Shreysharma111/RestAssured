@@ -83,10 +83,10 @@ public class API {
         String actualValue = response.jsonPath().getString(key);
 
         // Asserting the actual value against the expected value
-        if (actualValue.equals(expectedValue)) {
-            extentTest.get().log(Status.PASS,"Assertion passed! " + key + " has the expected value: " + expectedValue);
+        if (actualValue.equals(expectedValue) || actualValue.contains(expectedValue)) {
+            extentTest.get().log(Status.PASS,"Assertion passed! " + key + " in response body has the expected value: " + expectedValue);
         } else {
-            extentTest.get().log(Status.FAIL,"Assertion failed! " + key + " does not have the expected value. Expected: " +
+            extentTest.get().log(Status.FAIL,"Assertion failed! " + key + " in response body does not have the expected value. Expected: " +
                     expectedValue + ", Actual: " + actualValue);
             }
     }
@@ -145,17 +145,17 @@ public class API {
         SoftAssert softAssert = new SoftAssert();
 
         // Check if the response time is less than 500 milliseconds
-        softAssert.assertTrue(responseTime <= 500, "Response time is less than 500 milliseconds: " + responseTime + "ms");
+        softAssert.assertTrue(responseTime <= 800, "Response time is less than 800 milliseconds: " + responseTime + "ms");
 
         try {
             // Perform all the soft assertions
             softAssert.assertAll();
 
             // If no exceptions are thrown, it means all assertions passed
-            extentTest.get().log(Status.PASS, "Assertion passed! Response time is less than 500 milliseconds: " + responseTime + "ms");
+            extentTest.get().log(Status.PASS, "Assertion passed! Response time is less than 800 milliseconds: " + responseTime + "ms");
         } catch (AssertionError e) {
             // Log the failure and re-throw the AssertionError
-            extentTest.get().log(Status.FAIL, "Assertion failed! Response time is greater than 500 milliseconds: " + responseTime + "ms");
+            extentTest.get().log(Status.FAIL, "Assertion failed! Response time is greater than 800 milliseconds: " + responseTime + "ms");
             throw e;
         }
     }

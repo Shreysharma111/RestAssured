@@ -11,7 +11,11 @@
 <!--            <class name="ozonetel.GetOzonetelAccTests"/>-->
 <!--            <class name="ozonetel.GetOzonetelCampaignsTests"/>-->
 <!--            <class name="ozonetel.UserCompanyTests"/>-->
-            <class name="ozonetel.GetCallCenterByCompanyTests"/>
+<!--            <class name="ozonetel.GetCallCenterByCompanyTests"/>-->
+<!--            <class name="winchcamp.CameraDetailsByGuidTests"></class>-->
+<!--            <class name="winchcamp.AllCameraConfigsTests"></class>-->
+<!--            <class name="winchcamp.MonitoringAreasListByFacIdTests"></class>-->
+            <class name="winchcamp.ManualOverrideTests"></class>
         </classes>
     </test>
 </suite>

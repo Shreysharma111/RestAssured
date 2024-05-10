@@ -3,6 +3,7 @@ package utilities.reporting;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -48,8 +49,16 @@ public class ExtentReportManager {
     public static void logFailureDetails(String log) {
         Setup.extentTest.get().fail(MarkupHelper.createLabel(log, ExtentColor.RED));
     }
+
     public static void logInfoDetails(String log) {
-        Setup.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.BLUE));
+        String markup = "<div style=\"background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px\">" + log + "</div>";
+        Markup m = new Markup() {
+            @Override
+            public String getMarkup() {
+                return markup;
+            }
+        };
+        Setup.extentTest.get().info(m);
     }
     public static void logInfoDetailsNoMarkup(String log) {
         Setup.extentTest.get().info(log);

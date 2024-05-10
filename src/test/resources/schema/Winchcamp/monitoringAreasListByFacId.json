@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "integer"
+            },
+            "isMonitoring": {
+              "type": "integer"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "areaId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guid",
+            "cameraStatus",
+            "isMonitoring",
+            "areaName",
+            "areaId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "integer"
+            },
+            "isMonitoring": {
+              "type": "integer"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "areaId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guid",
+            "cameraStatus",
+            "isMonitoring",
+            "areaName",
+            "areaId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "integer"
+            },
+            "isMonitoring": {
+              "type": "integer"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "areaId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guid",
+            "cameraStatus",
+            "isMonitoring",
+            "areaName",
+            "areaId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "integer"
+            },
+            "isMonitoring": {
+              "type": "integer"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "areaId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guid",
+            "cameraStatus",
+            "isMonitoring",
+            "areaName",
+            "areaId"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}

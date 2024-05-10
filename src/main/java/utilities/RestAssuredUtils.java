@@ -11,7 +11,6 @@ import io.restassured.specification.SpecificationQuerier;
 import utilities.reporting.ExtentReportManager;
 
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
 
 import static utilities.reporting.Setup.extentTest;
 
@@ -146,8 +145,8 @@ public class RestAssuredUtils {
     }
 
     public static void printResponseLogInReport(Response response) {
-        ExtentReportManager.logInfoDetails("Response status code : " + response.getStatusCode());
-        ExtentReportManager.logInfoDetails("Response time (milliseconds) : " + response.getTimeIn(TimeUnit.MILLISECONDS));
+//        ExtentReportManager.logInfoDetails("Response status code : " + response.getStatusCode());
+//        ExtentReportManager.logInfoDetails("Response time (milliseconds) : " + response.getTimeIn(TimeUnit.MILLISECONDS));
 //        ExtentReportManager.logInfoDetails("Response Headers are ");
 //        ExtentReportManager.logHeaders(response.getHeaders().asList());
         ExtentReportManager.logInfoDetails("Response body : ");
