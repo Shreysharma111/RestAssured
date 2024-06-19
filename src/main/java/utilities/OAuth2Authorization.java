@@ -38,7 +38,7 @@ public class OAuth2Authorization {
                 .auth().preemptive().basic("prm3", "prm3") // Basic Auth if required
                 .formParam("grant_type", "password")
                 .formParam("username", "administrator")
-                .formParam("password", "Admin@uat#24")
+                .formParam("password", "Admin@uat#23")
                 .formParam("scope", "all")
                 .when()
                 .post("https://auth-qa.clovedental.in/oauth2/token").then().extract().response();

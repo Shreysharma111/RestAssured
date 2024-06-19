@@ -1,0 +1,335 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "draw": {
+          "type": "integer"
+        },
+        "recordsTotal": {
+          "type": "integer"
+        },
+        "recordsFiltered": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "eventId": {
+                  "type": "integer"
+                },
+                "applicationId": {
+                  "type": "integer"
+                },
+                "entityId1": {
+                  "type": "string"
+                },
+                "entityName1": {
+                  "type": "string"
+                },
+                "entityId2": {
+                  "type": "string"
+                },
+                "entityName2": {
+                  "type": "string"
+                },
+                "entityId3": {
+                  "type": "string"
+                },
+                "entityName3": {
+                  "type": "null"
+                },
+                "entityId4": {
+                  "type": "string"
+                },
+                "entityName4": {
+                  "type": "string"
+                },
+                "category1": {
+                  "type": "string"
+                },
+                "category2": {
+                  "type": "string"
+                },
+                "category3": {
+                  "type": "string"
+                },
+                "category4": {
+                  "type": "null"
+                },
+                "eventVersion": {
+                  "type": "number"
+                },
+                "eventType": {
+                  "type": "string"
+                },
+                "imageCreatedAt": {
+                  "type": "integer"
+                },
+                "createdGmt": {
+                  "type": "null"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "result": {
+                  "type": "string"
+                },
+                "isVideoGenerated": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "eventId",
+                "applicationId",
+                "entityId1",
+                "entityName1",
+                "entityId2",
+                "entityName2",
+                "entityId3",
+                "entityName3",
+                "entityId4",
+                "entityName4",
+                "category1",
+                "category2",
+                "category3",
+                "category4",
+                "eventVersion",
+                "eventType",
+                "imageCreatedAt",
+                "createdGmt",
+                "title",
+                "message",
+                "description",
+                "result",
+                "isVideoGenerated"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "eventId": {
+                  "type": "integer"
+                },
+                "applicationId": {
+                  "type": "integer"
+                },
+                "entityId1": {
+                  "type": "string"
+                },
+                "entityName1": {
+                  "type": "string"
+                },
+                "entityId2": {
+                  "type": "string"
+                },
+                "entityName2": {
+                  "type": "string"
+                },
+                "entityId3": {
+                  "type": "string"
+                },
+                "entityName3": {
+                  "type": "null"
+                },
+                "entityId4": {
+                  "type": "string"
+                },
+                "entityName4": {
+                  "type": "string"
+                },
+                "category1": {
+                  "type": "string"
+                },
+                "category2": {
+                  "type": "string"
+                },
+                "category3": {
+                  "type": "string"
+                },
+                "category4": {
+                  "type": "null"
+                },
+                "eventVersion": {
+                  "type": "number"
+                },
+                "eventType": {
+                  "type": "string"
+                },
+                "imageCreatedAt": {
+                  "type": "integer"
+                },
+                "createdGmt": {
+                  "type": "null"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "result": {
+                  "type": "string"
+                },
+                "isVideoGenerated": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "eventId",
+                "applicationId",
+                "entityId1",
+                "entityName1",
+                "entityId2",
+                "entityName2",
+                "entityId3",
+                "entityName3",
+                "entityId4",
+                "entityName4",
+                "category1",
+                "category2",
+                "category3",
+                "category4",
+                "eventVersion",
+                "eventType",
+                "imageCreatedAt",
+                "createdGmt",
+                "title",
+                "message",
+                "description",
+                "result",
+                "isVideoGenerated"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "eventId": {
+                  "type": "integer"
+                },
+                "applicationId": {
+                  "type": "integer"
+                },
+                "entityId1": {
+                  "type": "string"
+                },
+                "entityName1": {
+                  "type": "string"
+                },
+                "entityId2": {
+                  "type": "string"
+                },
+                "entityName2": {
+                  "type": "string"
+                },
+                "entityId3": {
+                  "type": "string"
+                },
+                "entityName3": {
+                  "type": "null"
+                },
+                "entityId4": {
+                  "type": "string"
+                },
+                "entityName4": {
+                  "type": "string"
+                },
+                "category1": {
+                  "type": "string"
+                },
+                "category2": {
+                  "type": "string"
+                },
+                "category3": {
+                  "type": "string"
+                },
+                "category4": {
+                  "type": "null"
+                },
+                "eventVersion": {
+                  "type": "number"
+                },
+                "eventType": {
+                  "type": "string"
+                },
+                "imageCreatedAt": {
+                  "type": "integer"
+                },
+                "createdGmt": {
+                  "type": "null"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "result": {
+                  "type": "string"
+                },
+                "isVideoGenerated": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "eventId",
+                "applicationId",
+                "entityId1",
+                "entityName1",
+                "entityId2",
+                "entityName2",
+                "entityId3",
+                "entityName3",
+                "entityId4",
+                "entityName4",
+                "category1",
+                "category2",
+                "category3",
+                "category4",
+                "eventVersion",
+                "eventType",
+                "imageCreatedAt",
+                "createdGmt",
+                "title",
+                "message",
+                "description",
+                "result",
+                "isVideoGenerated"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "draw",
+        "recordsTotal",
+        "recordsFiltered",
+        "data"
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}

@@ -5,6 +5,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.http.Method;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
@@ -136,6 +137,44 @@ public class API {
             throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
         }
     }
+    public static void assertFieldIsPresentAndEmpty(Response response, String fieldName) {
+        String fieldValue = response.jsonPath().getString(fieldName);
+        try {
+            Assert.assertNotNull(fieldValue, "Field '" + fieldName + "' is not present in the response body");
+            Assert.assertTrue(fieldValue.isEmpty(), "Field '" + fieldName + "' is not empty");
+
+            // Log the assertion pass
+            extentTest.get().log(Status.PASS, "Assertion passed! Field '" + fieldName + "' is present in the response body and is empty");
+
+        } catch (AssertionError e) {
+            // Log the assertion fail
+            extentTest.get().log(Status.FAIL, "Assertion failed! " + e.getMessage());
+            throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
+        }
+    }
+
+    public static void assertArrayIsPresentAndEmpty(Response response, String arrayPath) {
+        try {
+            // Convert the response to JsonPath
+            JsonPath jsonPath = response.jsonPath();
+
+            // Get the array from the JSON response using JSONPath
+            Object arrayObject = jsonPath.get(arrayPath);
+
+            // Assert that the array is present and empty
+            Assert.assertNotNull(arrayObject, "Expected array at path '" + arrayPath + "' to be present.");
+            Assert.assertTrue(arrayObject instanceof List && ((List<?>) arrayObject).isEmpty(),
+                    "Expected array at path '" + arrayPath + "' to be empty.");
+
+            // Log the assertion pass
+            extentTest.get().log(Status.PASS, "Assertion passed! Array at path '" + arrayPath + "' is present in the response body and is empty");
+        } catch (AssertionError e) {
+            // Log the assertion fail
+            extentTest.get().log(Status.FAIL, "Assertion failed! " + e.getMessage());
+            throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
+        }
+    }
+
 
     // Method to assert the response time
     public static void assertResponseTime(Response response) {

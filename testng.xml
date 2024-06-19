@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="utilities.reporting.Setup"/>
     </listeners>
-    <test verbose="2" preserve-order="true"
+    <test preserve-order="true"
           name="OzonetelSuite">
         <classes>
 <!--            <class name="ozonetel.GetAllOzonetelAccTests"/>-->
@@ -13,11 +13,12 @@
 <!--            <class name="ozonetel.UserCompanyTests"/>-->
 <!--            <class name="ozonetel.GetCallCenterByCompanyTests"/>-->
 <!--            <class name="winchcamp.CameraDetailsByGuidTests"></class>-->
-            <class name="winchcamp.AllCameraConfigsTests"></class>
+<!--            <class name="winchcamp.AllCameraConfigsTests"></class>-->
 <!--            <class name="winchcamp.MonitoringAreasListByFacIdTests"></class>-->
 <!--            <class name="winchcamp.ManualOverrideTests"></class>-->
 <!--            <class name="winchcamp.GetCameraConfigsByConfigIdTests"></class>-->
 <!--            <class name="winchcamp.FacilityDetailsByGuidTests"></class>-->
+            <class name="winchcamp.EventsByFiltersTests"></class>
         </classes>
     </test>
 </suite>
