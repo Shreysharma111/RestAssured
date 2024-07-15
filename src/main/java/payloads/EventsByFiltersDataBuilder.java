@@ -14,8 +14,6 @@ public class EventsByFiltersDataBuilder {
     private static final String SHEET_NAME = "EventsByFilters";
     private static final String SHEET_RANGE = "A1:R7";
 
-    static List<EventsByFiltersPojo> eventsByFiltersData;
-
     //data builder for multiple scenerios from google sheets
     public static EventsByFiltersPojo getCustomizedEventsByFiltersData(LinkedHashMap<String, String> data) {
         EventsByFiltersPojo eventsByFiltersPojo=new EventsByFiltersPojo();
@@ -45,8 +43,7 @@ public class EventsByFiltersDataBuilder {
             eventsByFiltersPojo.setPageableRequest(setupPageableRequest(data));
         if(!data.get("searchText").equalsIgnoreCase("NO_DATA"))
             eventsByFiltersPojo.setSearchText(data.get("searchText"));
-//        if(!data.get("password").equalsIgnoreCase("NO_DATA"))
-        System.out.println("\n"+eventsByFiltersPojo);
+//
         return eventsByFiltersPojo;
     }
 
@@ -56,7 +53,6 @@ public class EventsByFiltersDataBuilder {
         List<LinkedHashMap<String, String>> sheetDataAsListOfMap = null;
         try {
             sheetDataAsListOfMap = GoogleSheetsUtils.getGoogleSheetsDataAsListOfMap(SPREADSHEET_ID,SHEET_NAME, SHEET_RANGE);
-            System.out.println(sheetDataAsListOfMap);
         } catch (IOException | GeneralSecurityException e) {
             throw new RuntimeException(e);
         }
@@ -68,13 +64,12 @@ public class EventsByFiltersDataBuilder {
         return eventsByFiltersData.iterator();
     }
 
-    //data provider to get positive case data from google sheets
+    //data provider to get only positive case data from google sheets
     @DataProvider(name = "getEventsByFiltersPositiveData")
     public static Iterator<EventsByFiltersPojo> getEventsByFiltersPositiveData() {
         List<LinkedHashMap<String, String>> sheetDataAsListOfMap = null;
         try {
             sheetDataAsListOfMap = GoogleSheetsUtils.getGoogleSheetsDataAsListOfMap(SPREADSHEET_ID,SHEET_NAME, "A1:R2");
-            System.out.println("---------"+sheetDataAsListOfMap);
         } catch (IOException | GeneralSecurityException e) {
             throw new RuntimeException(e);
         }

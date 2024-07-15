@@ -41,7 +41,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
         Setup.extentTest.set(test);
         // Logic to use payload data from getEventsByFiltersPositiveData data provider
         Iterator<EventsByFiltersPojo> eventsIterator = getEventsByFiltersPositiveData();
@@ -57,7 +57,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersPositiveData")
     public void wrongEndPointCase(EventsByFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_WrongEndpoint", "wrong endpoint case");
         Setup.extentTest.set(test);
         response = eventsByFiltersWrongEndpointCase(payload);
 
@@ -67,7 +67,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersPositiveData")
     public void wrongMethodCase(EventsByFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_WrongMethod", "wrong request method case");
         Setup.extentTest.set(test);
         response = eventsByFiltersMethodCase(payload);
 
@@ -84,12 +84,10 @@ public class EventsByFiltersTests {
         response = eventsByFiltersPositiveCase(payload);
 
         if(payload.getExpectedStatusCode()!=200) {
-            if(payload.getScenerioId().equalsIgnoreCase("EventsByFiltersBodyScenerio_3")) {
-                assertStatusCode(response, 500);
-                assertKeyValue(response, "message", payload.getExpectedMessage());
-            }
-            else {
-                assertStatusCode(response, 400);
+               assertStatusCode(response, 400);
+               if(payload.getScenerioId().equalsIgnoreCase("EventsByFiltersBodyScenerio_5"))
+                   assertKeyValue(response, "detail", payload.getExpectedMessage());
+               else {
                 assertKeyValue(response, "message", payload.getExpectedMessage());
             }
         }

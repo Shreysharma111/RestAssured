@@ -1,0 +1,3504 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category1": {
+              "type": "string"
+            },
+            "category2": {
+              "type": "string"
+            },
+            "category3": {
+              "type": "string"
+            },
+            "category4": {
+              "type": "null"
+            },
+            "title": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "result": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "integer"
+            },
+            "application_id": {
+              "type": "integer"
+            },
+            "entity_id1": {
+              "type": "string"
+            },
+            "entity_id2": {
+              "type": "string"
+            },
+            "entity_id3": {
+              "type": "string"
+            },
+            "entity_name1": {
+              "type": "string"
+            },
+            "entity_name2": {
+              "type": "string"
+            },
+            "entity_name3": {
+              "type": "null"
+            },
+            "event_version": {
+              "type": "number"
+            },
+            "event_type": {
+              "type": "string"
+            },
+            "image_created_at": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "category1",
+            "category2",
+            "category3",
+            "category4",
+            "title",
+            "message",
+            "description",
+            "result",
+            "event_id",
+            "application_id",
+            "entity_id1",
+            "entity_id2",
+            "entity_id3",
+            "entity_name1",
+            "entity_name2",
+            "entity_name3",
+            "event_version",
+            "event_type",
+            "image_created_at"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}

@@ -35,10 +35,10 @@ public class OAuth2Authorization {
         // sending a request to the authorization server and extracting the access token
         Response response = RestAssured.given().log().all()
                 .contentType("application/x-www-form-urlencoded")
-                .auth().preemptive().basic("prm3", "prm3") // Basic Auth if required
+                .auth().preemptive().basic("prm2", "prm2") // Basic Auth if required
                 .formParam("grant_type", "password")
-                .formParam("username", "administrator")
-                .formParam("password", "Admin@uat#23")
+                .formParam("username", "jai.banipark1")
+                .formParam("password", "Raj@1234")
                 .formParam("scope", "all")
                 .when()
                 .post("https://auth-qa.clovedental.in/oauth2/token").then().extract().response();

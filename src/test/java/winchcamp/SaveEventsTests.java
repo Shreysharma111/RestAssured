@@ -7,21 +7,17 @@ import io.restassured.response.Response;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import payloads.EventsByFiltersDataBuilder;
-import pojos.EventsByFiltersPojo;
+import payloads.SaveEventsDataBuilder;
 import pojos.SaveEventsPojo;
 import utilities.OAuth2Authorization;
 import utilities.reporting.Setup;
 
 import java.util.Iterator;
-
-import static endpoints.winchcamp.EventsByFilters.*;
 import static endpoints.winchcamp.SaveEvents.*;
-import static payloads.EventsByFiltersDataBuilder.getEventsByFiltersPositiveData;
+import static payloads.SaveEventsDataBuilder.saveEventsSingleData;
 import static utilities.RestAssuredUtils.printResponseLogInReport;
 import static utilities.RestAssuredUtils.validateJsonSchema;
 import static utilities.restAssuredFunctions.API.*;
-import static utilities.restAssuredFunctions.API.assertResponseTime;
 
 public class SaveEventsTests {
     private static Response response;
@@ -31,7 +27,7 @@ public class SaveEventsTests {
         OAuth2Authorization.getAccessTokenAndUpdateToken();
         RestAssured.useRelaxedHTTPSValidation();
     }
-    @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "saveEventsPositiveData")
+    @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsSingleData")
     public void jsonSchemaValidationCase(SaveEventsPojo payload) {
         ExtentTest test = Setup.extentReports.createTest("SaveEvents_SchemaValidation", "schema validation case");
         Setup.extentTest.set(test);
@@ -46,7 +42,7 @@ public class SaveEventsTests {
         ExtentTest test = Setup.extentReports.createTest("SaveEvents_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
         Setup.extentTest.set(test);
         // Logic to use payload data from getEventsByFiltersPositiveData data provider
-        Iterator<SaveEventsPojo> eventsIterator = saveEventsPositiveData();
+        Iterator<SaveEventsPojo> eventsIterator = saveEventsSingleData();
         while (eventsIterator.hasNext()) {
             SaveEventsPojo eventData = eventsIterator.next();
 
@@ -56,7 +52,7 @@ public class SaveEventsTests {
             assertKeyValue(response, "error", "Unauthorized");
         }
     }
-    @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersPositiveData")
+    @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsSingleData")
     public void wrongEndPointCase(SaveEventsPojo payload) {
         ExtentTest test = Setup.extentReports.createTest("SaveEvents_WrongEndpoint", "wrong endpoint case");
         Setup.extentTest.set(test);
@@ -65,9 +61,9 @@ public class SaveEventsTests {
         assertStatusCode(response, 404);
         assertKeyValue(response, "error", "Not Found");
     }
-    @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersPositiveData")
+    @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsSingleData")
     public void wrongMethodCase(SaveEventsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("SaveEvents_WrongMethod", "wrong request method case");
         Setup.extentTest.set(test);
         response = saveEventsMethodCase(payload);
 
@@ -75,33 +71,25 @@ public class SaveEventsTests {
         assertKeyValue(response, "error", "Method Not Allowed");
     }
 
-/*    @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersData")
-    public void BodyCase(EventsByFiltersPojo payload) {
+    @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsData")
+    public void BodyCase(SaveEventsPojo payload) {
         ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc());
         Setup.extentTest.set(test);
 
-        response = eventsByFiltersPositiveCase(payload);
+        response = saveEventsPositiveCase(payload);
 
         if(payload.getExpectedStatusCode()!=200) {
-            if(payload.getScenerioId().equalsIgnoreCase("EventsByFiltersBodyScenerio_3")) {
-                assertStatusCode(response, 500);
-                assertKeyValue(response, "message", payload.getExpectedMessage());
-            }
-            else {
                 assertStatusCode(response, 400);
                 assertKeyValue(response, "message", payload.getExpectedMessage());
             }
-        }
+
         else {
-            if(payload.getScenerioId().equalsIgnoreCase("EventsByFiltersBodyScenerio_2"))
-                assertArrayIsPresentAndEmpty(response, "data.data");
-            else {
-                assertKeyValue(response, "data.data[0].entityId1", payload.getEntityId1());
-            }
+            assertStatusCode(response, 200);
+            assertKeyValue(response, "message", payload.getExpectedMessage());
         }
         assertResponseTime(response);
 
-    }*/
+    }
 
     @AfterMethod
     public static void afterMethodRespLog() {

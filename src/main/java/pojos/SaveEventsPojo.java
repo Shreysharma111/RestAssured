@@ -13,8 +13,9 @@ public class SaveEventsPojo extends BasePojo {
     private String entity_name1;
     private int entity_id2;
     private String entity_name2;
+    private int entity_id4;
     private String entity_name4;
-    private String entity_id3;
+    private int entity_id3;
     private String category1;
     private String category2;
     private String category3;
