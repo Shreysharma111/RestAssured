@@ -6,61 +6,59 @@ import utilities.reporting.ExtentReportManager;
 
 import static utilities.RestAssuredUtils.*;
 
-public class AllCameraConfigs {
+public class GetAllTenantCameraConfig {
     private static Response response;
     private static String accessToken = getToken();
-    public static String allCameraConfigs_url = getUrl().getString("allCameraConfigs_url");
+    public static String getAllTenantCameraConfig_url = getUrl().getString("getAllTenantCameraConfig_url");
 
-    public static Response allCameraConfigsPositiveCase() {
-
-        // Send a request using the obtained access token
-        response = RestAssured.given()
-                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
-                .when()
-                .get(allCameraConfigs_url);
-
-        //log details and verify status code in extent report
-        printRequestLogInReport(allCameraConfigs_url, "GET", commonRequestSpecWithToken(accessToken));
-        ExtentReportManager.logInfoDetails("Assertions :");
-        return response;
-    }
-    public static Response allCameraConfigsWrongEndpointCase() {
+    public static Response getAllTenantCameraConfigPositiveCase() {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get(allCameraConfigs_url+"shr");
+                .get(getAllTenantCameraConfig_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(allCameraConfigs_url+"shr", "GET", commonRequestSpecWithToken(accessToken));
+        printRequestLogInReport(getAllTenantCameraConfig_url, "GET", commonRequestSpecWithToken(accessToken));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-    public static Response allCameraConfigsMethodCase() {
+    public static Response getAllTenantCameraConfigWrongEndpointCase() {
+
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .post(allCameraConfigs_url);
+                .get(getAllTenantCameraConfig_url+"shr");
 
         //log details and verify status code in extent report
-        printRequestLogInReport(allCameraConfigs_url, "POST", commonRequestSpecWithToken(accessToken));
+        printRequestLogInReport(getAllTenantCameraConfig_url+"shr", "GET", commonRequestSpecWithToken(accessToken));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-    public static Response allCameraConfigsHeaderCase(String... headers) {
+    public static Response getAllTenantCameraConfigMethodCase() {
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
+                .when()
+                .post(getAllTenantCameraConfig_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(getAllTenantCameraConfig_url, "POST", commonRequestSpecWithToken(accessToken));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+    public static Response getAllTenantCameraConfigHeaderCase(String... headers) {
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
                 .when()
-                .get(allCameraConfigs_url);
+                .get(getAllTenantCameraConfig_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(allCameraConfigs_url, "GET", commonRequestSpecGet(headers));
+        printRequestLogInReport(getAllTenantCameraConfig_url, "GET", commonRequestSpecGet(headers));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-
-
 }

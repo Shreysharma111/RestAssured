@@ -33,7 +33,7 @@ public class OAuth2Authorization {
         RestAssured.useRelaxedHTTPSValidation();
         // OAuth 2.0 authorization logic here
         // sending a request to the authorization server and extracting the access token
-        Response response = RestAssured.given().log().all()
+        Response response = RestAssured.given()
                 .contentType("application/x-www-form-urlencoded")
                 .auth().preemptive().basic("prm2", "prm2") // Basic Auth if required
                 .formParam("grant_type", "password")
@@ -45,7 +45,7 @@ public class OAuth2Authorization {
 
        //Extract access token from response
         String accessToken = response.jsonPath().getString("access_token");
-        System.out.println("ACeesss token "+accessToken);
+
         return accessToken;
     }
     // Method to update oAuthToken in routes.properties file
