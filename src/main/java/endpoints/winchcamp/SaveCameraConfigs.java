@@ -34,7 +34,7 @@ public class SaveCameraConfigs {
                 .post(saveCameraConfigs_url+"shr");
 
         //log details and verify status code in extent report
-        printRequestLogInReport(saveCameraConfigs_url, "POST", commonRequestSpecPost(accessToken, payload));
+        printRequestLogInReport(saveCameraConfigs_url+"shr", "POST", commonRequestSpecPost(accessToken, payload));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }

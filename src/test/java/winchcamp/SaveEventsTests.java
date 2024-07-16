@@ -72,7 +72,7 @@ public class SaveEventsTests {
     }
 
     @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsData")
-    public void BodyCase(SaveEventsPojo payload) {
+    public void bodyCase(SaveEventsPojo payload) {
         ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc());
         Setup.extentTest.set(test);
 

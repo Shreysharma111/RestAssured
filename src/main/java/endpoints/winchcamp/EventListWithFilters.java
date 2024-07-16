@@ -35,7 +35,7 @@ public class EventListWithFilters {
                 .post(eventListWithFilters_url+"shr");
 
         //log details and verify status code in extent report
-        printRequestLogInReport(eventListWithFilters_url, "POST", commonRequestSpecPost(accessToken, payload));
+        printRequestLogInReport(eventListWithFilters_url+"shr", "POST", commonRequestSpecPost(accessToken, payload));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
