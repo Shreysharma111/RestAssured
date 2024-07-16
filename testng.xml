@@ -5,7 +5,7 @@
         <listener class-name="utilities.reporting.Setup"/>
     </listeners>
     <test preserve-order="true"
-          name="OzonetelSuite">
+          name="AssureSuite">
         <classes>
 
 <!--            <class name="winchcamp.CameraDetailsByGuidTests"></class>-->
