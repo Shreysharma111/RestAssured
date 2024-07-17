@@ -7,61 +7,60 @@ import utilities.reporting.ExtentReportManager;
 import static utilities.RestAssuredUtils.*;
 import static utilities.RestAssuredUtils.commonRequestSpecWithToken;
 
-public class CameraDetailsByGuid {
+public class GetZonesByRegion {
     private static Response response;
     private static String accessToken = getToken();
 
-    public static Response cameraDetailsByGuidPositiveCase(String guid) {
-        String uri = String.format("%s/%s", "/facility/camera/guid", guid);
+    public static Response getZonesByRegionPositiveCase(String regionId) {
+        String uri = String.format("%s/%s", "/facility/zones", regionId);
 
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/camera/guid/"+"/{guid}", guid);
+                .get("/facility/zones"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-    public static Response cameraDetailsByGuidWrongEndpointCase(String guid) {
-        String uri = String.format("%s/%s", "/facility/camera/guiddd", guid);
+    public static Response getZonesByRegionWrongEndpointCase(String regionId) {
+        String uri = String.format("%s/%s", "/facility/zonesss", regionId);
 
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/camera/guiddd"+"/{guid}", guid);
+                .get("/facility/zonesss"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-    public static Response cameraDetailsByGuidWrongGuidCase(String guid) {
-        String uri = String.format("%s/%s%s", "/facility/camera/guid", guid,"shr");
+    public static Response getZonesByRegionWrongRegionIdCase(String regionId) {
+        String uri = String.format("%s/%s%s", "/facility/zones", regionId,"99");
 
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/camera/guid"+"/{guid}shr", guid);
+                .get("/facility/zones"+"/{regionId}99", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
-
-    public static Response cameraDetailsByGuidMethodCase(String guid) {
-        String uri = String.format("%s/%s", "/facility/camera/guid", guid);
+    public static Response getZonesByRegionMethodCase(String regionId) {
+        String uri = String.format("%s/%s", "/facility/zones", regionId);
 
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .post("/facility/camera/guid"+"/{guid}", guid);
+                .post("/facility/zones"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "POST", commonRequestSpecWithToken(accessToken));
@@ -69,18 +68,20 @@ public class CameraDetailsByGuid {
         return response;
     }
 
-    public static Response cameraDetailsByGuidHeaderCase(String guid, String... headers) {
-        String uri = String.format("%s/%s", "/facility/camera/guid", guid);
+    public static Response getZonesByRegionHeaderCase(String regionId, String... headers) {
+        String uri = String.format("%s/%s", "/facility/zones", regionId);
 
         // Send a request using the obtained access token
         response = RestAssured.given()
                 .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
                 .when()
-                .get("/facility/camera/guid"+"/{guid}", guid);
+                .get("/facility/zones"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
+
+
 }

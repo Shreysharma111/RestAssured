@@ -17,7 +17,8 @@
 <!--            <class name="winchcamp.EventsByFiltersTests"></class>-->
 <!--            <class name="winchcamp.SaveEventsTests"></class>-->
 <!--            <class name="winchcamp.EventListWithFiltersTests"></class>-->
-            <class name="winchcamp.SaveCameraConfigsTests"></class>
+<!--            <class name="winchcamp.SaveCameraConfigsTests"></class>-->
+            <class name="winchcamp.GetAllTenantCameraConfigTests"></class>
         </classes>
     </test>
 </suite>

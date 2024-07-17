@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "tenant": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "guid",
+            "rtspUrl",
+            "tenant"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "tenant": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "guid",
+            "rtspUrl",
+            "tenant"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "tenant": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "guid",
+            "rtspUrl",
+            "tenant"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "tenant": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "guid",
+            "rtspUrl",
+            "tenant"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "tenant": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "guid",
+            "rtspUrl",
+            "tenant"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "tenant": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "guid",
+            "rtspUrl",
+            "tenant"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}
