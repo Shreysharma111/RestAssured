@@ -18,7 +18,7 @@ public class GetZonesByRegion {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/zones"+"/{regionId}", regionId);
+                .get("v1/user/facility/zones"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -32,7 +32,7 @@ public class GetZonesByRegion {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/zonesss"+"/{regionId}", regionId);
+                .get("v1/user/facility/zonesss"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -46,7 +46,7 @@ public class GetZonesByRegion {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/zones"+"/{regionId}99", regionId);
+                .get("v1/user/facility/zones"+"/{regionId}99", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -60,7 +60,7 @@ public class GetZonesByRegion {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .post("/facility/zones"+"/{regionId}", regionId);
+                .post("v1/user/facility/zones"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "POST", commonRequestSpecWithToken(accessToken));
@@ -75,7 +75,7 @@ public class GetZonesByRegion {
         response = RestAssured.given()
                 .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
                 .when()
-                .get("/facility/zones"+"/{regionId}", regionId);
+                .get("v1/user/facility/zones"+"/{regionId}", regionId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));

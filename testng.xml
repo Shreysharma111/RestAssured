@@ -18,7 +18,12 @@
 <!--            <class name="winchcamp.SaveEventsTests"></class>-->
 <!--            <class name="winchcamp.EventListWithFiltersTests"></class>-->
 <!--            <class name="winchcamp.SaveCameraConfigsTests"></class>-->
-            <class name="winchcamp.GetAllTenantCameraConfigTests"></class>
+<!--            <class name="winchcamp.GetAllTenantCameraConfigTests"></class>-->
+<!--            <class name="winchcamp.GetZonesByRegionTests"></class>-->
+<!--            <class name="winchcamp.CreateCameraTests"></class>-->
+<!--            <class name="winchcamp.GetAllCameraTests"></class>-->
+<!--            <class name="winchcamp.ActivateCameraTests"></class>-->
+            <class name="winchcamp.DeactivateCameraTests"></class>
         </classes>
     </test>
 </suite>

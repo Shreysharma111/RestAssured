@@ -8,6 +8,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.restassured.http.Header;
+import io.restassured.specification.QueryableRequestSpecification;
 
 import java.awt.*;
 import java.io.File;
@@ -16,6 +17,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class ExtentReportManager {
 
@@ -112,46 +114,27 @@ public class ExtentReportManager {
         Setup.extentTest.get().info(MarkupHelper.createTable(arrayHeaders));
     }
 
-    // Method to log query parameters as a table in Extent report
-    public static void logQueryParams(String queryParams) {
-        // List to store modified query parameters
-        List<String> modifiedQueryParams = new ArrayList<>();
+    public static void logQueryParamsAsTable(QueryableRequestSpecification queryableRequestSpecification) {
+        Map<String, String> queryParams = queryableRequestSpecification.getQueryParams();
 
-        // Split the query parameters string into individual parameters
-        String[] paramsArray = queryParams.split("&");
+        StringBuilder htmlTable = new StringBuilder();
+        htmlTable.append("<table border='1' style='width:100%; border-collapse: collapse;'>")
+                .append("<thead><tr><th>Key</th><th>Value</th></tr></thead>")
+                .append("<tbody>");
 
-        // Iterate through each query parameter
-        for (String param : paramsArray) {
-            // Split the parameter into name and value
-            String[] parts = param.split(":");
-            String paramName = parts[0];
-            String paramValue = parts.length > 1 ? parts[1] : "";
+        queryParams.forEach((key, value) -> {
+            htmlTable.append("<tr>")
+                    .append("<td>").append(key).append("</td>")
+                    .append("<td>").append(value).append("</td>")
+                    .append("</tr>");
+        });
 
-            // Truncate the parameter value if it's too long
-            if (paramValue.length() > 30) {
-                // Truncate the value to a manageable length
-                String truncatedValue = paramValue.substring(0, Math.min(paramValue.length(), 20)) + "....." + paramValue.substring(paramValue.length() - 5);
+        htmlTable.append("</tbody></table>");
 
-                // Add the modified query parameter to the list
-                modifiedQueryParams.add(paramName + "=" + truncatedValue);
-            } else {
-                // Add the query parameter as it is to the list
-                modifiedQueryParams.add(paramName + "=" + paramValue);
-            }
-        }
-
-        // Convert modified query parameters to a 2D array
-        String[][] tableData = new String[modifiedQueryParams.size()][2];
-        for (int i = 0; i < modifiedQueryParams.size(); i++) {
-            String[] parts = modifiedQueryParams.get(i).split("=");
-            tableData[i][0] = parts[0];
-            tableData[i][1] = parts[1];
-        }
-
-        // Log the modified headers in the Extent Report as a table
-        Setup.extentTest.get().info(MarkupHelper.createTable(tableData));
-
+        // Log the HTML table to the Extent report
+        Setup.extentTest.get().info(htmlTable.toString());
     }
+
 
 
     public static void openReportInBrowser() {

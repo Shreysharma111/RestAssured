@@ -1,6 +1,7 @@
 package utilities;
 
 import com.aventstack.extentreports.Status;
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -16,6 +17,7 @@ import static utilities.reporting.Setup.extentTest;
 
 
 public class RestAssuredUtils {
+    private static Response response;
     public static String baseUrl=getUrl().getString("base_url");
     public static String incorrectBaseUrl=getUrl().getString("incorrect_base_url");
     //generated to create common request specifications
@@ -76,7 +78,7 @@ public class RestAssuredUtils {
         return builder.build();
     }
 
-    public static RequestSpecification commonRequestSpecParamGet(String oAuthToken, String... queryParams) {
+    public static RequestSpecification commonRequestSpecParam(String oAuthToken, String... queryParams) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .setContentType(ContentType.JSON)
@@ -136,7 +138,7 @@ public class RestAssuredUtils {
 
         if(!queryableRequestSpecification.getQueryParams().isEmpty()) {
             ExtentReportManager.logInfoDetails("Query Params : ");
-            ExtentReportManager.logQueryParams(queryableRequestSpecification.getQueryParams().toString());
+            ExtentReportManager.logQueryParamsAsTable(queryableRequestSpecification);
         }
         if(queryableRequestSpecification.getBody()!=null) {
             ExtentReportManager.logInfoDetails("Request body : ");
@@ -188,6 +190,74 @@ public class RestAssuredUtils {
     public static ResourceBundle getUrl() {
         ResourceBundle routes = ResourceBundle.getBundle("routes");
         return routes;
+    }
+
+    //
+    public static Response queryParamsPositiveCase(String api_url, String accessToken, String... queryParams) {
+
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Set access token as Bearer token
+                .when()
+                .post(api_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url, "POST", commonRequestSpecParam(accessToken, queryParams));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+    public static Response queryParamsWrongEndpointCase(String api_url, String accessToken, String... queryParams) {
+
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Set access token as Bearer token
+                .when()
+                .post(api_url+"shr");
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url+"shr", "POST", commonRequestSpecParam(accessToken, queryParams));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+
+    public static Response queryParamsMethodCase(String api_url, String accessToken, String... queryParams) {
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Set access token as Bearer token
+                .when()
+                .get(api_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url, "GET", commonRequestSpecParam(accessToken, queryParams));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+    public static Response queryParamsQueryParamCase(String api_url, String accessToken, String... queryParams) {
+
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Don't set access token as Bearer token
+                .when()
+                .post(api_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url, "GET", commonRequestSpecParam(accessToken, queryParams));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+
+    public static Response queryParamsHeaderCase(String api_url, String paramKey, String paramValue, String... headers) {
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
+                .queryParam(paramKey,paramValue)
+                .when()
+                .post(api_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url, "POST", commonRequestSpecGet(headers));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
     }
 
 

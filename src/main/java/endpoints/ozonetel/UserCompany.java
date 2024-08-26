@@ -15,12 +15,12 @@ public class UserCompany {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Set access token as Bearer token
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Set access token as Bearer token
                 .when()
                 .get(userCompany_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParamGet(accessToken, queryParams));
+        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParam(accessToken, queryParams));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
@@ -28,12 +28,12 @@ public class UserCompany {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Set access token as Bearer token
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Set access token as Bearer token
                 .when()
                 .get(userCompany_url+"wrong");
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url+"wrong", "GET", commonRequestSpecParamGet(accessToken, queryParams));
+        printRequestLogInReport(userCompany_url+"wrong", "GET", commonRequestSpecParam(accessToken, queryParams));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
@@ -41,12 +41,12 @@ public class UserCompany {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Set access token as Bearer token
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Set access token as Bearer token
                 .when()
                 .post(userCompany_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url, "POST", commonRequestSpecParamGet(accessToken, queryParams));
+        printRequestLogInReport(userCompany_url, "POST", commonRequestSpecParam(accessToken, queryParams));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
@@ -69,12 +69,12 @@ public class UserCompany {
 
         // Send a request using the obtained access token
         response = RestAssured.given()
-                .spec(commonRequestSpecParamGet(accessToken, queryParams))// Don't set access token as Bearer token
+                .spec(commonRequestSpecParam(accessToken, queryParams))// Don't set access token as Bearer token
                 .when()
                 .get(userCompany_url);
 
         //log details and verify status code in extent report
-        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParamGet(accessToken, queryParams));
+        printRequestLogInReport(userCompany_url, "GET", commonRequestSpecParam(accessToken, queryParams));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
     }
