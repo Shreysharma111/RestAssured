@@ -33,7 +33,6 @@ public class GetAllTenantCameraConfigTests {
         assertFieldIsPresentAndNotEmpty(response, "data");
         assertKeyValue(response, "status", "200");
         assertResponseTime(response);
-
     }
     @Test
     public void jsonSchemaValidationCase() {

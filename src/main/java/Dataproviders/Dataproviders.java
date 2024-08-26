@@ -35,4 +35,9 @@ public class Dataproviders {
         Object[][] obj= {{"id", "0"},{"id","9988"}};
         return obj;
     }
+    @DataProvider(name ="queryDataProviderForEditMasterCamera")
+    public static Object[][] queryDataProviderForEditMasterCamera() {
+        Object[][][] obj= {{{"cameraName", ""}, {"id", "60"}},{{"cameraName", "Camera-60"}, {"id", ""}}};
+        return obj;
+    }
 }

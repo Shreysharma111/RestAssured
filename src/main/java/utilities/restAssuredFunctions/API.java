@@ -13,6 +13,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -50,13 +51,21 @@ public class API {
                 reqSpec.header(head[row][col], head[row][col + 1]);
     }
 
-    public void setHeader(String head, String val) { reqSpec.header(head, val);}
+    public void setHeader(String head, String val) {
+        reqSpec.header(head, val);
+    }
 
-    public void setBody(String body) { reqSpec.body(body); }
+    public void setBody(String body) {
+        reqSpec.body(body);
+    }
 
-    public void setFormParam(String key, String val) { reqSpec.formParam(key, val);}
+    public void setFormParam(String key, String val) {
+        reqSpec.formParam(key, val);
+    }
 
-    public void setQueryParam(String key, String val) { reqSpec.queryParam(key, val);}
+    public void setQueryParam(String key, String val) {
+        reqSpec.queryParam(key, val);
+    }
 
     public String callIt() {
         if (method.toString().equalsIgnoreCase("get")) {
@@ -85,11 +94,11 @@ public class API {
 
         // Asserting the actual value against the expected value
         if (actualValue.equals(expectedValue) || actualValue.contains(expectedValue)) {
-            extentTest.get().log(Status.PASS,"Assertion passed! " + key + " in response body has the expected value: " + expectedValue);
+            extentTest.get().log(Status.PASS, "Assertion passed! " + key + " in response body has the expected value: " + expectedValue);
         } else {
-            extentTest.get().log(Status.FAIL,"Assertion failed! " + key + " in response body does not have the expected value. Expected: " +
+            extentTest.get().log(Status.FAIL, "Assertion failed! " + key + " in response body does not have the expected value. Expected: " +
                     expectedValue + ", Actual: " + actualValue);
-            }
+        }
     }
 
     public void assertIt(List<List<Object>> data) {
@@ -108,16 +117,17 @@ public class API {
             }
         }
     }
+
     // Method for asserting the status code
     public static void assertStatusCode(Response response, int expectedStatusCode) {
         int actualStatusCode = response.getStatusCode();
         try {
             assertEquals(actualStatusCode, expectedStatusCode, "Status code is not as expected");
-            extentTest.get().log(Status.PASS,"Status code assertion passed! Expected: " + expectedStatusCode +
+            extentTest.get().log(Status.PASS, "Status code assertion passed! Expected: " + expectedStatusCode +
                     ", Actual: " + actualStatusCode);
             // You can log this information to your report here.
         } catch (AssertionError e) {
-            extentTest.get().log(Status.FAIL,"Status code assertion failed! Expected: " + expectedStatusCode +
+            extentTest.get().log(Status.FAIL, "Status code assertion failed! Expected: " + expectedStatusCode +
                     ", Actual: " + actualStatusCode);
             throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
         }
@@ -129,14 +139,15 @@ public class API {
         try {
             Assert.assertNotNull(fieldValue, "Field '" + fieldName + "' is not present in the response body");
             Assert.assertFalse(fieldValue.isEmpty(), "Field '" + fieldName + "' is empty");
-            extentTest.get().log(Status.PASS,"Assertion passed! Field '" + fieldName + "' is present in the response body " +
+            extentTest.get().log(Status.PASS, "Assertion passed! Field '" + fieldName + "' is present in the response body " +
                     "and is not empty");
 
         } catch (AssertionError e) {
-            extentTest.get().log(Status.FAIL,"Assertion failed! " + e.getMessage());
+            extentTest.get().log(Status.FAIL, "Assertion failed! " + e.getMessage());
             throw e; // Re-throw the AssertionError to propagate the failure up the call stack.
         }
     }
+
     public static void assertFieldIsPresentAndEmpty(Response response, String fieldName) {
         String fieldValue = response.jsonPath().getString(fieldName);
         try {
@@ -199,6 +210,27 @@ public class API {
         }
     }
 
+    public static void verifyFieldsExistInEachObject(Response response, String... fieldNames) {
+        // Parse the response body to JsonPath object
+        JsonPath jsonPath = response.jsonPath();
+
+        // Extract the list of objects under the "data" field
+        List<Map<String, Object>> dataList = jsonPath.getList("data");
+
+        // Loop through each object in the list
+        for (Map<String, Object> item : dataList) {
+            // Check if each specified field exists
+            for (String fieldName : fieldNames) {
+                Object fieldValue = item.get(fieldName);
+
+                // Assert that the field is not null, meaning it exists
+                Assert.assertNotNull(fieldValue, "Field '" + fieldName + "' does not exist in one of the objects.");
+            }
+        }
+
+        // Logging success message
+        extentTest.get().log(Status.PASS,"All objects contain the fields: " + String.join(", ", fieldNames));
+    }
 
     public String extractString(String path) { return resp.jsonPath().getString(path);}
 

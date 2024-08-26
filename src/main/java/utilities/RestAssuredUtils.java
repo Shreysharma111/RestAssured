@@ -19,6 +19,7 @@ import static utilities.reporting.Setup.extentTest;
 public class RestAssuredUtils {
     private static Response response;
     public static String baseUrl=getUrl().getString("base_url");
+    private static String accessToken = getToken();
     public static String incorrectBaseUrl=getUrl().getString("incorrect_base_url");
     //generated to create common request specifications
     public static RequestSpecification commonRequestSpecPost(Object payload, String... headers) {
@@ -260,5 +261,58 @@ public class RestAssuredUtils {
         return response;
     }
 
+
+
+
+    public static Response positiveCaseGet(String api_url) {
+
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
+                .when()
+                .get(api_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url, "GET", commonRequestSpecWithToken(accessToken));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+    public static Response wrongEndpointCaseGet(String api_url) {
+
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
+                .when()
+                .get(api_url+"shr");
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url+"shr", "GET", commonRequestSpecWithToken(accessToken));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+    public static Response methodCaseGet(String api_url) {
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
+                .when()
+                .post(api_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url, "POST", commonRequestSpecWithToken(accessToken));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
+    public static Response headerCaseGet(String api_url, String... headers) {
+        // Send a request using the obtained access token
+        response = RestAssured.given()
+                .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
+                .when()
+                .get(api_url);
+
+        //log details and verify status code in extent report
+        printRequestLogInReport(api_url, "GET", commonRequestSpecGet(headers));
+        ExtentReportManager.logInfoDetails("Assertions :");
+        return response;
+    }
 
 }
