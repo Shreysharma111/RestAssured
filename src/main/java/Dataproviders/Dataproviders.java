@@ -40,4 +40,12 @@ public class Dataproviders {
         Object[][][] obj= {{{"cameraName", ""}, {"id", "60"}},{{"cameraName", "Camera-60"}, {"id", ""}}};
         return obj;
     }
+    @DataProvider(name ="pathDataProviderForGetFacilitiesByZoneAndRegion")
+    public static Object[][] pathDataProviderForGetFacilitiesByZoneAndRegion() {
+        return new Object[][]{
+                {0, 0},
+                {999, 999},
+                {1, 2}
+        };
+    }
 }

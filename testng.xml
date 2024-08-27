@@ -7,7 +7,6 @@
     <test preserve-order="true"
           name="AssureSuite">
         <classes>
-
             <!--            <class name="winchcamp.CameraDetailsByGuidTests"></class>-->
             <!--            <class name="winchcamp.AllCameraConfigsTests"></class>-->
             <!--            <class name="winchcamp.MonitoringAreasListByFacIdTests"></class>-->
@@ -24,8 +23,13 @@
             <!--            <class name="winchcamp.GetAllCameraTests"></class>-->
             <!--            <class name="winchcamp.ActivateCameraTests"></class>-->
             <!--            <class name="winchcamp.DeactivateCameraTests"></class>-->
-<!--            <class name="winchcamp.FetchAllAreaTests"></class>-->
-            <class name="winchcamp.EditMasterCameraTests"></class>
+            <!--            <class name="winchcamp.FetchAllAreaTests"></class>-->
+            <!--            <class name="winchcamp.EditMasterCameraTests"></class>-->
+            <class name="winchcamp.GetFacilitiesByZoneAndRegionTests">
+<!--                <methods>-->
+<!--                    <include name="positiveCase"></include>-->
+<!--                </methods>-->
+            </class>
         </classes>
     </test>
 </suite>

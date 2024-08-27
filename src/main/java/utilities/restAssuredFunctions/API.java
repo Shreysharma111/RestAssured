@@ -210,7 +210,7 @@ public class API {
         }
     }
 
-    public static void verifyFieldsExistInEachObject(Response response, String... fieldNames) {
+    public static void assertFieldsExistInEachObject(Response response, String... fieldNames) {
         // Parse the response body to JsonPath object
         JsonPath jsonPath = response.jsonPath();
 
@@ -230,6 +230,32 @@ public class API {
 
         // Logging success message
         extentTest.get().log(Status.PASS,"All objects contain the fields: " + String.join(", ", fieldNames));
+    }
+
+    public static void assertFieldsWithExpectedValues(Response response, Map<String, Object> expectedFieldValues) {
+        // Parse the response body to JsonPath object
+        JsonPath jsonPath = response.jsonPath();
+
+        // Extract the list of objects under the "data" field
+        List<Map<String, Object>> dataList = jsonPath.getList("data");
+
+        // Loop through each object in the list
+        for (Map<String, Object> item : dataList) {
+            // Check if each specified field exists and matches the expected value
+            for (Map.Entry<String, Object> entry : expectedFieldValues.entrySet()) {
+                String fieldName = entry.getKey();
+                Object expectedValue = entry.getValue();
+
+                Object actualValue = item.get(fieldName);
+
+                // Assert that the field is not null (exists) and that its value matches the expected value
+                Assert.assertNotNull(actualValue, "Field '" + fieldName + "' does not exist in one of the objects.");
+                Assert.assertEquals(actualValue, expectedValue, "Field '" + fieldName + "' does not match the expected value. Expected: " + expectedValue + ", but got: " + actualValue);
+            }
+        }
+
+        // Logging success message
+        extentTest.get().log(Status.PASS, "All objects contain the fields with expected values: " + expectedFieldValues.toString());
     }
 
     public String extractString(String path) { return resp.jsonPath().getString(path);}

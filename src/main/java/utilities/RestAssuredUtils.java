@@ -10,7 +10,10 @@ import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
 import utilities.reporting.ExtentReportManager;
+import utilities.restAssuredFunctions.HttpMethod;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 import static utilities.reporting.Setup.extentTest;
@@ -261,9 +264,6 @@ public class RestAssuredUtils {
         return response;
     }
 
-
-
-
     public static Response positiveCaseGet(String api_url) {
 
         // Send a request using the obtained access token
@@ -313,6 +313,69 @@ public class RestAssuredUtils {
         printRequestLogInReport(api_url, "GET", commonRequestSpecGet(headers));
         ExtentReportManager.logInfoDetails("Assertions :");
         return response;
+    }
+
+
+
+    // Dynamic method to handle different HTTP methods
+    public static Response positiveCase(HttpMethod method, String api_url, int... pathParams) {
+        // Ensure that api_url contains the correct number of placeholders (e.g., /v1/user/facilities/{regionId}/{zoneId})
+        // Example: api_url should be "/v1/user/facilities/{regionId}/{zoneId}" if expecting two path parameters
+
+        // Get the common request specification with the token
+        RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecWithToken(accessToken));
+
+        // Convert pathParams to a Map if needed for named placeholders
+        Map<String, Object> pathParamsMap = new LinkedHashMap<>();
+        for (int i = 0; i < pathParams.length; i++) {
+            pathParamsMap.put("param" + i, pathParams[i]);
+        }
+
+        // Switch based on the HTTP method type
+        Response response;
+        switch (method) {
+            case GET:
+                response = requestSpec.pathParams(pathParamsMap).when().get(api_url);
+                break;
+            case POST:
+                response = requestSpec.pathParams(pathParamsMap).when().post(api_url);
+                break;
+            case PUT:
+                response = requestSpec.pathParams(pathParamsMap).when().put(api_url);
+                break;
+            case DELETE:
+                response = requestSpec.pathParams(pathParamsMap).when().delete(api_url);
+                break;
+            case PATCH:
+                response = requestSpec.pathParams(pathParamsMap).when().patch(api_url);
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported HTTP method: " + method);
+        }
+        // Format the URL for logging
+        String formattedUrl = api_url;
+        for (int i = 0; i < pathParams.length; i++) {
+            formattedUrl = formattedUrl.replace("{param" + i + "}", String.valueOf(pathParams[i]));
+        }
+
+
+        // Log details and verify status code in Extent Report
+        printRequestLogInReport(formattedUrl, method.name(), requestSpec);
+        ExtentReportManager.logInfoDetails("Assertions :");
+
+        return response;
+    }
+
+
+
+
+
+    private static Map<String, Object> createPathParamMap(int... pathParams) {
+        Map<String, Object> pathParamMap = new LinkedHashMap<>();
+        for (int i = 0; i < pathParams.length; i++) {
+            pathParamMap.put("param" + i, pathParams[i]);
+        }
+        return pathParamMap;
     }
 
 }

@@ -37,7 +37,7 @@ public class OAuth2Authorization {
                 .contentType("application/x-www-form-urlencoded")
                 .auth().preemptive().basic("prm2", "prm2") // Basic Auth if required
                 .formParam("grant_type", "password")
-                .formParam("username", "jai.banipark1")
+                .formParam("username", "administrator")
                 .formParam("password", "Raj@1234")
                 .formParam("scope", "all")
                 .when()
@@ -45,7 +45,7 @@ public class OAuth2Authorization {
 
        //Extract access token from response
         String accessToken = response.jsonPath().getString("access_token");
-
+        System.out.println(response);
         return accessToken;
     }
     // Method to update oAuthToken in routes.properties file
