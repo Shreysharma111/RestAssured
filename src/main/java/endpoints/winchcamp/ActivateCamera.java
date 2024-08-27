@@ -3,6 +3,7 @@ package endpoints.winchcamp;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import utilities.reporting.ExtentReportManager;
+import utilities.restAssuredFunctions.HttpMethod;
 
 import static utilities.RestAssuredUtils.*;
 
@@ -12,13 +13,13 @@ public class ActivateCamera {
     public static String activateCamera_url = getUrl().getString("activateCamera_url");
 
     public static Response activateCameraPositiveCase(String... queryParams) {
-        return queryParamsPositiveCase(activateCamera_url, accessToken, queryParams);
+        return queryParamsPositiveCase(HttpMethod.POST, activateCamera_url, accessToken, queryParams);
     }
     public static Response activateCameraWrongEndpointCase(String... queryParams) {
-        return queryParamsWrongEndpointCase(activateCamera_url, accessToken, queryParams);
+        return queryParamsPositiveCase(HttpMethod.POST, activateCamera_url+"shr", accessToken, queryParams);
     }
     public static Response activateCameraMethodCase(String... queryParams) {
-        return queryParamsMethodCase(activateCamera_url, accessToken, queryParams);
+        return queryParamsPositiveCase(HttpMethod.GET, activateCamera_url, accessToken, queryParams);
     }
     public static Response activateCameraHeaderCase(int idValue, String... headers) {
         // Send a request using the obtained access token

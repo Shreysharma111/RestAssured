@@ -18,7 +18,7 @@ public class GetCameraConfigsByConfigId {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/details/camera/config"+"/{configId}", configId);
+                .get("/v1/user/facility/details/camera/config"+"/{configId}", configId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -32,7 +32,7 @@ public class GetCameraConfigsByConfigId {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/details/camera/configwrong"+"/{configId}", configId);
+                .get("/v1/user/facility/details/camera/configwrong"+"/{configId}", configId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -46,7 +46,7 @@ public class GetCameraConfigsByConfigId {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .post("/facility/details/camera/config"+"/{configId}", configId);
+                .post("/v1/user/facility/details/camera/config"+"/{configId}", configId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "POST", commonRequestSpecWithToken(accessToken));
@@ -61,7 +61,7 @@ public class GetCameraConfigsByConfigId {
         response = RestAssured.given()
                 .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
                 .when()
-                .get("/facility/details/camera/config"+"/{configId}", configId);
+                .get("/v1/user/facility/details/camera/config"+"/{configId}", configId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));
@@ -75,7 +75,7 @@ public class GetCameraConfigsByConfigId {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/details/camera/config"+"/{configId}", 0);
+                .get("/v1/user/facility/details/camera/config"+"/{configId}", 0);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));

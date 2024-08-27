@@ -5,7 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import utilities.OAuth2Authorization;
 import utilities.reporting.Setup;
@@ -18,7 +18,7 @@ public class CameraDetailsByGuidTests {
     private String guidValue;
     private static Response response;
 
-    @BeforeClass
+    @BeforeSuite
     public void before(){
         OAuth2Authorization.getAccessTokenAndUpdateToken();
         guidValue = getValue("winchcamp", "guid");
@@ -89,7 +89,7 @@ public class CameraDetailsByGuidTests {
         response = cameraDetailsByGuidWrongGuidCase(guidValue);
 
         assertStatusCode(response, 404);
-        assertKeyValue(response, "$.message", "No Camera Found");
+        assertKeyValue(response, "message", "No Camera Found");
 
     }
 

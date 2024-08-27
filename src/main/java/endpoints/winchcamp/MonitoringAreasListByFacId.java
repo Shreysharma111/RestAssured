@@ -18,7 +18,7 @@ public class MonitoringAreasListByFacId {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility"+"/{facilityId}/areas", facilityId);
+                .get("/v1/user/facility"+"/{facilityId}/areas", facilityId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -32,7 +32,7 @@ public class MonitoringAreasListByFacId {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility"+"/{facilityId}/areaswrong", facilityId);
+                .get("/v1/user/facility"+"/{facilityId}/areaswrong", facilityId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -46,7 +46,7 @@ public class MonitoringAreasListByFacId {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .post("/facility"+"/{facilityId}/areas", facilityId);
+                .post("/v1/user/facility"+"/{facilityId}/areas", facilityId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "POST", commonRequestSpecWithToken(accessToken));
@@ -61,7 +61,7 @@ public class MonitoringAreasListByFacId {
         response = RestAssured.given()
                 .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
                 .when()
-                .get("/facility"+"/{facilityId}/areas", facilityId);
+                .get("/v1/user/facility"+"/{facilityId}/areas", facilityId);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));

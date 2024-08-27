@@ -3,6 +3,7 @@ package endpoints.winchcamp;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import utilities.reporting.ExtentReportManager;
+import utilities.restAssuredFunctions.HttpMethod;
 
 import static utilities.RestAssuredUtils.*;
 
@@ -14,7 +15,7 @@ public class GetAllCamera {
 
     public static Response getAllCameraPositiveCase(String... queryParams) {
 
-       return queryParamsPositiveCase(getAllCamera_url, accessToken, queryParams);
+       return queryParamsPositiveCase(HttpMethod.POST, getAllCamera_url, accessToken, queryParams);
     }
 
     public static Response getAllCameraWrongEndpointCase(String... queryParams) {

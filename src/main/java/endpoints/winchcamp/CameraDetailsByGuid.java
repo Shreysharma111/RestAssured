@@ -18,7 +18,7 @@ public class CameraDetailsByGuid {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/camera/guid/"+"/{guid}", guid);
+                .get("/v1/user/facility/camera/guid/"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -32,7 +32,7 @@ public class CameraDetailsByGuid {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/camera/guiddd"+"/{guid}", guid);
+                .get("/v1/user/facility/camera/guiddd"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -46,7 +46,7 @@ public class CameraDetailsByGuid {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/facility/camera/guid"+"/{guid}shr", guid);
+                .get("/v1/user/facility/camera/guid"+"/{guid}shr", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -61,7 +61,7 @@ public class CameraDetailsByGuid {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .post("/facility/camera/guid"+"/{guid}", guid);
+                .post("/v1/user/facility/camera/guid"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "POST", commonRequestSpecWithToken(accessToken));
@@ -76,7 +76,7 @@ public class CameraDetailsByGuid {
         response = RestAssured.given()
                 .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
                 .when()
-                .get("/facility/camera/guid"+"/{guid}", guid);
+                .get("/v1/user/facility/camera/guid"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));

@@ -3,6 +3,7 @@ package endpoints.winchcamp;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import utilities.reporting.ExtentReportManager;
+import utilities.restAssuredFunctions.HttpMethod;
 
 import static utilities.RestAssuredUtils.*;
 
@@ -12,7 +13,7 @@ public class DeactivateCamera {
     public static String deactivateCamera_url = getUrl().getString("deactivateCamera_url");
 
     public static Response deactivateCameraPositiveCase(String... queryParams) {
-        return queryParamsPositiveCase(deactivateCamera_url, accessToken, queryParams);
+        return queryParamsPositiveCase(HttpMethod.POST, deactivateCamera_url, accessToken, queryParams);
     }
     public static Response deactivateCameraWrongEndpointCase(String... queryParams) {
         return queryParamsWrongEndpointCase(deactivateCamera_url, accessToken, queryParams);
