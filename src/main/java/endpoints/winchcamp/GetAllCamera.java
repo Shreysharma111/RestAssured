@@ -6,6 +6,7 @@ import utilities.reporting.ExtentReportManager;
 
 import static utilities.RestAssuredUtils.*;
 
+
 public class GetAllCamera {
     private static Response response;
     private static String accessToken = getToken();

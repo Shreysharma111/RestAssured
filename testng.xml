@@ -25,11 +25,7 @@
             <!--            <class name="winchcamp.DeactivateCameraTests"></class>-->
             <!--            <class name="winchcamp.FetchAllAreaTests"></class>-->
             <!--            <class name="winchcamp.EditMasterCameraTests"></class>-->
-            <class name="winchcamp.GetFacilitiesByZoneAndRegionTests">
-<!--                <methods>-->
-<!--                    <include name="positiveCase"></include>-->
-<!--                </methods>-->
-            </class>
+            <class name="winchcamp.GetFacilitiesByZoneAndRegionTests"></class>
         </classes>
     </test>
 </suite>

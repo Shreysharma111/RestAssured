@@ -37,7 +37,6 @@ public class GetZonesByRegionTests {
         assertResponseTime(response);
 
     }
-
     @Test
     public void jsonSchemaValidationCase() {
         ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_SchemaValidation", "schema validation case");
@@ -45,7 +44,6 @@ public class GetZonesByRegionTests {
         response = getZonesByRegionPositiveCase(regionIdValue);
 
         validateJsonSchema(response, "schema/Winchcamp/getZonesByRegion.json");
-
     }
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
@@ -63,7 +61,6 @@ public class GetZonesByRegionTests {
         response = getZonesByRegionHeaderCase(regionIdValue,"Authorization:"+"Bearer "+getToken());
 
         assertStatusCode(response, 200);
-
     }
     @Test
     public void wrongEndPointCase() {
@@ -91,7 +88,6 @@ public class GetZonesByRegionTests {
 
         assertStatusCode(response, 200);
         assertArrayIsPresentAndEmpty(response, "data");
-
     }
 
     @AfterMethod
