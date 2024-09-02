@@ -42,6 +42,6 @@ public class EditMasterCamera {
         //log details and verify status code in extent report
         printRequestLogInReport(editMasterCamera_url, "PUT", commonRequestSpecGet(headers));
         ExtentReportManager.logInfoDetails("Assertions :");
-        return response;
+          return response;
     }
 }

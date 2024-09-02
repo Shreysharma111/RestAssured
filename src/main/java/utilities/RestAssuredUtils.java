@@ -63,6 +63,24 @@ public class RestAssuredUtils {
 
         return builder.build();
     }
+    public static RequestSpecification commonRequestSpec(String oAuthToken, String... headers) {
+        RequestSpecBuilder builder = new RequestSpecBuilder()
+                .setBaseUri(baseUrl)
+                .addHeader("Authorization", "Bearer " + oAuthToken)
+                .setContentType(ContentType.JSON);
+
+        for (String header : headers) {
+            String[] headerParts = header.split(":");
+            if (headerParts.length == 2) {
+                builder.addHeader(headerParts[0].trim(), headerParts[1].trim());
+            } else {
+                // Handle invalid header format, log or throw an exception as needed
+                System.err.println("Invalid header format: " + header);
+            }
+        }
+
+        return builder.build();
+    }
 
     public static RequestSpecification commonRequestSpecGet(String... headers) {
         RequestSpecBuilder builder = new RequestSpecBuilder()
@@ -374,6 +392,43 @@ public class RestAssuredUtils {
         for (int i = 0; i < pathParams.length; i++) {
             formattedUrl = formattedUrl.replace("{param" + i + "}", String.valueOf(pathParams[i]));
         }
+
+
+        // Log details and verify status code in Extent Report
+        printRequestLogInReport(formattedUrl, method.name(), requestSpec);
+        ExtentReportManager.logInfoDetails("Assertions :");
+
+        return response;
+    }
+    // Dynamic method to handle different HTTP methods
+    public static Response positiveCase(HttpMethod method, String api_url, int pathParams, String... headers) {
+
+        // Get the common request specification with the token
+        RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecGet(headers));
+
+        // Switch based on the HTTP method type
+        Response response;
+        switch (method) {
+            case GET:
+                response = requestSpec.pathParam("param0", pathParams).when().get(api_url);
+                break;
+            case POST:
+                response = requestSpec.pathParam("param0", pathParams).when().post(api_url);
+                break;
+            case PUT:
+                response = requestSpec.pathParam("param0", pathParams).when().put(api_url);
+                break;
+            case DELETE:
+                response = requestSpec.pathParam("param0", pathParams).when().delete(api_url);
+                break;
+            case PATCH:
+                response = requestSpec.pathParam("param0", pathParams).when().patch(api_url);
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported HTTP method: " + method);
+        }
+        // Format the URL for logging
+        String formattedUrl = api_url.replace("{param0}", String.valueOf(pathParams));
 
 
         // Log details and verify status code in Extent Report
