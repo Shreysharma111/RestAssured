@@ -1,0 +1,3034 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test ExecutionReport</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Test API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 5, 2024 05:23:05 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>5:23:05 pm</span> / <span>00:00:00:896</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.05.2024 5:23:05 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:06 pm</span>
+<span class='badge badge-default'>00:00:00:896</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/1/1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Authorization</td><td>Bearer GUyZC1yZXBseU.....InVzZ</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-275",
+    "status": 401,
+    "message": "An error occurred while attempting to decode the Jwt: Invalid JWT serialization: Missing dot delimiter(s)",
+    "error": "Unauthorized",
+    "type": "InvalidBearerTokenException"
+}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>5:23:06 pm</span> / <span>00:00:00:173</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.05.2024 5:23:06 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:06 pm</span>
+<span class='badge badge-default'>00:00:00:173</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/1/1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Authorization</td><td>Bearer</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-275",
+    "status": 401,
+    "message": "Bearer token is malformed",
+    "error": "Unauthorized",
+    "type": "OAuth2AuthenticationException"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_SchemaValidation</p>
+            <p class="text-sm">
+              <span>5:23:06 pm</span> / <span>00:00:01:195</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_SchemaValidation</h5>
+<span class='badge badge-success'>09.05.2024 5:23:06 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-default'>00:00:01:195</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">schema validation case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:07 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/1/1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:07 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:07 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:07 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:07 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:07 pm</td>
+        <td>
+          JSON schema validation passed!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:07 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({
+    "data": [
+        {
+            "id": 1,
+            "name": "Developer West",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "B-23,Sector-2",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9711099290",
+            "status": 1,
+            "recoDate": "2016-10-14 01:23:41",
+            "countryCode": "India",
+            "postalCode": "302004",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 2,
+            "name": "Noida Sec 77",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": " *eConsultation appointment",
+            "city": " over Video Conference or Phone",
+            "state": "Andaman and Nicobar Islands",
+            "mobile": "9711099290",
+            "status": 1,
+            "recoDate": "2017-02-27 14:46:59",
+            "countryCode": " for query call",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 3,
+            "name": "Jaipur - Vaishali Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "B-282, Vaishali Circle, Vaishali Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:36:55",
+            "countryCode": "India",
+            "postalCode": "302021",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 4,
+            "name": "Jaipur - Bani Park",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.1, Plot No B-16A, Shiv Marg, Bani Park",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:38:42",
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 5,
+            "name": "Jaipur - Malviya Nagar - Kailgiri Road",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Plot No-7,8,65,66, Jem Enclave, Kailgiri Road, Malviya Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:40:21",
+            "countryCode": "India",
+            "postalCode": "302017",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 6,
+            "name": "Jaipur - Durgapura",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ground Floor, Plot No 303, Mahaveer Nagar 2, Near Maharani Farm, Durgapura",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:42:00",
+            "countryCode": "India",
+            "postalCode": "302018",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 7,
+            "name": "Okhla Warehouse",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "E48/4 Okhla Phase 2, behind Nathu Sweets",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-04-06 16:18:27",
+            "countryCode": "India",
+            "postalCode": "110020",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 9,
+            "name": "Jaipur - Jhotwara",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ground Floor, Plot No. 4, Govind Nagar, Jhotwara",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-15 23:14:16",
+            "countryCode": "India",
+            "postalCode": "302012",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 10,
+            "name": "Jaipur - Tilak Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "A-30, Bella Palazzo, Near LBS College, Tilak Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-05-07 20:38:41",
+            "countryCode": "India",
+            "postalCode": "302004",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 11,
+            "name": "Jaipur - C Scheme",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "J-40, GHP Enclave, Krishna Marg, C Scheme",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-06-14 21:28:04",
+            "countryCode": "",
+            "postalCode": "302005",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 14,
+            "name": "Jaipur - Malviya Nagar - Girdhar Marg",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "G-1, Vaibhav Enclave, Ground Floor Plot No- 11/01, Girdhar Marg Malviya Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-09-12 18:47:29",
+            "countryCode": "India",
+            "postalCode": "302017",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 19,
+            "name": "Hosp Apex-Mansarovar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ground floor, Apex Hospital, 55, Rajat Path, Ward 27, Mansarovar Sector 5",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302020",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 33,
+            "name": "Nirman Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No. 1, First Floor, Kings Rd, Gautam Marg Rd, Nirman Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-05-02 13:50:30",
+            "countryCode": "India",
+            "postalCode": "302019",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 36,
+            "name": "Shipra Path",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No. S-5 & S-10, Opp. H.C.G. Hospital, Shipra Path, Mansarovar Sector 5",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-05-31 13:56:43",
+            "countryCode": "India",
+            "postalCode": "302020",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 40,
+            "name": "Vidhyadhar Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": " G6, Alankar Plaza, Next to Cafe Coffee Day, Sector 2 Central Spine, Vidhyadhar Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-09-06 11:41:44",
+            "countryCode": "India",
+            "postalCode": "302012",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 46,
+            "name": "Jaipur - Shastri Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "C-3, First Floor, Above Jodhpur Sweets, Subhash Nagar, Shastri Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-11-09 18:16:44",
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 47,
+            "name": "Sikar Road",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "F-2, First Floor, Plot 2-B, Maharaja Colony, Near PNB, Sikar Road",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-11-09 18:20:02",
+            "countryCode": "India",
+            "postalCode": "302039",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 48,
+            "name": "Jaipur - Pratap Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.5, First Floor, Near D-Mart, Sector 8, Pratap Nagar, Tonk Rd, Sanganer",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2020-01-29 17:47:34",
+            "countryCode": "India",
+            "postalCode": "302003",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 49,
+            "name": "Camp Clinic - Jaipur",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.1, Plot No B-16A, Shiv Marg, Bani Park",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 50,
+            "name": "JAI@CCH1",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": " *eConsultation appointment",
+            "city": " over Video Conference or Phone",
+            "state": "",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": " for query call",
+            "postalCode": "",
+            "monitoringStatus": 2
+        },
+        {
+            "id": 51,
+            "name": "West@Home",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.1, Plot No B-16A, Shiv Marg, Bani Park",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 2
+        },
+        {
+            "id": 52,
+            "name": "LMS Followup West",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "DLTA Complex, 1 Africa Avenue",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "110029",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 53,
+            "name": "PTR-Jaipur",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Partner clinic",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302001",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 54,
+            "name": "PTR-Ahmedabad",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Partner clinic",
+            "city": "Ahmedabad",
+            "state": "Gujarat",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "380001",
+            "monitoringStatus": 2
+        },
+        {
+            "id": 55,
+            "name": "PTR-Pune",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Partner clinic",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "411001",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 56,
+            "name": "ExtSC-Jaipur",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ext - Scanner",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 57,
+            "name": "ExtSC-Ahmedabad",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ext - Scanner",
+            "city": "Ahmedabad",
+            "state": "Gujarat",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 58,
+            "name": "ExtSC-Pune",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ext - Scanner",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 67,
+            "name": "Safdarjung Development Area",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "C-4/8, Opp. IIT Gate No 1, SDA",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "mobile": "9711099290",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "110016",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 69,
+            "name": "Crossing Republic",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "5555555555",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 70,
+            "name": "Dwarka Sec-11",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "2222222222",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 71,
+            "name": "Mayur Vihar Phase-3",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "1111111111",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 72,
+            "name": "YV Bhajanpura",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "3333333333",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 73,
+            "name": "Tagore Garden",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "1111111111",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 2
+        }
+    ],
+    "status": 200
+}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_WrongParams</p>
+            <p class="text-sm">
+              <span>5:23:08 pm</span> / <span>00:00:00:204</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_WrongParams</h5>
+<span class='badge badge-success'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-default'>00:00:00:204</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">wrong region Id and zone Id as path param case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/0/0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Assertion passed! Array at path 'data' is present in the response body and is empty
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "data": [
+        
+    ],
+    "status": 200
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_WrongParams</p>
+            <p class="text-sm">
+              <span>5:23:08 pm</span> / <span>00:00:00:189</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_WrongParams</h5>
+<span class='badge badge-success'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-default'>00:00:00:189</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">wrong region Id and zone Id as path param case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/999/999
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Assertion passed! Array at path 'data' is present in the response body and is empty
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
+    "data": [
+        
+    ],
+    "status": 200
+}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_WrongParams</p>
+            <p class="text-sm">
+              <span>5:23:08 pm</span> / <span>00:00:00:168</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_WrongParams</h5>
+<span class='badge badge-success'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-default'>00:00:00:168</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">wrong region Id and zone Id as path param case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/1/2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Assertion passed! Array at path 'data' is present in the response body and is empty
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "data": [
+        
+    ],
+    "status": 200
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_PositiveCase</p>
+            <p class="text-sm">
+              <span>5:23:08 pm</span> / <span>00:00:00:241</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_PositiveCase</h5>
+<span class='badge badge-success'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-default'>00:00:00:241</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">test positive flow</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/1/1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          All objects contain the fields with expected values: {regionId=1, zoneId=1}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 141ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:08 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({
+    "data": [
+        {
+            "id": 1,
+            "name": "Developer West",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "B-23,Sector-2",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9711099290",
+            "status": 1,
+            "recoDate": "2016-10-14 01:23:41",
+            "countryCode": "India",
+            "postalCode": "302004",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 2,
+            "name": "Noida Sec 77",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": " *eConsultation appointment",
+            "city": " over Video Conference or Phone",
+            "state": "Andaman and Nicobar Islands",
+            "mobile": "9711099290",
+            "status": 1,
+            "recoDate": "2017-02-27 14:46:59",
+            "countryCode": " for query call",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 3,
+            "name": "Jaipur - Vaishali Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "B-282, Vaishali Circle, Vaishali Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:36:55",
+            "countryCode": "India",
+            "postalCode": "302021",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 4,
+            "name": "Jaipur - Bani Park",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.1, Plot No B-16A, Shiv Marg, Bani Park",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:38:42",
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 5,
+            "name": "Jaipur - Malviya Nagar - Kailgiri Road",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Plot No-7,8,65,66, Jem Enclave, Kailgiri Road, Malviya Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:40:21",
+            "countryCode": "India",
+            "postalCode": "302017",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 6,
+            "name": "Jaipur - Durgapura",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ground Floor, Plot No 303, Mahaveer Nagar 2, Near Maharani Farm, Durgapura",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-01 22:42:00",
+            "countryCode": "India",
+            "postalCode": "302018",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 7,
+            "name": "Okhla Warehouse",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "E48/4 Okhla Phase 2, behind Nathu Sweets",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-04-06 16:18:27",
+            "countryCode": "India",
+            "postalCode": "110020",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 9,
+            "name": "Jaipur - Jhotwara",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ground Floor, Plot No. 4, Govind Nagar, Jhotwara",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-03-15 23:14:16",
+            "countryCode": "India",
+            "postalCode": "302012",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 10,
+            "name": "Jaipur - Tilak Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "A-30, Bella Palazzo, Near LBS College, Tilak Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-05-07 20:38:41",
+            "countryCode": "India",
+            "postalCode": "302004",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 11,
+            "name": "Jaipur - C Scheme",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "J-40, GHP Enclave, Krishna Marg, C Scheme",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-06-14 21:28:04",
+            "countryCode": "",
+            "postalCode": "302005",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 14,
+            "name": "Jaipur - Malviya Nagar - Girdhar Marg",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "G-1, Vaibhav Enclave, Ground Floor Plot No- 11/01, Girdhar Marg Malviya Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2017-09-12 18:47:29",
+            "countryCode": "India",
+            "postalCode": "302017",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 19,
+            "name": "Hosp Apex-Mansarovar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ground floor, Apex Hospital, 55, Rajat Path, Ward 27, Mansarovar Sector 5",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302020",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 33,
+            "name": "Nirman Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No. 1, First Floor, Kings Rd, Gautam Marg Rd, Nirman Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-05-02 13:50:30",
+            "countryCode": "India",
+            "postalCode": "302019",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 36,
+            "name": "Shipra Path",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No. S-5 & S-10, Opp. H.C.G. Hospital, Shipra Path, Mansarovar Sector 5",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-05-31 13:56:43",
+            "countryCode": "India",
+            "postalCode": "302020",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 40,
+            "name": "Vidhyadhar Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": " G6, Alankar Plaza, Next to Cafe Coffee Day, Sector 2 Central Spine, Vidhyadhar Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-09-06 11:41:44",
+            "countryCode": "India",
+            "postalCode": "302012",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 46,
+            "name": "Jaipur - Shastri Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "C-3, First Floor, Above Jodhpur Sweets, Subhash Nagar, Shastri Nagar",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-11-09 18:16:44",
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 47,
+            "name": "Sikar Road",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "F-2, First Floor, Plot 2-B, Maharaja Colony, Near PNB, Sikar Road",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2019-11-09 18:20:02",
+            "countryCode": "India",
+            "postalCode": "302039",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 48,
+            "name": "Jaipur - Pratap Nagar",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.5, First Floor, Near D-Mart, Sector 8, Pratap Nagar, Tonk Rd, Sanganer",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": "2020-01-29 17:47:34",
+            "countryCode": "India",
+            "postalCode": "302003",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 49,
+            "name": "Camp Clinic - Jaipur",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.1, Plot No B-16A, Shiv Marg, Bani Park",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 50,
+            "name": "JAI@CCH1",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": " *eConsultation appointment",
+            "city": " over Video Conference or Phone",
+            "state": "",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": " for query call",
+            "postalCode": "",
+            "monitoringStatus": 2
+        },
+        {
+            "id": 51,
+            "name": "West@Home",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "No.1, Plot No B-16A, Shiv Marg, Bani Park",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "9667353232",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302016",
+            "monitoringStatus": 2
+        },
+        {
+            "id": 52,
+            "name": "LMS Followup West",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "DLTA Complex, 1 Africa Avenue",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "110029",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 53,
+            "name": "PTR-Jaipur",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Partner clinic",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "302001",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 54,
+            "name": "PTR-Ahmedabad",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Partner clinic",
+            "city": "Ahmedabad",
+            "state": "Gujarat",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "380001",
+            "monitoringStatus": 2
+        },
+        {
+            "id": 55,
+            "name": "PTR-Pune",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Partner clinic",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "411001",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 56,
+            "name": "ExtSC-Jaipur",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ext - Scanner",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 57,
+            "name": "ExtSC-Ahmedabad",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ext - Scanner",
+            "city": "Ahmedabad",
+            "state": "Gujarat",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 58,
+            "name": "ExtSC-Pune",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "Ext - Scanner",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "mobile": "8882429943",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 67,
+            "name": "Safdarjung Development Area",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "C-4/8, Opp. IIT Gate No 1, SDA",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "mobile": "9711099290",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "India",
+            "postalCode": "110016",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 69,
+            "name": "Crossing Republic",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "5555555555",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 70,
+            "name": "Dwarka Sec-11",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "2222222222",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 1
+        },
+        {
+            "id": 71,
+            "name": "Mayur Vihar Phase-3",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "1111111111",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 72,
+            "name": "YV Bhajanpura",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "3333333333",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 0
+        },
+        {
+            "id": 73,
+            "name": "Tagore Garden",
+            "regionId": 1,
+            "zoneId": 1,
+            "street": "",
+            "city": "",
+            "state": "Rajasthan",
+            "mobile": "1111111111",
+            "status": 1,
+            "recoDate": null,
+            "countryCode": "",
+            "postalCode": "",
+            "monitoringStatus": 2
+        }
+    ],
+    "status": 200
+}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_WrongEndpoint</p>
+            <p class="text-sm">
+              <span>5:23:08 pm</span> / <span>00:00:00:191</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_WrongEndpoint</h5>
+<span class='badge badge-success'>09.05.2024 5:23:08 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-default'>00:00:00:191</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">wrong endpoint case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/1/1shr
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-275",
+    "status": 404,
+    "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: \"1shr\"",
+    "error": "Not Found",
+    "type": "MethodArgumentTypeMismatchException"
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetFacilitiesByZoneAndRegion_WrongMethod</p>
+            <p class="text-sm">
+              <span>5:23:09 pm</span> / <span>00:00:00:186</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetFacilitiesByZoneAndRegion_WrongMethod</h5>
+<span class='badge badge-success'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-default'>00:00:00:186</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">wrong request method case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/facilities/1/1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Status code assertion passed! Expected: 405, Actual: 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-05T11:53:11.069+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/facility/facilities/1/1"
+}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>5:23:09 pm</span> / <span>00:00:00:175</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AreaByGuid_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-default'>00:00:00:175</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/24a79839-4310-413a-9129-dce712e23bad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer GUyZC1yZXBseU.....InVzZ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-275",
+    "status": 401,
+    "message": "An error occurred while attempting to decode the Jwt: Invalid JWT serialization: Missing dot delimiter(s)",
+    "error": "Unauthorized",
+    "type": "InvalidBearerTokenException"
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>5:23:09 pm</span> / <span>00:00:00:134</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AreaByGuid_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-default'>00:00:00:134</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/24a79839-4310-413a-9129-dce712e23bad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-275",
+    "status": 401,
+    "message": "Bearer token is malformed",
+    "error": "Unauthorized",
+    "type": "OAuth2AuthenticationException"
+}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_InvalidGuid</p>
+            <p class="text-sm">
+              <span>5:23:09 pm</span> / <span>00:00:00:155</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AreaByGuid_InvalidGuid</h5>
+<span class='badge badge-success'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-default'>00:00:00:155</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">invalid guid as path param case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/24a79839-4310-413a-9129-dce712e23ba
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Assertion passed! data.name in response body has the expected value: Area Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({
+    "data": {
+        "id": null,
+        "name": "Area Not Found"
+    },
+    "status": 200
+}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_InvalidGuid</p>
+            <p class="text-sm">
+              <span>5:23:09 pm</span> / <span>00:00:00:159</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AreaByGuid_InvalidGuid</h5>
+<span class='badge badge-success'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-default'>00:00:00:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">invalid guid as path param case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/99999
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          Assertion passed! data.name in response body has the expected value: Area Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({
+    "data": {
+        "id": null,
+        "name": "Area Not Found"
+    },
+    "status": 200
+}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_SchemaValidation</p>
+            <p class="text-sm">
+              <span>5:23:09 pm</span> / <span>00:00:00:225</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AreaByGuid_SchemaValidation</h5>
+<span class='badge badge-success'>09.05.2024 5:23:09 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:10 pm</span>
+<span class='badge badge-default'>00:00:00:225</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">schema validation case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/24a79839-4310-413a-9129-dce712e23bad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          JSON schema validation passed!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+    "data": {
+        "id": 1,
+        "name": "Operatory 1"
+    },
+    "status": 200
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_PositiveCase</p>
+            <p class="text-sm">
+              <span>5:23:10 pm</span> / <span>00:00:00:210</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AreaByGuid_PositiveCase</h5>
+<span class='badge badge-success'>09.05.2024 5:23:10 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:10 pm</span>
+<span class='badge badge-default'>00:00:00:210</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">test positive flow</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/24a79839-4310-413a-9129-dce712e23bad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <span class='badge white-text red'>class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [io.restassured.path.json.JsonPath.getList(JsonPath.java:375)<br> utilities.restAssuredFunctions.API.assertFieldsWithExpectedValues(API.java:240)<br> winchcamp.AreaByGuidTests.positiveCase(AreaByGuidTests.java:47)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({
+    "data": {
+        "id": 1,
+        "name": "Operatory 1"
+    },
+    "status": 200
+}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_WrongEndpoint</p>
+            <p class="text-sm">
+              <span>5:23:10 pm</span> / <span>00:00:00:479</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AreaByGuid_WrongEndpoint</h5>
+<span class='badge badge-success'>09.05.2024 5:23:10 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:10 pm</span>
+<span class='badge badge-default'>00:00:00:479</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">wrong endpoint case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/24a79839-4310-413a-9129-dce712e23bad/shr
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:10 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-05T11:53:12.626+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/reports/area/24a79839-4310-413a-9129-dce712e23bad/shr"
+}); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AreaByGuid_WrongMethod</p>
+            <p class="text-sm">
+              <span>5:23:10 pm</span> / <span>00:00:00:273</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AreaByGuid_WrongMethod</h5>
+<span class='badge badge-success'>09.05.2024 5:23:10 pm</span>
+<span class='badge badge-danger'>09.05.2024 5:23:11 pm</span>
+<span class='badge badge-default'>00:00:00:273</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">wrong request method case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/area/24a79839-4310-413a-9129-dce712e23bad
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vBtdw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+          Status code assertion passed! Expected: 405, Actual: 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:23:11 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-05T11:53:12.903+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/reports/area/24a79839-4310-413a-9129-dce712e23bad"
+}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 5, 2024 05:23:05 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 5, 2024 05:23:11 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>16</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'>
+<b>16</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='5%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='16%'><b>24</b> events passed</small></div>
+<div>
+<small data-tooltip='1%'><b>2</b> events failed,
+<b data-tooltip='%'>119</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"GetFacilitiesByZoneAndRegion_EmptyAndWrongAuth":0.896,"GetFacilitiesByZoneAndRegion_EmptyAndWrongAuth":0.173,"GetFacilitiesByZoneAndRegion_SchemaValidation":1.195,"GetFacilitiesByZoneAndRegion_WrongParams":0.204,"GetFacilitiesByZoneAndRegion_WrongParams":0.189,"GetFacilitiesByZoneAndRegion_WrongParams":0.168,"GetFacilitiesByZoneAndRegion_PositiveCase":0.241,"GetFacilitiesByZoneAndRegion_WrongEndpoint":0.191,"GetFacilitiesByZoneAndRegion_WrongMethod":0.186,"AreaByGuid_EmptyAndWrongAuth":0.175,"AreaByGuid_EmptyAndWrongAuth":0.134,"AreaByGuid_InvalidGuid":0.155,"AreaByGuid_InvalidGuid":0.159,"AreaByGuid_SchemaValidation":0.225,"AreaByGuid_PositiveCase":0.21,"AreaByGuid_WrongEndpoint":0.479,"AreaByGuid_WrongMethod":0.273
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 16,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 24,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 119
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
