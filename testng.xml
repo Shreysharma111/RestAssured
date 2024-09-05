@@ -31,7 +31,8 @@
 <!--            <class name="winchcamp.UpdateCameraConfigsTests"></class>-->
 <!--            <class name="winchcamp.FCMTokenListTests"></class>-->
 <!--            <class name="winchcamp.SaveFCMTokenTests"></class>-->
-            <class name="winchcamp.AIEventReportScreenDataTests"></class>
+<!--            <class name="winchcamp.AIEventReportScreenDataTests"></class>-->
+            <class name="winchcamp.AreaByGuidTests"></class>
         </classes>
     </test>
 </suite>

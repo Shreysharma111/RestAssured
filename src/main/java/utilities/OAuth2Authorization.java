@@ -21,7 +21,7 @@ public class OAuth2Authorization {
         updateTokenInPropertiesFile(accessToken);
 
         // Save the generated token in oAuthToken variable of JwtTokenUtil class
-        JwtTokenUtil.setToken(accessToken);
+//        JwtTokenUtil.setToken(accessToken);
 
         return accessToken;
     }
