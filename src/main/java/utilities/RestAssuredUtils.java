@@ -401,7 +401,93 @@ public class RestAssuredUtils {
         return response;
     }
     // Dynamic method to handle different HTTP methods
+    public static Response positiveCaseWithStringPathParams(HttpMethod method, String api_url, String... pathParams) {
+        // Ensure that api_url contains the correct number of placeholders (e.g., /v1/user/facilities/{regionId}/{zoneId})
+        // Example: api_url should be "/v1/user/facilities/{regionId}/{zoneId}" if expecting two path parameters
+
+        // Get the common request specification with the token
+        RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecWithToken(accessToken));
+
+        // Convert pathParams to a Map if needed for named placeholders
+        Map<String, Object> pathParamsMap = new LinkedHashMap<>();
+        for (int i = 0; i < pathParams.length; i++) {
+            pathParamsMap.put("param" + i, pathParams[i]);
+        }
+
+        // Switch based on the HTTP method type
+        Response response;
+        switch (method) {
+            case GET:
+                response = requestSpec.pathParams(pathParamsMap).when().get(api_url);
+                break;
+            case POST:
+                response = requestSpec.pathParams(pathParamsMap).when().post(api_url);
+                break;
+            case PUT:
+                response = requestSpec.pathParams(pathParamsMap).when().put(api_url);
+                break;
+            case DELETE:
+                response = requestSpec.pathParams(pathParamsMap).when().delete(api_url);
+                break;
+            case PATCH:
+                response = requestSpec.pathParams(pathParamsMap).when().patch(api_url);
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported HTTP method: " + method);
+        }
+        // Format the URL for logging
+        String formattedUrl = api_url;
+        for (int i = 0; i < pathParams.length; i++) {
+            formattedUrl = formattedUrl.replace("{param" + i + "}", String.valueOf(pathParams[i]));
+        }
+
+
+        // Log details and verify status code in Extent Report
+        printRequestLogInReport(formattedUrl, method.name(), requestSpec);
+        ExtentReportManager.logInfoDetails("Assertions :");
+
+        return response;
+    }
+
+    // Dynamic method to handle different HTTP methods
     public static Response positiveCase(HttpMethod method, String api_url, int pathParams, String... headers) {
+
+        // Get the common request specification with the token
+        RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecGet(headers));
+
+        // Switch based on the HTTP method type
+        Response response;
+        switch (method) {
+            case GET:
+                response = requestSpec.pathParam("param0", pathParams).when().get(api_url);
+                break;
+            case POST:
+                response = requestSpec.pathParam("param0", pathParams).when().post(api_url);
+                break;
+            case PUT:
+                response = requestSpec.pathParam("param0", pathParams).when().put(api_url);
+                break;
+            case DELETE:
+                response = requestSpec.pathParam("param0", pathParams).when().delete(api_url);
+                break;
+            case PATCH:
+                response = requestSpec.pathParam("param0", pathParams).when().patch(api_url);
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported HTTP method: " + method);
+        }
+        // Format the URL for logging
+        String formattedUrl = api_url.replace("{param0}", String.valueOf(pathParams));
+
+
+        // Log details and verify status code in Extent Report
+        printRequestLogInReport(formattedUrl, method.name(), requestSpec);
+        ExtentReportManager.logInfoDetails("Assertions :");
+
+        return response;
+    }
+    // Dynamic method to handle different HTTP methods
+    public static Response positiveCase(HttpMethod method, String api_url, String pathParams, String... headers) {
 
         // Get the common request specification with the token
         RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecGet(headers));
@@ -441,28 +527,8 @@ public class RestAssuredUtils {
     public static Response positiveCase(HttpMethod method, String api_url) {
         RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecWithToken(accessToken));
 
-
         // Switch based on the HTTP method type
-        Response response;
-        switch (method) {
-            case GET:
-                response = requestSpec.when().get(api_url);
-                break;
-            case POST:
-                response = requestSpec.when().post(api_url);
-                break;
-            case PUT:
-                response = requestSpec.when().put(api_url);
-                break;
-            case DELETE:
-                response = requestSpec.when().delete(api_url);
-                break;
-            case PATCH:
-                response = requestSpec.when().patch(api_url);
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported HTTP method: " + method);
-        }
+        Response response= executeRequest(method, requestSpec, api_url);
 
         // Log details and verify status code in Extent Report
         printRequestLogInReport(api_url, method.name(), requestSpec);
@@ -473,28 +539,8 @@ public class RestAssuredUtils {
     public static Response positiveCase(HttpMethod method, String api_url, String... headers) {
         RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecGet(headers));
 
-
         // Switch based on the HTTP method type
-        Response response;
-        switch (method) {
-            case GET:
-                response = requestSpec.when().get(api_url);
-                break;
-            case POST:
-                response = requestSpec.when().post(api_url);
-                break;
-            case PUT:
-                response = requestSpec.when().put(api_url);
-                break;
-            case DELETE:
-                response = requestSpec.when().delete(api_url);
-                break;
-            case PATCH:
-                response = requestSpec.when().patch(api_url);
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported HTTP method: " + method);
-        }
+        Response response= executeRequest(method, requestSpec, api_url);
 
         // Log details and verify status code in Extent Report
         printRequestLogInReport(api_url, method.name(), requestSpec);
@@ -502,5 +548,61 @@ public class RestAssuredUtils {
 
         return response;
     }
+
+    public static Response positiveCaseWithPayload(HttpMethod method, String api_url, Object payload) {
+        // Create the request specification with the common token setup
+        RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecWithToken(accessToken));
+
+        // Add payload to the request if it's not null
+        if (payload != null) {
+            requestSpec.body(payload);
+        }
+
+        // Switch based on the HTTP method type
+        Response response= executeRequest(method, requestSpec, api_url);
+
+        // Log details and verify status code in Extent Report
+        printRequestLogInReport(api_url, method.name(), requestSpec);
+        ExtentReportManager.logInfoDetails("Assertions :");
+
+        return response;
+    }
+    public static Response positiveCaseWithPayload(HttpMethod method, String api_url, Object payload, String... headers) {
+        // Create the request specification with the common token setup
+        RequestSpecification requestSpec = RestAssured.given().spec(commonRequestSpecGet(headers));
+
+        // Add payload to the request if it's not null
+        if (payload != null) {
+            requestSpec.body(payload);
+        }
+        // Switch based on the HTTP method type
+        Response response= executeRequest(method, requestSpec, api_url);
+
+        // Log details and verify status code in Extent Report
+        printRequestLogInReport(api_url, method.name(), requestSpec);
+        ExtentReportManager.logInfoDetails("Assertions :");
+
+        return response;
+    }
+
+    //common method designed to use switch case based on th HTTP method type
+    public static Response executeRequest(HttpMethod method, RequestSpecification requestSpec, String apiUrl) {
+        // Switch based on the HTTP method type
+        switch (method) {
+            case GET:
+                return requestSpec.when().get(apiUrl);
+            case POST:
+                return requestSpec.when().post(apiUrl);
+            case PUT:
+                return requestSpec.when().put(apiUrl);
+            case DELETE:
+                return requestSpec.when().delete(apiUrl);
+            case PATCH:
+                return requestSpec.when().patch(apiUrl);
+            default:
+                throw new IllegalArgumentException("Unsupported HTTP method: " + method);
+        }
+    }
+
 
 }

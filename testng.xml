@@ -27,7 +27,11 @@
 <!--            <class name="winchcamp.EditMasterCameraTests"></class>-->
 <!--            <class name="winchcamp.GetFacilitiesByZoneAndRegionTests"></class>-->
 <!--            <class name="winchcamp.GetFacilitiesByRoleTests"></class>-->
-            <class name="winchcamp.DeleteCameraConfigsByConfigIdTests"></class>
+<!--            <class name="winchcamp.DeleteCameraConfigsByConfigIdTests"></class>-->
+<!--            <class name="winchcamp.UpdateCameraConfigsTests"></class>-->
+<!--            <class name="winchcamp.FCMTokenListTests"></class>-->
+<!--            <class name="winchcamp.SaveFCMTokenTests"></class>-->
+            <class name="winchcamp.AIEventReportScreenDataTests"></class>
         </classes>
     </test>
 </suite>

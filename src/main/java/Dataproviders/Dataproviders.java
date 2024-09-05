@@ -48,4 +48,19 @@ public class Dataproviders {
                 {1, 2}
         };
     }
+
+    @DataProvider(name ="pathDataProviderForDeleteCameraConfigByConfigId")
+    public static Object[][] pathDataProviderForGetFacilityById() {
+        return new Object[][]{
+                {0},
+                {99999}
+        };
+    }
+    @DataProvider(name ="pathDataProviderForFCMTokenList")
+    public static Object[][] pathDataProviderForFCMTokenList() {
+        return new Object[][]{
+                {"24a79839-4310-413a-9129-dce712e23ba"},
+                {"99999"}
+        };
+    }
 }

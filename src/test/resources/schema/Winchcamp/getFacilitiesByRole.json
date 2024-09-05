@@ -1,0 +1,2280 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultFacility": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "isRecoEnabled": {
+              "type": "integer"
+            },
+            "brandLogo": {
+              "type": "string"
+            },
+            "infDiseaseForm": {
+              "type": "integer"
+            },
+            "recoUserId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "defaultFacility",
+            "status",
+            "isRecoEnabled",
+            "brandLogo",
+            "infDiseaseForm",
+            "recoUserId"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}
