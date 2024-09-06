@@ -1,13 +1,9 @@
 package utilities;
 
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.Properties;
 
 public class OAuth2Authorization {
@@ -43,7 +39,7 @@ public class OAuth2Authorization {
                 .when()
                 .post("https://auth-qa.clovedental.in/oauth2/token").then().extract().response();
 
-       //Extract access token from response
+        //Extract access token from response
         String accessToken = response.jsonPath().getString("access_token");
         System.out.println(response);
         return accessToken;
@@ -70,7 +66,7 @@ public class OAuth2Authorization {
             properties.store(fileOutputStream, null);
             fileOutputStream.close();
         }
-          catch (FileNotFoundException e) {
+        catch (FileNotFoundException e) {
             System.err.println("Properties file not found: " + e.getMessage());
             // Handle the case where the properties file is not found
         } catch (IOException e) {
@@ -82,9 +78,5 @@ public class OAuth2Authorization {
         }
     }
 
-//    public static void main(String[] args) {
-//        // Call the method to obtain access token and update oAuthToken
-//        String accessToken = getAccessTokenAndUpdateToken();
-//        System.out.println("Access Token: " + accessToken);
-//    }
 }
+

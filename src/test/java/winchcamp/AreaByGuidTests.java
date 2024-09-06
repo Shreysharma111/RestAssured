@@ -30,7 +30,6 @@ public class AreaByGuidTests {
         guidForAreaByGuidValue = getValue("winchcamp", "guidForFCMToken");
         idValue = Integer.parseInt(getValue("winchcamp", "idInResponseForAreaByGuid"));
         nameValue = getValue("winchcamp", "nameInResponseForAreaByGuid");
-
         RestAssured.useRelaxedHTTPSValidation();
     }
     @Test

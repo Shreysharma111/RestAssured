@@ -2,9 +2,13 @@ package Dataproviders;
 
 import org.testng.annotations.DataProvider;
 
+import static utilities.RestAssuredUtils.getValue;
 import static utilities.RestAssuredUtils.getWrongToken;
 
 public class Dataproviders {
+    private static int reportIdForAreaCameraReportValue = Integer.parseInt(getValue("winchcamp", "reportIdForAreaCameraReport"));
+    private static int reportIdForAIEventReportValue = Integer.parseInt(getValue("winchcamp", "reportIdForAIEventReport"));
+
 
     @DataProvider(name = "headerDataProvider")
     public static Object[][] headerDataProvider() {
@@ -61,6 +65,13 @@ public class Dataproviders {
         return new Object[][]{
                 {"24a79839-4310-413a-9129-dce712e23ba"},
                 {"99999"}
+        };
+    }
+    @DataProvider(name ="pathDataProviderForFetchReportHistory")
+    public static Object[][] pathDataProviderForFetchReportHistory() {
+        return new Object[][]{
+                {reportIdForAreaCameraReportValue},
+                {reportIdForAIEventReportValue}
         };
     }
 }
