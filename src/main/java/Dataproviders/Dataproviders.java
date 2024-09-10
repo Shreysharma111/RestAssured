@@ -57,7 +57,7 @@ public class Dataproviders {
     public static Object[][] pathDataProviderForGetFacilityById() {
         return new Object[][]{
                 {0},
-                {99999}
+                {999}
         };
     }
     @DataProvider(name ="pathDataProviderForFCMTokenList")
