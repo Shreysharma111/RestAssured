@@ -36,7 +36,6 @@ public class EventsByFiltersTests {
         response = eventsByFiltersPositiveCase(payload);
 
         validateJsonSchema(response, "schema/Winchcamp/eventsByFilters.json");
-
     }
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")

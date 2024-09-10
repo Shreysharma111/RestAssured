@@ -1,0 +1,341 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "draw": {
+      "type": "integer"
+    },
+    "recordsTotal": {
+      "type": "integer"
+    },
+    "recordsFiltered": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "eventId": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "string"
+            },
+            "clinicName": {
+              "type": "string"
+            },
+            "clinicId": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "event": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "null"
+            },
+            "state": {
+              "type": "string"
+            },
+            "hasView": {
+              "type": "boolean"
+            },
+            "cleaningDetails": {
+              "type": "string"
+            },
+            "partDate": {
+              "type": "string"
+            },
+            "time": {
+              "type": "string"
+            },
+            "cleaningStatus": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "eventId",
+            "date",
+            "clinicName",
+            "clinicId",
+            "area",
+            "event",
+            "status",
+            "duration",
+            "state",
+            "hasView",
+            "cleaningDetails",
+            "partDate",
+            "time",
+            "cleaningStatus"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "eventId": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "string"
+            },
+            "clinicName": {
+              "type": "string"
+            },
+            "clinicId": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "event": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "null"
+            },
+            "state": {
+              "type": "string"
+            },
+            "hasView": {
+              "type": "boolean"
+            },
+            "cleaningDetails": {
+              "type": "string"
+            },
+            "partDate": {
+              "type": "string"
+            },
+            "time": {
+              "type": "string"
+            },
+            "cleaningStatus": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "eventId",
+            "date",
+            "clinicName",
+            "clinicId",
+            "area",
+            "event",
+            "status",
+            "duration",
+            "state",
+            "hasView",
+            "cleaningDetails",
+            "partDate",
+            "time",
+            "cleaningStatus"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "eventId": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "string"
+            },
+            "clinicName": {
+              "type": "string"
+            },
+            "clinicId": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "event": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "null"
+            },
+            "state": {
+              "type": "string"
+            },
+            "hasView": {
+              "type": "boolean"
+            },
+            "cleaningDetails": {
+              "type": "string"
+            },
+            "partDate": {
+              "type": "string"
+            },
+            "time": {
+              "type": "string"
+            },
+            "cleaningStatus": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "eventId",
+            "date",
+            "clinicName",
+            "clinicId",
+            "area",
+            "event",
+            "status",
+            "duration",
+            "state",
+            "hasView",
+            "cleaningDetails",
+            "partDate",
+            "time",
+            "cleaningStatus"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "eventId": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "string"
+            },
+            "clinicName": {
+              "type": "string"
+            },
+            "clinicId": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "event": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "null"
+            },
+            "state": {
+              "type": "string"
+            },
+            "hasView": {
+              "type": "boolean"
+            },
+            "cleaningDetails": {
+              "type": "string"
+            },
+            "partDate": {
+              "type": "string"
+            },
+            "time": {
+              "type": "string"
+            },
+            "cleaningStatus": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "eventId",
+            "date",
+            "clinicName",
+            "clinicId",
+            "area",
+            "event",
+            "status",
+            "duration",
+            "state",
+            "hasView",
+            "cleaningDetails",
+            "partDate",
+            "time",
+            "cleaningStatus"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "eventId": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "string"
+            },
+            "clinicName": {
+              "type": "string"
+            },
+            "clinicId": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "event": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "null"
+            },
+            "state": {
+              "type": "string"
+            },
+            "hasView": {
+              "type": "boolean"
+            },
+            "cleaningDetails": {
+              "type": "string"
+            },
+            "partDate": {
+              "type": "string"
+            },
+            "time": {
+              "type": "string"
+            },
+            "cleaningStatus": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "eventId",
+            "date",
+            "clinicName",
+            "clinicId",
+            "area",
+            "event",
+            "status",
+            "duration",
+            "state",
+            "hasView",
+            "cleaningDetails",
+            "partDate",
+            "time",
+            "cleaningStatus"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "draw",
+    "recordsTotal",
+    "recordsFiltered",
+    "data"
+  ]
+}
