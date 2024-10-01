@@ -31,7 +31,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersPositiveData")
     public void jsonSchemaValidationCase(EventsByFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_SchemaValidation", "schema validation case").assignCategory("EventsByFilters");
         Setup.extentTest.set(test);
         response = eventsByFiltersPositiveCase(payload);
 
@@ -40,7 +40,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("EventsByFilters");
         Setup.extentTest.set(test);
         // Logic to use payload data from getEventsByFiltersPositiveData data provider
         Iterator<EventsByFiltersPojo> eventsIterator = getEventsByFiltersPositiveData();
@@ -56,7 +56,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersPositiveData")
     public void wrongEndPointCase(EventsByFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_WrongEndpoint", "wrong endpoint case").assignCategory("EventsByFilters");
         Setup.extentTest.set(test);
         response = eventsByFiltersWrongEndpointCase(payload);
 
@@ -66,7 +66,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersPositiveData")
     public void wrongMethodCase(EventsByFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_WrongMethod", "wrong request method case").assignCategory("EventsByFilters");
         Setup.extentTest.set(test);
         response = eventsByFiltersMethodCase(payload);
 
@@ -77,7 +77,7 @@ public class EventsByFiltersTests {
 
     @Test(dataProviderClass = EventsByFiltersDataBuilder.class, dataProvider = "getEventsByFiltersData")
     public void BodyCase(EventsByFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc());
+        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc()).assignCategory("EventsByFilters");
         Setup.extentTest.set(test);
 
         response = eventsByFiltersPositiveCase(payload);

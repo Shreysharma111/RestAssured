@@ -15,7 +15,7 @@ public class EventsByFiltersDataBuilder {
     private static final String SHEET_RANGE = "A1:R7";
 
     //data builder for multiple scenerios from google sheets
-    public static EventsByFiltersPojo getCustomizedEventsByFiltersData(LinkedHashMap<String, String> data) {
+    public static EventsByFiltersPojo getCustomizedEventsByFiltersData(LinkedHashMap<String, String> data, String entityId1) {
         EventsByFiltersPojo eventsByFiltersPojo=new EventsByFiltersPojo();
 
         eventsByFiltersPojo.setScenerioId(data.get("scenerioId"));
@@ -23,8 +23,8 @@ public class EventsByFiltersDataBuilder {
         eventsByFiltersPojo.setExpectedStatusCode(Integer.parseInt(data.get("expectedStatusCode")));
         if(!data.get("expectedMessage").equals("NO_DATA"))
             eventsByFiltersPojo.setExpectedMessage(data.get("expectedMessage"));
-        if(!data.get("entityId1").equalsIgnoreCase("NO_DATA"))
-        eventsByFiltersPojo.setEntityId1(data.get("entityId1"));
+        eventsByFiltersPojo.setEntityId1(entityId1 != null ? entityId1 :
+                (!data.get("entityId1").equalsIgnoreCase("NO_DATA") ? data.get("entityId1") : null));
         if(!data.get("entityId2").equalsIgnoreCase("NO_DATA"))
             eventsByFiltersPojo.setEntityId2(Collections.singletonList(Integer.valueOf(data.get("entityId2"))));
         if(!data.get("entityId3").equalsIgnoreCase("NO_DATA"))
@@ -58,7 +58,7 @@ public class EventsByFiltersDataBuilder {
         }
         List<EventsByFiltersPojo> eventsByFiltersData = new ArrayList<>();
         for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
-            EventsByFiltersPojo eventsByFilters = EventsByFiltersDataBuilder.getCustomizedEventsByFiltersData(data);
+            EventsByFiltersPojo eventsByFilters = EventsByFiltersDataBuilder.getCustomizedEventsByFiltersData(data, null);
             eventsByFiltersData.add(eventsByFilters);
         }
         return eventsByFiltersData.iterator();
@@ -75,7 +75,22 @@ public class EventsByFiltersDataBuilder {
         }
         List<EventsByFiltersPojo> eventsByFiltersData = new ArrayList<>();
         for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
-            EventsByFiltersPojo eventsByFilters = EventsByFiltersDataBuilder.getCustomizedEventsByFiltersData(data);
+            EventsByFiltersPojo eventsByFilters = EventsByFiltersDataBuilder.getCustomizedEventsByFiltersData(data, null);
+            eventsByFiltersData.add(eventsByFilters);
+        }
+        return eventsByFiltersData.iterator();
+    }
+    @DataProvider(name = "getEventsByFiltersIngnData")
+    public static Iterator<EventsByFiltersPojo> getEventsByFiltersIngnData(String entityId1) {
+        List<LinkedHashMap<String, String>> sheetDataAsListOfMap = null;
+        try {
+            sheetDataAsListOfMap = GoogleSheetsUtils.getGoogleSheetsDataAsListOfMap(SPREADSHEET_ID,SHEET_NAME, "A1:R2");
+        } catch (IOException | GeneralSecurityException e) {
+            throw new RuntimeException(e);
+        }
+        List<EventsByFiltersPojo> eventsByFiltersData = new ArrayList<>();
+        for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
+            EventsByFiltersPojo eventsByFilters = EventsByFiltersDataBuilder.getCustomizedEventsByFiltersData(data, entityId1);
             eventsByFiltersData.add(eventsByFilters);
         }
         return eventsByFiltersData.iterator();
