@@ -24,12 +24,12 @@ public class ActivateCameraTests {
     @BeforeClass
     public void before(){
         OAuth2Authorization.getAccessTokenAndUpdateToken();
-        idValue = Integer.parseInt(getValue("winchcamp", "id"));
+        idValue = Integer.parseInt(getValue("winchcamp", "cameraIdForCamerasScreen"));
         RestAssured.useRelaxedHTTPSValidation();
     }
     @Test
     public void noParamCase() {
-        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_NoParamCase", "test no param flow" );
+        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_NoParamCase", "test no param flow" ).assignCategory("ActivateCamera");
         Setup.extentTest.set(test);
 
         response = activateCameraPositiveCase();
@@ -40,7 +40,7 @@ public class ActivateCameraTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_SchemaValidation", "schema validation case").assignCategory("ActivateCamera");
         Setup.extentTest.set(test);
         response = activateCameraQueryParamCase("id"+":"+idValue);
 
@@ -48,7 +48,7 @@ public class ActivateCameraTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("ActivateCamera");
         Setup.extentTest.set(test);
         response = activateCameraHeaderCase(idValue, key+":"+"Bearer "+value);
 
@@ -56,7 +56,7 @@ public class ActivateCameraTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "queryDataProviderForActivateCamera")
     public void wrongParamCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_wrongParam", "wrong query param case : zero param | not existing param");
+        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_wrongParam", "wrong query param case : zero param | not existing param").assignCategory("ActivateCamera");
         Setup.extentTest.set(test);
         response = activateCameraQueryParamCase(key+":"+value);
 
@@ -64,7 +64,7 @@ public class ActivateCameraTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_CorrectAuth", "authorization token case : correct token").assignCategory("ActivateCamera");
         Setup.extentTest.set(test);
         response = activateCameraHeaderCase(idValue,"Authorization:"+"Bearer "+getToken());
 
@@ -73,7 +73,7 @@ public class ActivateCameraTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_WrongEndpoint", "wrong endpoint case").assignCategory("ActivateCamera");
         Setup.extentTest.set(test);
         response = activateCameraWrongEndpointCase("id"+":"+idValue);
 
@@ -81,7 +81,7 @@ public class ActivateCameraTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("ActivateCamera_WrongMethod", "wrong request method case").assignCategory("ActivateCamera");
         Setup.extentTest.set(test);
         response = activateCameraMethodCase("id"+":"+idValue);
 
