@@ -1,0 +1,328 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "facilityName": {
+              "type": "string"
+            },
+            "facilityNpi": {
+              "type": "string"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "cameraName": {
+              "type": "string"
+            },
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "events": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "monitoringStatus": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "updatedDate": {
+              "type": "string"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "creatorUid": {
+              "type": "string"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "updatorUid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "facilityName",
+            "facilityNpi",
+            "areaName",
+            "cameraName",
+            "guid",
+            "rtspUrl",
+            "events",
+            "monitoringStatus",
+            "cameraStatus",
+            "createdDate",
+            "updatedDate",
+            "createdBy",
+            "creatorUid",
+            "updatedBy",
+            "updatorUid",
+            "status"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "facilityName": {
+              "type": "string"
+            },
+            "facilityNpi": {
+              "type": "string"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "cameraName": {
+              "type": "string"
+            },
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "events": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "monitoringStatus": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "updatedDate": {
+              "type": "string"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "creatorUid": {
+              "type": "string"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "updatorUid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "facilityName",
+            "facilityNpi",
+            "areaName",
+            "cameraName",
+            "guid",
+            "rtspUrl",
+            "events",
+            "monitoringStatus",
+            "cameraStatus",
+            "createdDate",
+            "updatedDate",
+            "createdBy",
+            "creatorUid",
+            "updatedBy",
+            "updatorUid",
+            "status"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "facilityName": {
+              "type": "string"
+            },
+            "facilityNpi": {
+              "type": "string"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "cameraName": {
+              "type": "string"
+            },
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "events": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "monitoringStatus": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "updatedDate": {
+              "type": "string"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "creatorUid": {
+              "type": "string"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "updatorUid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "facilityName",
+            "facilityNpi",
+            "areaName",
+            "cameraName",
+            "guid",
+            "rtspUrl",
+            "events",
+            "monitoringStatus",
+            "cameraStatus",
+            "createdDate",
+            "updatedDate",
+            "createdBy",
+            "creatorUid",
+            "updatedBy",
+            "updatorUid",
+            "status"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "facilityName": {
+              "type": "string"
+            },
+            "facilityNpi": {
+              "type": "string"
+            },
+            "areaName": {
+              "type": "string"
+            },
+            "cameraName": {
+              "type": "string"
+            },
+            "guid": {
+              "type": "string"
+            },
+            "rtspUrl": {
+              "type": "string"
+            },
+            "events": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "monitoringStatus": {
+              "type": "string"
+            },
+            "cameraStatus": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "updatedDate": {
+              "type": "string"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "creatorUid": {
+              "type": "string"
+            },
+            "updatedBy": {
+              "type": "string"
+            },
+            "updatorUid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "facilityName",
+            "facilityNpi",
+            "areaName",
+            "cameraName",
+            "guid",
+            "rtspUrl",
+            "events",
+            "monitoringStatus",
+            "cameraStatus",
+            "createdDate",
+            "updatedDate",
+            "createdBy",
+            "creatorUid",
+            "updatedBy",
+            "updatorUid",
+            "status"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "status"
+  ]
+}
