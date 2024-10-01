@@ -26,7 +26,7 @@ public class FetchAllAreaTests {
 
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_PositiveCase", "test positive flow" ).assignCategory("FetchAllArea");
         Setup.extentTest.set(test);
 
         response = fetchAllAreaPositiveCase();
@@ -38,7 +38,7 @@ public class FetchAllAreaTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_SchemaValidation", "schema validation case").assignCategory("FetchAllArea");
         Setup.extentTest.set(test);
         response = fetchAllAreaPositiveCase();
 
@@ -46,7 +46,7 @@ public class FetchAllAreaTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("FetchAllArea");
         Setup.extentTest.set(test);
         response = fetchAllAreaHeaderCase(key+":"+"Bearer "+value);
 
@@ -54,7 +54,7 @@ public class FetchAllAreaTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_CorrectAuth", "authorization token case : correct token").assignCategory("FetchAllArea");
         Setup.extentTest.set(test);
         response = fetchAllAreaHeaderCase("Authorization:"+"Bearer "+getToken());
 
@@ -62,7 +62,7 @@ public class FetchAllAreaTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_WrongEndpoint", "wrong endpoint case").assignCategory("FetchAllArea");
         Setup.extentTest.set(test);
         response = fetchAllAreaWrongEndpointCase();
 
@@ -70,7 +70,7 @@ public class FetchAllAreaTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("FetchAllArea_WrongMethod", "wrong request method case").assignCategory("FetchAllArea");
         Setup.extentTest.set(test);
         response = fetchAllAreaMethodCase();
 

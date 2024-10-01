@@ -5,10 +5,7 @@ import io.restassured.response.Response;
 import static utilities.RestAssuredUtils.*;
 
 public class FetchAllArea {
-
-    private static Response response;
-    private static String accessToken = getToken();
-    public static String fetchAllArea_url = getUrl().getString("fetchAllArea_url");
+    public static String fetchAllArea_url = getUrl("fetchAllArea_url");
 
     public static Response fetchAllAreaPositiveCase() {
         return positiveCaseGet(fetchAllArea_url);
