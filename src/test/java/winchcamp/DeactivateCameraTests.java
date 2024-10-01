@@ -25,13 +25,13 @@ public class DeactivateCameraTests {
     @BeforeSuite
     public void before(){
         OAuth2Authorization.getAccessTokenAndUpdateToken();
-        idValue = Integer.parseInt(getValue("winchcamp", "id"));
+        idValue = Integer.parseInt(getValue("winchcamp", "cameraIdForCamerasScreen"));
         RestAssured.useRelaxedHTTPSValidation();
     }
 
     @Test
     public void noParamCase() {
-        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_NoParamCase", "test no param flow" );
+        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_NoParamCase", "test no param flow" ).assignCategory("DeactivateCamera");
         Setup.extentTest.set(test);
 
         response = deactivateCameraPositiveCase();
@@ -42,7 +42,7 @@ public class DeactivateCameraTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_SchemaValidation", "schema validation case").assignCategory("DeactivateCamera");
         Setup.extentTest.set(test);
         response = deactivateCameraQueryParamCase("id"+":"+idValue);
 
@@ -50,7 +50,7 @@ public class DeactivateCameraTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("DeactivateCamera");
         Setup.extentTest.set(test);
         response = deactivateCameraHeaderCase(idValue, key+":"+"Bearer "+value);
 
@@ -58,7 +58,7 @@ public class DeactivateCameraTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "queryDataProviderForActivateCamera")
     public void wrongParamCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_wrongParam", "wrong query param case : zero param | not existing param");
+        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_wrongParam", "wrong query param case : zero param | not existing param").assignCategory("DeactivateCamera");
         Setup.extentTest.set(test);
         response = deactivateCameraQueryParamCase(key+":"+value);
 
@@ -67,7 +67,7 @@ public class DeactivateCameraTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_CorrectAuth", "authorization token case : correct token").assignCategory("DeactivateCamera");
         Setup.extentTest.set(test);
         response = deactivateCameraHeaderCase(idValue,"Authorization:"+"Bearer "+getToken());
 
@@ -76,7 +76,7 @@ public class DeactivateCameraTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_WrongEndpoint", "wrong endpoint case").assignCategory("DeactivateCamera");
         Setup.extentTest.set(test);
         response = deactivateCameraWrongEndpointCase("id"+":"+idValue);
 
@@ -84,7 +84,7 @@ public class DeactivateCameraTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("deActivateCamera_WrongMethod", "wrong request method case").assignCategory("DeactivateCamera");
         Setup.extentTest.set(test);
         response = deactivateCameraMethodCase("id"+":"+idValue);
 
