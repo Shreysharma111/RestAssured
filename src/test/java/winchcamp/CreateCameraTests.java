@@ -29,7 +29,7 @@ public class CreateCameraTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_PositiveCase", "test positive flow" ).assignCategory("CreateCamera");
         Setup.extentTest.set(test);
 
         response = createCameraPositiveCase("cameraName"+":"+cameraNameValue);
@@ -42,7 +42,7 @@ public class CreateCameraTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_SchemaValidation", "schema validation case").assignCategory("CreateCamera");
         Setup.extentTest.set(test);
         response = createCameraQueryParamCase("cameraName"+":"+cameraNameValue);
 
@@ -51,7 +51,7 @@ public class CreateCameraTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("CreateCamera");
         Setup.extentTest.set(test);
         response = createCameraHeaderCase(cameraNameValue, key+":"+"Bearer "+value);
 
@@ -60,7 +60,7 @@ public class CreateCameraTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "queryDataProviderForCreateCamera")
     public void emptyAndWrongParamCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_EmptyAndWrongParam", "query param case : empty param | wrong param");
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_EmptyAndWrongParam", "query param case : empty param | wrong param").assignCategory("CreateCamera");
         Setup.extentTest.set(test);
         response = createCameraQueryParamCase(key+":"+value);
 
@@ -70,7 +70,7 @@ public class CreateCameraTests {
 
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_CorrectAuth", "authorization token case : correct token").assignCategory("CreateCamera");
         Setup.extentTest.set(test);
         response = createCameraHeaderCase(cameraNameValue,"Authorization:"+"Bearer "+getToken());
 
@@ -79,7 +79,7 @@ public class CreateCameraTests {
 
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_WrongEndpoint", "wrong endpoint case").assignCategory("CreateCamera");
         Setup.extentTest.set(test);
         response = createCameraWrongEndpointCase("cameraName"+":"+cameraNameValue);
 
@@ -87,7 +87,7 @@ public class CreateCameraTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_WrongMethod", "wrong request method case").assignCategory("CreateCamera");
         Setup.extentTest.set(test);
         response = createCameraMethodCase("cameraName"+":"+cameraNameValue);
 
@@ -97,7 +97,7 @@ public class CreateCameraTests {
 
     @Test
     public void duplicateCameraCreationCase() {
-        ExtentTest test = Setup.extentReports.createTest("CreateCamera_DuplicateCamera", "duplicate camera creation case");
+        ExtentTest test = Setup.extentReports.createTest("CreateCamera_DuplicateCamera", "duplicate camera creation case").assignCategory("CreateCamera");
         Setup.extentTest.set(test);
         createCameraPositiveCase("cameraName"+":"+cameraNameValue);
         response = createCameraPositiveCase("cameraName"+":"+cameraNameValue);
