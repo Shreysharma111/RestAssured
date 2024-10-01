@@ -1,5 +1,7 @@
 package winchcamp;
 
+
+import utilities.BaseSetup;
 import Dataproviders.Dataproviders;
 import com.aventstack.extentreports.ExtentTest;
 import io.restassured.RestAssured;
@@ -14,7 +16,7 @@ import static endpoints.winchcamp.AllCameraConfigs.*;
 import static utilities.RestAssuredUtils.*;
 import static utilities.restAssuredFunctions.API.*;
 
-public class AllCameraConfigsTests {
+public class AllCameraConfigsTests extends BaseSetup {
     private static Response response;
 
     @BeforeClass
@@ -24,7 +26,7 @@ public class AllCameraConfigsTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_PositiveCase", "test positive flow" ).assignCategory("AllCameraConfigs");
         Setup.extentTest.set(test);
 
         response = allCameraConfigsPositiveCase();
@@ -37,7 +39,7 @@ public class AllCameraConfigsTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_SchemaValidation", "schema validation case").assignCategory("AllCameraConfigs");
         Setup.extentTest.set(test);
         response = allCameraConfigsPositiveCase();
 
@@ -45,7 +47,7 @@ public class AllCameraConfigsTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("AllCameraConfigs");
         Setup.extentTest.set(test);
         response = allCameraConfigsHeaderCase(key+":"+"Bearer "+value);
 
@@ -53,7 +55,7 @@ public class AllCameraConfigsTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_CorrectAuth", "authorization token case : correct token").assignCategory("AllCameraConfigs");
         Setup.extentTest.set(test);
         response = allCameraConfigsHeaderCase("Authorization:"+"Bearer "+getToken());
 
@@ -61,7 +63,7 @@ public class AllCameraConfigsTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_WrongEndpoint", "wrong endpoint case").assignCategory("AllCameraConfigs");
         Setup.extentTest.set(test);
         response = allCameraConfigsWrongEndpointCase();
 
@@ -69,7 +71,7 @@ public class AllCameraConfigsTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("AllCameraConfigs_WrongMethod", "wrong request method case").assignCategory("AllCameraConfigs");
         Setup.extentTest.set(test);
         response = allCameraConfigsMethodCase();
 
