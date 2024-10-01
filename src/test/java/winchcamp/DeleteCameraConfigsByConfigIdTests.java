@@ -25,7 +25,7 @@ public class DeleteCameraConfigsByConfigIdTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_PositiveCase", "test positive flow" ).assignCategory("DeleteCameraConfigsByConfigId");
         Setup.extentTest.set(test);
 
         response = deleteCameraConfigsByConfigIdPositiveCase(cameraConfigIdValue);
@@ -36,7 +36,7 @@ public class DeleteCameraConfigsByConfigIdTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_SchemaValidation", "schema validation case").assignCategory("DeleteCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = deleteCameraConfigsByConfigIdPositiveCase(cameraConfigIdValue);
 
@@ -44,7 +44,7 @@ public class DeleteCameraConfigsByConfigIdTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("DeleteCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = deleteCameraConfigsByConfigIdHeaderCase(cameraConfigIdValue,key+":"+"Bearer "+value);
 
@@ -52,7 +52,7 @@ public class DeleteCameraConfigsByConfigIdTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_WrongEndpoint", "wrong endpoint case").assignCategory("DeleteCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = deleteCameraConfigsByConfigIdWrongEndpointCase(cameraConfigIdValue);
 
@@ -60,7 +60,7 @@ public class DeleteCameraConfigsByConfigIdTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_WrongMethod", "wrong request method case").assignCategory("DeleteCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = deleteCameraConfigsByConfigIdMethodCase(cameraConfigIdValue);
 
@@ -68,7 +68,7 @@ public class DeleteCameraConfigsByConfigIdTests {
     }
     @Test
     public void repeatCase() {
-        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_RepeatCase", "test already deleted config" );
+        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_RepeatCase", "test already deleted config" ).assignCategory("DeleteCameraConfigsByConfigId");
         Setup.extentTest.set(test);
 
         response = deleteCameraConfigsByConfigIdPositiveCase(cameraConfigIdValue);
@@ -79,7 +79,7 @@ public class DeleteCameraConfigsByConfigIdTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "pathDataProviderForDeleteCameraConfigByConfigId")
     public void invalidCameraConfigIdCase(int cameraConfigIdValue) {
-        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_WrongConfigId", "invalid camera config Id as path param case");
+        ExtentTest test = Setup.extentReports.createTest("DeleteCameraConfigsByConfigId_WrongConfigId", "invalid camera config Id as path param case").assignCategory("DeleteCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = deleteCameraConfigsByConfigIdPositiveCase(cameraConfigIdValue);
 

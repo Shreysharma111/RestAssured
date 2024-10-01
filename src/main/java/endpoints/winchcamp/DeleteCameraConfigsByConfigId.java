@@ -12,7 +12,7 @@ public class DeleteCameraConfigsByConfigId {
         return positiveCase(HttpMethod.DELETE, deleteCameraConfigsByConfigId_url, pathParams);
     }
     public static Response deleteCameraConfigsByConfigIdWrongEndpointCase(int... pathParams) {
-        return positiveCase(HttpMethod.DELETE, deleteCameraConfigsByConfigId_url+"shr", pathParams);
+        return positiveCase(HttpMethod.DELETE, deleteCameraConfigsByConfigId_url+"/shr", pathParams);
     }
     public static Response deleteCameraConfigsByConfigIdMethodCase(int... pathParams) {
         return positiveCase(HttpMethod.GET, deleteCameraConfigsByConfigId_url, pathParams);
