@@ -27,7 +27,7 @@ public class CameraDetailsByGuidTests {
 
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_PositiveCase", "test positive flow" ).assignCategory("CameraDetailsByGuid");
         Setup.extentTest.set(test);
 
         response = cameraDetailsByGuidPositiveCase(guidValue);
@@ -40,7 +40,7 @@ public class CameraDetailsByGuidTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_SchemaValidation", "schema validation case").assignCategory("CameraDetailsByGuid");
         Setup.extentTest.set(test);
         response = cameraDetailsByGuidPositiveCase(guidValue);
 
@@ -49,7 +49,7 @@ public class CameraDetailsByGuidTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("CameraDetailsByGuid");
         Setup.extentTest.set(test);
         response = cameraDetailsByGuidHeaderCase(guidValue, key+":"+"Bearer "+value);
 
@@ -57,7 +57,7 @@ public class CameraDetailsByGuidTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_CorrectAuth", "authorization token case : correct token").assignCategory("CameraDetailsByGuid");
         Setup.extentTest.set(test);
         response = cameraDetailsByGuidHeaderCase(guidValue,"Authorization:"+"Bearer "+getToken());
 
@@ -66,7 +66,7 @@ public class CameraDetailsByGuidTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_WrongEndpoint", "wrong endpoint case").assignCategory("CameraDetailsByGuid");
         Setup.extentTest.set(test);
         response = cameraDetailsByGuidWrongEndpointCase(guidValue);
 
@@ -75,7 +75,7 @@ public class CameraDetailsByGuidTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_WrongMethod", "wrong request method case").assignCategory("CameraDetailsByGuid");
         Setup.extentTest.set(test);
         response = cameraDetailsByGuidMethodCase(guidValue);
 
@@ -84,12 +84,12 @@ public class CameraDetailsByGuidTests {
     }
     @Test
     public void wrongGuidCase() {
-        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_WrongGuid", "wrong guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("CameraDetailsByGuid_WrongGuid", "wrong guid as path param case").assignCategory("CameraDetailsByGuid");
         Setup.extentTest.set(test);
         response = cameraDetailsByGuidWrongGuidCase(guidValue);
 
         assertStatusCode(response, 404);
-        assertKeyValue(response, "message", "No Camera Found");
+        assertKeyValue(response, "message", "Camera Not Found");
 
     }
 
