@@ -31,7 +31,7 @@ public class EventListWithFiltersTests {
 
     @Test(dataProviderClass = EventListWithFiltersDataBuilder.class, dataProvider = "eventListWithFiltersSingleData")
     public void jsonSchemaValidationCase(EventListWithFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("EventsByFilters_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("EventListWithFilters_SchemaValidation", "schema validation case").assignCategory("EventListWithFilters");
         Setup.extentTest.set(test);
         response = eventListWithFiltersPositiveCase(payload);
 
@@ -41,7 +41,7 @@ public class EventListWithFiltersTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("EventListWithFilters_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("EventListWithFilters_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("EventListWithFilters");
         Setup.extentTest.set(test);
         // Logic to use payload data from getEventsByFiltersSingleData data provider
         Iterator<EventListWithFiltersPojo> eventsIterator = eventListWithFiltersSingleData();
@@ -57,7 +57,7 @@ public class EventListWithFiltersTests {
 
     @Test(dataProviderClass = EventListWithFiltersDataBuilder.class, dataProvider = "eventListWithFiltersSingleData")
     public void wrongEndPointCase(EventListWithFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("EventListWithFilters_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("EventListWithFilters_WrongEndpoint", "wrong endpoint case").assignCategory("EventListWithFilters");
         Setup.extentTest.set(test);
         response = eventListWithFiltersWrongEndpointCase(payload);
 
@@ -67,7 +67,7 @@ public class EventListWithFiltersTests {
 
     @Test(dataProviderClass = EventListWithFiltersDataBuilder.class, dataProvider = "eventListWithFiltersSingleData")
     public void wrongMethodCase(EventListWithFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("EventListWithFilters_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("EventListWithFilters_WrongMethod", "wrong request method case").assignCategory("EventListWithFilters");
         Setup.extentTest.set(test);
         response = eventListWithFiltersMethodCase(payload);
 
@@ -77,7 +77,7 @@ public class EventListWithFiltersTests {
 
     @Test(dataProviderClass = EventListWithFiltersDataBuilder.class, dataProvider = "eventListWithFiltersData")
     public void BodyCase(EventListWithFiltersPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc());
+        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc()).assignCategory("EventListWithFilters");
         Setup.extentTest.set(test);
 
         response = eventListWithFiltersPositiveCase(payload);

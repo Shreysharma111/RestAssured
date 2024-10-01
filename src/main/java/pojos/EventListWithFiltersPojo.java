@@ -12,7 +12,7 @@ import java.util.List;
 public class EventListWithFiltersPojo extends BasePojo {
     private String entityId1;
     private List<Integer> entityId2;
-    private int entityId3;
+    private Integer entityId3;
     private String category1;
     private String category2;
 }
