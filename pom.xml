@@ -19,7 +19,7 @@
         <json>20231013</json>
         <jacksonVersion>2.14.1</jacksonVersion>
         <gsonVersion>2.10</gsonVersion>
-        <extentVersion>5.1.0</extentVersion>
+        <extentVersion>5.1.2</extentVersion>
         <datafakerVersion>1.8.0</datafakerVersion>
         <lombokVersion>1.18.24</lombokVersion>
         <poi>5.2.3</poi>
@@ -29,7 +29,16 @@
         <poijiVersion>4.1.1</poijiVersion>
         <jsonSchemaValidator>5.3.0</jsonSchemaValidator>
     </properties>
-
+    <developers>
+        <developer>
+            <id>352</id>
+            <name>Shrey Sharma</name>
+            <email>shrey.sharma@instantsys.com</email>
+            <roles>
+                <role>Automation Engineer</role>
+            </roles>
+        </developer>
+    </developers>
     <build>
         <pluginManagement>
             <plugins>
@@ -75,6 +84,12 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testngVersion}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.networknt/json-schema-validator -->
+        <dependency>
+            <groupId>com.networknt</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>1.5.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->

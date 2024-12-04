@@ -4,37 +4,41 @@
     <listeners>
         <listener class-name="utilities.reporting.Setup"/>
     </listeners>
-    <test preserve-order="true"
+    <test
           name="AssureSuite">
         <classes>
-<!--            <class name="winchcamp.CameraDetailsByGuidTests"></class>-->
-<!--            <class name="winchcamp.AllCameraConfigsTests"></class>-->
-<!--            <class name="winchcamp.MonitoringAreasListByFacIdTests"></class>-->
-<!--            <class name="winchcamp.ManualOverrideTests"></class>-->
-<!--            <class name="winchcamp.GetCameraConfigsByConfigIdTests"></class>-->
-<!--            <class name="winchcamp.FacilityDetailsByGuidTests"></class>-->
-<!--            <class name="winchcamp.EventsByFiltersTests"></class>-->
-<!--            <class name="winchcamp.SaveEventsTests"></class>-->
-<!--            <class name="winchcamp.EventListWithFiltersTests"></class>-->
-<!--            <class name="winchcamp.SaveCameraConfigsTests"></class>-->
-<!--            <class name="winchcamp.GetAllTenantCameraConfigTests"></class>-->
-<!--            <class name="winchcamp.GetZonesByRegionTests"></class>-->
-<!--            <class name="winchcamp.CreateCameraTests"></class>-->
-<!--            <class name="winchcamp.GetAllCameraTests"></class>-->
-<!--            <class name="winchcamp.ActivateCameraTests"></class>-->
-<!--            <class name="winchcamp.DeactivateCameraTests"></class>-->
-<!--            <class name="winchcamp.FetchAllAreaTests"></class>-->
-<!--            <class name="winchcamp.EditMasterCameraTests"></class>-->
-<!--            <class name="winchcamp.GetFacilitiesByZoneAndRegionTests"></class>-->
-<!--            <class name="winchcamp.GetFacilitiesByRoleTests"></class>-->
-<!--            <class name="winchcamp.DeleteCameraConfigsByConfigIdTests"></class>-->
-<!--            <class name="winchcamp.UpdateCameraConfigsTests"></class>-->
-<!--            <class name="winchcamp.FCMTokenListTests"></class>-->
-<!--            <class name="winchcamp.SaveFCMTokenTests"></class>-->
-<!--            <class name="winchcamp.AIEventReportScreenDataTests"></class>-->
-<!--            <class name="winchcamp.AreaByGuidTests"></class>-->
-<!--            <class name="winchcamp.FetchReportHistoryTests"></class>-->
-            <class name="winchcamp.CSVGenerationForAreaCameraReportTests"></class>
+<!--            <class name="winchcamp.CameraDetailsByGuidTests"/>-->
+<!--            <class name="winchcamp.AllCameraConfigsTests"/>-->
+<!--            <class name="winchcamp.MonitoringAreasListByFacIdTests"/>-->
+<!--            <class name="winchcamp.ManualOverrideTests"/>-->
+<!--            <class name="winchcamp.GetCameraConfigsByConfigIdTests"/>-->
+<!--            <class name="winchcamp.FacilityDetailsByGuidTests"/>-->
+<!--            <class name="winchcamp.EventsByFiltersTests"/>-->
+<!--            <class name="winchcamp.SaveEventsTests"/>-->
+<!--            <class name="winchcamp.EventListWithFiltersTests"/>-->
+<!--            <class name="winchcamp.SaveCameraConfigsTests"/>-->
+<!--            <class name="winchcamp.GetAllTenantCameraConfigTests"/>-->
+<!--            <class name="winchcamp.GetZonesByRegionTests"/>-->
+<!--            <class name="winchcamp.CreateCameraTests"/>-->
+<!--            <class name="winchcamp.GetAllCameraTests"/>-->
+<!--            <class name="winchcamp.ActivateCameraTests"/>-->
+<!--            <class name="winchcamp.DeactivateCameraTests"/>-->
+<!--            <class name="winchcamp.FetchAllAreaTests"/>-->
+<!--            <class name="winchcamp.EditMasterCameraTests"/>-->
+<!--            <class name="winchcamp.GetFacilitiesByZoneAndRegionTests"/>-->
+<!--            <class name="winchcamp.GetFacilitiesByRoleTests"/>-->
+<!--            <class name="winchcamp.DeleteCameraConfigsByConfigIdTests"/>-->
+<!--            <class name="winchcamp.UpdateCameraConfigsTests"/>-->
+<!--            <class name="winchcamp.FCMTokenListTests"/>-->
+<!--            <class name="winchcamp.SaveFCMTokenTests"/>-->
+<!--            <class name="winchcamp.AIEventReportScreenDataTests"/>-->
+<!--            <class name="winchcamp.AreaByGuidTests"/>-->
+<!--            <class name="winchcamp.FetchReportHistoryTests"/>-->
+<!--            <class name="winchcamp.CSVGenerationForAreaCameraReportTests"/>-->
+<!--            <class name="winchcamp.EventsByFilterTests"/>-->
+<!--            <class name="winchcamp.AreaCameraReportScreenDataTests"/>-->
+<!--            <class name="winchcamp.GetFacilitiesTests"/>-->
+<!--            <class name="winchcamp.GetDetailsByFacilityIdTests"/>-->
         </classes>
     </test>
 </suite>

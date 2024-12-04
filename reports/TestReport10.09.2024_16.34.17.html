@@ -1,0 +1,996 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test ExecutionReport</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Test API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 10, 2024 04:34:17 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">GetDetailsByFacilityId</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="GetDetailsByFacilityId"
+          device="">
+          <div class="test-detail">
+            <p class="name">GetDetailsByFacilityId_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>4:34:17 pm</span> / <span>00:00:00:810</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetDetailsByFacilityId_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.10.2024 4:34:17 pm</span>
+<span class='badge badge-danger'>09.10.2024 4:34:18 pm</span>
+<span class='badge badge-default'>00:00:00:810</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GetDetailsByFacilityId</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/31/areas
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer GUyZC1yZXBseU.....InVzZ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-281",
+    "status": 401,
+    "message": "An error occurred while attempting to decode the Jwt: Invalid JWT serialization: Missing dot delimiter(s)",
+    "error": "Unauthorized",
+    "type": "InvalidBearerTokenException"
+}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="GetDetailsByFacilityId"
+          device="">
+          <div class="test-detail">
+            <p class="name">GetDetailsByFacilityId_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>4:34:18 pm</span> / <span>00:00:00:207</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetDetailsByFacilityId_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.10.2024 4:34:18 pm</span>
+<span class='badge badge-danger'>09.10.2024 4:34:18 pm</span>
+<span class='badge badge-default'>00:00:00:207</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GetDetailsByFacilityId</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/31/areas
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-281",
+    "status": 401,
+    "message": "Bearer token is malformed",
+    "error": "Unauthorized",
+    "type": "OAuth2AuthenticationException"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="GetDetailsByFacilityId"
+          device="">
+          <div class="test-detail">
+            <p class="name">GetDetailsByFacilityId_InvalidFacilityId</p>
+            <p class="text-sm">
+              <span>4:34:18 pm</span> / <span>00:00:00:254</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetDetailsByFacilityId_InvalidFacilityId</h5>
+<span class='badge badge-success'>09.10.2024 4:34:18 pm</span>
+<span class='badge badge-danger'>09.10.2024 4:34:18 pm</span>
+<span class='badge badge-default'>00:00:00:254</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GetDetailsByFacilityId</span></div>
+<div class="m-t-10 m-l-5">invalid facility id as path param case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/0/areas
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc....._xHOw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          Assertion passed! message in response body has the expected value: No facility found in database for facilityId(0)!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "NOT_FOUND",
+    "message": "No facility found in database for facilityId(0)!",
+    "status": 404,
+    "error": "Not Found"
+}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag="GetDetailsByFacilityId"
+          device="">
+          <div class="test-detail">
+            <p class="name">GetDetailsByFacilityId_InvalidFacilityId</p>
+            <p class="text-sm">
+              <span>4:34:18 pm</span> / <span>00:00:00:299</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">GetDetailsByFacilityId_InvalidFacilityId</h5>
+<span class='badge badge-success'>09.10.2024 4:34:18 pm</span>
+<span class='badge badge-danger'>09.10.2024 4:34:19 pm</span>
+<span class='badge badge-default'>00:00:00:299</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GetDetailsByFacilityId</span></div>
+<div class="m-t-10 m-l-5">invalid facility id as path param case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/99999/areas
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc....._xHOw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Assertion failed! message in response body does not have the expected value. Expected: No facility found in database for facilityId(0)!, Actual: No facility found in database for facilityId(99,999)!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "NOT_FOUND",
+    "message": "No facility found in database for facilityId(99,999)!",
+    "status": 404,
+    "error": "Not Found"
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <span class='badge white-text red'>
+Cannot inject @Test annotated Method [jsonSchemaValidationCase] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)<br> org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)<br> org.testng.internal.Parameters.createParameters(Parameters.java:693)<br> org.testng.internal.Parameters.handleParameters(Parameters.java:879)<br> org.testng.internal.Parameters.handleParameters(Parameters.java:728)<br> org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)<br> org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <span class='badge white-text red'>
+Cannot inject @Test annotated Method [positiveCase] with [int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)<br> org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)<br> org.testng.internal.Parameters.createParameters(Parameters.java:693)<br> org.testng.internal.Parameters.handleParameters(Parameters.java:879)<br> org.testng.internal.Parameters.handleParameters(Parameters.java:728)<br> org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)<br> org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="GetDetailsByFacilityId"
+          device="">
+          <div class="test-detail">
+            <p class="name">GetDetailsByFacilityId_WrongEndpoint</p>
+            <p class="text-sm">
+              <span>4:34:19 pm</span> / <span>00:00:00:429</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetDetailsByFacilityId_WrongEndpoint</h5>
+<span class='badge badge-success'>09.10.2024 4:34:19 pm</span>
+<span class='badge badge-danger'>09.10.2024 4:34:19 pm</span>
+<span class='badge badge-default'>00:00:00:429</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GetDetailsByFacilityId</span></div>
+<div class="m-t-10 m-l-5">wrong endpoint case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/31/areas/shr
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc....._xHOw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-10T11:04:19.818+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/facility/31/areas/shr"
+}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="GetDetailsByFacilityId"
+          device="">
+          <div class="test-detail">
+            <p class="name">GetDetailsByFacilityId_WrongMethod</p>
+            <p class="text-sm">
+              <span>4:34:19 pm</span> / <span>00:00:00:222</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetDetailsByFacilityId_WrongMethod</h5>
+<span class='badge badge-success'>09.10.2024 4:34:19 pm</span>
+<span class='badge badge-danger'>09.10.2024 4:34:19 pm</span>
+<span class='badge badge-default'>00:00:00:222</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GetDetailsByFacilityId</span></div>
+<div class="m-t-10 m-l-5">wrong request method case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/31/areas
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc....._xHOw</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          Status code assertion passed! Expected: 405, Actual: 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:34:19 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-10T11:04:20.043+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/facility/31/areas"
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">GetDetailsByFacilityId</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>GetDetailsByFacilityId</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:34:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>GetDetailsByFacilityId_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:34:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>GetDetailsByFacilityId_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:34:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>GetDetailsByFacilityId_InvalidFacilityId</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:34:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>GetDetailsByFacilityId_InvalidFacilityId</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:34:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>GetDetailsByFacilityId_WrongEndpoint</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:34:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>GetDetailsByFacilityId_WrongMethod</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 10, 2024 04:34:17 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 10, 2024 04:34:19 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='83%'>
+<b>5</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='16%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='12%'><b>7</b> events passed</small></div>
+<div>
+<small data-tooltip='9%'><b>5</b> events failed,
+<b data-tooltip='%'>42</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"GetDetailsByFacilityId_EmptyAndWrongAuth":0.81,"GetDetailsByFacilityId_EmptyAndWrongAuth":0.207,"GetDetailsByFacilityId_InvalidFacilityId":0.254,"GetDetailsByFacilityId_InvalidFacilityId":0.299,"GetDetailsByFacilityId_WrongEndpoint":0.429,"GetDetailsByFacilityId_WrongMethod":0.222
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>GetDetailsByFacilityId</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>83.333%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 7,
+failEvents: 5,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 42
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

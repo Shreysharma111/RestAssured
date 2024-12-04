@@ -12,6 +12,9 @@ import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -230,6 +233,54 @@ public class API {
 
         // Logging success message
         extentTest.get().log(Status.PASS,"All objects contain the fields: " + String.join(", ", fieldNames));
+    }
+    public static void validateDatesWithinRange(Response response, String fromDate, String toDate) {
+        // Parse the response body to JsonPath object
+        JsonPath jsonPath = response.jsonPath();
+
+        // Extract the list of objects under the "data" field
+        List<Map<String, Object>> dataList = jsonPath.getList("data");
+
+        // Define the date format used in the response and request
+        SimpleDateFormat partDateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat requestDateFormat = new SimpleDateFormat("dd-MM-yyyy");
+
+        // Parse the fromDate and toDate from the request
+        Date from = null;
+        Date to = null;
+        try {
+            from = requestDateFormat.parse(fromDate);
+            to = requestDateFormat.parse(toDate);
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+        boolean allDatesValid = true;  // Flag to track if all dates are within range
+
+        // Loop through each object in the list and validate the partDate field
+        for (Map<String, Object> item : dataList) {
+            String partDateStr = (String) item.get("partDate");
+            Date eventDate = null;
+            try {
+                eventDate = partDateFormat.parse(partDateStr);
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+
+            // Assert that the partDate is within the specified range
+            if (eventDate.compareTo(from) >= 0 && eventDate.compareTo(to) <= 0) {
+                extentTest.get().log(Status.PASS, "PartDate '" + partDateStr + "' is within the expected range of '" + fromDate + "' and '" + toDate + "'.");
+            } else {
+                allDatesValid = false;
+                extentTest.get().log(Status.FAIL, "PartDate '" + partDateStr + "' is NOT within the expected range of '" + fromDate + "' and '" + toDate + "'.");
+            }
+        }
+
+        // Logging a final success message if all dates are valid
+        if (allDatesValid) {
+            extentTest.get().log(Status.PASS, "All objects contain partDate within the expected range.");
+        } else {
+            extentTest.get().log(Status.FAIL, "One or more objects contain partDate outside the expected range.");
+        }
     }
 
     public static void assertFieldsWithExpectedValues(Response response, Map<String, Object> expectedFieldValues) {

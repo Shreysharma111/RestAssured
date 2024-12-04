@@ -1,0 +1,1693 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test ExecutionReport</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Test API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 12, 2024 04:16:33 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">EventListWithFilters</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_BodyScenerio1</p>
+            <p class="text-sm">
+              <span>4:16:40 pm</span> / <span>00:00:01:573</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">EventListWithFilters_BodyScenerio1</h5>
+<span class='badge badge-success'>09.12.2024 4:16:40 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:42 pm</span>
+<span class='badge badge-default'>00:00:01:573</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">pass all the fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":1,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <span class='badge white-text red'>Failed to parse the JSON document</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)<br> io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)<br> io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)<br> io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br> io.restassured.path.json.JsonPath.getString(JsonPath.java:352)<br> utilities.restAssuredFunctions.API.assertKeyValue(API.java:96)<br> winchcamp.EventListWithFiltersTests.BodyCase(EventListWithFiltersTests.java:95)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_BodyScenerio2</p>
+            <p class="text-sm">
+              <span>4:16:42 pm</span> / <span>00:00:00:283</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">EventListWithFilters_BodyScenerio2</h5>
+<span class='badge badge-success'>09.12.2024 4:16:42 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:42 pm</span>
+<span class='badge badge-default'>00:00:00:283</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">pass only entityId3</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"entityId1":null,"entityId2":null,"entityId3":1,"category1":null,"category2":null}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <span class='badge white-text red'>Failed to parse the JSON document</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)<br> io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)<br> io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)<br> io.restassured.path.json.JsonPath.get(JsonPath.java:202)<br> io.restassured.path.json.JsonPath.getString(JsonPath.java:352)<br> utilities.restAssuredFunctions.API.assertKeyValue(API.java:96)<br> winchcamp.EventListWithFiltersTests.BodyCase(EventListWithFiltersTests.java:95)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_BodyScenerio3</p>
+            <p class="text-sm">
+              <span>4:16:42 pm</span> / <span>00:00:00:260</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventListWithFilters_BodyScenerio3</h5>
+<span class='badge badge-success'>09.12.2024 4:16:42 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:42 pm</span>
+<span class='badge badge-default'>00:00:00:260</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">enter incorrect values for all fields except entityId3</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"entityId1":"a7d5110b-753a-4029-9905-086fef2bd14b","entityId2":[5101],"entityId3":1,"category1":"cleaningg","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Status code assertion passed! Expected: 204, Actual: 204
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 221ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:42 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_BodyScenerio4</p>
+            <p class="text-sm">
+              <span>4:16:42 pm</span> / <span>00:00:00:253</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventListWithFilters_BodyScenerio4</h5>
+<span class='badge badge-success'>09.12.2024 4:16:42 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:43 pm</span>
+<span class='badge badge-default'>00:00:00:253</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">enter incorrect entityId3</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":10,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Status code assertion passed! Expected: 400, Actual: 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Assertion passed! message in response body has the expected value: tenant not found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 214ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-286",
+    "status": 400,
+    "message": "tenant not found",
+    "error": "Bad Request",
+    "type": "MethodArgumentNotValidException",
+    "errors": [
+        {
+            "message": "tenant not found",
+            "fieldName": "entityId3",
+            "objectName": "AIEventsFilterDto"
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_BodyScenerio5</p>
+            <p class="text-sm">
+              <span>4:16:43 pm</span> / <span>00:00:00:298</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventListWithFilters_BodyScenerio5</h5>
+<span class='badge badge-success'>09.12.2024 4:16:43 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:43 pm</span>
+<span class='badge badge-default'>00:00:00:298</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">don't pass entityId3</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":null,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Status code assertion passed! Expected: 400, Actual: 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Assertion passed! message in response body has the expected value: tenant Id can not be null
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 266ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:43 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-286",
+    "status": 400,
+    "message": "tenant Id can not be null",
+    "error": "Bad Request",
+    "type": "MethodArgumentNotValidException",
+    "errors": [
+        {
+            "message": "tenant Id can not be null",
+            "fieldName": "entityId3",
+            "objectName": "AIEventsFilterDto"
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>4:16:43 pm</span> / <span>00:00:00:674</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventListWithFilters_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.12.2024 4:16:43 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:44 pm</span>
+<span class='badge badge-default'>00:00:00:674</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer GUyZC1yZXBseU.....InVzZ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":1,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Unauthorized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-286",
+    "status": 401,
+    "message": "An error occurred while attempting to decode the Jwt: Invalid JWT serialization: Missing dot delimiter(s)",
+    "error": "Unauthorized",
+    "type": "InvalidBearerTokenException"
+}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>4:16:44 pm</span> / <span>00:00:00:758</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventListWithFilters_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.12.2024 4:16:44 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:44 pm</span>
+<span class='badge badge-default'>00:00:00:758</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":1,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Unauthorized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:44 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-286",
+    "status": 401,
+    "message": "Bearer token is malformed",
+    "error": "Unauthorized",
+    "type": "OAuth2AuthenticationException"
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="8"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_SchemaValidation</p>
+            <p class="text-sm">
+              <span>4:16:45 pm</span> / <span>00:00:00:452</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">EventListWithFilters_SchemaValidation</h5>
+<span class='badge badge-success'>09.12.2024 4:16:45 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:45 pm</span>
+<span class='badge badge-default'>00:00:00:452</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">schema validation case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":1,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          <span class='badge white-text red'>com.fasterxml.jackson.core.JsonParseException: no JSON Text to read from input
+ at [Source: (StringReader); line: 1, column: 1]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)<br> io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)<br> org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)<br> io.restassured.internal.assertion.BodyMatcher.validate(BodyMatcher.java:82)<br> io.restassured.internal.assertion.BodyMatcherGroup.lambda$validate$0(BodyMatcherGroup.java:30)<br> java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)<br> java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)<br> java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)<br> java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)<br> java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)<br> java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)<br> java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)<br> io.restassured.internal.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.java:30)<br> io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)<br> org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br> org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br> org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)<br> io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)<br> io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)<br> org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)<br> org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)<br> org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)<br> io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)<br> io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)<br> org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)<br> org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)<br> org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)<br> org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)<br> org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)<br> io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)<br> io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)<br> utilities.RestAssuredUtils.validateJsonSchema(RestAssuredUtils.java:189)<br> winchcamp.EventListWithFiltersTests.jsonSchemaValidationCase(EventListWithFiltersTests.java:38)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:45 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_WrongEndpoint</p>
+            <p class="text-sm">
+              <span>4:16:46 pm</span> / <span>00:00:00:433</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventListWithFilters_WrongEndpoint</h5>
+<span class='badge badge-success'>09.12.2024 4:16:46 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:46 pm</span>
+<span class='badge badge-default'>00:00:00:433</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">wrong endpoint case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter/shr
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":1,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:46 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-12T10:46:46.675+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/facility/getEventsByFilter/shr"
+}); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="EventListWithFilters"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventListWithFilters_WrongMethod</p>
+            <p class="text-sm">
+              <span>4:16:47 pm</span> / <span>00:00:00:310</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventListWithFilters_WrongMethod</h5>
+<span class='badge badge-success'>09.12.2024 4:16:47 pm</span>
+<span class='badge badge-danger'>09.12.2024 4:16:47 pm</span>
+<span class='badge badge-default'>00:00:00:310</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventListWithFilters</span></div>
+<div class="m-t-10 m-l-5">wrong request method case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          Endpoint    :   /v1/user/facility/getEventsByFilter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....vpFkQ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create({"entityId1":"fa413faa-d94e-4c21-afd2-d8c1c3bd0a0c","entityId2":[5100],"entityId3":1,"category1":"cleaning","category2":"cleaning_started"}); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          Status code assertion passed! Expected: 405, Actual: 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Method Not Allowed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:16:47 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-12T10:46:47.420+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/facility/getEventsByFilter"
+}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">EventListWithFilters</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>EventListWithFilters</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:16:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>EventListWithFilters_BodyScenerio1</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>EventListWithFilters_BodyScenerio2</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>EventListWithFilters_BodyScenerio3</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>EventListWithFilters_BodyScenerio4</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>EventListWithFilters_BodyScenerio5</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>EventListWithFilters_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:16:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>EventListWithFilters_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:16:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>EventListWithFilters_SchemaValidation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:16:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>EventListWithFilters_WrongEndpoint</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:16:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>EventListWithFilters_WrongMethod</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 12, 2024 04:16:33 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 12, 2024 04:16:47 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>7</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='70%'>
+<b>7</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='30%'><b>3</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='14%'><b>16</b> events passed</small></div>
+<div>
+<small data-tooltip='5%'><b>6</b> events failed,
+<b data-tooltip='%'>90</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"EventListWithFilters_BodyScenerio1":1.573,"EventListWithFilters_BodyScenerio2":0.283,"EventListWithFilters_BodyScenerio3":0.26,"EventListWithFilters_BodyScenerio4":0.253,"EventListWithFilters_BodyScenerio5":0.298,"EventListWithFilters_EmptyAndWrongAuth":0.674,"EventListWithFilters_EmptyAndWrongAuth":0.758,"EventListWithFilters_SchemaValidation":0.452,"EventListWithFilters_WrongEndpoint":0.433,"EventListWithFilters_WrongMethod":0.31
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>EventListWithFilters</td>
+<td>7</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>70%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 7,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 16,
+failEvents: 6,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 90
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

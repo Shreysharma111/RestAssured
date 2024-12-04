@@ -26,20 +26,20 @@ public class GetZonesByRegionTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_PositiveCase", "test positive flow" ).assignCategory("GetZonesByRegion");
         Setup.extentTest.set(test);
 
         response = getZonesByRegionPositiveCase(regionIdValue);
 
         assertStatusCode(response, 200);
         assertFieldIsPresentAndNotEmpty(response, "data");
-        assertKeyValue(response, "data.id", regionIdValue);
+        assertKeyValue(response, "data[0].zone.id", regionIdValue);
         assertResponseTime(response);
 
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_SchemaValidation", "schema validation case").assignCategory("GetZonesByRegion");
         Setup.extentTest.set(test);
         response = getZonesByRegionPositiveCase(regionIdValue);
 
@@ -48,7 +48,7 @@ public class GetZonesByRegionTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("GetZonesByRegion");
         Setup.extentTest.set(test);
         response = getZonesByRegionHeaderCase(regionIdValue, key+":"+"Bearer "+value);
 
@@ -56,7 +56,7 @@ public class GetZonesByRegionTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_CorrectAuth", "authorization token case : correct token").assignCategory("GetZonesByRegion");
         Setup.extentTest.set(test);
         response = getZonesByRegionHeaderCase(regionIdValue,"Authorization:"+"Bearer "+getToken());
 
@@ -64,7 +64,7 @@ public class GetZonesByRegionTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_WrongEndpoint", "wrong endpoint case").assignCategory("GetZonesByRegion");
         Setup.extentTest.set(test);
         response = getZonesByRegionWrongEndpointCase(regionIdValue);
 
@@ -73,7 +73,7 @@ public class GetZonesByRegionTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_WrongMethod", "wrong request method case").assignCategory("GetZonesByRegion");
         Setup.extentTest.set(test);
         response = getZonesByRegionMethodCase(regionIdValue);
 
@@ -82,7 +82,7 @@ public class GetZonesByRegionTests {
     }
     @Test
     public void wrongRegionIdCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_WrongGuid", "wrong guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("GetZonesByRegion_WrongGuid", "wrong guid as path param case").assignCategory("GetZonesByRegion");
         Setup.extentTest.set(test);
         response = getZonesByRegionWrongRegionIdCase(regionIdValue);
 

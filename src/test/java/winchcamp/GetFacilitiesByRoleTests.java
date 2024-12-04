@@ -24,7 +24,7 @@ public class GetFacilitiesByRoleTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_PositiveCase", "test positive flow" ).assignCategory("GetFacilitiesByRole");
         Setup.extentTest.set(test);
 
         response = getFacilitiesByRolePositiveCase();
@@ -35,7 +35,7 @@ public class GetFacilitiesByRoleTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_SchemaValidation", "schema validation case").assignCategory("GetFacilitiesByRole");
         Setup.extentTest.set(test);
         response = getFacilitiesByRolePositiveCase();
 
@@ -43,7 +43,7 @@ public class GetFacilitiesByRoleTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("GetFacilitiesByRole");
         Setup.extentTest.set(test);
         response = getFacilitiesByRoleHeaderCase(key+":"+"Bearer "+value);
 
@@ -51,7 +51,7 @@ public class GetFacilitiesByRoleTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_CorrectAuth", "authorization token case : correct token").assignCategory("GetFacilitiesByRole");
         Setup.extentTest.set(test);
         response = getFacilitiesByRoleHeaderCase("Authorization:"+"Bearer "+getToken());
 
@@ -59,7 +59,7 @@ public class GetFacilitiesByRoleTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_WrongEndpoint", "wrong endpoint case").assignCategory("GetFacilitiesByRole");
         Setup.extentTest.set(test);
         response = getFacilitiesByRoleWrongEndpointCase();
 
@@ -67,7 +67,7 @@ public class GetFacilitiesByRoleTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("GetFacilitiesByRole_WrongMethod", "wrong request method case").assignCategory("GetFacilitiesByRole");
         Setup.extentTest.set(test);
         response = getFacilitiesByRoleMethodCase();
 

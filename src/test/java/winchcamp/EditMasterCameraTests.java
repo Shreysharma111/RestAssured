@@ -29,7 +29,7 @@ public class EditMasterCameraTests {
     }
     @Test
     public void noParamCase() {
-        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_NoParamCase", "test no param flow" );
+        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_NoParamCase", "test no param flow" ).assignCategory("EditMasterCamera");
         Setup.extentTest.set(test);
 
         response = editMasterCameraPositiveCase();
@@ -40,7 +40,7 @@ public class EditMasterCameraTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_SchemaValidation", "schema validation case").assignCategory("EditMasterCamera");
         Setup.extentTest.set(test);
         response = editMasterCameraQueryParamCase("cameraName"+":"+cameraNameValue, "id"+":"+idValue);
 
@@ -48,7 +48,7 @@ public class EditMasterCameraTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("EditMasterCamera");
         Setup.extentTest.set(test);
         response = editMasterCameraHeaderCase(cameraNameValue, idValue, key+":"+"Bearer "+value);
 
@@ -62,7 +62,7 @@ public class EditMasterCameraTests {
         for (int i = 0; i < queryParams.length; i++) {
             keyValuePairs[i] = queryParams[i][0] + ":" + queryParams[i][1]; // "key:value"
         }
-        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_wrongParam", "empty query param case : cameraName param | id param");
+        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_wrongParam", "empty query param case : cameraName param | id param").assignCategory("EditMasterCamera");
         Setup.extentTest.set(test);
         response = editMasterCameraQueryParamCase(keyValuePairs);
 
@@ -70,7 +70,7 @@ public class EditMasterCameraTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_WrongEndpoint", "wrong endpoint case").assignCategory("EditMasterCamera");
         Setup.extentTest.set(test);
         response = editMasterCameraWrongEndpointCase("cameraName"+":"+cameraNameValue, "id"+":"+idValue);
 
@@ -78,7 +78,7 @@ public class EditMasterCameraTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("EditMasterCamera_WrongMethod", "wrong request method case").assignCategory("EditMasterCamera");
         Setup.extentTest.set(test);
         response = editMasterCameraMethodCase("cameraName"+":"+cameraNameValue, "id"+":"+idValue);
 

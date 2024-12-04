@@ -34,7 +34,7 @@ public class AreaByGuidTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_PositiveCase", "test positive flow" ).assignCategory("AreaByGuid");
         Setup.extentTest.set(test);
 
         response = areaByGuidPositiveCase(guidForAreaByGuidValue);
@@ -49,7 +49,7 @@ public class AreaByGuidTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_SchemaValidation", "schema validation case").assignCategory("AreaByGuid");
         Setup.extentTest.set(test);
         response = areaByGuidPositiveCase(guidForAreaByGuidValue);
 
@@ -57,7 +57,7 @@ public class AreaByGuidTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("AreaByGuid");
         Setup.extentTest.set(test);
         response = areaByGuidHeaderCase(guidForAreaByGuidValue,key+":"+"Bearer "+value);
 
@@ -65,7 +65,7 @@ public class AreaByGuidTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_WrongEndpoint", "wrong endpoint case").assignCategory("AreaByGuid");
         Setup.extentTest.set(test);
         response = areaByGuidWrongEndpointCase(guidForAreaByGuidValue);
 
@@ -73,7 +73,7 @@ public class AreaByGuidTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_WrongMethod", "wrong request method case").assignCategory("AreaByGuid");
         Setup.extentTest.set(test);
         response = areaByGuidMethodCase(guidForAreaByGuidValue);
 
@@ -81,7 +81,7 @@ public class AreaByGuidTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "pathDataProviderForFCMTokenList")
     public void invalidGuidCase(String guidForFCMTokenValue) {
-        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_InvalidGuid", "invalid guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("AreaByGuid_InvalidGuid", "invalid guid as path param case").assignCategory("AreaByGuid");
         Setup.extentTest.set(test);
         response = areaByGuidPositiveCase(guidForFCMTokenValue);
 

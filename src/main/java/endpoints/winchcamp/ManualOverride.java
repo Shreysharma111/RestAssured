@@ -18,7 +18,7 @@ public class ManualOverride {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/users/override/camera"+"/{guid}", guid);
+                .get("/v1/user/users/override/camera"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -32,7 +32,7 @@ public class ManualOverride {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/users/override/cameraaa"+"/{guid}", guid);
+                .get("/v1/user/users/override/cameraaa"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -46,7 +46,7 @@ public class ManualOverride {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .get("/users/override/camera"+"/{guid}shr", guid);
+                .get("/v1/user/users/override/camera"+"/{guid}shr", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecWithToken(accessToken));
@@ -60,7 +60,7 @@ public class ManualOverride {
         response = RestAssured.given()
                 .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
                 .when()
-                .post("/users/override/camera"+"/{guid}", guid);
+                .post("/v1/user/users/override/camera"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "POST", commonRequestSpecWithToken(accessToken));
@@ -75,7 +75,7 @@ public class ManualOverride {
         response = RestAssured.given()
                 .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
                 .when()
-                .get("/users/override/camera"+"/{guid}", guid);
+                .get("/v1/user/users/override/camera"+"/{guid}", guid);
 
         //log details and verify status code in extent report
         printRequestLogInReport(uri, "GET", commonRequestSpecGet(headers));

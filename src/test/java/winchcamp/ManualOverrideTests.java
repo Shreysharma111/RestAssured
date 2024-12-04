@@ -21,12 +21,12 @@ public class ManualOverrideTests {
     @BeforeClass
     public void before(){
         OAuth2Authorization.getAccessTokenAndUpdateToken();
-        guidValue = getValue("winchcamp", "guid");
+        guidValue = getValue("winchcamp", "guidForManualOverride");
         RestAssured.useRelaxedHTTPSValidation();
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("ManualOverride_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("ManualOverride_PositiveCase", "test positive flow" ).assignCategory("ManualOverride");
         Setup.extentTest.set(test);
 
         response = manualOverridePositiveCase(guidValue);
@@ -37,7 +37,7 @@ public class ManualOverrideTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("ManualOverride_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("ManualOverride_SchemaValidation", "schema validation case").assignCategory("ManualOverride");
         Setup.extentTest.set(test);
         response = manualOverridePositiveCase(guidValue);
 
@@ -45,7 +45,7 @@ public class ManualOverrideTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("ManualOverride_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("ManualOverride_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("ManualOverride");
         Setup.extentTest.set(test);
         response = manualOverrideHeaderCase(guidValue, key+":"+"Bearer "+value);
 
@@ -53,7 +53,7 @@ public class ManualOverrideTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("ManualOverride_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("ManualOverride_CorrectAuth", "authorization token case : correct token").assignCategory("ManualOverride");
         Setup.extentTest.set(test);
         response = manualOverrideHeaderCase(guidValue,"Authorization:"+"Bearer "+getToken());
 
@@ -62,7 +62,7 @@ public class ManualOverrideTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("ManualOverride_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("ManualOverride_WrongEndpoint", "wrong endpoint case").assignCategory("ManualOverride");
         Setup.extentTest.set(test);
         response = manualOverrideWrongEndpointCase(guidValue);
 
@@ -71,7 +71,7 @@ public class ManualOverrideTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("ManualOverride_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("ManualOverride_WrongMethod", "wrong request method case").assignCategory("ManualOverride");
         Setup.extentTest.set(test);
         response = manualOverrideMethodCase(guidValue);
 
@@ -80,7 +80,7 @@ public class ManualOverrideTests {
     }
     @Test
     public void wrongGuidCase() {
-        ExtentTest test = Setup.extentReports.createTest("ManualOverride_WrongGuid", "wrong guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("ManualOverride_WrongGuid", "wrong guid as path param case").assignCategory("ManualOverride");
         Setup.extentTest.set(test);
         response = manualOverrideWrongGuidCase(guidValue);
 

@@ -29,7 +29,7 @@ public class SaveEventsTests {
     }
     @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsSingleData")
     public void jsonSchemaValidationCase(SaveEventsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("SaveEvents_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("SaveEvents_SchemaValidation", "schema validation case").assignCategory("SaveEvents");
         Setup.extentTest.set(test);
         response = saveEventsPositiveCase(payload);
 
@@ -39,7 +39,7 @@ public class SaveEventsTests {
 
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("SaveEvents_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("SaveEvents_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("SaveEvents");
         Setup.extentTest.set(test);
         // Logic to use payload data from getEventsByFiltersPositiveData data provider
         Iterator<SaveEventsPojo> eventsIterator = saveEventsSingleData();
@@ -54,7 +54,7 @@ public class SaveEventsTests {
     }
     @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsSingleData")
     public void wrongEndPointCase(SaveEventsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("SaveEvents_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("SaveEvents_WrongEndpoint", "wrong endpoint case").assignCategory("SaveEvents");
         Setup.extentTest.set(test);
         response = saveEventsWrongEndpointCase(payload);
 
@@ -63,7 +63,7 @@ public class SaveEventsTests {
     }
     @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsSingleData")
     public void wrongMethodCase(SaveEventsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("SaveEvents_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("SaveEvents_WrongMethod", "wrong request method case").assignCategory("SaveEvents");
         Setup.extentTest.set(test);
         response = saveEventsMethodCase(payload);
 
@@ -73,7 +73,7 @@ public class SaveEventsTests {
 
     @Test(dataProviderClass = SaveEventsDataBuilder.class, dataProvider = "saveEventsData")
     public void bodyCase(SaveEventsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc());
+        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc()).assignCategory("SaveEvents");
         Setup.extentTest.set(test);
 
         response = saveEventsPositiveCase(payload);

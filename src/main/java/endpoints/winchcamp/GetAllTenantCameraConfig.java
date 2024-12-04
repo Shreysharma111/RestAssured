@@ -1,8 +1,7 @@
 package endpoints.winchcamp;
 
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import utilities.reporting.ExtentReportManager;
+import utilities.restAssuredFunctions.HttpMethod;
 
 import static utilities.RestAssuredUtils.*;
 
@@ -12,53 +11,19 @@ public class GetAllTenantCameraConfig {
     public static String getAllTenantCameraConfig_url = getUrl().getString("getAllTenantCameraConfig_url");
 
     public static Response getAllTenantCameraConfigPositiveCase() {
+        return positiveCase(HttpMethod.GET, getAllTenantCameraConfig_url);
 
-        // Send a request using the obtained access token
-        response = RestAssured.given()
-                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
-                .when()
-                .get(getAllTenantCameraConfig_url);
-
-        //log details and verify status code in extent report
-        printRequestLogInReport(getAllTenantCameraConfig_url, "GET", commonRequestSpecWithToken(accessToken));
-        ExtentReportManager.logInfoDetails("Assertions :");
-        return response;
     }
     public static Response getAllTenantCameraConfigWrongEndpointCase() {
+        return positiveCase(HttpMethod.GET, getAllTenantCameraConfig_url+"shr");
 
-        // Send a request using the obtained access token
-        response = RestAssured.given()
-                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
-                .when()
-                .get(getAllTenantCameraConfig_url+"shr");
-
-        //log details and verify status code in extent report
-        printRequestLogInReport(getAllTenantCameraConfig_url+"shr", "GET", commonRequestSpecWithToken(accessToken));
-        ExtentReportManager.logInfoDetails("Assertions :");
-        return response;
     }
     public static Response getAllTenantCameraConfigMethodCase() {
-        // Send a request using the obtained access token
-        response = RestAssured.given()
-                .spec(commonRequestSpecWithToken(accessToken))// Set access token as Bearer token
-                .when()
-                .post(getAllTenantCameraConfig_url);
+        return positiveCase(HttpMethod.POST, getAllTenantCameraConfig_url);
 
-        //log details and verify status code in extent report
-        printRequestLogInReport(getAllTenantCameraConfig_url, "POST", commonRequestSpecWithToken(accessToken));
-        ExtentReportManager.logInfoDetails("Assertions :");
-        return response;
     }
     public static Response getAllTenantCameraConfigHeaderCase(String... headers) {
-        // Send a request using the obtained access token
-        response = RestAssured.given()
-                .spec(commonRequestSpecGet(headers))// Don't set access token as Bearer token
-                .when()
-                .get(getAllTenantCameraConfig_url);
+        return positiveCase(HttpMethod.GET, getAllTenantCameraConfig_url, headers);
 
-        //log details and verify status code in extent report
-        printRequestLogInReport(getAllTenantCameraConfig_url, "GET", commonRequestSpecGet(headers));
-        ExtentReportManager.logInfoDetails("Assertions :");
-        return response;
     }
 }

@@ -17,7 +17,7 @@ public class SaveEventsDataBuilder {
     private static final String SHEET_RANGE = "A1:X12";
 
     //data builder for multiple scenerios from google sheets
-    public static SaveEventsPojo getCustomizedSaveEventsData(LinkedHashMap<String, String> data) {
+    public static SaveEventsPojo getCustomizedSaveEventsData(LinkedHashMap<String, String> data, String entityId1, String entityName1) {
         SaveEventsPojo saveEventsPojo = new SaveEventsPojo();
 
         saveEventsPojo.setScenerioId(data.get("scenerioId"));
@@ -27,12 +27,12 @@ public class SaveEventsDataBuilder {
             saveEventsPojo.setExpectedMessage(data.get("expectedMessage"));
         if(!data.get("application_id").equals("NO_DATA"))
             saveEventsPojo.setApplication_id(Integer.parseInt(data.get("application_id")));
-        if(!data.get("entity_id1").equalsIgnoreCase("NO_DATA"))
-            saveEventsPojo.setEntity_id1(data.get("entity_id1"));
-            saveEventsPojo.setEntity_name1(data.get("entity_name1"));
-        saveEventsPojo.setEntity_id2(Integer.valueOf(data.get("entity_id2")));
+        saveEventsPojo.setEntity_id1(entityId1 != null ? entityId1 :
+                (!data.get("entity_id1").equalsIgnoreCase("NO_DATA") ? data.get("entity_id1") : null));
+        saveEventsPojo.setEntity_name1(entityName1 != null ? entityName1 : data.get("entity_name1"));
+        saveEventsPojo.setEntity_id2(Integer.parseInt(data.get("entity_id2")));
         saveEventsPojo.setEntity_name2(data.get("entity_name2"));
-            saveEventsPojo.setEntity_id3(Integer.parseInt(data.get("entity_id3")));
+        saveEventsPojo.setEntity_id3(Integer.parseInt(data.get("entity_id3")));
         saveEventsPojo.setEntity_id4(Integer.parseInt(data.get("entity_id4")));
         saveEventsPojo.setEntity_name4(data.get("entity_name4"));
         if(!data.get("category1").equalsIgnoreCase("NO_DATA"))
@@ -41,7 +41,7 @@ public class SaveEventsDataBuilder {
             saveEventsPojo.setCategory2(data.get("category2"));
         if(!data.get("category3").equalsIgnoreCase("NO_DATA"))
             saveEventsPojo.setCategory3(data.get("category3"));
-            saveEventsPojo.setEvent_version(data.get("event_version"));
+        saveEventsPojo.setEvent_version(data.get("event_version"));
         if(!data.get("event_type").equalsIgnoreCase("NO_DATA"))
             saveEventsPojo.setEvent_type(data.get("event_type"));
         saveEventsPojo.setImage_name(data.get("image_name"));
@@ -69,7 +69,7 @@ public class SaveEventsDataBuilder {
         }
         List<SaveEventsPojo> saveEventsData = new ArrayList<>();
         for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
-            SaveEventsPojo saveEvents = SaveEventsDataBuilder.getCustomizedSaveEventsData(data);
+            SaveEventsPojo saveEvents = SaveEventsDataBuilder.getCustomizedSaveEventsData(data, null, null);
             saveEventsData.add(saveEvents);
         }
         return saveEventsData.iterator();
@@ -84,11 +84,24 @@ public class SaveEventsDataBuilder {
         }
         List<SaveEventsPojo> saveEventsData = new ArrayList<>();
         for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
-            SaveEventsPojo saveEvents = SaveEventsDataBuilder.getCustomizedSaveEventsData(data);
+            SaveEventsPojo saveEvents = SaveEventsDataBuilder.getCustomizedSaveEventsData(data, null, null);
             saveEventsData.add(saveEvents);
         }
         return saveEventsData.iterator();
     }
-
+    public static Iterator<SaveEventsPojo> saveEventsIngnData(String entityId1, String entityName1) {
+        List<LinkedHashMap<String, String>> sheetDataAsListOfMap = null;
+        try {
+            sheetDataAsListOfMap = GoogleSheetsUtils.getGoogleSheetsDataAsListOfMap(SPREADSHEET_ID,SHEET_NAME, "A1:X2");
+        } catch (IOException | GeneralSecurityException e) {
+            throw new RuntimeException(e);
+        }
+        List<SaveEventsPojo> saveEventsData = new ArrayList<>();
+        for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
+            SaveEventsPojo saveEvents = SaveEventsDataBuilder.getCustomizedSaveEventsData(data, entityId1, entityName1);
+            saveEventsData.add(saveEvents);
+        }
+        return saveEventsData.iterator();
+    }
 
 }

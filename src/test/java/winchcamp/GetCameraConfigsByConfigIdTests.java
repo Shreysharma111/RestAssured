@@ -16,28 +16,31 @@ import static utilities.restAssuredFunctions.API.*;
 
 public class GetCameraConfigsByConfigIdTests {
     private int configIdValue;
+    private String facilityNameValue;
     private static Response response;
 
     @BeforeClass
     public void before(){
         OAuth2Authorization.getAccessTokenAndUpdateToken();
         configIdValue = Integer.parseInt(getValue("winchcamp", "configId"));
+        facilityNameValue = getValue("winchcamp", "facilityName");
         RestAssured.useRelaxedHTTPSValidation();
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_PositiveCase", "test positive flow" ).assignCategory("GetCameraConfigsByConfigId");
         Setup.extentTest.set(test);
 
         response = getCameraConfigsByConfigIdPositiveCase(configIdValue);
 
         assertStatusCode(response, 200);
         assertFieldIsPresentAndNotEmpty(response, "data");
+        assertKeyValue(response, "data.name", facilityNameValue);
         assertResponseTime(response);
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_SchemaValidation", "schema validation case").assignCategory("GetCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = getCameraConfigsByConfigIdPositiveCase(configIdValue);
 
@@ -46,7 +49,7 @@ public class GetCameraConfigsByConfigIdTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("GetCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = getCameraConfigsByConfigIdHeaderCase(configIdValue, key+":"+"Bearer "+value);
 
@@ -54,7 +57,7 @@ public class GetCameraConfigsByConfigIdTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_CorrectAuth", "authorization token case : correct token").assignCategory("GetCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = getCameraConfigsByConfigIdHeaderCase(configIdValue,"Authorization:"+"Bearer "+getToken());
 
@@ -63,7 +66,7 @@ public class GetCameraConfigsByConfigIdTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_WrongEndpoint", "wrong endpoint case").assignCategory("GetCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = getCameraConfigsByConfigIdWrongEndpointCase(configIdValue);
 
@@ -72,7 +75,7 @@ public class GetCameraConfigsByConfigIdTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_WrongMethod", "wrong request method case").assignCategory("GetCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = getCameraConfigsByConfigIdMethodCase(configIdValue);
 
@@ -81,7 +84,7 @@ public class GetCameraConfigsByConfigIdTests {
     }
     @Test
     public void wrongGuidCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_ZeroConfigId", "wrong guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("GetCameraConfigsByConfigId_ZeroConfigId", "wrong guid as path param case").assignCategory("GetCameraConfigsByConfigId");
         Setup.extentTest.set(test);
         response = getCameraConfigsByConfigIdZeroConfigIdCase();
 

@@ -26,7 +26,7 @@ public class FCMTokenListTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_PositiveCase", "test positive flow" ).assignCategory("FCMTokenList");
         Setup.extentTest.set(test);
 
         response = fcmTokenListPositiveCase(guidForFCMTokenValue);
@@ -36,7 +36,7 @@ public class FCMTokenListTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_SchemaValidation", "schema validation case").assignCategory("FCMTokenList");
         Setup.extentTest.set(test);
         response = fcmTokenListPositiveCase(guidForFCMTokenValue);
 
@@ -44,7 +44,7 @@ public class FCMTokenListTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("FCMTokenList");
         Setup.extentTest.set(test);
         response = fcmTokenListHeaderCase(guidForFCMTokenValue,key+":"+"Bearer "+value);
 
@@ -52,7 +52,7 @@ public class FCMTokenListTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_WrongEndpoint", "wrong endpoint case").assignCategory("FCMTokenList");
         Setup.extentTest.set(test);
         response = fcmTokenListWrongEndpointCase(guidForFCMTokenValue);
 
@@ -60,7 +60,7 @@ public class FCMTokenListTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_WrongMethod", "wrong request method case").assignCategory("FCMTokenList");
         Setup.extentTest.set(test);
         response = fcmTokenListMethodCase(guidForFCMTokenValue);
 
@@ -68,7 +68,7 @@ public class FCMTokenListTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "pathDataProviderForFCMTokenList")
     public void invalidGuidCase(String guidForFCMTokenValue) {
-        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_InvalidGuid", "invalid guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("FCMTokenList_InvalidGuid", "invalid guid as path param case").assignCategory("FCMTokenList");
         Setup.extentTest.set(test);
         response = fcmTokenListPositiveCase(guidForFCMTokenValue);
 

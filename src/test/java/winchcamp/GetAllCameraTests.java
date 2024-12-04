@@ -28,7 +28,7 @@ public class GetAllCameraTests {
     }
     @Test
     public void noParamCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_NoParamCase", "test no param flow" );
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_NoParamCase", "test no param flow" ).assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
 
         response = getAllCameraPositiveCase();
@@ -38,7 +38,7 @@ public class GetAllCameraTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_SchemaValidation", "schema validation case").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraQueryParamCase("keyword"+":"+keywordValue, "status"+":"+statusValue);
 
@@ -46,7 +46,7 @@ public class GetAllCameraTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraHeaderCase(keywordValue, statusValue, key+":"+"Bearer "+value);
 
@@ -60,7 +60,7 @@ public class GetAllCameraTests {
         for (int i = 0; i < queryParams.length; i++) {
             keyValuePairs[i] = queryParams[i][0] + ":" + queryParams[i][1]; // "key:value"
         }
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_wrongParam", "wrong query param case : keyword param | status param");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_wrongParam", "wrong query param case : keyword param | status param").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraQueryParamCase(keyValuePairs);
 
@@ -69,7 +69,7 @@ public class GetAllCameraTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_CorrectAuth", "authorization token case : correct token").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraHeaderCase(keywordValue, statusValue,"Authorization:"+"Bearer "+getToken());
 
@@ -78,7 +78,7 @@ public class GetAllCameraTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_WrongEndpoint", "wrong endpoint case").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraWrongEndpointCase("keyword"+":"+keywordValue, "status"+":"+statusValue);
 
@@ -86,7 +86,7 @@ public class GetAllCameraTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_WrongMethod", "wrong request method case").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraMethodCase("keyword"+":"+keywordValue, "status"+":"+statusValue);
 
@@ -95,7 +95,7 @@ public class GetAllCameraTests {
     }
     @Test
     public void verifyKeywordParamCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_KeywordParam", "keyword param impact case");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_KeywordParam", "keyword param impact case").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraPositiveCase("keyword"+":"+keywordValue, "status"+":"+"");
         assertKeyValue(response, "error", "Bad Request");
@@ -105,7 +105,7 @@ public class GetAllCameraTests {
 
     @Test
     public void verifyStatusParamCase() {
-        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_StatusParam", "status param impact case");
+        ExtentTest test = Setup.extentReports.createTest("GetAllCamera_StatusParam", "status param impact case").assignCategory("GetAllCamera");
         Setup.extentTest.set(test);
         response = getAllCameraPositiveCase("keyword"+":"+"", "status"+":"+statusValue);
         assertKeyValue(response, "error", "Bad Request");

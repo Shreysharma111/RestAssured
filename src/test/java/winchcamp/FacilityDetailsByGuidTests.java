@@ -26,7 +26,7 @@ public class FacilityDetailsByGuidTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_PositiveCase", "test positive flow" ).assignCategory("FacilityDetailsByGuid");
         Setup.extentTest.set(test);
 
         response = facilityDetailsByGuidPositiveCase(guidValue);
@@ -38,7 +38,7 @@ public class FacilityDetailsByGuidTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_SchemaValidation", "schema validation case").assignCategory("FacilityDetailsByGuid");
         Setup.extentTest.set(test);
         response = facilityDetailsByGuidPositiveCase(guidValue);
 
@@ -47,7 +47,7 @@ public class FacilityDetailsByGuidTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("FacilityDetailsByGuid");
         Setup.extentTest.set(test);
         response = facilityDetailsByGuidHeaderCase(guidValue, key+":"+"Bearer "+value);
 
@@ -55,7 +55,7 @@ public class FacilityDetailsByGuidTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_CorrectAuth", "authorization token case : correct token").assignCategory("FacilityDetailsByGuid");
         Setup.extentTest.set(test);
         response = facilityDetailsByGuidHeaderCase(guidValue,"Authorization:"+"Bearer "+getToken());
 
@@ -64,7 +64,7 @@ public class FacilityDetailsByGuidTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_WrongEndpoint", "wrong endpoint case").assignCategory("FacilityDetailsByGuid");
         Setup.extentTest.set(test);
         response = facilityDetailsByGuidWrongEndpointCase(guidValue);
 
@@ -73,7 +73,7 @@ public class FacilityDetailsByGuidTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_WrongMethod", "wrong request method case").assignCategory("FacilityDetailsByGuid");
         Setup.extentTest.set(test);
         response = facilityDetailsByGuidMethodCase(guidValue);
 
@@ -82,7 +82,7 @@ public class FacilityDetailsByGuidTests {
     }
     @Test
     public void wrongGuidCase() {
-        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_WrongGuid", "wrong guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("FacilityDetailsByGuid_WrongGuid", "wrong guid as path param case").assignCategory("FacilityDetailsByGuid");
         Setup.extentTest.set(test);
         response = facilityDetailsByGuidWrongGuidCase(guidValue);
 

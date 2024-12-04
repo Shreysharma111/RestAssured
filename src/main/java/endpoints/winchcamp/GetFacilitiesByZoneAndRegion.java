@@ -16,7 +16,7 @@ public class GetFacilitiesByZoneAndRegion {
         return positiveCase(HttpMethod.GET, getFacilitiesByZoneAndRegion_url, pathParams);
     }
     public static Response getFacilitiesByZoneAndRegionWrongEndpointCase(int... pathParams) {
-        return positiveCase(HttpMethod.GET, getFacilitiesByZoneAndRegion_url+"shr", pathParams);
+        return positiveCase(HttpMethod.GET, getFacilitiesByZoneAndRegion_url+"/shr", pathParams);
     }
     public static Response getFacilitiesByZoneAndRegionMethodCase(int... pathParams) {
         return positiveCase(HttpMethod.POST, getFacilitiesByZoneAndRegion_url, pathParams);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Test Suite">
+<!--    <parameter name="env" value="uat" />-->
+    <listeners>
+        <listener class-name="utilities.reporting.Setup"/>
+    </listeners>
+    <test
+            name="DemoAssureSuite">
+        <classes>
+<!--            <class name="winchcamp.CameraDetailsByGuidTests"/>-->
+            <class name="winchcamp.AllCameraConfigsTests"/>
+<!--            <class name="winchcamp.MonitoringAreasListByFacIdTests"/>-->
+<!--            <class name="winchcamp.ManualOverrideTests"/>-->
+<!--            <class name="winchcamp.GetCameraConfigsByConfigIdTests"/>-->
+<!--            <class name="winchcamp.FacilityDetailsByGuidTests"/>-->
+<!--            <class name="winchcamp.EventsByFiltersTests"/>-->
+<!--            <class name="winchcamp.SaveCameraConfigsTests"/>-->
+        </classes>
+    </test>
+</suite>

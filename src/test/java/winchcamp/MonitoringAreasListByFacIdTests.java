@@ -26,7 +26,7 @@ public class MonitoringAreasListByFacIdTests {
     }
     @Test
     public void positiveCase() {
-        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_PositiveCase", "test positive flow" );
+        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_PositiveCase", "test positive flow" ).assignCategory("MonitoringAreasListByFacId");
         Setup.extentTest.set(test);
 
         response = monitoringAreasListByFacIdPositiveCase(facilityIdValue);
@@ -37,7 +37,7 @@ public class MonitoringAreasListByFacIdTests {
     }
     @Test
     public void jsonSchemaValidationCase() {
-        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_SchemaValidation", "schema validation case").assignCategory("MonitoringAreasListByFacId");
         Setup.extentTest.set(test);
         response = monitoringAreasListByFacIdPositiveCase(facilityIdValue);
 
@@ -46,7 +46,7 @@ public class MonitoringAreasListByFacIdTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("MonitoringAreasListByFacId");
         Setup.extentTest.set(test);
         response = monitoringAreasListByFacIdHeaderCase(facilityIdValue, key+":"+"Bearer "+value);
 
@@ -54,7 +54,7 @@ public class MonitoringAreasListByFacIdTests {
     }
     @Test
     public void correctAuthTokenCase() {
-        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_CorrectAuth", "authorization token case : correct token");
+        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_CorrectAuth", "authorization token case : correct token").assignCategory("MonitoringAreasListByFacId");
         Setup.extentTest.set(test);
         response = monitoringAreasListByFacIdHeaderCase(facilityIdValue,"Authorization:"+"Bearer "+getToken());
 
@@ -63,7 +63,7 @@ public class MonitoringAreasListByFacIdTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_WrongEndpoint", "wrong endpoint case").assignCategory("MonitoringAreasListByFacId");
         Setup.extentTest.set(test);
         response = monitoringAreasListByFacIdWrongEndpointCase(facilityIdValue);
 
@@ -72,7 +72,7 @@ public class MonitoringAreasListByFacIdTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("MonitoringAreasListByFacId_WrongMethod", "wrong request method case").assignCategory("MonitoringAreasListByFacId");
         Setup.extentTest.set(test);
         response = monitoringAreasListByFacIdMethodCase(facilityIdValue);
 

@@ -31,7 +31,7 @@ public class SaveCameraConfigsTests {
     }
     @Test(dataProviderClass = SaveCameraConfigsDataBuilder.class, dataProvider = "saveCameraConfigsSingleData")
     public void jsonSchemaValidationCase(SaveCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_SchemaValidation", "schema validation case").assignCategory("SaveCameraConfigs");
         Setup.extentTest.set(test);
         response = saveCameraConfigsPositiveCase(payload);
 
@@ -40,7 +40,7 @@ public class SaveCameraConfigsTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("SaveCameraConfigs");
         Setup.extentTest.set(test);
         // Logic to use payload data from saveCameraConfigsPositiveData data provider
         Iterator<SaveCameraConfigsPojo> eventsIterator = saveCameraConfigsSingleData();
@@ -55,7 +55,7 @@ public class SaveCameraConfigsTests {
     }
     @Test(dataProviderClass = SaveCameraConfigsDataBuilder.class, dataProvider = "saveCameraConfigsSingleData")
     public void wrongEndPointCase(SaveCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_WrongEndpoint", "wrong endpoint case").assignCategory("SaveCameraConfigs");
         Setup.extentTest.set(test);
         response = saveCameraConfigsWrongEndpointCase(payload);
 
@@ -64,7 +64,7 @@ public class SaveCameraConfigsTests {
     }
     @Test(dataProviderClass = SaveCameraConfigsDataBuilder.class, dataProvider = "saveCameraConfigsSingleData")
     public void wrongMethodCase(SaveCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("SaveCameraConfigs_WrongMethod", "wrong request method case").assignCategory("SaveCameraConfigs");
         Setup.extentTest.set(test);
         response = saveCameraConfigsMethodCase(payload);
 
@@ -73,7 +73,7 @@ public class SaveCameraConfigsTests {
     }
     @Test(dataProviderClass = SaveCameraConfigsDataBuilder.class, dataProvider = "saveCameraConfigsData")
     public void bodyCase(SaveCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc());
+        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc()).assignCategory("SaveCameraConfigs");
         Setup.extentTest.set(test);
 
         response = saveCameraConfigsPositiveCase(payload);

@@ -27,7 +27,7 @@ public class FetchReportHistoryTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "pathDataProviderForFetchReportHistory")
     public void positiveCase(int value) {
-        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_PositiveCase", "test positive flow for area camera report and ai event report history" );
+        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_PositiveCase", "test positive flow for area camera report and ai event report history" ).assignCategory("FetchReportHistory");
         Setup.extentTest.set(test);
 
         response = fetchReportHistoryPositiveCase(value);
@@ -36,7 +36,7 @@ public class FetchReportHistoryTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "pathDataProviderForFetchReportHistory")
     public void jsonSchemaValidationCase(int value) {
-        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_SchemaValidation", "schema validation case").assignCategory("FetchReportHistory");
         Setup.extentTest.set(test);
         response = fetchReportHistoryPositiveCase(value);
 
@@ -44,7 +44,7 @@ public class FetchReportHistoryTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("FetchReportHistory");
         Setup.extentTest.set(test);
         response = fetchReportHistoryHeaderCase(reportIdForAIEventReportValue,key+":"+"Bearer "+value);
 
@@ -52,7 +52,7 @@ public class FetchReportHistoryTests {
     }
     @Test
     public void wrongEndPointCase() {
-        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_WrongEndpoint", "wrong endpoint case").assignCategory("FetchReportHistory");
         Setup.extentTest.set(test);
         response = fetchReportHistoryWrongEndpointCase(reportIdForAIEventReportValue);
 
@@ -60,7 +60,7 @@ public class FetchReportHistoryTests {
     }
     @Test
     public void wrongMethodCase() {
-        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_WrongMethod", "wrong request method case").assignCategory("FetchReportHistory");
         Setup.extentTest.set(test);
         response = fetchReportHistoryMethodCase(reportIdForAIEventReportValue);
 
@@ -69,7 +69,7 @@ public class FetchReportHistoryTests {
     //used this dataprovider as we need invalid int values like 0 and 99999. In this case, this dataprovider best offers the usecase
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "pathDataProviderForDeleteCameraConfigByConfigId")
     public void invalidReportIdCase(int reportIdValue) {
-        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_InvalidGuid", "invalid guid as path param case");
+        ExtentTest test = Setup.extentReports.createTest("FetchReportHistory_InvalidGuid", "invalid guid as path param case").assignCategory("FetchReportHistory");
         Setup.extentTest.set(test);
         response = fetchReportHistoryPositiveCase(reportIdValue);
 

@@ -30,7 +30,7 @@ public class UpdateCameraConfigsTests {
     }
     @Test(dataProviderClass = UpdateCameraConfigsDataBuilder.class, dataProvider = "updateCameraConfigsSingleData")
     public void jsonSchemaValidationCase(UpdateCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_SchemaValidation", "schema validation case");
+        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_SchemaValidation", "schema validation case").assignCategory("UpdateCameraConfigs");
         Setup.extentTest.set(test);
         response = updateCameraConfigsPositiveCase(payload);
 
@@ -38,7 +38,7 @@ public class UpdateCameraConfigsTests {
     }
     @Test(dataProviderClass = Dataproviders.class, dataProvider = "headerDataProvider")
     public void emptyAndWrongAuthTokenCase(String key, String value) {
-        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_EmptyAndWrongAuth", "authorization token case : empty token | wrong token");
+        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_EmptyAndWrongAuth", "authorization token case : empty token | wrong token").assignCategory("UpdateCameraConfigs");
         Setup.extentTest.set(test);
         // Logic to use payload data from updateCameraConfigsSingleData data provider
         Iterator<UpdateCameraConfigsPojo> eventsIterator = updateCameraConfigsSingleData();
@@ -53,7 +53,7 @@ public class UpdateCameraConfigsTests {
     }
     @Test(dataProviderClass = UpdateCameraConfigsDataBuilder.class, dataProvider = "updateCameraConfigsSingleData")
     public void wrongEndPointCase(UpdateCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_WrongEndpoint", "wrong endpoint case");
+        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_WrongEndpoint", "wrong endpoint case").assignCategory("UpdateCameraConfigs");
         Setup.extentTest.set(test);
         response = updateCameraConfigsWrongEndpointCase(payload);
 
@@ -62,7 +62,7 @@ public class UpdateCameraConfigsTests {
     }
     @Test(dataProviderClass = UpdateCameraConfigsDataBuilder.class, dataProvider = "updateCameraConfigsSingleData")
     public void wrongMethodCase(UpdateCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_WrongMethod", "wrong request method case");
+        ExtentTest test = Setup.extentReports.createTest("UpdateCameraConfigs_WrongMethod", "wrong request method case").assignCategory("UpdateCameraConfigs");
         Setup.extentTest.set(test);
         response = updateCameraConfigsMethodCase(payload);
 
@@ -71,7 +71,7 @@ public class UpdateCameraConfigsTests {
     }
     @Test(dataProviderClass = UpdateCameraConfigsDataBuilder.class, dataProvider = "updateCameraConfigsData")
     public void bodyCase(UpdateCameraConfigsPojo payload) {
-        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc());
+        ExtentTest test = Setup.extentReports.createTest(payload.getScenerioId(), payload.getScenerioDesc()).assignCategory("UpdateCameraConfigs");
         Setup.extentTest.set(test);
 
         response = updateCameraConfigsPositiveCase(payload);

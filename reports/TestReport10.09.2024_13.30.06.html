@@ -1,0 +1,4397 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Test ExecutionReport</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Test API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 10, 2024 01:30:06 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">CSVGenerationForAreaCameraReport</a><a class="dropdown-item" href="#">EventsByFilter</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_BodyScenerio1</p>
+            <p class="text-sm">
+              <span>1:30:12 pm</span> / <span>00:00:01:391</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CSVGenerationForAreaCameraReport_BodyScenerio1</h5>
+<span class='badge badge-success'>09.10.2024 1:30:12 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-default'>00:00:01:391</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">positive case : pass all fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:13 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:13 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:13 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:13 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:13 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"09-08-2024","toDate":"06-09-2024","monitoringStatus":1,"allEntries":"TRUE"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "data": [
+        {
+            "facilityName": "Safdarjung Development Area",
+            "facilityNpi": "5100",
+            "areaName": "Operatory 2",
+            "cameraName": "Camera - 56",
+            "guid": "06c43b37-7ca2-4aa7-bb0f-3dcf4b2c9c74",
+            "rtspUrl": "rtsp://dori:Dori05100@183.82.156.40:554/Streaming/Channels/1002",
+            "events": [
+                "All"
+            ],
+            "monitoringStatus": "ENABLED",
+            "cameraStatus": "GREEN",
+            "createdDate": "2024-08-15 11:42:02",
+            "updatedDate": null,
+            "createdBy": "administrator",
+            "creatorUid": "CON00005",
+            "updatedBy": null,
+            "updatorUid": null,
+            "status": "ACTIVE"
+        },
+        {
+            "facilityName": "Safdarjung Development Area",
+            "facilityNpi": "5100",
+            "areaName": "Operatory 1",
+            "cameraName": "Camera - 3653",
+            "guid": "cbec9bf8-89bc-444b-bac9-aa28a308c6e4",
+            "rtspUrl": "rtsp://dori:Dori05100@183.82.156.40:554/Streaming/Channels/902",
+            "events": [
+                "All"
+            ],
+            "monitoringStatus": "ENABLED",
+            "cameraStatus": "GREEN",
+            "createdDate": "2024-08-19 11:41:41",
+            "updatedDate": null,
+            "createdBy": "administrator",
+            "creatorUid": "CON00005",
+            "updatedBy": null,
+            "updatorUid": null,
+            "status": "ACTIVE"
+        },
+        {
+            "facilityName": "Safdarjung Development Area",
+            "facilityNpi": "5100",
+            "areaName": "Operatory 3",
+            "cameraName": "Camera - 57",
+            "guid": "7da7668e-1ec5-4546-91d7-f261db6ed29f",
+            "rtspUrl": "rtsp://dori:Dori05100@183.82.156.40:554/Streaming/Channels/602",
+            "events": [
+                "All"
+            ],
+            "monitoringStatus": "ENABLED",
+            "cameraStatus": "GREEN",
+            "createdDate": "2024-08-19 11:42:34",
+            "updatedDate": null,
+            "createdBy": "administrator",
+            "creatorUid": "CON00005",
+            "updatedBy": null,
+            "updatorUid": null,
+            "status": "ACTIVE"
+        }
+    ],
+    "status": 200
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_BodyScenerio2</p>
+            <p class="text-sm">
+              <span>1:30:14 pm</span> / <span>00:00:00:166</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">CSVGenerationForAreaCameraReport_BodyScenerio2</h5>
+<span class='badge badge-success'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-default'>00:00:00:166</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">pass all fields empty</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"regionId":null,"zoneId":null,"facilityId":null,"fromDate":null,"toDate":null,"monitoringStatus":null,"allEntries":null}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Status code assertion failed! Expected: 200, Actual: 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <span class='badge white-text red'>Status code is not as expected expected [200] but found [500]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.failNotEquals(Assert.java:1578)<br> org.testng.Assert.assertEqualsImpl(Assert.java:150)<br> org.testng.Assert.assertEquals(Assert.java:132)<br> org.testng.Assert.assertEquals(Assert.java:1419)<br> org.testng.Assert.assertEquals(Assert.java:1383)<br> utilities.restAssuredFunctions.API.assertStatusCode(API.java:128)<br> winchcamp.CSVGenerationForAreaCameraReportTests.bodyCase(CSVGenerationForAreaCameraReportTests.java:81)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "INTERNAL_SERVER_ERROR",
+    "message": "Cannot invoke \"String.isEmpty()\" because the return value of \"com.i32rx.dbms.prm.params.ReportParams.getFacilityId()\" is null",
+    "status": 500,
+    "error": "Internal Server Error"
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_BodyScenerio3</p>
+            <p class="text-sm">
+              <span>1:30:14 pm</span> / <span>00:00:00:191</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">CSVGenerationForAreaCameraReport_BodyScenerio3</h5>
+<span class='badge badge-success'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-default'>00:00:00:191</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">enter wrong date format yyyy-mm-dd</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"2024-12-01","toDate":"2024-12-31","monitoringStatus":1,"allEntries":null}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Assertion passed! message in response body has the expected value: Invalid date format, please use the format dd-MM-yyyy!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Status code assertion failed! Expected: 400, Actual: 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <span class='badge white-text red'>Status code is not as expected expected [400] but found [500]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.failNotEquals(Assert.java:1578)<br> org.testng.Assert.assertEqualsImpl(Assert.java:150)<br> org.testng.Assert.assertEquals(Assert.java:132)<br> org.testng.Assert.assertEquals(Assert.java:1419)<br> org.testng.Assert.assertEquals(Assert.java:1383)<br> utilities.restAssuredFunctions.API.assertStatusCode(API.java:128)<br> winchcamp.CSVGenerationForAreaCameraReportTests.bodyCase(CSVGenerationForAreaCameraReportTests.java:81)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "INTERNAL_SERVER_ERROR",
+    "message": "Invalid date format, please use the format dd-MM-yyyy!",
+    "status": 500,
+    "error": "Internal Server Error"
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_BodyScenerio4</p>
+            <p class="text-sm">
+              <span>1:30:14 pm</span> / <span>00:00:00:228</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">CSVGenerationForAreaCameraReport_BodyScenerio4</h5>
+<span class='badge badge-success'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-default'>00:00:00:228</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">single facility, pass only from date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"14-06-2024","toDate":null,"monitoringStatus":null,"allEntries":null}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Status code assertion failed! Expected: 200, Actual: 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <span class='badge white-text red'>Status code is not as expected expected [200] but found [500]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.failNotEquals(Assert.java:1578)<br> org.testng.Assert.assertEqualsImpl(Assert.java:150)<br> org.testng.Assert.assertEquals(Assert.java:132)<br> org.testng.Assert.assertEquals(Assert.java:1419)<br> org.testng.Assert.assertEquals(Assert.java:1383)<br> utilities.restAssuredFunctions.API.assertStatusCode(API.java:128)<br> winchcamp.CSVGenerationForAreaCameraReportTests.bodyCase(CSVGenerationForAreaCameraReportTests.java:81)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "INTERNAL_SERVER_ERROR",
+    "message": "Cannot invoke \"String.isEmpty()\" because the return value of \"com.i32rx.dbms.prm.params.ReportParams.getToDate()\" is null",
+    "status": 500,
+    "error": "Internal Server Error"
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_BodyScenerio5</p>
+            <p class="text-sm">
+              <span>1:30:14 pm</span> / <span>00:00:00:171</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">CSVGenerationForAreaCameraReport_BodyScenerio5</h5>
+<span class='badge badge-success'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-default'>00:00:00:171</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">single facility, pass only to date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":null,"toDate":"06-09-2024","monitoringStatus":null,"allEntries":null}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Status code assertion failed! Expected: 200, Actual: 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <span class='badge white-text red'>Status code is not as expected expected [200] but found [500]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.failNotEquals(Assert.java:1578)<br> org.testng.Assert.assertEqualsImpl(Assert.java:150)<br> org.testng.Assert.assertEquals(Assert.java:132)<br> org.testng.Assert.assertEquals(Assert.java:1419)<br> org.testng.Assert.assertEquals(Assert.java:1383)<br> utilities.restAssuredFunctions.API.assertStatusCode(API.java:128)<br> winchcamp.CSVGenerationForAreaCameraReportTests.bodyCase(CSVGenerationForAreaCameraReportTests.java:81)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "INTERNAL_SERVER_ERROR",
+    "message": "Cannot invoke \"String.isEmpty()\" because the return value of \"com.i32rx.dbms.prm.params.ReportParams.getFromDate()\" is null",
+    "status": 500,
+    "error": "Internal Server Error"
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_BodyScenerio6</p>
+            <p class="text-sm">
+              <span>1:30:14 pm</span> / <span>00:00:00:163</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">CSVGenerationForAreaCameraReport_BodyScenerio6</h5>
+<span class='badge badge-success'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-default'>00:00:00:163</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">all facility, pass only from date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({"regionId":null,"zoneId":null,"facilityId":null,"fromDate":"20-06-2024","toDate":null,"monitoringStatus":null,"allEntries":null}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          Status code assertion failed! Expected: 200, Actual: 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <span class='badge white-text red'>Status code is not as expected expected [200] but found [500]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.failNotEquals(Assert.java:1578)<br> org.testng.Assert.assertEqualsImpl(Assert.java:150)<br> org.testng.Assert.assertEquals(Assert.java:132)<br> org.testng.Assert.assertEquals(Assert.java:1419)<br> org.testng.Assert.assertEquals(Assert.java:1383)<br> utilities.restAssuredFunctions.API.assertStatusCode(API.java:128)<br> winchcamp.CSVGenerationForAreaCameraReportTests.bodyCase(CSVGenerationForAreaCameraReportTests.java:81)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "INTERNAL_SERVER_ERROR",
+    "message": "Cannot invoke \"String.isEmpty()\" because the return value of \"com.i32rx.dbms.prm.params.ReportParams.getFacilityId()\" is null",
+    "status": 500,
+    "error": "Internal Server Error"
+}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_BodyScenerio7</p>
+            <p class="text-sm">
+              <span>1:30:14 pm</span> / <span>00:00:00:147</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">CSVGenerationForAreaCameraReport_BodyScenerio7</h5>
+<span class='badge badge-success'>09.10.2024 1:30:14 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:15 pm</span>
+<span class='badge badge-default'>00:00:00:147</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">all facility, pass only to date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"regionId":null,"zoneId":null,"facilityId":null,"fromDate":null,"toDate":"22-08-2024","monitoringStatus":null,"allEntries":null}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          Status code assertion failed! Expected: 200, Actual: 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <span class='badge white-text red'>Status code is not as expected expected [200] but found [500]</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [org.testng.Assert.fail(Assert.java:111)<br> org.testng.Assert.failNotEquals(Assert.java:1578)<br> org.testng.Assert.assertEqualsImpl(Assert.java:150)<br> org.testng.Assert.assertEquals(Assert.java:132)<br> org.testng.Assert.assertEquals(Assert.java:1419)<br> org.testng.Assert.assertEquals(Assert.java:1383)<br> utilities.restAssuredFunctions.API.assertStatusCode(API.java:128)<br> winchcamp.CSVGenerationForAreaCameraReportTests.bodyCase(CSVGenerationForAreaCameraReportTests.java:81)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+    "source": "user",
+    "type": "INTERNAL_SERVER_ERROR",
+    "message": "Cannot invoke \"String.isEmpty()\" because the return value of \"com.i32rx.dbms.prm.params.ReportParams.getFacilityId()\" is null",
+    "status": 500,
+    "error": "Internal Server Error"
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>1:30:15 pm</span> / <span>00:00:00:606</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CSVGenerationForAreaCameraReport_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.10.2024 1:30:15 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:15 pm</span>
+<span class='badge badge-default'>00:00:00:606</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer GUyZC1yZXBseU.....InVzZ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"09-08-2024","toDate":"06-09-2024","monitoringStatus":1,"allEntries":"TRUE"}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Unauthorized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-279",
+    "status": 401,
+    "message": "An error occurred while attempting to decode the Jwt: Invalid JWT serialization: Missing dot delimiter(s)",
+    "error": "Unauthorized",
+    "type": "InvalidBearerTokenException"
+}); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>1:30:15 pm</span> / <span>00:00:00:570</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CSVGenerationForAreaCameraReport_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.10.2024 1:30:15 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:16 pm</span>
+<span class='badge badge-default'>00:00:00:570</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"09-08-2024","toDate":"06-09-2024","monitoringStatus":1,"allEntries":"TRUE"}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Unauthorized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-279",
+    "status": 401,
+    "message": "Bearer token is malformed",
+    "error": "Unauthorized",
+    "type": "OAuth2AuthenticationException"
+}); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_SchemaValidation</p>
+            <p class="text-sm">
+              <span>1:30:16 pm</span> / <span>00:00:00:616</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CSVGenerationForAreaCameraReport_SchemaValidation</h5>
+<span class='badge badge-success'>09.10.2024 1:30:16 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:17 pm</span>
+<span class='badge badge-default'>00:00:00:616</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">schema validation case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"09-08-2024","toDate":"06-09-2024","monitoringStatus":1,"allEntries":"TRUE"}); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:16 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:17 pm</td>
+        <td>
+          JSON schema validation passed!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:17 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:17 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({
+    "data": [
+        {
+            "facilityName": "Safdarjung Development Area",
+            "facilityNpi": "5100",
+            "areaName": "Operatory 2",
+            "cameraName": "Camera - 56",
+            "guid": "06c43b37-7ca2-4aa7-bb0f-3dcf4b2c9c74",
+            "rtspUrl": "rtsp://dori:Dori05100@183.82.156.40:554/Streaming/Channels/1002",
+            "events": [
+                "All"
+            ],
+            "monitoringStatus": "ENABLED",
+            "cameraStatus": "GREEN",
+            "createdDate": "2024-08-15 11:42:02",
+            "updatedDate": null,
+            "createdBy": "administrator",
+            "creatorUid": "CON00005",
+            "updatedBy": null,
+            "updatorUid": null,
+            "status": "ACTIVE"
+        },
+        {
+            "facilityName": "Safdarjung Development Area",
+            "facilityNpi": "5100",
+            "areaName": "Operatory 1",
+            "cameraName": "Camera - 3653",
+            "guid": "cbec9bf8-89bc-444b-bac9-aa28a308c6e4",
+            "rtspUrl": "rtsp://dori:Dori05100@183.82.156.40:554/Streaming/Channels/902",
+            "events": [
+                "All"
+            ],
+            "monitoringStatus": "ENABLED",
+            "cameraStatus": "GREEN",
+            "createdDate": "2024-08-19 11:41:41",
+            "updatedDate": null,
+            "createdBy": "administrator",
+            "creatorUid": "CON00005",
+            "updatedBy": null,
+            "updatorUid": null,
+            "status": "ACTIVE"
+        },
+        {
+            "facilityName": "Safdarjung Development Area",
+            "facilityNpi": "5100",
+            "areaName": "Operatory 3",
+            "cameraName": "Camera - 57",
+            "guid": "7da7668e-1ec5-4546-91d7-f261db6ed29f",
+            "rtspUrl": "rtsp://dori:Dori05100@183.82.156.40:554/Streaming/Channels/602",
+            "events": [
+                "All"
+            ],
+            "monitoringStatus": "ENABLED",
+            "cameraStatus": "GREEN",
+            "createdDate": "2024-08-19 11:42:34",
+            "updatedDate": null,
+            "createdBy": "administrator",
+            "creatorUid": "CON00005",
+            "updatedBy": null,
+            "updatorUid": null,
+            "status": "ACTIVE"
+        }
+    ],
+    "status": 200
+}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_WrongEndpoint</p>
+            <p class="text-sm">
+              <span>1:30:17 pm</span> / <span>00:00:00:275</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CSVGenerationForAreaCameraReport_WrongEndpoint</h5>
+<span class='badge badge-success'>09.10.2024 1:30:17 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:18 pm</span>
+<span class='badge badge-default'>00:00:00:275</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">wrong endpoint case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-detailsshr
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"09-08-2024","toDate":"06-09-2024","monitoringStatus":1,"allEntries":"TRUE"}); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-21'></div>
+ <script>
+  function jsonTreeCreate21() { 
+   document.getElementById('code-block-json-21').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-10T08:00:18.080+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/reports/filtered-detailsshr"
+}); 
+  }
+  jsonTreeCreate21();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="CSVGenerationForAreaCameraReport"
+          device="">
+          <div class="test-detail">
+            <p class="name">CSVGenerationForAreaCameraReport_WrongMethod</p>
+            <p class="text-sm">
+              <span>1:30:18 pm</span> / <span>00:00:00:228</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CSVGenerationForAreaCameraReport_WrongMethod</h5>
+<span class='badge badge-success'>09.10.2024 1:30:18 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:18 pm</span>
+<span class='badge badge-default'>00:00:00:228</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CSVGenerationForAreaCameraReport</span></div>
+<div class="m-t-10 m-l-5">wrong request method case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/filtered-details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create({"regionId":1,"zoneId":1,"facilityId":67,"fromDate":"09-08-2024","toDate":"06-09-2024","monitoringStatus":1,"allEntries":"TRUE"}); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Status code assertion passed! Expected: 405, Actual: 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Method Not Allowed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-23'></div>
+ <script>
+  function jsonTreeCreate23() { 
+   document.getElementById('code-block-json-23').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-10T08:00:18.694+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/reports/filtered-details"
+}); 
+  }
+  jsonTreeCreate23();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_1</p>
+            <p class="text-sm">
+              <span>1:30:19 pm</span> / <span>00:00:00:415</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilterBodyScenerio_1</h5>
+<span class='badge badge-success'>09.10.2024 1:30:19 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-default'>00:00:00:415</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">positive case : pass all fields</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-24'></div>
+ <script>
+  function jsonTreeCreate24() { 
+   document.getElementById('code-block-json-24').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"ASC"},"isCSV":true}); 
+  }
+  jsonTreeCreate24();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          PartDate '04-09-2024' is within the expected range of '09-07-2024' and '07-09-2024'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          PartDate '04-09-2024' is within the expected range of '09-07-2024' and '07-09-2024'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          PartDate '05-09-2024' is within the expected range of '09-07-2024' and '07-09-2024'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          PartDate '05-09-2024' is within the expected range of '09-07-2024' and '07-09-2024'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          PartDate '05-09-2024' is within the expected range of '09-07-2024' and '07-09-2024'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          All objects contain partDate within the expected range.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 385ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-25'></div>
+ <script>
+  function jsonTreeCreate25() { 
+   document.getElementById('code-block-json-25').innerHTML = JSONTree.create({
+    "draw": 1,
+    "recordsTotal": 23,
+    "recordsFiltered": 23,
+    "data": [
+        {
+            "eventId": 14,
+            "date": "2024-09-04 12:03:39",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "04-09-2024",
+            "time": "05:33 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 17,
+            "date": "2024-09-04 12:03:49",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "04-09-2024",
+            "time": "05:33 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 46,
+            "date": "2024-09-05 07:27:08",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "05-09-2024",
+            "time": "12:57 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 48,
+            "date": "2024-09-05 07:30:47",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "05-09-2024",
+            "time": "01:00 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 55,
+            "date": "2024-09-05 08:07:35",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "05-09-2024",
+            "time": "01:37 PM",
+            "cleaningStatus": null
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate25();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_2</p>
+            <p class="text-sm">
+              <span>1:30:20 pm</span> / <span>00:00:00:244</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilterBodyScenerio_2</h5>
+<span class='badge badge-success'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-default'>00:00:00:244</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">pass all fields empty</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-26'></div>
+ <script>
+  function jsonTreeCreate26() { 
+   document.getElementById('code-block-json-26').innerHTML = JSONTree.create({"facilityId":null,"regionId":null,"areaId":null,"zoneId":null,"event":null,"status":null,"toDate":null,"fromDate":null,"page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"DESC"},"isCSV":true}); 
+  }
+  jsonTreeCreate26();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 227ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-27'></div>
+ <script>
+  function jsonTreeCreate27() { 
+   document.getElementById('code-block-json-27').innerHTML = JSONTree.create({
+    "draw": 1,
+    "recordsTotal": 338,
+    "recordsFiltered": 338,
+    "data": [
+        {
+            "eventId": 454,
+            "date": "2024-09-10 06:53:12",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "10-09-2024",
+            "time": "12:23 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 453,
+            "date": "2024-09-10 06:41:54",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_time_threshold_exceeded",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "10-09-2024",
+            "time": "12:11 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 452,
+            "date": "2024-09-10 06:40:06",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "10-09-2024",
+            "time": "12:10 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 451,
+            "date": "2024-09-10 06:37:38",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "person_on_chair",
+            "status": "person_left_the_chair",
+            "duration": null,
+            "state": "5.565787783333334",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "10-09-2024",
+            "time": "12:07 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 450,
+            "date": "2024-09-10 06:32:23",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "person_on_chair",
+            "status": "person_on_chair_detected",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "10-09-2024",
+            "time": "12:02 PM",
+            "cleaningStatus": null
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate27();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_3</p>
+            <p class="text-sm">
+              <span>1:30:20 pm</span> / <span>00:00:00:179</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">EventsByFilterBodyScenerio_3</h5>
+<span class='badge badge-success'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-default'>00:00:00:179</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">enter wrong date format yyyy-mm-dd</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-28'></div>
+ <script>
+  function jsonTreeCreate28() { 
+   document.getElementById('code-block-json-28').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"2024-09-07","fromDate":"2024-07-09","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"DESC"},"isCSV":true}); 
+  }
+  jsonTreeCreate28();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <span class='badge white-text red'>Cannot invoke "String.equals(Object)" because "actualValue" is null</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <details>
+    <summary>Click Here To See Exception Logs</summary>
+    [utilities.restAssuredFunctions.API.assertKeyValue(API.java:99)<br> winchcamp.EventsByFilterTests.BodyCase(EventsByFilterTests.java:80)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br> java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br> java.base/java.lang.reflect.Method.invoke(Method.java:568)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:848)<br> org.testng.TestRunner.run(TestRunner.java:621)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br> org.testng.SuiteRunner.run(SuiteRunner.java:336)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br> org.testng.TestNG.runSuites(TestNG.java:1114)<br> org.testng.TestNG.run(TestNG.java:1082)<br> com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br> com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)]
+</details>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-29'></div>
+ <script>
+  function jsonTreeCreate29() { 
+   document.getElementById('code-block-json-29').innerHTML = JSONTree.create({
+    "draw": 0,
+    "recordsTotal": 0,
+    "recordsFiltered": 0,
+    "data": null
+}); 
+  }
+  jsonTreeCreate29();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_4</p>
+            <p class="text-sm">
+              <span>1:30:20 pm</span> / <span>00:00:00:185</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilterBodyScenerio_4</h5>
+<span class='badge badge-success'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-default'>00:00:00:185</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">single facility, pass only from date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-30'></div>
+ <script>
+  function jsonTreeCreate30() { 
+   document.getElementById('code-block-json-30').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":null,"fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"DESC"},"isCSV":true}); 
+  }
+  jsonTreeCreate30();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 172ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-31'></div>
+ <script>
+  function jsonTreeCreate31() { 
+   document.getElementById('code-block-json-31').innerHTML = JSONTree.create({
+    "draw": 1,
+    "recordsTotal": 23,
+    "recordsFiltered": 23,
+    "data": [
+        {
+            "eventId": 359,
+            "date": "2024-09-06 14:33:11",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "06-09-2024",
+            "time": "08:03 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 352,
+            "date": "2024-09-06 14:19:18",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "06-09-2024",
+            "time": "07:49 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 343,
+            "date": "2024-09-06 13:44:44",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: True, chair_cleaning: False",
+            "partDate": "06-09-2024",
+            "time": "07:14 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 257,
+            "date": "2024-09-06 10:45:37",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "06-09-2024",
+            "time": "04:15 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 255,
+            "date": "2024-09-06 10:45:14",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "06-09-2024",
+            "time": "04:15 PM",
+            "cleaningStatus": null
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate31();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_5</p>
+            <p class="text-sm">
+              <span>1:30:20 pm</span> / <span>00:00:00:169</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilterBodyScenerio_5</h5>
+<span class='badge badge-success'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-default'>00:00:00:169</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">single facility, pass only to date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-32'></div>
+ <script>
+  function jsonTreeCreate32() { 
+   document.getElementById('code-block-json-32').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":null,"page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"DESC"},"isCSV":true}); 
+  }
+  jsonTreeCreate32();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 162ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-33'></div>
+ <script>
+  function jsonTreeCreate33() { 
+   document.getElementById('code-block-json-33').innerHTML = JSONTree.create({
+    "draw": 1,
+    "recordsTotal": 23,
+    "recordsFiltered": 23,
+    "data": [
+        {
+            "eventId": 359,
+            "date": "2024-09-06 14:33:11",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "06-09-2024",
+            "time": "08:03 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 352,
+            "date": "2024-09-06 14:19:18",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "06-09-2024",
+            "time": "07:49 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 343,
+            "date": "2024-09-06 13:44:44",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: True, chair_cleaning: False",
+            "partDate": "06-09-2024",
+            "time": "07:14 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 257,
+            "date": "2024-09-06 10:45:37",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "06-09-2024",
+            "time": "04:15 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 255,
+            "date": "2024-09-06 10:45:14",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "06-09-2024",
+            "time": "04:15 PM",
+            "cleaningStatus": null
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate33();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_6</p>
+            <p class="text-sm">
+              <span>1:30:20 pm</span> / <span>00:00:00:137</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilterBodyScenerio_6</h5>
+<span class='badge badge-success'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-default'>00:00:00:137</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">all facility, pass only from date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-34'></div>
+ <script>
+  function jsonTreeCreate34() { 
+   document.getElementById('code-block-json-34').innerHTML = JSONTree.create({"facilityId":null,"regionId":null,"areaId":null,"zoneId":null,"event":"cleaning","status":"cleaning_started","toDate":null,"fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"DESC"},"isCSV":true}); 
+  }
+  jsonTreeCreate34();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 131ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-35'></div>
+ <script>
+  function jsonTreeCreate35() { 
+   document.getElementById('code-block-json-35').innerHTML = JSONTree.create({
+    "draw": 0,
+    "recordsTotal": 0,
+    "recordsFiltered": 0,
+    "data": null
+}); 
+  }
+  jsonTreeCreate35();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_7</p>
+            <p class="text-sm">
+              <span>1:30:20 pm</span> / <span>00:00:00:131</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilterBodyScenerio_7</h5>
+<span class='badge badge-success'>09.10.2024 1:30:20 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:21 pm</span>
+<span class='badge badge-default'>00:00:00:131</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">all facility, pass only to date to get 2months data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-36'></div>
+ <script>
+  function jsonTreeCreate36() { 
+   document.getElementById('code-block-json-36').innerHTML = JSONTree.create({"facilityId":null,"regionId":null,"areaId":null,"zoneId":null,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":null,"page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"DESC"},"isCSV":true}); 
+  }
+  jsonTreeCreate36();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 124ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-37'></div>
+ <script>
+  function jsonTreeCreate37() { 
+   document.getElementById('code-block-json-37').innerHTML = JSONTree.create({
+    "draw": 0,
+    "recordsTotal": 0,
+    "recordsFiltered": 0,
+    "data": null
+}); 
+  }
+  jsonTreeCreate37();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilterBodyScenerio_8</p>
+            <p class="text-sm">
+              <span>1:30:21 pm</span> / <span>00:00:00:190</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilterBodyScenerio_8</h5>
+<span class='badge badge-success'>09.10.2024 1:30:21 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:21 pm</span>
+<span class='badge badge-default'>00:00:00:190</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">pass invalid event and status </div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-38'></div>
+ <script>
+  function jsonTreeCreate38() { 
+   document.getElementById('code-block-json-38').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaningg","status":"ccleaning_started","toDate":"07-09-2024","fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"DESC"},"isCSV":true}); 
+  }
+  jsonTreeCreate38();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Status code assertion passed! Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Assertion passed! Response time is less than 800 milliseconds: 184ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-39'></div>
+ <script>
+  function jsonTreeCreate39() { 
+   document.getElementById('code-block-json-39').innerHTML = JSONTree.create({
+    "draw": 1,
+    "recordsTotal": 0,
+    "recordsFiltered": 0,
+    "data": [
+        
+    ]
+}); 
+  }
+  jsonTreeCreate39();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilter_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>1:30:21 pm</span> / <span>00:00:00:586</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilter_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.10.2024 1:30:21 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:21 pm</span>
+<span class='badge badge-default'>00:00:00:586</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer GUyZC1yZXBseU.....InVzZ</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-40'></div>
+ <script>
+  function jsonTreeCreate40() { 
+   document.getElementById('code-block-json-40').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"ASC"},"isCSV":false}); 
+  }
+  jsonTreeCreate40();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Unauthorized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:21 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-41'></div>
+ <script>
+  function jsonTreeCreate41() { 
+   document.getElementById('code-block-json-41').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-279",
+    "status": 401,
+    "message": "An error occurred while attempting to decode the Jwt: Invalid JWT serialization: Missing dot delimiter(s)",
+    "error": "Unauthorized",
+    "type": "InvalidBearerTokenException"
+}); 
+  }
+  jsonTreeCreate41();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilter_EmptyAndWrongAuth</p>
+            <p class="text-sm">
+              <span>1:30:21 pm</span> / <span>00:00:00:514</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilter_EmptyAndWrongAuth</h5>
+<span class='badge badge-success'>09.10.2024 1:30:21 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:22 pm</span>
+<span class='badge badge-default'>00:00:00:514</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">authorization token case : empty token | wrong token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-42'></div>
+ <script>
+  function jsonTreeCreate42() { 
+   document.getElementById('code-block-json-42').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"ASC"},"isCSV":false}); 
+  }
+  jsonTreeCreate42();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          Status code assertion passed! Expected: 401, Actual: 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Unauthorized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-43'></div>
+ <script>
+  function jsonTreeCreate43() { 
+   document.getElementById('code-block-json-43').innerHTML = JSONTree.create({
+    "source": "v1-user-v1-build-user-279",
+    "status": 401,
+    "message": "Bearer token is malformed",
+    "error": "Unauthorized",
+    "type": "OAuth2AuthenticationException"
+}); 
+  }
+  jsonTreeCreate43();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilter_SchemaValidation</p>
+            <p class="text-sm">
+              <span>1:30:22 pm</span> / <span>00:00:00:243</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilter_SchemaValidation</h5>
+<span class='badge badge-success'>09.10.2024 1:30:22 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:23 pm</span>
+<span class='badge badge-default'>00:00:00:243</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">schema validation case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-44'></div>
+ <script>
+  function jsonTreeCreate44() { 
+   document.getElementById('code-block-json-44').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"ASC"},"isCSV":false}); 
+  }
+  jsonTreeCreate44();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:22 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          JSON schema validation passed!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-45'></div>
+ <script>
+  function jsonTreeCreate45() { 
+   document.getElementById('code-block-json-45').innerHTML = JSONTree.create({
+    "draw": 1,
+    "recordsTotal": 23,
+    "recordsFiltered": 23,
+    "data": [
+        {
+            "eventId": 14,
+            "date": "2024-09-04 12:03:39",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "04-09-2024",
+            "time": "05:33 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 17,
+            "date": "2024-09-04 12:03:49",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: False, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: True",
+            "partDate": "04-09-2024",
+            "time": "05:33 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 46,
+            "date": "2024-09-05 07:27:08",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "05-09-2024",
+            "time": "12:57 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 48,
+            "date": "2024-09-05 07:30:47",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "05-09-2024",
+            "time": "01:00 PM",
+            "cleaningStatus": null
+        },
+        {
+            "eventId": 55,
+            "date": "2024-09-05 08:07:35",
+            "clinicName": "Safdarjung Development Area",
+            "clinicId": "5100",
+            "area": "Operatory 1",
+            "event": "cleaning",
+            "status": "cleaning_started",
+            "duration": null,
+            "state": "",
+            "hasView": true,
+            "cleaningDetails": "tray_cleaning: True, light_cleaning: False, spittoon_cleaning: False, chair_cleaning: False",
+            "partDate": "05-09-2024",
+            "time": "01:37 PM",
+            "cleaningStatus": null
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate45();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilter_WrongEndpoint</p>
+            <p class="text-sm">
+              <span>1:30:23 pm</span> / <span>00:00:00:140</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilter_WrongEndpoint</h5>
+<span class='badge badge-success'>09.10.2024 1:30:23 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:23 pm</span>
+<span class='badge badge-default'>00:00:00:140</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">wrong endpoint case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/eventsshr
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          Method   :   POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-46'></div>
+ <script>
+  function jsonTreeCreate46() { 
+   document.getElementById('code-block-json-46').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"ASC"},"isCSV":false}); 
+  }
+  jsonTreeCreate46();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          Status code assertion passed! Expected: 404, Actual: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:23 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-47'></div>
+ <script>
+  function jsonTreeCreate47() { 
+   document.getElementById('code-block-json-47').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-10T08:00:23.628+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/reports/eventsshr"
+}); 
+  }
+  jsonTreeCreate47();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag="EventsByFilter"
+          device="">
+          <div class="test-detail">
+            <p class="name">EventsByFilter_WrongMethod</p>
+            <p class="text-sm">
+              <span>1:30:23 pm</span> / <span>00:00:00:153</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventsByFilter_WrongMethod</h5>
+<span class='badge badge-success'>09.10.2024 1:30:23 pm</span>
+<span class='badge badge-danger'>09.10.2024 1:30:24 pm</span>
+<span class='badge badge-default'>00:00:00:153</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">EventsByFilter</span></div>
+<div class="m-t-10 m-l-5">wrong request method case</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          Endpoint    :   /v1/user/reports/events
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          Method   :   GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Headers : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJraWQiOiJyc.....zbWXA</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Request body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-48'></div>
+ <script>
+  function jsonTreeCreate48() { 
+   document.getElementById('code-block-json-48').innerHTML = JSONTree.create({"facilityId":67,"regionId":1,"areaId":1,"zoneId":1,"event":"cleaning","status":"cleaning_started","toDate":"07-09-2024","fromDate":"09-07-2024","page":{"draw":1,"page":0,"size":5,"sortBy":"eventDate","sortType":"ASC"},"isCSV":false}); 
+  }
+  jsonTreeCreate48();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Assertions :</div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          Status code assertion passed! Expected: 405, Actual: 405
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          Assertion passed! error in response body has the expected value: Method Not Allowed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+          <div style="background-color: dodgerblue; font-weight: normal; color: white; padding: 3px 5px 3px; border-radius: 5px">Response body : </div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:24 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-49'></div>
+ <script>
+  function jsonTreeCreate49() { 
+   document.getElementById('code-block-json-49').innerHTML = JSONTree.create({
+    "timestamp": "2024-09-10T08:00:24.162+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/reports/events"
+}); 
+  }
+  jsonTreeCreate49();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">CSVGenerationForAreaCameraReport</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>CSVGenerationForAreaCameraReport</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>CSVGenerationForAreaCameraReport_BodyScenerio1</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:30:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>CSVGenerationForAreaCameraReport_BodyScenerio2</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:30:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>CSVGenerationForAreaCameraReport_BodyScenerio3</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:30:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>CSVGenerationForAreaCameraReport_BodyScenerio4</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:30:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>CSVGenerationForAreaCameraReport_BodyScenerio5</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:30:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>CSVGenerationForAreaCameraReport_BodyScenerio6</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:30:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>CSVGenerationForAreaCameraReport_BodyScenerio7</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>CSVGenerationForAreaCameraReport_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>CSVGenerationForAreaCameraReport_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>CSVGenerationForAreaCameraReport_SchemaValidation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>CSVGenerationForAreaCameraReport_WrongEndpoint</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>CSVGenerationForAreaCameraReport_WrongMethod</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>12</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">EventsByFilter</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>EventsByFilter</h4>
+<span status="pass" class='badge log pass-bg'>12 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>EventsByFilterBodyScenerio_1</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>EventsByFilterBodyScenerio_2</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>EventsByFilterBodyScenerio_3</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>EventsByFilterBodyScenerio_4</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>EventsByFilterBodyScenerio_5</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>EventsByFilterBodyScenerio_6</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>EventsByFilterBodyScenerio_7</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>EventsByFilterBodyScenerio_8</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>EventsByFilter_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>EventsByFilter_EmptyAndWrongAuth</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>EventsByFilter_SchemaValidation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>EventsByFilter_WrongEndpoint</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:30:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>EventsByFilter_WrongMethod</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 10, 2024 01:30:06 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 10, 2024 01:30:24 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>18</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>7</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='72%'>
+<b>18</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='28%'><b>7</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='14%'><b>40</b> events passed</small></div>
+<div>
+<small data-tooltip='7%'><b>20</b> events failed,
+<b data-tooltip='%'>225</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"CSVGenerationForAreaCameraReport_BodyScenerio1":1.391,"CSVGenerationForAreaCameraReport_BodyScenerio2":0.166,"CSVGenerationForAreaCameraReport_BodyScenerio3":0.191,"CSVGenerationForAreaCameraReport_BodyScenerio4":0.228,"CSVGenerationForAreaCameraReport_BodyScenerio5":0.171,"CSVGenerationForAreaCameraReport_BodyScenerio6":0.163,"CSVGenerationForAreaCameraReport_BodyScenerio7":0.147,"CSVGenerationForAreaCameraReport_EmptyAndWrongAuth":0.606,"CSVGenerationForAreaCameraReport_EmptyAndWrongAuth":0.57,"CSVGenerationForAreaCameraReport_SchemaValidation":0.616,"CSVGenerationForAreaCameraReport_WrongEndpoint":0.275,"CSVGenerationForAreaCameraReport_WrongMethod":0.228,"EventsByFilterBodyScenerio_1":0.415,"EventsByFilterBodyScenerio_2":0.244,"EventsByFilterBodyScenerio_3":0.179,"EventsByFilterBodyScenerio_4":0.185,"EventsByFilterBodyScenerio_5":0.169,"EventsByFilterBodyScenerio_6":0.137,"EventsByFilterBodyScenerio_7":0.131,"EventsByFilterBodyScenerio_8":0.19,"EventsByFilter_EmptyAndWrongAuth":0.586,"EventsByFilter_EmptyAndWrongAuth":0.514,"EventsByFilter_SchemaValidation":0.243,"EventsByFilter_WrongEndpoint":0.14,"EventsByFilter_WrongMethod":0.153
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>CSVGenerationForAreaCameraReport</td>
+<td>6</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>EventsByFilter</td>
+<td>12</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>92.308%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 18,
+failParent: 7,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 40,
+failEvents: 20,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 225
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

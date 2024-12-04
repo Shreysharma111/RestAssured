@@ -14,7 +14,7 @@ public class SaveCameraConfigsDataBuilder {
     private static final String SHEET_RANGE = "A1:J8";
 
     //data builder for multiple scenerios from google sheets
-    public static SaveCameraConfigsPojo getCustomizedSaveCameraConfigsData(LinkedHashMap<String, String> data) {
+    public static SaveCameraConfigsPojo getCustomizedSaveCameraConfigsData(LinkedHashMap<String, String> data, Integer dynamicCameraId, String dynamicRtspUrl, Integer dynamicMonitoringStatus) {
         SaveCameraConfigsPojo saveCameraConfigsPojo = new SaveCameraConfigsPojo();
 
         saveCameraConfigsPojo.setScenerioId(data.get("scenerioId"));
@@ -22,11 +22,14 @@ public class SaveCameraConfigsDataBuilder {
         saveCameraConfigsPojo.setExpectedStatusCode(Integer.parseInt(data.get("expectedStatusCode")));
         saveCameraConfigsPojo.setExpectedMessage(data.get("expectedMessage"));
         saveCameraConfigsPojo.setAreaId(Integer.parseInt(data.get("areaId")));
-        saveCameraConfigsPojo.setCameraId(Integer.parseInt(data.get("cameraId")));
         saveCameraConfigsPojo.setFacilityId(Integer.parseInt(data.get("facilityId")));
-        if(!data.get("rtspUrl").equalsIgnoreCase("NO_DATA"))
-            saveCameraConfigsPojo.setRtspUrl(data.get("rtspUrl"));
-        saveCameraConfigsPojo.setMonitoringStatus(Integer.parseInt(data.get("monitoringStatus")));
+
+        // Set dynamicRtspUrl if provided, otherwise use value from LinkedHashMap
+        saveCameraConfigsPojo.setCameraId(dynamicCameraId != null ? dynamicCameraId : Integer.parseInt(data.get("cameraId")));
+        saveCameraConfigsPojo.setRtspUrl(dynamicRtspUrl != null ? dynamicRtspUrl :
+                (!data.get("rtspUrl").equalsIgnoreCase("NO_DATA") ? data.get("rtspUrl") : null));
+
+        saveCameraConfigsPojo.setMonitoringStatus(dynamicMonitoringStatus != null ? dynamicMonitoringStatus : Integer.parseInt(data.get("monitoringStatus")));
         if(!data.get("eventId").equalsIgnoreCase("NO_DATA"))
             saveCameraConfigsPojo.setEventId(Collections.singletonList(data.get("eventId")));
 
@@ -43,7 +46,7 @@ public class SaveCameraConfigsDataBuilder {
         }
         List<SaveCameraConfigsPojo> saveCameraConfigsData = new ArrayList<>();
         for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
-            SaveCameraConfigsPojo saveCameraConfigs = SaveCameraConfigsDataBuilder.getCustomizedSaveCameraConfigsData(data);
+            SaveCameraConfigsPojo saveCameraConfigs = SaveCameraConfigsDataBuilder.getCustomizedSaveCameraConfigsData(data, null, null, null);
             saveCameraConfigsData.add(saveCameraConfigs);
         }
         return saveCameraConfigsData.iterator();
@@ -58,9 +61,24 @@ public class SaveCameraConfigsDataBuilder {
         }
         List<SaveCameraConfigsPojo> saveCameraConfigsData = new ArrayList<>();
         for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
-            SaveCameraConfigsPojo saveCameraConfigs = SaveCameraConfigsDataBuilder.getCustomizedSaveCameraConfigsData(data);
+            SaveCameraConfigsPojo saveCameraConfigs = SaveCameraConfigsDataBuilder.getCustomizedSaveCameraConfigsData(data, null, null, null);
             saveCameraConfigsData.add(saveCameraConfigs);
         }
         return saveCameraConfigsData.iterator();
     }
+    @DataProvider(name = "saveCameraConfigsIngnData")
+    public static Iterator<SaveCameraConfigsPojo> saveCameraConfigsIngnData(Integer dynamicCameraId, String dynamicRtsp, Integer dynamicMonitoringStatus) {
+        List<LinkedHashMap<String, String>> sheetDataAsListOfMap = null;
+        try {
+            sheetDataAsListOfMap = GoogleSheetsUtils.getGoogleSheetsDataAsListOfMap(SPREADSHEET_ID,SHEET_NAME, "A1:J2");
+        } catch (IOException | GeneralSecurityException e) {
+            throw new RuntimeException(e);
+        }
+        List<SaveCameraConfigsPojo> saveCameraConfigsData = new ArrayList<>();
+        for(LinkedHashMap<String,String> data : sheetDataAsListOfMap) {
+            SaveCameraConfigsPojo saveCameraConfigs = SaveCameraConfigsDataBuilder.getCustomizedSaveCameraConfigsData(data, dynamicCameraId, dynamicRtsp, dynamicMonitoringStatus);
+            saveCameraConfigsData.add(saveCameraConfigs);
+        }
+        return saveCameraConfigsData.iterator();
     }
+}
